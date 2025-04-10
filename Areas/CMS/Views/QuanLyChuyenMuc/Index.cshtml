@@ -1,0 +1,160 @@
+﻿@{
+    ViewBag.Title = "Quản lý chuyên mục";
+}
+<div class="d-flex align-items-center block-header">
+    <div class="search-block">
+        <input id="search" type="text" placeholder="Tìm kiếm...">
+        <button id="btn-search"> <img src="~/images/search-cms.png" alt=""></button>
+    </div>
+    <button style="height: 40px; margin-left: 25px;" class="btn" type="button" data-bs-toggle="modal" data-bs-target="#modalAdd" id="btn-create">
+        Thêm mới
+    </button>
+</div>
+<table class="table table-border" id="myTable">
+    <thead>
+        <tr>
+            <th>Stt</th>
+            <th>Tên chuyên mục</th>
+            <th>Mô tả</th>
+            <th>Ảnh đại diện</th>
+            <th>Trạng thái</th>
+            <th>Thao tác</th>
+        </tr>
+    </thead>
+</table>
+@* MODAL THÊM MỚI  *@
+<div class="modal fade" id="modalAdd" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Thêm mới chuyên mục</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Hủy"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label for="tenChuyenMucAdd" class="form-label">Tên chuyên mục <span class="text-red">*</span></label>
+                    <input type="text" class="form-control" id="tenChuyenMucAdd" placeholder="Nhập tên chuyên mục">
+                </div>
+                <div class="mb-3">
+                    <label for="moTaAdd" class="form-label">Mô tả</label>
+                    <textarea cols="30" rows="5" class="form-control" id="moTaAdd" placeholder="Nhập mô tả chuyên mục"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Trạng thái <span class="text-red">*</span></label>
+                    <div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="trangThaiAdd" id="suDungAdd" value="1" checked>
+                            <label class="form-check-label" for="suDungAdd">Sử dụng</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="trangThaiAdd" id="khongSuDungAdd" value="0">
+                            <label class="form-check-label" for="khongSuDungAdd">Không sử dụng</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="anhDaiDienChuyenMucAdd" class="form-label">Ảnh đại diện</label>
+                    <input type="file" class="form-control" id="anhDaiDienChuyenMucAdd" accept="image/*">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-cancel btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                <button type="button" class="btn btn-active btn-primary" id="saveData">Lưu</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@* MODAL CẬP NHẬT  *@
+<div class="modal fade" id="modalEdit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Cập nhật chuyên mục</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Hủy"></button>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" class="form-control" id="maChuyenMucEdit" />
+                <div class="mb-3">
+                    <label for="tenChuyenMucEdit" class="form-label">Tên chuyên mục <span class="text-red">*</span></label>
+                    <input type="text" class="form-control" id="tenChuyenMucEdit" placeholder="Nhập tên chuyên mục">
+                </div>
+                <div class="mb-3">
+                    <label for="moTaEdit" class="form-label">Mô tả</label>
+                    <textarea cols="30" rows="5" class="form-control" id="moTaEdit" placeholder="Nhập mô tả chuyên mục"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Trạng thái <span class="text-red">*</span></label>
+                    <div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="trangThaiEdit" id="suDungEdit" value="1">
+                            <label class="form-check-label" for="suDungEdit">Sử dụng</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="trangThaiEdit" id="khongSuDungEdit" value="0">
+                            <label class="form-check-label" for="khongSuDungEdit">Không sử dụng</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3" id="anhDaiDienNull">
+                    <label for="anhDaiDienChuyenMucEdit" class="form-label" hidden>Ảnh đại diện</label>
+                    <img id="currentAnhDaiDienEdit" src="" alt="Ảnh cũ" />
+                    <button type="button" class="button btn-delete" id="btn-deleteAnhDaiDien">
+                        <img src="../images/delete_filled.png" alt="Alternate Text" />
+                    </button>
+                </div>
+                <div class="mb-3">
+                    <label for="anhDaiDienChuyenMucEdit" class="form-label">Cập nhật đại diện</label>
+                    <input type="file" class="form-control" id="anhDaiDienChuyenMucEdit" placeholder="Thêm ảnh đại diện">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-cancel btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                <button type="button" class="btn btn-active btn-primary" id="editData">Lưu</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@* MODAL XÓA *@
+<div class="modal fade" id="modalDelete" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Xóa chuyên mục</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Hủy"></button>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" class="form-control" id="maChuyenMucDelete" />
+                <p>Bạn có chắc chắn muốn xóa chuyên mục này không?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-cancel btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                <button type="button" class="btn btn-active btn-primary" id="deleteData">Đồng ý</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@* MODAL XÓA ẢNH ĐẠI DIỆN*@
+<div class="modal fade" id="modalDeleteAnhDaiDien" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Xóa ảnh đại diện</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Hủy"></button>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" class="form-control" id="maChuyenMucDeleteAnh" />
+                <p>Bạn có chắc chắn muốn xóa ảnh đại diện này không?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-cancel btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                <button type="button" class="btn btn-active btn-primary" id="deleteAnhDaiDien">Đồng ý</button>
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    <script src="~/PageScripts/QuanLyChuyenMuc.js"></script>
+}

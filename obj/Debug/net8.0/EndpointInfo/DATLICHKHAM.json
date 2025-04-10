@@ -1,0 +1,3155 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "DATLICHKHAM",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/BenhNhanApi/Gets": {
+      "get": {
+        "tags": [
+          "BenhNhanApi"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_BenhNhanIEnumerableResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_BenhNhanIEnumerableResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_BenhNhanIEnumerableResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/BenhNhanApi/Get": {
+      "get": {
+        "tags": [
+          "BenhNhanApi"
+        ],
+        "parameters": [
+          {
+            "name": "MaBenhNhan",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_BenhNhanResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_BenhNhanResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_BenhNhanResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/BenhNhanApi/Add": {
+      "post": {
+        "tags": [
+          "BenhNhanApi"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_BenhNhanAddInfo"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_BenhNhanAddInfo"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_BenhNhanAddInfo"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_BenhNhanResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_BenhNhanResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_BenhNhanResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/BenhNhanApi/Update": {
+      "put": {
+        "tags": [
+          "BenhNhanApi"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_BenhNhanUpdate"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_BenhNhanUpdate"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_BenhNhanUpdate"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_BenhNhanResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_BenhNhanResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_BenhNhanResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/BenhNhanApi/Delete": {
+      "delete": {
+        "tags": [
+          "BenhNhanApi"
+        ],
+        "parameters": [
+          {
+            "name": "MaBenhNhan",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Int32Result"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Int32Result"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Int32Result"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ChungChiChuyenGiaApi/Get": {
+      "get": {
+        "tags": [
+          "ChungChiChuyenGiaApi"
+        ],
+        "parameters": [
+          {
+            "name": "MaChungChi",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ChungChiChuyenGiaResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ChungChiChuyenGiaResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ChungChiChuyenGiaResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ChungChiChuyenGiaApi/Gets": {
+      "get": {
+        "tags": [
+          "ChungChiChuyenGiaApi"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ChungChiChuyenGiaIEnumerableResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ChungChiChuyenGiaIEnumerableResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ChungChiChuyenGiaIEnumerableResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ChungChiChuyenGiaApi/Add": {
+      "post": {
+        "tags": [
+          "ChungChiChuyenGiaApi"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_ChungChiChuyenGiaAdd"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_ChungChiChuyenGiaAdd"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_ChungChiChuyenGiaAdd"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ChungChiChuyenGiaResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ChungChiChuyenGiaResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ChungChiChuyenGiaResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ChungChiChuyenGiaApi/Update": {
+      "put": {
+        "tags": [
+          "ChungChiChuyenGiaApi"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_ChungChiChuyenGia"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_ChungChiChuyenGia"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_ChungChiChuyenGia"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ChungChiChuyenGiaResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ChungChiChuyenGiaResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ChungChiChuyenGiaResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ChungChiChuyenGiaApi/Delete": {
+      "delete": {
+        "tags": [
+          "ChungChiChuyenGiaApi"
+        ],
+        "parameters": [
+          {
+            "name": "MaChungChi",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Int32Result"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Int32Result"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Int32Result"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ChuyenGiaApi/Get": {
+      "get": {
+        "tags": [
+          "ChuyenGiaApi"
+        ],
+        "parameters": [
+          {
+            "name": "MaChuyenGia",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ChuyenGiaResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ChuyenGiaResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ChuyenGiaResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ChuyenGiaApi/Gets": {
+      "post": {
+        "tags": [
+          "ChuyenGiaApi"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_ChuyenGiaRequestFilter"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_ChuyenGiaRequestFilter"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_ChuyenGiaRequestFilter"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ChuyenGiaIEnumerableResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ChuyenGiaIEnumerableResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ChuyenGiaIEnumerableResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ChuyenGiaApi/Add": {
+      "post": {
+        "tags": [
+          "ChuyenGiaApi"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_ChuyenGiaAddInfo"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_ChuyenGiaAddInfo"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_ChuyenGiaAddInfo"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ChuyenGiaResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ChuyenGiaResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ChuyenGiaResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ChuyenGiaApi/Update": {
+      "put": {
+        "tags": [
+          "ChuyenGiaApi"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_ChuyenGiaUpdate"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_ChuyenGiaUpdate"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_ChuyenGiaUpdate"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ChuyenGiaResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ChuyenGiaResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ChuyenGiaResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ChuyenGiaApi/Delete": {
+      "delete": {
+        "tags": [
+          "ChuyenGiaApi"
+        ],
+        "parameters": [
+          {
+            "name": "MaNguoiDung",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Int32Result"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Int32Result"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Int32Result"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ChuyenKhoaApi/Get": {
+      "get": {
+        "tags": [
+          "ChuyenKhoaApi"
+        ],
+        "parameters": [
+          {
+            "name": "MaChuyenKhoa",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ChuyenKhoaResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ChuyenKhoaResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ChuyenKhoaResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ChuyenKhoaApi/Gets": {
+      "get": {
+        "tags": [
+          "ChuyenKhoaApi"
+        ],
+        "parameters": [
+          {
+            "name": "filter",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ChuyenKhoaIEnumerableResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ChuyenKhoaIEnumerableResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ChuyenKhoaIEnumerableResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ChuyenKhoaApi/Add": {
+      "post": {
+        "tags": [
+          "ChuyenKhoaApi"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_ChuyenKhoaAdd"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_ChuyenKhoaAdd"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_ChuyenKhoaAdd"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ChuyenKhoaResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ChuyenKhoaResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ChuyenKhoaResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ChuyenKhoaApi/Update": {
+      "put": {
+        "tags": [
+          "ChuyenKhoaApi"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_ChuyenKhoa"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_ChuyenKhoa"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_ChuyenKhoa"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ChuyenKhoaResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ChuyenKhoaResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ChuyenKhoaResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ChuyenKhoaApi/Delete": {
+      "delete": {
+        "tags": [
+          "ChuyenKhoaApi"
+        ],
+        "parameters": [
+          {
+            "name": "MaChuyenKhoa",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Int32Result"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Int32Result"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Int32Result"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ChuyenMucApi/Gets": {
+      "post": {
+        "tags": [
+          "ChuyenMucApi"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_ChuyenMucRequestFilter"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_ChuyenMucRequestFilter"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_ChuyenMucRequestFilter"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ChuyenMucIEnumerableResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ChuyenMucIEnumerableResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ChuyenMucIEnumerableResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ChuyenMucApi/Get": {
+      "get": {
+        "tags": [
+          "ChuyenMucApi"
+        ],
+        "parameters": [
+          {
+            "name": "MaChuyenMuc",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ChuyenMucResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ChuyenMucResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ChuyenMucResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ChuyenMucApi/Add": {
+      "post": {
+        "tags": [
+          "ChuyenMucApi"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "file": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "data": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "file": {
+                  "style": "form"
+                },
+                "data": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ChuyenMucResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ChuyenMucResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ChuyenMucResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ChuyenMucApi/Update": {
+      "put": {
+        "tags": [
+          "ChuyenMucApi"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "file": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "data": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "file": {
+                  "style": "form"
+                },
+                "data": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ChuyenMucResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ChuyenMucResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ChuyenMucResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ChuyenMucApi/Delete": {
+      "delete": {
+        "tags": [
+          "ChuyenMucApi"
+        ],
+        "parameters": [
+          {
+            "name": "MaChuyenMuc",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Int32Result"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Int32Result"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Int32Result"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ChuyenMucApi/DeleteAnhDaiDien": {
+      "delete": {
+        "tags": [
+          "ChuyenMucApi"
+        ],
+        "parameters": [
+          {
+            "name": "MaChuyenMuc",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ChuyenMucResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ChuyenMucResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ChuyenMucResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/DichVuApi/Gets": {
+      "post": {
+        "tags": [
+          "DichVuApi"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_DichVuRequestFilter"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_DichVuRequestFilter"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_DichVuRequestFilter"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_DichVuIEnumerableResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_DichVuIEnumerableResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_DichVuIEnumerableResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/DichVuApi/Get": {
+      "get": {
+        "tags": [
+          "DichVuApi"
+        ],
+        "parameters": [
+          {
+            "name": "MaDichVu",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_DichVuResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_DichVuResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_DichVuResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/DichVuApi/Add": {
+      "post": {
+        "tags": [
+          "DichVuApi"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "file": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "data": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "file": {
+                  "style": "form"
+                },
+                "data": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_DichVuResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_DichVuResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_DichVuResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/DichVuApi/Update": {
+      "put": {
+        "tags": [
+          "DichVuApi"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "file": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "data": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "file": {
+                  "style": "form"
+                },
+                "data": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_DichVuResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_DichVuResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_DichVuResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/DichVuApi/Delete": {
+      "delete": {
+        "tags": [
+          "DichVuApi"
+        ],
+        "parameters": [
+          {
+            "name": "MaDichVu",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Int32Result"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Int32Result"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Int32Result"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/DichVuApi/DeleteAnhDaiDien": {
+      "delete": {
+        "tags": [
+          "DichVuApi"
+        ],
+        "parameters": [
+          {
+            "name": "MaDichVu",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_DichVuResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_DichVuResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_DichVuResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/DichVuChuyenGiaApi/Add": {
+      "post": {
+        "tags": [
+          "DichVuChuyenGiaApi"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_DichVu_ChuyenGia"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_DichVu_ChuyenGia"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_DichVu_ChuyenGia"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_DichVu_ChuyenGiaResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_DichVu_ChuyenGiaResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_DichVu_ChuyenGiaResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/LichHenApi/Gets": {
+      "get": {
+        "tags": [
+          "LichHenApi"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_LichHenIEnumerableResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_LichHenIEnumerableResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_LichHenIEnumerableResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/LichHenApi/Get": {
+      "get": {
+        "tags": [
+          "LichHenApi"
+        ],
+        "parameters": [
+          {
+            "name": "MaLichHen",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_LichHenResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_LichHenResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_LichHenResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/LichHenApi/Add": {
+      "post": {
+        "tags": [
+          "LichHenApi"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_LichHenAdd"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_LichHenAdd"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_LichHenAdd"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_LichHenResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_LichHenResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_LichHenResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/LichHenApi/Update": {
+      "put": {
+        "tags": [
+          "LichHenApi"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_LichHen"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_LichHen"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_LichHen"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_LichHenResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_LichHenResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_LichHenResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/LichHenApi/Delete": {
+      "delete": {
+        "tags": [
+          "LichHenApi"
+        ],
+        "parameters": [
+          {
+            "name": "MaLichHen",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Int32Result"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Int32Result"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Int32Result"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/LichLamViecChuyenGiaApi/Gets": {
+      "get": {
+        "tags": [
+          "LichLamViecChuyenGiaApi"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_LichLamViecChuyenGiaIEnumerableResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_LichLamViecChuyenGiaIEnumerableResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_LichLamViecChuyenGiaIEnumerableResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/LichLamViecChuyenGiaApi/Get": {
+      "get": {
+        "tags": [
+          "LichLamViecChuyenGiaApi"
+        ],
+        "parameters": [
+          {
+            "name": "MaLichLamViec",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_LichLamViecChuyenGiaResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_LichLamViecChuyenGiaResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_LichLamViecChuyenGiaResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/LichLamViecChuyenGiaApi/Add": {
+      "post": {
+        "tags": [
+          "LichLamViecChuyenGiaApi"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_LichLamViecChuyenGiaAdd"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_LichLamViecChuyenGiaAdd"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_LichLamViecChuyenGiaAdd"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_LichLamViecChuyenGiaResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_LichLamViecChuyenGiaResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_LichLamViecChuyenGiaResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/LichLamViecChuyenGiaApi/Update": {
+      "put": {
+        "tags": [
+          "LichLamViecChuyenGiaApi"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_LichLamViecChuyenGia"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_LichLamViecChuyenGia"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_LichLamViecChuyenGia"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_LichLamViecChuyenGiaResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_LichLamViecChuyenGiaResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_LichLamViecChuyenGiaResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/LichLamViecChuyenGiaApi/Delete": {
+      "delete": {
+        "tags": [
+          "LichLamViecChuyenGiaApi"
+        ],
+        "parameters": [
+          {
+            "name": "MaLichLamViec",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Int32Result"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Int32Result"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Int32Result"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ThongTinChanDoanApi/Gets": {
+      "get": {
+        "tags": [
+          "ThongTinChanDoanApi"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ThongTinChanDoanIEnumerableResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ThongTinChanDoanIEnumerableResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ThongTinChanDoanIEnumerableResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ThongTinChanDoanApi/Get": {
+      "get": {
+        "tags": [
+          "ThongTinChanDoanApi"
+        ],
+        "parameters": [
+          {
+            "name": "MaChanDoan",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ThongTinChanDoanResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ThongTinChanDoanResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ThongTinChanDoanResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ThongTinChanDoanApi/Add": {
+      "post": {
+        "tags": [
+          "ThongTinChanDoanApi"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_ThongTinChanDoanAdd"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_ThongTinChanDoanAdd"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_ThongTinChanDoanAdd"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ThongTinChanDoanResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ThongTinChanDoanResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ThongTinChanDoanResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ThongTinChanDoanApi/Update": {
+      "put": {
+        "tags": [
+          "ThongTinChanDoanApi"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_ThongTinChanDoan"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_ThongTinChanDoan"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_ThongTinChanDoan"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ThongTinChanDoanResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ThongTinChanDoanResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ThongTinChanDoanResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ThongTinChanDoanApi/Delete": {
+      "delete": {
+        "tags": [
+          "ThongTinChanDoanApi"
+        ],
+        "parameters": [
+          {
+            "name": "MaChanDoan",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Int32Result"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Int32Result"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Int32Result"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "DLK_BenhNhan": {
+        "type": "object",
+        "properties": {
+          "maBenhNhan": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "maNguoiDung": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "hoTen": {
+            "type": "string",
+            "nullable": true
+          },
+          "gioiTinh": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "ngaySinh": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "diaChi": {
+            "type": "string",
+            "nullable": true
+          },
+          "tienSuBenh": {
+            "type": "string",
+            "nullable": true
+          },
+          "thoiQuenSinhHoat": {
+            "type": "string",
+            "nullable": true
+          },
+          "ghiChuKhac": {
+            "type": "string",
+            "nullable": true
+          },
+          "ngheNghiep": {
+            "type": "string",
+            "nullable": true
+          },
+          "tinhTrangHonNhan": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "thuocDangDung": {
+            "type": "string",
+            "nullable": true
+          },
+          "trangThai": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "DLK_BenhNhanAddInfo": {
+        "type": "object",
+        "properties": {
+          "username": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "hoTen": {
+            "type": "string",
+            "nullable": true
+          },
+          "soDienThoai": {
+            "type": "string",
+            "nullable": true
+          },
+          "maNguoiDung": {
+            "type": "integer",
+            "format": "int64"
+          }
+        },
+        "additionalProperties": false
+      },
+      "DLK_BenhNhanIEnumerableResult": {
+        "type": "object",
+        "properties": {
+          "isSuccess": {
+            "type": "boolean"
+          },
+          "value": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DLK_BenhNhan"
+            },
+            "nullable": true
+          },
+          "error": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DLK_BenhNhanResult": {
+        "type": "object",
+        "properties": {
+          "isSuccess": {
+            "type": "boolean"
+          },
+          "value": {
+            "$ref": "#/components/schemas/DLK_BenhNhan"
+          },
+          "error": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DLK_BenhNhanUpdate": {
+        "type": "object",
+        "properties": {
+          "maBenhNhan": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "maNguoiDung": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "username": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "soDienThoai": {
+            "type": "string",
+            "nullable": true
+          },
+          "hoTen": {
+            "type": "string",
+            "nullable": true
+          },
+          "gioiTinh": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "ngaySinh": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "diaChi": {
+            "type": "string",
+            "nullable": true
+          },
+          "tienSuBenh": {
+            "type": "string",
+            "nullable": true
+          },
+          "thoiQuenSinhHoat": {
+            "type": "string",
+            "nullable": true
+          },
+          "ghiChuKhac": {
+            "type": "string",
+            "nullable": true
+          },
+          "ngheNghiep": {
+            "type": "string",
+            "nullable": true
+          },
+          "tinhTrangHonNhan": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "thuocDangDung": {
+            "type": "string",
+            "nullable": true
+          },
+          "trangThai": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "DLK_ChungChiChuyenGia": {
+        "type": "object",
+        "properties": {
+          "maChungChi": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "maChuyenGia": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tenChungChi": {
+            "type": "string",
+            "nullable": true
+          },
+          "ngayCap": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "ngayHetHan": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "soHieuChungChi": {
+            "type": "string",
+            "nullable": true
+          },
+          "toChucCap": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DLK_ChungChiChuyenGiaAdd": {
+        "type": "object",
+        "properties": {
+          "maChuyenGia": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tenChungChi": {
+            "type": "string",
+            "nullable": true
+          },
+          "ngayCap": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "ngayHetHan": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "soHieuChungChi": {
+            "type": "string",
+            "nullable": true
+          },
+          "toChucCap": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DLK_ChungChiChuyenGiaIEnumerableResult": {
+        "type": "object",
+        "properties": {
+          "isSuccess": {
+            "type": "boolean"
+          },
+          "value": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DLK_ChungChiChuyenGia"
+            },
+            "nullable": true
+          },
+          "error": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DLK_ChungChiChuyenGiaResult": {
+        "type": "object",
+        "properties": {
+          "isSuccess": {
+            "type": "boolean"
+          },
+          "value": {
+            "$ref": "#/components/schemas/DLK_ChungChiChuyenGia"
+          },
+          "error": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DLK_ChuyenGia": {
+        "type": "object",
+        "properties": {
+          "maChuyenGia": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "maNguoiDung": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "maChuyenKhoa": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tenChuyenKhoa": {
+            "type": "string",
+            "nullable": true
+          },
+          "hoTen": {
+            "type": "string",
+            "nullable": true
+          },
+          "chucDanh": {
+            "type": "string",
+            "nullable": true
+          },
+          "chucVu": {
+            "type": "string",
+            "nullable": true
+          },
+          "gioiTinh": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "ngaySinh": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "soNamKinhNghiem": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "giaiThuong_NghienCuu": {
+            "type": "string",
+            "nullable": true
+          },
+          "gioiThieu": {
+            "type": "string",
+            "nullable": true
+          },
+          "donViCongTac": {
+            "type": "string",
+            "nullable": true
+          },
+          "kinhNghiem": {
+            "type": "string",
+            "nullable": true
+          },
+          "diaChi": {
+            "type": "string",
+            "nullable": true
+          },
+          "trangThai": {
+            "type": "boolean"
+          },
+          "anhDaiDien": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DLK_ChuyenGiaAddInfo": {
+        "type": "object",
+        "properties": {
+          "username": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "hoTen": {
+            "type": "string",
+            "nullable": true
+          },
+          "gioiTinh": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "ngaySinh": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "maNguoiDung": {
+            "type": "integer",
+            "format": "int64"
+          }
+        },
+        "additionalProperties": false
+      },
+      "DLK_ChuyenGiaIEnumerableResult": {
+        "type": "object",
+        "properties": {
+          "isSuccess": {
+            "type": "boolean"
+          },
+          "value": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DLK_ChuyenGia"
+            },
+            "nullable": true
+          },
+          "error": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DLK_ChuyenGiaRequestFilter": {
+        "type": "object",
+        "properties": {
+          "keyword": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DLK_ChuyenGiaResult": {
+        "type": "object",
+        "properties": {
+          "isSuccess": {
+            "type": "boolean"
+          },
+          "value": {
+            "$ref": "#/components/schemas/DLK_ChuyenGia"
+          },
+          "error": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DLK_ChuyenGiaUpdate": {
+        "type": "object",
+        "properties": {
+          "maChuyenGia": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "maChuyenKhoa": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "username": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "hoTen": {
+            "type": "string",
+            "nullable": true
+          },
+          "chucDanh": {
+            "type": "string",
+            "nullable": true
+          },
+          "chucVu": {
+            "type": "string",
+            "nullable": true
+          },
+          "gioiTinh": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "ngaySinh": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "soNamKinhNghiem": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "giaiThuong_NghienCuu": {
+            "type": "string",
+            "nullable": true
+          },
+          "gioiThieu": {
+            "type": "string",
+            "nullable": true
+          },
+          "donViCongTac": {
+            "type": "string",
+            "nullable": true
+          },
+          "kinhNghiem": {
+            "type": "string",
+            "nullable": true
+          },
+          "diaChi": {
+            "type": "string",
+            "nullable": true
+          },
+          "trangThai": {
+            "type": "boolean"
+          },
+          "anhDaiDien": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DLK_ChuyenKhoa": {
+        "type": "object",
+        "properties": {
+          "maChuyenKhoa": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tenChuyenKhoa": {
+            "type": "string",
+            "nullable": true
+          },
+          "moTa": {
+            "type": "string",
+            "nullable": true
+          },
+          "trangThai": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "DLK_ChuyenKhoaAdd": {
+        "type": "object",
+        "properties": {
+          "tenChuyenKhoa": {
+            "type": "string",
+            "nullable": true
+          },
+          "moTa": {
+            "type": "string",
+            "nullable": true
+          },
+          "trangThai": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "DLK_ChuyenKhoaIEnumerableResult": {
+        "type": "object",
+        "properties": {
+          "isSuccess": {
+            "type": "boolean"
+          },
+          "value": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DLK_ChuyenKhoa"
+            },
+            "nullable": true
+          },
+          "error": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DLK_ChuyenKhoaResult": {
+        "type": "object",
+        "properties": {
+          "isSuccess": {
+            "type": "boolean"
+          },
+          "value": {
+            "$ref": "#/components/schemas/DLK_ChuyenKhoa"
+          },
+          "error": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DLK_ChuyenMuc": {
+        "type": "object",
+        "properties": {
+          "maChuyenMuc": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tenChuyenMuc": {
+            "type": "string",
+            "nullable": true
+          },
+          "moTa": {
+            "type": "string",
+            "nullable": true
+          },
+          "anhDaiDien": {
+            "type": "string",
+            "nullable": true
+          },
+          "trangThai": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "DLK_ChuyenMucIEnumerableResult": {
+        "type": "object",
+        "properties": {
+          "isSuccess": {
+            "type": "boolean"
+          },
+          "value": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DLK_ChuyenMuc"
+            },
+            "nullable": true
+          },
+          "error": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DLK_ChuyenMucRequestFilter": {
+        "type": "object",
+        "properties": {
+          "keyword": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DLK_ChuyenMucResult": {
+        "type": "object",
+        "properties": {
+          "isSuccess": {
+            "type": "boolean"
+          },
+          "value": {
+            "$ref": "#/components/schemas/DLK_ChuyenMuc"
+          },
+          "error": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DLK_DichVu": {
+        "type": "object",
+        "properties": {
+          "maDichVu": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tenDichVu": {
+            "type": "string",
+            "nullable": true
+          },
+          "moTa": {
+            "type": "string",
+            "nullable": true
+          },
+          "trangThai": {
+            "type": "boolean"
+          },
+          "giaDichVu": {
+            "type": "number",
+            "format": "float",
+            "nullable": true
+          },
+          "anhDaiDien": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DLK_DichVuIEnumerableResult": {
+        "type": "object",
+        "properties": {
+          "isSuccess": {
+            "type": "boolean"
+          },
+          "value": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DLK_DichVu"
+            },
+            "nullable": true
+          },
+          "error": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DLK_DichVuRequestFilter": {
+        "type": "object",
+        "properties": {
+          "keyword": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DLK_DichVuResult": {
+        "type": "object",
+        "properties": {
+          "isSuccess": {
+            "type": "boolean"
+          },
+          "value": {
+            "$ref": "#/components/schemas/DLK_DichVu"
+          },
+          "error": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DLK_DichVu_ChuyenGia": {
+        "type": "object",
+        "properties": {
+          "maDichVu": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "maChuyenGia": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "DLK_DichVu_ChuyenGiaResult": {
+        "type": "object",
+        "properties": {
+          "isSuccess": {
+            "type": "boolean"
+          },
+          "value": {
+            "$ref": "#/components/schemas/DLK_DichVu_ChuyenGia"
+          },
+          "error": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DLK_LichHen": {
+        "type": "object",
+        "properties": {
+          "maLichHen": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "maChuyenGia": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "maBenhNhan": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "ngayHen": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "thoiGianHen": {
+            "type": "string",
+            "nullable": true
+          },
+          "trangThai": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "hinhThucKham": {
+            "type": "boolean"
+          },
+          "lyDoHuyLich": {
+            "type": "string",
+            "nullable": true
+          },
+          "ghiChu": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DLK_LichHenAdd": {
+        "type": "object",
+        "properties": {
+          "maChuyenGia": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "maBenhNhan": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "ngayHen": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "thoiGianHen": {
+            "type": "string",
+            "nullable": true
+          },
+          "trangThai": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "hinhThucKham": {
+            "type": "boolean"
+          },
+          "lyDoHuyLich": {
+            "type": "string",
+            "nullable": true
+          },
+          "ghiChu": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DLK_LichHenIEnumerableResult": {
+        "type": "object",
+        "properties": {
+          "isSuccess": {
+            "type": "boolean"
+          },
+          "value": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DLK_LichHen"
+            },
+            "nullable": true
+          },
+          "error": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DLK_LichHenResult": {
+        "type": "object",
+        "properties": {
+          "isSuccess": {
+            "type": "boolean"
+          },
+          "value": {
+            "$ref": "#/components/schemas/DLK_LichHen"
+          },
+          "error": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DLK_LichLamViecChuyenGia": {
+        "type": "object",
+        "properties": {
+          "maLichLamViec": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "maChuyenGia": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "ngay": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "thoiGianLamViec": {
+            "type": "string",
+            "nullable": true
+          },
+          "trangThai": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "DLK_LichLamViecChuyenGiaAdd": {
+        "type": "object",
+        "properties": {
+          "maChuyenGia": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "ngay": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "thoiGianLamViec": {
+            "type": "string",
+            "nullable": true
+          },
+          "trangThai": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "DLK_LichLamViecChuyenGiaIEnumerableResult": {
+        "type": "object",
+        "properties": {
+          "isSuccess": {
+            "type": "boolean"
+          },
+          "value": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DLK_LichLamViecChuyenGia"
+            },
+            "nullable": true
+          },
+          "error": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DLK_LichLamViecChuyenGiaResult": {
+        "type": "object",
+        "properties": {
+          "isSuccess": {
+            "type": "boolean"
+          },
+          "value": {
+            "$ref": "#/components/schemas/DLK_LichLamViecChuyenGia"
+          },
+          "error": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DLK_ThongTinChanDoan": {
+        "type": "object",
+        "properties": {
+          "maChanDoan": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "maLichHen": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tinhTrangHienTai": {
+            "type": "string",
+            "nullable": true
+          },
+          "chanDoan": {
+            "type": "string",
+            "nullable": true
+          },
+          "huongDieuTri": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DLK_ThongTinChanDoanAdd": {
+        "type": "object",
+        "properties": {
+          "maLichHen": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tinhTrangHienTai": {
+            "type": "string",
+            "nullable": true
+          },
+          "chanDoan": {
+            "type": "string",
+            "nullable": true
+          },
+          "huongDieuTri": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DLK_ThongTinChanDoanIEnumerableResult": {
+        "type": "object",
+        "properties": {
+          "isSuccess": {
+            "type": "boolean"
+          },
+          "value": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DLK_ThongTinChanDoan"
+            },
+            "nullable": true
+          },
+          "error": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DLK_ThongTinChanDoanResult": {
+        "type": "object",
+        "properties": {
+          "isSuccess": {
+            "type": "boolean"
+          },
+          "value": {
+            "$ref": "#/components/schemas/DLK_ThongTinChanDoan"
+          },
+          "error": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Int32Result": {
+        "type": "object",
+        "properties": {
+          "isSuccess": {
+            "type": "boolean"
+          },
+          "value": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "error": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

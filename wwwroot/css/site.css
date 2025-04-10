@@ -1,0 +1,655 @@
+﻿html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mulish";
+    font-weight: 400;
+    color: var(--body);
+}
+
+/*HEADER*/
+header {
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+    header .navbar {
+        padding: 0;
+        background-color: var(--white) !important;
+    }
+
+        header .navbar .container-fluid {
+            padding: 11px 60px;
+        }
+
+            header .navbar .container-fluid .navbar-brand {
+                padding: 0;
+            }
+
+                header .navbar .container-fluid .navbar-brand .logo {
+                    margin-right: 40px;
+                }
+
+            header .navbar .container-fluid .navbar-brand {
+                padding: 0;
+                display: flex;
+                align-items: center;
+            }
+
+                header .navbar .container-fluid .navbar-brand span.name-center {
+                    color: var(--green);
+                    font-weight: 800;
+                    font-size: 25px;
+                }
+
+                header .navbar .container-fluid .navbar-brand span.center {
+                    color: var(--pink);
+                    font-weight: 800;
+                }
+
+            header .navbar .container-fluid .navbar-collapse {
+                flex-grow: 0;
+            }
+
+                header .navbar .container-fluid .navbar-collapse .navbar-nav {
+                    width: 800px;
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                    header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link {
+                        color: var(--blue);
+                        font-weight: 800;
+                        font-size: 20px;
+                        padding: 8px 10px;
+                    }
+
+                        header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link.active {
+                            color: var(--pink);
+                        }
+
+        header .navbar .navbar-right {
+            display: flex;
+        }
+
+        header .navbar .login-btn {
+            margin-left: 26px;
+        }
+
+            header .navbar .login-btn .btn {
+                width: 150px;
+                height: 50px;
+                font-size: 20px;
+                border-radius: 10px;
+                border: solid 1px var(--pink);
+                color: var(--pink);
+            }
+
+                header .navbar .login-btn .btn:hover {
+                    background-color: var(--pink);
+                    color: var(--white);
+                } 
+/*ENDHEADER*/
+
+/*FOOTER*/
+footer .footer {
+    background-color: var(--body);
+    padding: 10px 60px;
+     margin-top: 60px; 
+     position:initial !important;
+}
+
+    footer .footer .heading-footer {
+        display: flex;
+        align-items: flex-end;
+    }
+
+        footer .footer .heading-footer img {
+            width: 100px;
+            height: 100px;
+            margin-right: 16px;
+        }
+
+        footer .footer .heading-footer .heading {
+            color: var(--white);
+            font-family: "Playfair_Display";
+            font-size: 23px;
+            font-weight: 800;
+        }
+
+    footer .footer .information-footer {
+        display: flex;
+    }
+
+        footer .footer .information-footer .info {
+            position: relative;
+            padding-left: 18px;
+            width: 2000px;
+            margin-top: 27px;
+        }
+
+            footer .footer .information-footer .info ::before {
+                content: "";
+                width: 5px;
+                height: 80px;
+                background-color: var(--green);
+                position: absolute;
+                opacity: 0.8;
+                display: block;
+                top: 0;
+                left: 0;
+            }
+
+            footer .footer .information-footer .info p {
+                color: var(--white);
+                font-size: 20px;
+                opacity: 0.8;
+                line-height: 30px;
+            }
+/*ENDFOOTER*/
+
+/*START BANNER TRANG CHỦ*/
+
+main.block-trangchu {
+    margin-top: 102px;
+}
+
+    main .banner {
+        padding-bottom: 200px;
+        padding-top: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url("../images/bg.png");
+        position: relative;
+        z-index: 0;
+    }
+
+        main .banner .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        main .banner .heading {
+            color: var(--white)
+        }
+
+        main .banner .heading1 {
+            font-size: 35px;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        main .banner .heading2 {
+            font-size: 35px;
+            font-weight: 700;
+            font-family: "Playfair_Display";
+        }
+
+        main .banner .heading3 {
+            font-size: 30px;
+            font-weight: 700;
+            font-style: italic;
+            position: relative;
+        }
+
+            main .banner .heading3::before {
+                width: 700px;
+                height: 3px;
+                position: absolute;
+                display: block;
+                content: "";
+                background-color: var(--pink);
+                bottom: 0;
+                right: 50%;
+                transform: translate(50%, 5px);
+            }
+
+        main .banner .extend {
+            display: flex;
+            margin-top: 56px;
+        }
+
+            main .banner .extend .search-box {
+                height: 80px;
+                width: 600px;
+                border-radius: 50px;
+                box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.25);
+                background-color: var(--white);
+                display: flex;
+            }
+
+                main .banner .extend .search-box input {
+                    height: 100%;
+                    border: none;
+                    border-radius: 50px;
+                    padding-left: 30px;
+                    width: 520px;
+                }
+
+                    main .banner .extend .search-box input:focus {
+                        border: none;
+                        outline: none;
+                    }
+
+                main .banner .extend .search-box .icon-search {
+                    border: none;
+                    right: 0;
+                    background: none;
+                }
+
+                    main .banner .extend .search-box .icon-search:focus {
+                        border: none;
+                        outline: none;
+                    }
+
+                main .banner .extend .search-box input::placeholder {
+                    font-size: 25px;
+                    color: #868C98;
+                }
+
+            main .banner .extend .DatLichNgay {
+                border: none;
+                height: 80px;
+                width: 300px;
+                background: var(--pink);
+                color: var(--white);
+                font-size: 30px;
+                border-radius: 50px;
+                box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.25);
+                margin-left: 36px;
+                transition: all 0.1s ease-in-out;
+            }
+
+/*END BANNER TRANG CHỦ*/
+
+    main .block-content {
+        padding-right: 81px;
+        padding-left: 81px;
+        margin-top: 80px;
+    }
+
+        main .block-content .heading {
+            font-family: "Playfair_Display";
+            font-size: 40px;
+            font-weight: 800;
+            color: var(--pink);
+            line-height: 30px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+
+
+/*START ĐẶT KHÁM */
+    main .booking-now .card {
+        width: 100%;
+        border: none;
+        box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+    }
+
+        main .booking-now .card .block-img {
+            padding: 40px 75px 0px 75px;
+        }
+
+            main .booking-now .card .block-img img.card-img-top {
+                width: 250px;
+                height: 250px;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+
+        main .booking-now .card .card-body {
+            padding: 26px 39px 40px 39px;
+            text-align: center;
+        }
+
+            main .booking-now .card .card-body .card-title > a {
+                font-size: 25px;
+                font-weight: 500;
+                margin-bottom: 14px;
+                text-decoration: none;
+                color: var(--body);
+            }
+
+            main .booking-now .card .card-body .card-text {
+                font-size: 20px;
+                color: var(--grey);
+                font-weight: 500;
+                margin-bottom: 14px;
+                display: -webkit-box;
+                -webkit-line-clamp: 2; /* Giới hạn số dòng */
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+
+            main .booking-now .card .card-body .btn-register {
+                background-color: var(--blue);
+                border: none;
+                padding: 12px 0px;
+                margin: 0px 36px;
+                border-radius: 20px;
+                font-size: 20px;
+            }
+                main .booking-now .card .card-body .btn-register:hover {
+                    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.25);
+                }
+
+                main .booking-now .owl-carousel.owl-drag .owl-item {
+                    padding: 15px;
+                }
+
+    main .booking-now .owl-theme .owl-dots .owl-dot.active span {
+        background: var(--pink);
+    }
+
+    main .booking-now .owl-theme .owl-dots .owl-dot span {
+        width: 20px;
+        height: 20px;
+    }
+/*END ĐẶT KHÁM*/
+
+
+    main .blog .row .col-right .card {
+        border-radius: 10px;
+    }
+
+        main .blog .row .col-right .card > a {
+            text-decoration: none;
+        }
+
+            main .blog .row .col-right .card > a img {
+                object-fit: cover;
+                height: 450px;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+
+        main .blog .row .col-right .card .card-body {
+            padding: 25px 30px 32px 30px;
+        }
+
+            main .blog .row .col-right .card .card-body .title-blog {
+                text-decoration: none;
+            }
+
+    main .blog .tieuDeBaiViet {
+        font-size: 25px;
+        font-weight: 700;
+        color: var(--lightblue);
+        margin-bottom: 0;
+    }
+
+    main .blog .ngayDangBaiViet, .view-cmt {
+        font-size: 20px;
+        color: var(--greystr);
+        font-weight: 500;
+        margin-bottom: 0;
+    }
+
+    main .blog .row .col-right .card .card-body .view-cmt .luotXemBaiViet, .soBinhLuan {
+        color: var(--black);
+        font-weight: 700;
+    }
+
+    main .blog .row .col-right .card .card-body .content-blog {
+        text-decoration: none;
+        color:var(--body);
+    }
+
+    main .blog .noiDungBaiViet {
+        font-size: 20px;
+        margin-top: 8px;
+        display: -webkit-box;
+        -webkit-line-clamp: 5; /* Giới hạn số dòng */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-align: justify;
+
+    }
+
+    main .blog .row .col-left .row .card.mb-3 {
+        margin-bottom: 21px !important;
+        padding: 0px;
+        border-radius: 10px;
+    }
+
+    main .blog .row .col-left .row .card .row .col-md-4 {
+        height: 173px;
+    }
+
+        main .blog .row .col-left .row .card .row .col-md-4 img {
+            height: 100%;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            object-fit: cover;
+        }
+
+    main .blog .row .col-left .row .card .row .col-md-8 .card-body {
+        padding: 22px 30px;
+    }
+
+        main .blog .row .col-left .row .card .row .col-md-8 .card-body .title-blog .tieuDeBaiViet {
+            font-size: 20px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2; /* Giới hạn số dòng */
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        main .blog .row .col-left .row .card .row .col-md-8 .card-body > a {
+            text-decoration: none;
+        }
+
+        main .blog .row .col-left .row .card .row .col-md-8 .card-body .ngayDangBaiViet {
+            font-size: 17px;
+            margin-top: 5px;
+        }
+
+        main .blog .row .col-left .row .card .row .col-md-8 .card-body .view-cmt {
+            font-size: 17px;
+        }
+
+            main .blog .row .col-left .row .card .row .col-md-8 .card-body .view-cmt .luotXemBaiViet, .soBinhLuan {
+                font-weight: 700;
+                color: var(--black);
+            }
+
+    main .rating .block-rating {
+        display: flex;
+        justify-content: center;
+    }
+
+    main .rating .card {
+        border-radius: 10px;
+        background: #F0FAFF;
+        margin-right: 27px;
+        margin-left: 27px;
+    }
+
+        main .rating .card .card-header {
+            background: none;
+            padding: 13px 25px 21px 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+            main .rating .card .card-header .card-text {
+                font-size: 15px;
+                text-align: center;
+                line-height: 30px;
+            }
+
+        main .rating .card .card-body {
+            padding: 15px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+            main .rating .card .card-body .card-title {
+                font-size: 17px;
+                font-weight: 700;
+                margin-bottom: 0;
+            }
+    main .category .row .col-3{
+        margin-bottom:20px;
+    }
+    main .category .row .col-3 .block-category {
+        border: solid 0.5px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        transition: all 0.3s ease-in-out;
+    }
+
+        main .category .row .col-3 .block-category:hover {
+            transform: scale(1.05);
+        }
+
+    main .category .row .col-3 .title {
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: -0.5px;
+        text-align: center;
+        padding: 20px 10px;
+        margin: 0;
+    }
+
+    main .category .row .col-3 img {
+        width: 100%;
+        height: 260px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        object-fit: cover;
+    }
+
+main .block-page{
+    padding:80px 120px;
+}
+    main .block-page h3.heading-page {
+        color: var(--greystr)!important;
+        font-size: 25px !important;
+        font-weight: 500;
+    }
+    main .block-page .main-content {
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+        padding: 50px 60px;
+        margin-top:38px;
+    }
+        main .block-page .main-content p{
+            font-size:25px;
+        }
+        main .block-page .main-content ul>li {
+            font-size: 25px;
+        }
+            main .block-page .main-content img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            main .block-page .main-content .introTen{
+                font-size: 25px;
+                font-weight: 700;
+            }
+    main .block-page .blockChuyenGia {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 160px;
+    }
+
+        main .block-page .blockChuyenGia .chuyenGia {
+            box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.25);
+            border-radius: 10px;
+            margin-top: 40px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+        main .block-page .blockChuyenGia .chuyenGia .chuyenGiaLeft{
+            padding:30px 50px;
+            display:flex;
+            flex-direction:column;
+        }
+            main .block-page .blockChuyenGia .chuyenGia .chuyenGiaLeft .anhDaiDienChuyenGia{
+                width:250px;
+                height:250px;
+                border-radius:50%;
+                object-fit:cover;
+                margin-bottom:15px;
+            }
+            main .block-page .blockChuyenGia .chuyenGia .chuyenGiaLeft .datKhamNgay{
+                text-decoration:none;
+                font-size:25px;
+                color:var(--white);
+                background:var(--blue);
+                text-align:center;
+                border-radius:20px;
+                padding:15px 35px;
+                line-height:30px;
+            }
+            main .block-page .blockChuyenGia .chuyenGia .chuyenGiaRight{
+                padding:30px 50px 30px 0px;
+            }
+            main .block-page .blockChuyenGia .chuyenGia .chuyenGiaRight .tenChuyenGia {
+                font-size: 30px;
+                font-weight: 500;
+            }
+            main .block-page .blockChuyenGia .chuyenGia .chuyenGiaRight .gioiThieuChuyenGia{
+                font-size:25px;
+                color:var(--black);
+                margin:0;
+            }
+                main .block-page .blockChuyenGia .chuyenGia .chuyenGiaRight .gioiThieuChuyenGia .thongtinChuyenGia{
+                    color:var(--grey);
+                    display:inline-block;
+                    width:200px;
+                }
+    main .block-page .blockDichVu {
+        padding: 10px 200px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+        main .block-page .blockDichVu .dichVu {
+            box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.25);
+            border-radius: 10px;
+            padding: 25px 35px;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%; /* Đảm bảo tất cả có cùng chiều cao */
+            padding: 20px;
+            border: 1px solid #ddd; /* Chỉ để dễ nhìn */
+        }

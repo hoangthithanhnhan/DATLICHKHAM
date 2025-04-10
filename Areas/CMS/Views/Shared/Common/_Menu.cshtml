@@ -1,0 +1,130 @@
+﻿<aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="index3.html" class="brand-link">
+        <img alt="AdminLTE Logo" class="brand-image" style="opacity: 1" data-cfsrc="dist/img/AdminLTELogo.png"
+             src="~/images/footer-logo.jpg">
+        <span class="brand-text font-weight-light">Hoàng Minh Center</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                data-accordion="false">
+                <li class="nav-item">
+                    <a class="nav-link">
+                        <img src="~/images/dichvu1.png" alt="">
+                        <p>
+                            Quản lý lịch khám
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a asp-area="CMS" asp-controller="QuanLyLichKham" asp-action="Index" class="nav-link">
+                                <p>&bull; Lịch khám</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a asp-area="CMS" asp-controller="QuanLyThanhToan" asp-action="Index" class="nav-link">
+                                <p>&bull; Thanh toán</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a asp-area="CMS" asp-controller="QuanLyDanhGia" asp-action="Index" class="nav-link">
+                                <p>&bull; Đánh giá dịch vụ</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="~/images/nguoidung.png" alt="">
+                        <p>
+                            Quản lý người dùng
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a asp-area="CMS" asp-controller="QuanLyChuyenGia" asp-action="Index" class="nav-link">
+                                <p>&bull; Chuyên gia</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a asp-area="CMS" asp-controller="QuanLyBenhNhan" asp-action="Index" class="nav-link">
+                                <p>&bull; Bệnh nhân</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="~/images/chuyenmon.png" alt="">
+                        <p>
+                            Quản lý chuyên môn
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a asp-area="CMS" asp-controller="QuanLyChuyenKhoa" asp-action="Index" class="nav-link">
+                                <p>&bull; Chuyên khoa</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a asp-area="CMS" asp-controller="QuanLyChungChi" asp-action="Index" class="nav-link">
+                                <p>&bull; Chứng chỉ</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a asp-area="CMS" asp-controller="QuanLyDichVu" asp-action="Index" class="nav-link">
+                                <p>&bull; Dịch vụ</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="~/images/baiviet.png" alt="">
+                        <p>
+                            Quản lý blog
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a asp-area="CMS" asp-controller="QuanLyChuyenMuc" asp-action="Index" class="nav-link">
+                                <p>&bull; Chuyên mục</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a asp-area="CMS" asp-controller="QuanLyBaiViet" asp-action="Index" class="nav-link">
+                                <p>&bull; Bài viết </p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a asp-area="CMS" asp-controller="ThongKe" asp-action="Index" class="nav-link">
+                        <img src="~/images/thongke.png" alt="">
+                        <p>Thống kê</p>
+                    </a>
+                </li>
+            </ul>
+            <div class="user-panel mt-3 pb-3 d-flex">
+                <div class="info">
+                    <a href="#" class="d-block">Admin</a>
+                </div>
+                <div class="image">
+                    <img alt="User Image" data-cfsrc="dist/img/user2-160x160.jpg"
+                         src="~/images/sign_out.png">
+                </div>
+            </div>
+        </nav>
+    </div>
+</aside>

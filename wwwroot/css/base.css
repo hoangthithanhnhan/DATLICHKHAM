@@ -1,0 +1,65 @@
+﻿:root {
+    --pink: #eb0076;
+    --green: #77d10f;
+    --blue: #42a1d8;
+    --body: #1D2A4D;
+    --lightblue: #135FA9;
+    --white: #ffffff;
+    --grey: #868C98;
+    --greystr: #60787C;
+    --black: #000000;
+    --yellow: #FFD53F;
+    --red: #FF0004;
+}
+
+/* Mulish */
+@font-face {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../lib/fonts/Mulish/Mulish-Regular.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 500;
+    src: url(../lib/fonts/Mulish/Mulish-Medium.ttf) format("ttf");
+}
+@font-face {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 600;
+    src: url(../lib/fonts/Mulish/Mulish-SemiBold.ttf) format("ttf");
+}
+@font-face {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 700;
+    src: url(../lib/fonts/Mulish/Mulish-Bold.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 800;
+    src: url(../lib/fonts/Mulish/Mulish-ExtraBold.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 900;
+    src: url(../lib/fonts/Mulish/Mulish-Black.ttf) format("truetype");
+}
+
+/* Playfair Display */
+@font-face {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 800;
+    src: url(../lib/fonts/Playfair_Display/PlayfairDisplay-ExtraBold.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 900;
+    src: url(../lib/fonts/Playfair_Display/PlayfairDisplay-Black.ttf) format("truetype");
+} 

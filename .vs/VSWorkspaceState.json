@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Persistence",
+    "\\Persistence\\Migrations",
+    "\\Views",
+    "\\Views\\Shared"
+  ],
+  "SelectedNode": "\\Persistence\\Migrations\\DataContextModelSnapshot.cs",
+  "PreviewInSolutionExplorer": false
+}

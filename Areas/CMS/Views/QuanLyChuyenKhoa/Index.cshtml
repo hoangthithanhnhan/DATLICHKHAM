@@ -1,0 +1,126 @@
+﻿@{
+    ViewBag.Title = "Quản lý chuyên khoa";
+}
+<div class="d-flex align-items-center block-header">
+    <div class="search-block">
+        <input id="search" type="text" placeholder="Tìm kiếm...">
+        <button id="btn-search"> <img src="~/images/search-cms.png" alt=""></button>
+    </div>
+    <button style="height: 40px; margin-left: 25px;" class="btn" type="button" data-bs-toggle="modal" data-bs-target="#modalAdd" id="btn-create">
+        Thêm mới
+    </button>
+</div>
+<table class="table table-border" id="myTable">
+    <thead>
+        <tr>
+            <th>Stt</th>
+            <th>Tên chuyên khoa</th>
+            <th>Mô tả</th>
+            <th>Trạng thái</th>
+            <th>Thao tác</th>
+        </tr>
+    </thead>
+</table>
+
+@* MODAL THÊM MỚI  *@
+<div class="modal fade" id="modalAdd" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Thêm mới chuyên khoa</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Hủy"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label for="tenChuyenKhoaAdd" class="form-label">Tên chuyên khoa <span class="text-red">*</span></label>
+                    <input type="text" class="form-control" id="tenChuyenKhoaAdd" placeholder="Nhập tên chuyên khoa">
+                </div>
+                <div class="mb-3">
+                    <label for="moTaAdd" class="form-label">Mô tả</label>
+                    <textarea cols="30" rows="5" class="form-control" id="moTaAdd" placeholder="Nhập mô tả chuyên khoa"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Trạng thái <span class="text-red">*</span></label>
+                    <div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="trangThaiAdd" id="suDungAdd" value="1" checked>
+                            <label class="form-check-label" for="suDungAdd">Sử dụng</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="trangThaiAdd" id="khongSuDungAdd" value="0">
+                            <label class="form-check-label" for="khongSuDungAdd">Không sử dụng</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-cancel btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                <button type="button" class="btn btn-active btn-primary" id="saveData">Lưu</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@* MODAL CẬP NHẬT  *@
+<div class="modal fade" id="modalEdit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Cập nhật chuyên khoa</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Hủy"></button>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" class="form-control" id="maChuyenKhoaEdit" />
+                <div class="mb-3">
+                    <label for="tenChuyenKhoaEdit" class="form-label">Tên chuyên khoa <span class="text-red">*</span></label>
+                    <input type="text" class="form-control" id="tenChuyenKhoaEdit" placeholder="Nhập tên chuyên khoa">
+                </div>
+                <div class="mb-3">
+                    <label for="moTaEdit" class="form-label">Mô tả</label>
+                    <textarea cols="30" rows="5" class="form-control" id="moTaEdit" placeholder="Nhập mô tả chuyên khoa"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Trạng thái <span class="text-red">*</span></label>
+                    <div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="trangThaiEdit" id="suDungEdit" value="1">
+                            <label class="form-check-label" for="suDungEdit">Sử dụng</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="trangThaiEdit" id="khongSuDungEdit" value="0">
+                            <label class="form-check-label" for="khongSuDungEdit">Không sử dụng</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-cancel btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                <button type="button" class="btn btn-active btn-primary" id="editData">Lưu</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@* MODAL XÓA *@
+<div class="modal fade" id="modalDelete" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Xóa chuyên khoa</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Hủy"></button>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" class="form-control" id="maChuyenKhoaDelete" />
+                <p>Bạn có chắc chắn muốn xóa chuyên khoa này không?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-cancel btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                <button type="button" class="btn btn-active btn-primary" id="deleteData">Đồng ý</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/PageScripts/QuanLyChuyenKhoa.js"></script>
+}
