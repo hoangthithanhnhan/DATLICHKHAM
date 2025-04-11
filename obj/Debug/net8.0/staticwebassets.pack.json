@@ -221,6 +221,10 @@
       "PackagePath": "staticwebassets\\images\\thongke1.png"
     },
     {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\images\\user.png",
+      "PackagePath": "staticwebassets\\images\\user.png"
+    },
+    {
       "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\images\\view-detail.png",
       "PackagePath": "staticwebassets\\images\\view-detail.png"
     },
@@ -451,6 +455,14 @@
     {
       "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\lib\\easing\\easing.min.js",
       "PackagePath": "staticwebassets\\lib\\easing\\easing.min.js"
+    },
+    {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\lib\\flatpickr\\flatpickr.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\flatpickr.js"
+    },
+    {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\lib\\flatpickr\\flatpickr.min.css",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\flatpickr.min.css"
     },
     {
       "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\lib\\fonts\\Mulish\\Mulish-Black.ttf",
@@ -1011,6 +1023,82 @@
     {
       "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\scss\\bootstrap\\scss\\vendor\\_rfs.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\vendor\\_rfs.scss"
+    },
+    {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\ChuyenGia\\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744336737.png",
+      "PackagePath": "staticwebassets\\upload\\ChuyenGia\\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744336737.png"
+    },
+    {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\ChuyenGia\\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744336850.png",
+      "PackagePath": "staticwebassets\\upload\\ChuyenGia\\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744336850.png"
+    },
+    {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\ChuyenGia\\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744336961.png",
+      "PackagePath": "staticwebassets\\upload\\ChuyenGia\\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744336961.png"
+    },
+    {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\ChuyenGia\\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744336968.png",
+      "PackagePath": "staticwebassets\\upload\\ChuyenGia\\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744336968.png"
+    },
+    {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\ChuyenGia\\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744337430.png",
+      "PackagePath": "staticwebassets\\upload\\ChuyenGia\\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744337430.png"
+    },
+    {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\ChuyenGia\\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744337474.png",
+      "PackagePath": "staticwebassets\\upload\\ChuyenGia\\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744337474.png"
+    },
+    {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\ChuyenGia\\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744337476.png",
+      "PackagePath": "staticwebassets\\upload\\ChuyenGia\\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744337476.png"
+    },
+    {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\ChuyenGia\\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744337616.png",
+      "PackagePath": "staticwebassets\\upload\\ChuyenGia\\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744337616.png"
+    },
+    {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\ChuyenGia\\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744337796.png",
+      "PackagePath": "staticwebassets\\upload\\ChuyenGia\\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744337796.png"
+    },
+    {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\ChuyenGia\\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744338216.png",
+      "PackagePath": "staticwebassets\\upload\\ChuyenGia\\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744338216.png"
+    },
+    {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\ChuyenGia\\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744338247.png",
+      "PackagePath": "staticwebassets\\upload\\ChuyenGia\\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744338247.png"
+    },
+    {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\ChuyenGia\\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744338294.png",
+      "PackagePath": "staticwebassets\\upload\\ChuyenGia\\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744338294.png"
+    },
+    {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\ChuyenGia\\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744338442.png",
+      "PackagePath": "staticwebassets\\upload\\ChuyenGia\\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744338442.png"
+    },
+    {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\ChuyenGia\\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744338466.png",
+      "PackagePath": "staticwebassets\\upload\\ChuyenGia\\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744338466.png"
+    },
+    {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\ChuyenGia\\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744340506.png",
+      "PackagePath": "staticwebassets\\upload\\ChuyenGia\\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744340506.png"
+    },
+    {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\ChuyenGia\\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744340525.png",
+      "PackagePath": "staticwebassets\\upload\\ChuyenGia\\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744340525.png"
+    },
+    {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\ChuyenGia\\Cún_1744336589.png",
+      "PackagePath": "staticwebassets\\upload\\ChuyenGia\\Cún_1744336589.png"
+    },
+    {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\ChuyenGia\\DatLichKham-phongkham_ERD_ver2.drawio_1744339728.png",
+      "PackagePath": "staticwebassets\\upload\\ChuyenGia\\DatLichKham-phongkham_ERD_ver2.drawio_1744339728.png"
+    },
+    {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\ChuyenGia\\DatLichKham-phongkham_ERD_ver2.drawio_1744339908.png",
+      "PackagePath": "staticwebassets\\upload\\ChuyenGia\\DatLichKham-phongkham_ERD_ver2.drawio_1744339908.png"
     },
     {
       "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\ChuyenMuc\\Cún_1744267920.png",

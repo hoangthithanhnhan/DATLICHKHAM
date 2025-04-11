@@ -1,5 +1,11 @@
 ﻿let APIURL = window.location.origin;
 $(document).ready(function () {
+
+    formatInputDate("#ngaySinhAdd");
+
+    formatInputDate("#ngaySinhEdit");
+
+
     function buildData() {
         let keyword = $('#search').val();
         let request = {
@@ -19,7 +25,7 @@ $(document).ready(function () {
             [10, 20, 50, 100],
             [10, 20, 50, 100]
         ],
-        language: {
+        language: { 
             "sProcessing": "Đang xử lý...",
             "sLengthMenu": "_MENU_",
             "sZeroRecords": "Không có dữ liệu",
@@ -63,6 +69,9 @@ $(document).ready(function () {
                 targets: 7,
                 render: function (data, type, row, meta) {
                     return `
+                            <button type="button" data-id="${meta.row}" class="button btn-user">
+                                <img src="../images/user.png" alt="Alternate Text" />
+                            </button> 
                             <button type="button" data-id="${meta.row}" class="button btn-update">
                                 <img src="../images/edit_filled.png" alt="Alternate Text" />
                             </button> 
@@ -79,8 +88,8 @@ $(document).ready(function () {
             { data: "chucDanh", "width": "200px", "className": "text-center" },
             { data: "chucVu", "width": "225px", "className": "text-center fw-bold" },
             { data: "tenChuyenKhoa", "width": "250px", "className": "text-center" },
-            { data: "soNamKinhNghiem", "width": "200px", "className": "text-center" },
-            { data: "trangThai", "width": "200px", "className": "text-center fw-bold" },
+            { data: "soNamKinhNghiem", "width": "180px", "className": "text-center" },
+            { data: "trangThai", "width": "180px", "className": "text-center fw-bold" },
             { data: "maChuyenGia", "width": "auto", "className": "text-center" }
         ]
     })
@@ -98,7 +107,7 @@ $(document).ready(function () {
             email: email,
             hoTen: hoTen.trim(),
             gioiTinh: Number(gioiTinh),
-            ngaySinh: ngaySinh
+            ngaySinh: formatDateSQL(ngaySinh)
         }
         console.log(request)
         if (checkEmptyString(tenDangNhap.trim())) {
@@ -131,7 +140,6 @@ $(document).ready(function () {
                         //Làm rỗng form sau khi thêm mới
                         resetForm()
                     }
-                    
                 },
                 error: function (error) {
                     showAlert("Thêm không thành công", "error");
@@ -143,13 +151,29 @@ $(document).ready(function () {
 
     $("#myTable tbody").on('click', '.btn-update', function () {
         let id = $(this).data("id");
-        let data = $('#myTable').DataTable().row(id).data(); 
-        $("#tenDangNhapEdit").val(data.tenDangNhap);
-        $("#matKhauEdit").val(data.matKhau);
+        let data = $('#myTable').DataTable().row(id).data();
+        console.log(data)
+        $("#maChuyenGiaEdit").val(data.maChuyenGia);
         $("#hoTenEdit").val(data.hoTen);
-        $("input[name='gioitinhEdit'][value='" + (data.trangThai ? 1 : 0) + "']").prop("checked", true);
+        $("input[name='gioitinhEdit'][value='" + data.gioiTinh + "']").prop("checked", true);
+        $("#ngaySinhEdit").val(formatDate(data.ngaySinh));
+
         $('#modalEdit').modal('show');
     })
+
+    $("#myTable tbody").on('click', '.btn-user', function () {
+        let id = $(this).data("id");
+        let data = $('#myTable').DataTable().row(id).data();
+        console.log(data)
+        $("#maChuyenGiaEdit").val(data.maChuyenGia);
+        $("#tenDangNhapEdit").val(data.tenDangNhap);
+        $("#matKhauEdit").val(data.matKhau);
+        console.log(data.tenDangNhap)
+        $("#hoTenEdit").val(data.hoTen);
+        $("input[name='gioitinhEdit'][value='" + (data.trangThai ? 1 : 0) + "']").prop("checked", true);
+        $('#modalEditAccount').modal('show');
+    })
+
     $("#myTable tbody .btn-update").on('click', function () {
         let id = $(this).data("id");
         let data = $('#myTable').DataTable().row(id).data();
@@ -168,6 +192,8 @@ $(document).ready(function () {
             $('#myTable').DataTable().ajax.reload();
         }
     })
+
+    
 })
 function resetForm() {
     $("#modalAdd input").val("");

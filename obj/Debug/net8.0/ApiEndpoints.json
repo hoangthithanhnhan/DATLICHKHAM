@@ -308,7 +308,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "MaChuyenGia",
+        "Name": "MaNguoiDung",
         "Type": "System.Int32",
         "IsRequired": false
       }
@@ -360,9 +360,14 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "Entity",
-        "Type": "DATLICHKHAM.Domain.DLK_ChuyenGiaUpdate",
-        "IsRequired": true
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "data",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [

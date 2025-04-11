@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using DATLICHKHAM.Application.ChuyenGia;
 using static System.Runtime.InteropServices.JavaScript.JSType;
+using Newtonsoft.Json;
 
 namespace DATLICHKHAM.APIsController
 {
@@ -21,9 +22,9 @@ namespace DATLICHKHAM.APIsController
 
         [HttpGet]
         [Route("Get")]
-        public async Task<Result<DLK_ChuyenGia>> Get(int MaChuyenGia)
+        public async Task<Result<DLK_ChuyenGia>> Get(int MaNguoiDung)
         {
-            return await Mediator.Send(new Get.Query { MaChuyenGia = MaChuyenGia });
+            return await Mediator.Send(new Get.Query { MaNguoiDung = MaNguoiDung });
         }
 
         [HttpPost]
@@ -75,9 +76,42 @@ namespace DATLICHKHAM.APIsController
         
         [HttpPut]
         [Route("Update")]
-        public async Task<Result<DLK_ChuyenGia>> Update(DLK_ChuyenGiaUpdate Entity)
+        public async Task<Result<DLK_ChuyenGia>> Update([FromForm] RequestUploadFile request)
         {
-            return await Mediator.Send(new Update.Command { Entity = Entity });
+            // Deserialize JSON string từ "data" thành object DLK_DichVuAdd
+            DLK_ChuyenGiaUpdate chuyenGia = JsonConvert.DeserializeObject<DLK_ChuyenGiaUpdate>(request.data);
+            const string avatarPath = "wwwroot\\upload\\ChuyenGia"; //nơi lưu file vật lý vừa upload
+            const string pathdb = "\\upload\\ChuyenGia"; //đường dẫn để lưu trong DB
+            //Lấy lại thông tin cũ của dịch vụ từ DB, để mình biết ảnh cũ là ảnh gì.
+            var ChuyenGiaOLD = await Mediator.Send(new Get.Query { MaNguoiDung = chuyenGia.MaNguoiDung });
+
+            if (request.file != null && request.file.Length > 0)
+            {
+                //Gọi API lấy dịch vụ cũ thành công Và có ảnh cũ tồn tại
+                //if (ChuyenGiaOLD.IsSuccess && !string.IsNullOrEmpty(ChuyenGiaOLD.Value.AnhDaiDien))
+                if (ChuyenGiaOLD != null && ChuyenGiaOLD.IsSuccess && ChuyenGiaOLD.Value != null && !string.IsNullOrEmpty(ChuyenGiaOLD.Value.AnhDaiDien))
+                {
+                    string oldFilePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", ChuyenGiaOLD.Value.AnhDaiDien.TrimStart('\\'));
+
+                    if (System.IO.File.Exists(oldFilePath))
+                    {
+                        System.IO.File.Delete(oldFilePath); // XÓA ảnh cũ
+                    }
+                }
+
+                // Upload ảnh mới
+                var uploadedFile = await SaveFileUploadSingleMain(request.file, avatarPath, pathdb);
+                chuyenGia.AnhDaiDien = uploadedFile;
+            }
+            else
+            {
+                // Nếu không có file ảnh mới, giữ nguyên đường dẫn ảnh cũ
+                if (ChuyenGiaOLD.IsSuccess)
+                {
+                    chuyenGia.AnhDaiDien = ChuyenGiaOLD.Value.AnhDaiDien;
+                }
+            }
+            return await Mediator.Send(new Update.Command { Entity = chuyenGia });
         }
 
         [HttpDelete]
