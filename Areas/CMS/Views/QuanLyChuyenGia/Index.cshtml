@@ -30,7 +30,7 @@
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">Thêm mới chuyên gia</h5>
+                <h5 class="modal-title" id="staticBackdropLabel">Thêm mới tài khoản chuyên gia</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Hủy"></button>
             </div>
             <div class="modal-body">
@@ -81,7 +81,7 @@
 </div>
 
 @* MODAL CẬP NHẬT THÔNG TIN CHUYÊN GIA *@
-<div class="modal fade" id="modalEdit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal fade" id="modalEdit" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
@@ -129,8 +129,13 @@
                 </div>
                 <div class="mb-3">
                     <label for="chuyenKhoaEdit" class="form-label">Chuyên khoa </label>
-                    <input type="text" class="form-control" id="chuyenKhoaEdit" placeholder="Nhập chuyên khoa">
+                    <div>
+                        <select class="form-select js-example-basic-single" name="state" id="chuyenKhoaEdit" aria-label="Default select example">
+                            @* render chuyên khoa *@
+                        </select>
+                    </div>
                 </div>
+
                 <div class="mb-3">
                     <label for="soNamKinhNghiemEdit" class="form-label">Số năm kinh nghiệm</label>
                     <input type="text" class="form-control" id="soNamKinhNghiemEdit" placeholder="Nhập số năm kinh nghiệm">
@@ -151,13 +156,15 @@
                     <label for="kinhNghiemEdit" class="form-label">Kinh nghiệm</label>
                     <textarea cols="30" rows="5" type="text" class="form-control" id="kinhNghiemEdit" placeholder="Nhập kinh nghiệm"></textarea>
                 </div>
+                @* hiển thị preview *@
                 <div class="mb-3" id="anhDaiDienNull">
-                    <label for="anhDaiDienDichVuEdit" class="form-label" hidden>Ảnh đại diện</label>
+                    <label for="anhDaiDienEdit" class="form-label" hidden>Ảnh đại diện</label>
                     <img id="currentAnhDaiDienEdit" src="" alt="Ảnh cũ" />
                     <button type="button" data-id="${meta.row}" class="button btn-delete" id="btn-deleteAnhDaiDien" data-bs-toggle="modal" data-bs-target="#modalDeleteAnhDaiDien">
                         <img src="../images/delete_filled.png" alt="Alternate Text" />
                     </button>
                 </div>
+                @* chọn ảnh tải lên *@
                 <div class="mb-3">
                     <label for="anhDaiDienAdd" class="form-label">Ảnh đại diện</label>
                     <input type="file" class="form-control" id="anhDaiDienAdd" accept="image/*">

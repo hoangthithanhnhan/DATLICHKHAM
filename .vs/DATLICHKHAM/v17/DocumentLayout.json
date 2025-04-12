@@ -3,28 +3,36 @@
   "WorkspaceRootPath": "D:\\TTTN2025\\DATLICHKHAM\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{103D04BA-3A84-42D5-BAB8-49526333C26D}|DATLICHKHAM.csproj|d:\\tttn2025\\datlichkham\\wwwroot\\pagescripts\\quanlychuyengia.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{103D04BA-3A84-42D5-BAB8-49526333C26D}|DATLICHKHAM.csproj|solutionrelative:wwwroot\\pagescripts\\quanlychuyengia.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{103D04BA-3A84-42D5-BAB8-49526333C26D}|DATLICHKHAM.csproj|d:\\tttn2025\\datlichkham\\apiscontroller\\chuyengiaapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{103D04BA-3A84-42D5-BAB8-49526333C26D}|DATLICHKHAM.csproj|solutionrelative:apiscontroller\\chuyengiaapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{103D04BA-3A84-42D5-BAB8-49526333C26D}|DATLICHKHAM.csproj|d:\\tttn2025\\datlichkham\\application\\chuyengia\\update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{103D04BA-3A84-42D5-BAB8-49526333C26D}|DATLICHKHAM.csproj|solutionrelative:application\\chuyengia\\update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{103D04BA-3A84-42D5-BAB8-49526333C26D}|DATLICHKHAM.csproj|d:\\tttn2025\\datlichkham\\domain\\dlk_chuyengia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{103D04BA-3A84-42D5-BAB8-49526333C26D}|DATLICHKHAM.csproj|solutionrelative:domain\\dlk_chuyengia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{103D04BA-3A84-42D5-BAB8-49526333C26D}|DATLICHKHAM.csproj|d:\\tttn2025\\datlichkham\\application\\chuyengia\\add.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{103D04BA-3A84-42D5-BAB8-49526333C26D}|DATLICHKHAM.csproj|solutionrelative:application\\chuyengia\\add.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{103D04BA-3A84-42D5-BAB8-49526333C26D}|DATLICHKHAM.csproj|d:\\tttn2025\\datlichkham\\areas\\cms\\views\\quanlychuyengia\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{103D04BA-3A84-42D5-BAB8-49526333C26D}|DATLICHKHAM.csproj|solutionrelative:areas\\cms\\views\\quanlychuyengia\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{103D04BA-3A84-42D5-BAB8-49526333C26D}|DATLICHKHAM.csproj|d:\\tttn2025\\datlichkham\\wwwroot\\pagescripts\\layout.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{103D04BA-3A84-42D5-BAB8-49526333C26D}|DATLICHKHAM.csproj|solutionrelative:wwwroot\\pagescripts\\layout.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{103D04BA-3A84-42D5-BAB8-49526333C26D}|DATLICHKHAM.csproj|d:\\tttn2025\\datlichkham\\areas\\cms\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{103D04BA-3A84-42D5-BAB8-49526333C26D}|DATLICHKHAM.csproj|solutionrelative:areas\\cms\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{103D04BA-3A84-42D5-BAB8-49526333C26D}|DATLICHKHAM.csproj|d:\\tttn2025\\datlichkham\\wwwroot\\pagescripts\\quanlychuyengia.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{103D04BA-3A84-42D5-BAB8-49526333C26D}|DATLICHKHAM.csproj|solutionrelative:wwwroot\\pagescripts\\quanlychuyengia.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{103D04BA-3A84-42D5-BAB8-49526333C26D}|DATLICHKHAM.csproj|d:\\tttn2025\\datlichkham\\areas\\cms\\views\\shared\\common\\_filter.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{103D04BA-3A84-42D5-BAB8-49526333C26D}|DATLICHKHAM.csproj|solutionrelative:areas\\cms\\views\\shared\\common\\_filter.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{103D04BA-3A84-42D5-BAB8-49526333C26D}|DATLICHKHAM.csproj|d:\\tttn2025\\datlichkham\\application\\chuyenkhoa\\gets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{103D04BA-3A84-42D5-BAB8-49526333C26D}|DATLICHKHAM.csproj|solutionrelative:application\\chuyenkhoa\\gets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,19 +42,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 250,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "QuanLyChuyenGia.js",
-              "DocumentMoniker": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\QuanLyChuyenGia.js",
-              "RelativeDocumentMoniker": "wwwroot\\PageScripts\\QuanLyChuyenGia.js",
-              "ToolTip": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\QuanLyChuyenGia.js",
-              "RelativeToolTip": "wwwroot\\PageScripts\\QuanLyChuyenGia.js",
-              "ViewState": "AgIAAJIAAAAAAAAAAAAAwKAAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-04-11T07:22:08.9Z",
+              "DocumentIndex": 2,
+              "Title": "Update.cs",
+              "DocumentMoniker": "D:\\TTTN2025\\DATLICHKHAM\\Application\\ChuyenGia\\Update.cs",
+              "RelativeDocumentMoniker": "Application\\ChuyenGia\\Update.cs",
+              "ToolTip": "D:\\TTTN2025\\DATLICHKHAM\\Application\\ChuyenGia\\Update.cs",
+              "RelativeToolTip": "Application\\ChuyenGia\\Update.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwCQAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T10:26:34.118Z",
               "EditorCaption": ""
             },
             {
@@ -55,68 +63,92 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Layout.js",
-              "DocumentMoniker": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\Layout.js",
-              "RelativeDocumentMoniker": "wwwroot\\PageScripts\\Layout.js",
-              "ToolTip": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\Layout.js",
-              "RelativeToolTip": "wwwroot\\PageScripts\\Layout.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-04-11T07:50:29.819Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\TTTN2025\\DATLICHKHAM\\Areas\\CMS\\Views\\QuanLyChuyenGia\\Index.cshtml",
-              "RelativeDocumentMoniker": "Areas\\CMS\\Views\\QuanLyChuyenGia\\Index.cshtml",
-              "ToolTip": "D:\\TTTN2025\\DATLICHKHAM\\Areas\\CMS\\Views\\QuanLyChuyenGia\\Index.cshtml",
-              "RelativeToolTip": "Areas\\CMS\\Views\\QuanLyChuyenGia\\Index.cshtml",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAnwFAAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-11T07:22:55.345Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Add.cs",
-              "DocumentMoniker": "D:\\TTTN2025\\DATLICHKHAM\\Application\\ChuyenGia\\Add.cs",
-              "RelativeDocumentMoniker": "Application\\ChuyenGia\\Add.cs",
-              "ToolTip": "D:\\TTTN2025\\DATLICHKHAM\\Application\\ChuyenGia\\Add.cs",
-              "RelativeToolTip": "Application\\ChuyenGia\\Add.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAgwBkAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T07:22:34.051Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "DLK_ChuyenGia.cs",
-              "DocumentMoniker": "D:\\TTTN2025\\DATLICHKHAM\\Domain\\DLK_ChuyenGia.cs",
-              "RelativeDocumentMoniker": "Domain\\DLK_ChuyenGia.cs",
-              "ToolTip": "D:\\TTTN2025\\DATLICHKHAM\\Domain\\DLK_ChuyenGia.cs",
-              "RelativeToolTip": "Domain\\DLK_ChuyenGia.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAA7wEMAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T07:22:20.3Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "ChuyenGiaApiController.cs",
               "DocumentMoniker": "D:\\TTTN2025\\DATLICHKHAM\\APIsController\\ChuyenGiaApiController.cs",
               "RelativeDocumentMoniker": "APIsController\\ChuyenGiaApiController.cs",
               "ToolTip": "D:\\TTTN2025\\DATLICHKHAM\\APIsController\\ChuyenGiaApiController.cs",
               "RelativeToolTip": "APIsController\\ChuyenGiaApiController.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAgwCkAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAADEAAAAAAAAAAAAkwFUAAABqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T02:55:19.735Z",
+              "WhenOpened": "2025-04-12T09:46:31.208Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DLK_ChuyenGia.cs",
+              "DocumentMoniker": "D:\\TTTN2025\\DATLICHKHAM\\Domain\\DLK_ChuyenGia.cs",
+              "RelativeDocumentMoniker": "Domain\\DLK_ChuyenGia.cs",
+              "ToolTip": "D:\\TTTN2025\\DATLICHKHAM\\Domain\\DLK_ChuyenGia.cs",
+              "RelativeToolTip": "Domain\\DLK_ChuyenGia.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T10:24:40.286Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\TTTN2025\\DATLICHKHAM\\Areas\\CMS\\Views\\QuanLyChuyenGia\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\CMS\\Views\\QuanLyChuyenGia\\Index.cshtml",
+              "ToolTip": "D:\\TTTN2025\\DATLICHKHAM\\Areas\\CMS\\Views\\QuanLyChuyenGia\\Index.cshtml",
+              "RelativeToolTip": "Areas\\CMS\\Views\\QuanLyChuyenGia\\Index.cshtml",
+              "ViewState": "AgIAAIUAAAAAAAAAAAAAAKkAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-12T08:48:56.77Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "QuanLyChuyenGia.js",
+              "DocumentMoniker": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\QuanLyChuyenGia.js",
+              "RelativeDocumentMoniker": "wwwroot\\PageScripts\\QuanLyChuyenGia.js",
+              "ToolTip": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\QuanLyChuyenGia.js",
+              "RelativeToolTip": "wwwroot\\PageScripts\\QuanLyChuyenGia.js",
+              "ViewState": "AgIAADsAAAAAAAAAAAAAwEkAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-04-12T08:21:53.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\TTTN2025\\DATLICHKHAM\\Areas\\CMS\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Areas\\CMS\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\TTTN2025\\DATLICHKHAM\\Areas\\CMS\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Areas\\CMS\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABwAAAAAAAAAAAAAADAAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-12T07:59:52.875Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Gets.cs",
+              "DocumentMoniker": "D:\\TTTN2025\\DATLICHKHAM\\Application\\ChuyenKhoa\\Gets.cs",
+              "RelativeDocumentMoniker": "Application\\ChuyenKhoa\\Gets.cs",
+              "ToolTip": "D:\\TTTN2025\\DATLICHKHAM\\Application\\ChuyenKhoa\\Gets.cs",
+              "RelativeToolTip": "Application\\ChuyenKhoa\\Gets.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T03:47:55.19Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_Filter.cshtml",
+              "DocumentMoniker": "D:\\TTTN2025\\DATLICHKHAM\\Areas\\CMS\\Views\\Shared\\Common\\_Filter.cshtml",
+              "RelativeDocumentMoniker": "Areas\\CMS\\Views\\Shared\\Common\\_Filter.cshtml",
+              "ToolTip": "D:\\TTTN2025\\DATLICHKHAM\\Areas\\CMS\\Views\\Shared\\Common\\_Filter.cshtml",
+              "RelativeToolTip": "Areas\\CMS\\Views\\Shared\\Common\\_Filter.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-12T02:21:33.277Z"
             }
           ]
         }

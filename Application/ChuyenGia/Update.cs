@@ -10,7 +10,7 @@ namespace DATLICHKHAM.Application.ChuyenGia
     {
         public class Command: IRequest<Result<DLK_ChuyenGia>>
         {
-            public DLK_ChuyenGiaUpdate Entity;
+            public DLK_ChuyenGia Entity;
         }
         public class Handler : IRequestHandler<Command, Result<DLK_ChuyenGia>>
         {

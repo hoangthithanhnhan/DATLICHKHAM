@@ -2928,8 +2928,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>5n1hmp4s7t</Fingerprint>
-      <Integrity>kTxAA4lwL3Y/pw9YheeVcPMM5smBOyNPA1DfWg9fDX8=</Integrity>
+      <Fingerprint>vwey35whrr</Fingerprint>
+      <Integrity>ASm60y8u2g3+Yh4KUJ1O/EAP/+qKLAZjIsYWYsHe0o4=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\PageScripts\Layout.js'))</OriginalItemSpec>
@@ -3000,8 +3000,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>i589xy9aab</Fingerprint>
-      <Integrity>etVFnFxctNH1l0wd4wnR5Zhq/42j61zm6azRniR+KIU=</Integrity>
+      <Fingerprint>bq1iv2mrad</Fingerprint>
+      <Integrity>Q8AWh7q0GcJ7uFnWGcMO7sCsI/OUmpk7MJM/0qWk4kE=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\PageScripts\QuanLyChuyenGia.js'))</OriginalItemSpec>
@@ -4896,6 +4896,42 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744340525.png'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744453233.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DATLICHKHAM</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DATLICHKHAM</BasePath>
+      <RelativePath>upload/ChuyenGia/ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744453233.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>47v40gkdv5</Fingerprint>
+      <Integrity>8Dan0eKUI34sATZlk7Pvvr/z+J4QXcuK7gcgwaYHKHc=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744453233.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744453291.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DATLICHKHAM</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DATLICHKHAM</BasePath>
+      <RelativePath>upload/ChuyenGia/ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744453291.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>47v40gkdv5</Fingerprint>
+      <Integrity>8Dan0eKUI34sATZlk7Pvvr/z+J4QXcuK7gcgwaYHKHc=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744453291.png'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\Cún_1744336589.png'))">
       <SourceType>Package</SourceType>
       <SourceId>DATLICHKHAM</SourceId>
@@ -4913,6 +4949,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\Cún_1744336589.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\Cún_1744453682.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DATLICHKHAM</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DATLICHKHAM</BasePath>
+      <RelativePath>upload/ChuyenGia/Cún_1744453682.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>wao15d7wh1</Fingerprint>
+      <Integrity>uOWNthZhHZ6RnlfHHgimMYXZR7RiL/SJoSZXC3uRnGw=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\Cún_1744453682.png'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\DatLichKham-phongkham_ERD_ver2.drawio_1744339728.png'))">
       <SourceType>Package</SourceType>

@@ -73,13 +73,13 @@ namespace DATLICHKHAM.APIsController
             //Gọi service add chuyên gia để đưa thông tin chuyên gia vào cơ sở dữ liệu
         }
 
-        
+
         [HttpPut]
         [Route("Update")]
         public async Task<Result<DLK_ChuyenGia>> Update([FromForm] RequestUploadFile request)
         {
             // Deserialize JSON string từ "data" thành object DLK_DichVuAdd
-            DLK_ChuyenGiaUpdate chuyenGia = JsonConvert.DeserializeObject<DLK_ChuyenGiaUpdate>(request.data);
+            DLK_ChuyenGia chuyenGia = JsonConvert.DeserializeObject<DLK_ChuyenGia>(request.data);
             const string avatarPath = "wwwroot\\upload\\ChuyenGia"; //nơi lưu file vật lý vừa upload
             const string pathdb = "\\upload\\ChuyenGia"; //đường dẫn để lưu trong DB
             //Lấy lại thông tin cũ của dịch vụ từ DB, để mình biết ảnh cũ là ảnh gì.

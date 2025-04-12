@@ -11,6 +11,7 @@ namespace DATLICHKHAM.Application.ChuyenKhoa
         public class Query : IRequest<Result<IEnumerable<DLK_ChuyenKhoa>>>
         {
             public string filter;
+            public bool? trangthai;
         }
         public class Handler : IRequestHandler<Query, Result<IEnumerable<DLK_ChuyenKhoa>>>
         {
@@ -29,6 +30,7 @@ namespace DATLICHKHAM.Application.ChuyenKhoa
                     {
                         DynamicParameters parameters = new DynamicParameters();
                         parameters.Add("@keyword", request.filter);    
+                        parameters.Add("@trangthai", request.trangthai);
                         var result = await connection.QueryAsync<DLK_ChuyenKhoa>("SP_Gets_ChuyenKhoa", parameters, commandType: System.Data.CommandType.StoredProcedure);
                         return Result<IEnumerable<DLK_ChuyenKhoa>>.Success(result);
                     }

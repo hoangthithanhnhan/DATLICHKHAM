@@ -24,9 +24,9 @@ namespace DATLICHKHAM.APIsController
         [HttpGet]
         [Route("Gets")]
         [AllowAnonymous]
-        public async Task<Result<IEnumerable<DLK_ChuyenKhoa>>> Gets(string filter=null)
+        public async Task<Result<IEnumerable<DLK_ChuyenKhoa>>> Gets(bool? trangThai, string filter = null)
         {
-            return await Mediator.Send(new Gets.Query { filter=filter});
+            return await Mediator.Send(new Gets.Query { filter = filter , trangthai = trangThai });
         }
 
 

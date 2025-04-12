@@ -686,6 +686,13 @@
         ],
         "parameters": [
           {
+            "name": "trangThai",
+            "in": "query",
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
             "name": "filter",
             "in": "query",
             "schema": {
@@ -2381,7 +2388,8 @@
           },
           "maChuyenKhoa": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
           },
           "tenChuyenKhoa": {
             "type": "string",
