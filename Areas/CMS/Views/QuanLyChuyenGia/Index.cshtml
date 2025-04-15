@@ -43,15 +43,19 @@
                     <input type="password" class="form-control" id="matKhauAdd" placeholder="Nhập mật khẩu">
                 </div>
                 <div class="mb-3">
-                    <label for="emailAdd" class="form-label">Email </label>
-                    <input type="email" class="form-control" id="emailAdd" placeholder="Nhập email">
-                </div>
-                <div class="mb-3">
                     <label for="hotenAdd" class="form-label">Họ và tên <span class="text-red">*</span></label>
                     <input type="email" class="form-control" id="hotenAdd" placeholder="Nhập họ và tên">
                 </div>
                 <div class="mb-3">
-                    <label class="form-label">Giới tính</label>
+                    <label for="emailAdd" class="form-label">Email </label>
+                    <input type="email" class="form-control" id="emailAdd" placeholder="Nhập email">
+                </div>
+                <div class="mb-3">
+                    <label for="soDienThoaiAdd" class="form-label">Số điện thoại <span class="text-red">*</span></label>
+                    <input type="text" class="form-control" id="soDienThoaiAdd" placeholder="Nhập số điện thoại">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Giới tính <span class="text-red">*</span></label>
                     <div>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="gioitinhAdd" id="nuAdd" value="1">
@@ -112,23 +116,31 @@
                     </div>
                 </div>
                 <div class="mb-3">
-                    <label for="ngaySinhEdit" class="form-label">Ngày sinh</label>
+                    <label for="ngaySinhEdit" class="form-label">Ngày sinh <span class="text-red">*</span></label>
                     <input type="date" class="form-control" id="ngaySinhEdit" placeholder="Nhập ngày sinh">
                 </div>
                 <div class="mb-3">
-                    <label for="diaChiEdit" class="form-label">Địa chỉ <span class="text-red">*</span></label>
+                    <label for="soDienThoaiEdit" class="form-label">Số điện thoại <span class="text-red">*</span></label>
+                    <input type="text" class="form-control" id="soDienThoaiEdit" placeholder="Nhập số điện thoại">
+                </div>
+                <div class="mb-3">
+                    <label for="emailEdit" class="form-label">Email </label>
+                    <input type="email" class="form-control" id="emailEdit" placeholder="Nhập email">
+                </div>
+                <div class="mb-3">
+                    <label for="diaChiEdit" class="form-label">Địa chỉ </label>
                     <input type="text" class="form-control" id="diaChiEdit" placeholder="Nhập địa chỉ">
                 </div>
                 <div class="mb-3">
-                    <label for="chucDanhEdit" class="form-label">Chức danh <span class="text-red">*</span></label>
+                    <label for="chucDanhEdit" class="form-label">Chức danh</label>
                     <input type="text" class="form-control" id="chucDanhEdit" placeholder="Nhập chức danh">
                 </div>
                 <div class="mb-3">
-                    <label for="chucVuEdit" class="form-label">Chức vụ <span class="text-red">*</span></label>
+                    <label for="chucVuEdit" class="form-label">Chức vụ</label>
                     <input type="text" class="form-control" id="chucVuEdit" placeholder="Nhập chức vụ">
                 </div>
                 <div class="mb-3">
-                    <label for="chuyenKhoaEdit" class="form-label">Chuyên khoa </label>
+                    <label for="chuyenKhoaEdit" class="form-label">Chuyên khoa <span class="text-red">*</span></label>
                     <div>
                         <select class="form-select js-example-basic-single" name="state" id="chuyenKhoaEdit" aria-label="Default select example">
                             @* render chuyên khoa *@
@@ -160,7 +172,7 @@
                 <div class="mb-3" id="anhDaiDienNull">
                     <label for="anhDaiDienEdit" class="form-label" hidden>Ảnh đại diện</label>
                     <img id="currentAnhDaiDienEdit" src="" alt="Ảnh cũ" />
-                    <button type="button" data-id="${meta.row}" class="button btn-delete" id="btn-deleteAnhDaiDien" data-bs-toggle="modal" data-bs-target="#modalDeleteAnhDaiDien">
+                    <button type="button" class="button btn-delete" id="btn-deleteAnhDaiDien">
                         <img src="../images/delete_filled.png" alt="Alternate Text" />
                     </button>
                 </div>
@@ -241,6 +253,26 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-cancel btn-secondary" data-bs-dismiss="modal">Hủy</button>
                 <button type="button" class="btn btn-active btn-primary" id="deleteData">Đồng ý</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@* MODAL XÓA ẢNH ĐẠI DIỆN*@
+<div class="modal fade" id="modalDeleteAnhDaiDien" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Xóa ảnh đại diện</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Hủy"></button>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" class="form-control" id="maChuyenGiaDeleteAnh" />
+                <p>Bạn có chắc chắn muốn xóa ảnh đại diện này không?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-cancel btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                <button type="button" class="btn btn-active btn-primary" id="deleteAnhDaiDien">Đồng ý</button>
             </div>
         </div>
     </div>

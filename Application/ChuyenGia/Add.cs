@@ -32,6 +32,8 @@ namespace DATLICHKHAM.Application.ChuyenGia
                         parameters.Add("@HoTen", request.Entity.HoTen);
                         parameters.Add("@GioiTinh", request.Entity.GioiTinh);
                         parameters.Add("@NgaySinh", request.Entity.NgaySinh);
+                        parameters.Add("SoDienThoai", request.Entity.SoDienThoai);
+                        parameters.Add("@Email", request.Entity.Email);
                         var result = await connection.QueryFirstOrDefaultAsync<DLK_ChuyenGia>("SP_Add_ChuyenGia", parameters, commandType: System.Data.CommandType.StoredProcedure);
                         return Result<DLK_ChuyenGia>.Success(result);
                     }

@@ -22,9 +22,9 @@ namespace DATLICHKHAM.APIsController
 
         [HttpGet]
         [Route("Get")]
-        public async Task<Result<DLK_ChuyenGia>> Get(int MaNguoiDung)
+        public async Task<Result<DLK_ChuyenGia>> Get(int MaChuyenGia)
         {
-            return await Mediator.Send(new Get.Query { MaNguoiDung = MaNguoiDung });
+            return await Mediator.Send(new Get.Query { MaChuyenGia = MaChuyenGia });
         }
 
         [HttpPost]
@@ -45,6 +45,7 @@ namespace DATLICHKHAM.APIsController
                 UserName = Entity.Username,
                 Email = Entity.Email,
                 DisplayName = Entity.HoTen,
+                PhoneNumber = Entity.SoDienThoai,
                 VaiTro = 1
             };
 
@@ -78,12 +79,12 @@ namespace DATLICHKHAM.APIsController
         [Route("Update")]
         public async Task<Result<DLK_ChuyenGia>> Update([FromForm] RequestUploadFile request)
         {
-            // Deserialize JSON string từ "data" thành object DLK_DichVuAdd
+            // Deserialize JSON string từ "data" thành object DLK_ChuyenGiaAdd
             DLK_ChuyenGia chuyenGia = JsonConvert.DeserializeObject<DLK_ChuyenGia>(request.data);
             const string avatarPath = "wwwroot\\upload\\ChuyenGia"; //nơi lưu file vật lý vừa upload
             const string pathdb = "\\upload\\ChuyenGia"; //đường dẫn để lưu trong DB
             //Lấy lại thông tin cũ của dịch vụ từ DB, để mình biết ảnh cũ là ảnh gì.
-            var ChuyenGiaOLD = await Mediator.Send(new Get.Query { MaNguoiDung = chuyenGia.MaNguoiDung });
+            var ChuyenGiaOLD = await Mediator.Send(new Get.Query { MaChuyenGia = chuyenGia.MaChuyenGia });
 
             if (request.file != null && request.file.Length > 0)
             {
@@ -106,9 +107,13 @@ namespace DATLICHKHAM.APIsController
             else
             {
                 // Nếu không có file ảnh mới, giữ nguyên đường dẫn ảnh cũ
-                if (ChuyenGiaOLD.IsSuccess)
+                if (ChuyenGiaOLD.IsSuccess && ChuyenGiaOLD.Value != null)
                 {
                     chuyenGia.AnhDaiDien = ChuyenGiaOLD.Value.AnhDaiDien;
+                }
+                else
+                {
+                    Console.WriteLine("Không tìm thấy chuyên gia cũ hoặc dữ liệu bị thiếu.");
                 }
             }
             return await Mediator.Send(new Update.Command { Entity = chuyenGia });
@@ -116,10 +121,51 @@ namespace DATLICHKHAM.APIsController
 
         [HttpDelete]
         [Route("Delete")]
-        public async Task<Result<int>> Delete(int MaNguoiDung)
+        public async Task<Result<int>> Delete(int MaChuyenGia)
         {
-            return await Mediator.Send(new Delete.Command { MaNguoiDung = MaNguoiDung });
+            var ChuyenMucOld = await Mediator.Send(new Get.Query { MaChuyenGia = MaChuyenGia });
+            if (ChuyenMucOld.IsSuccess && !string.IsNullOrEmpty(ChuyenMucOld.Value.AnhDaiDien))
+            {
+                try
+                {
+                    var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", ChuyenMucOld.Value.AnhDaiDien.TrimStart('\\'));
+                    if (System.IO.File.Exists(filePath))
+                    {
+                        System.IO.File.Delete(filePath);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    return Result<int>.Failure(ex.Message);
+                }
+            }
+            return await Mediator.Send(new Delete.Command { MaChuyenGia = MaChuyenGia });
         }
 
+        [HttpDelete]
+        [Route("DeleteAnhDaiDien")]
+        public async Task<Result<DLK_ChuyenGia>> DeleteAnhDaiDien(int MaChuyenGia)
+        {
+            var ChuyenGiaOld = await Mediator.Send(new Get.Query { MaChuyenGia = MaChuyenGia });
+            var relativePath = ChuyenGiaOld.Value.AnhDaiDien.Replace("/", Path.DirectorySeparatorChar.ToString()).TrimStart('\\');
+            var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", relativePath);
+            if (ChuyenGiaOld.IsSuccess && !string.IsNullOrEmpty(ChuyenGiaOld.Value.AnhDaiDien))
+            {
+                try
+                {
+                    if (System.IO.File.Exists(filePath))
+                    {
+                        System.IO.File.Delete(filePath);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    return Result<DLK_ChuyenGia>.Failure(ex.Message);
+                }
+            }
+            var entity = ChuyenGiaOld.Value;
+            entity.AnhDaiDien = null;
+            return await Mediator.Send(new Update.Command { Entity = entity });
+        }
     }
 }

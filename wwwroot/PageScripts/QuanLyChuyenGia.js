@@ -11,14 +11,10 @@ $(document).ready(function () {
         type: "GET",
         contentType: "application/json; charset=utf-8",
         success: function (data) {
-            //console.log(data)
             if (data && data.isSuccess) {
-
-                console.log(data)
                 if (data.value && data.value.length > 0) {
                     let html = "<option>Chọn chuyên khoa</option>";
                     $.each(data.value, function (index, item) {
-                        //console.log(item);
                         html += `<option value="${item.maChuyenKhoa}">${item.tenChuyenKhoa}</option>`;
                     });
                     $("#chuyenKhoaEdit").html(html);
@@ -71,7 +67,6 @@ $(document).ready(function () {
             data: buildData,
             contentType: "application/json; charset=utf-8",
             dataSrc: function (data) {
-                console.log(data)
                 var result = data.value
                 if (result) {
                     for (let i = 0; i < result.length; i++) {
@@ -126,15 +121,16 @@ $(document).ready(function () {
         let hoTen = $("#hotenAdd").val();
         let gioiTinh = $("input[name='gioitinhAdd']:checked").val();
         let ngaySinh = $("#ngaySinhAdd").val();
+        let soDienThoai = $("#soDienThoaiAdd").val();
         let request = {
             username: tenDangNhap.trim(),
             password: matKhau.trim(),
             email: email,
             hoTen: hoTen.trim(),
             gioiTinh: Number(gioiTinh),
-            ngaySinh: formatDateSQL(ngaySinh)
+            ngaySinh: formatDateSQL(ngaySinh),
+            soDienThoai: soDienThoai
         }
-        //console.log(request)
         if (checkEmptyString(tenDangNhap.trim())) {
             showAlert("Tên đăng nhập không được để trống", "error");
             return;
@@ -147,6 +143,14 @@ $(document).ready(function () {
             showAlert("Họ tên không được để trống", "error");
             return;
         }
+        if (checkEmptyString(soDienThoai)) {
+            showAlert("Số điện thoại không được để trống", "error");
+            return;
+        }
+        if (checkEmptyString(ngaySinh)) {
+            showAlert("Ngày sinh không được để trống", "error");
+            return;
+        }
         else {
             $.ajax({
                 type: "POST",
@@ -154,7 +158,6 @@ $(document).ready(function () {
                 contentType: "application/json; charset=utf-8",
                 data: JSON.stringify(request),
                 success: function (data) {
-                    console.log(data)
                     if (!data.isSuccess) {
                         showAlert(data.error, "error");
                     }
@@ -174,11 +177,10 @@ $(document).ready(function () {
         }
     })
 
-    //lấy giá trị gán vào các input trong modal edit khi click butotn sửa
+    //lấy giá trị gán vào các input trong modal edit khi click button sửa
     $("#myTable tbody").on('click', '.btn-update', function () {
         let id = $(this).data("id");
         let data = $('#myTable').DataTable().row(id).data();
-        console.log(data)
         $("#maChuyenGiaEdit").val(data.maChuyenGia);
         $("#hoTenEdit").val(data.hoTen);
         $("input[name='gioitinhEdit'][value='" + data.gioiTinh + "']").prop("checked", true);
@@ -189,6 +191,8 @@ $(document).ready(function () {
         $("#chuyenKhoaEdit").val(data.maChuyenKhoa).trigger("change");
         $("#soNamKinhNghiemEdit").val(data.soNamKinhNghiem);
         $("#donViCongTacEdit").val(data.donViCongTac);
+        $("#soDienThoaiEdit").val(data.soDienThoai);
+        $("#emailEdit").val(data.email);
         $("#giaiThuongNghienCuuEdit").val(data.giaiThuong_NghienCuu);
         $("#gioiThieuEdit").val(data.gioiThieu);
         $("#kinhNghiemEdit").val(data.kinhNghiem);
@@ -197,12 +201,12 @@ $(document).ready(function () {
         if (data.anhDaiDien != null && data.anhDaiDien != "") {
             $("#currentAnhDaiDienEdit").attr("src", `${APIURL}/` + data.anhDaiDien);
             $("#anhDaiDienNull").show(); //nếu có ảnh đại diện thì cho xem preview
-            $("#maChuyenGiaDelete").val(data.maDichVu);
+            $("#maChuyenGiaDeleteAnh").val(data.maChuyenGia);
         } else {
             $("#anhDaiDienNull").hide();
-            $("#maChuyenGiaDelete").val("");
+            $("#maChuyenGiaDeleteAnh").val("");
         };
-        $("#anhDaiDienDichVuEdit").val("");
+        $("#anhDaiDienChuyenGiaEdit").val("");
         $('#modalEdit').modal('show');
     })
 
@@ -222,6 +226,8 @@ $(document).ready(function () {
         let giaiThuongNghienCuu = $("#giaiThuongNghienCuuEdit").val();
         let gioiThieu = $("#gioiThieuEdit").val();
         let kinhNghiem = $("#kinhNghiemEdit").val();
+        let soDienThoai = $("#soDienThoaiEdit").val();
+        let email = $("#emailEdit").val();
         let trangThai = $("input[name='trangThaiEdit']:checked").val();
         let fileInput = $("#anhDaiDienAdd")[0];
         let file = fileInput.files[0];
@@ -239,20 +245,31 @@ $(document).ready(function () {
             giaiThuong_NghienCuu: giaiThuongNghienCuu,
             gioiThieu: gioiThieu,
             kinhNghiem: kinhNghiem,
+            soDienThoai: soDienThoai,
+            email: email,
             trangThai: Boolean(Number(trangThai))
         }
+        console.log(request)
         let formData = new FormData();
-        formData.append("data", JSON.stringify(request)); // dữ liệu dạng object
+        formData.append("data", JSON.stringify(request));// dữ liệu dạng object
         if (file) {
             formData.append("file", file); // ảnh nếu có
         }
+        console.log(formData)
+        console.log(file)
         if (checkEmptyString(hoTen)) {
             showAlert("Họ và tên chuyên gia không được để trống", "error");
             return;
         }
+        if (checkEmptyString(ngaySinh)) {
+            showAlert("Ngày sinh chuyên gia không được để trống", "error");
+            return;
+        }
+        if (checkEmptyString(soDienThoai)) {
+            showAlert("Số điện thoại chuyên gia không được để trống", "error");
+            return;
+        }
         else {
-            console.log(request)
-            console.log(file)
             $.ajax({
                 type: "PUT",
                 url: APIURL + "/api/ChuyenGiaApi/Update",
@@ -266,30 +283,101 @@ $(document).ready(function () {
                 },
                 error: function (error) {
                     showAlert("Cập nhật không thành công", "error");
+                    console.log(error,"Log lỗi")
                 }
             });
         }
     })
 
 
+    //sửa tài khoản chuyên gia
     $("#myTable tbody").on('click', '.btn-user', function () {
         let id = $(this).data("id");
         let data = $('#myTable').DataTable().row(id).data();
-        console.log(data)
-        $("#maChuyenGiaEdit").val(data.maChuyenGia);
-        $("#tenDangNhapEdit").val(data.tenDangNhap);
-        $("#matKhauEdit").val(data.matKhau);
-        console.log(data.tenDangNhap)
-        $("#hoTenEdit").val(data.hoTen);
-        $("input[name='gioitinhEdit'][value='" + (data.trangThai ? 1 : 0) + "']").prop("checked", true);
+        //console.log(data);
+        //$("#maChuyenGiaEdit").val(data.maChuyenGia);
+        //$("#tenDangNhapEdit").val(data.tenDangNhap);
+        //$("#matKhauEdit").val(data.matKhau);
+        //$("#hoTenEdit").val(data.hoTen);
+        //$("input[name='gioitinhEdit'][value='" + (data.trangThai ? 1 : 0) + "']").prop("checked", true);
         $('#modalEditAccount').modal('show');
     })
 
     $("#myTable tbody .btn-update").on('click', function () {
         let id = $(this).data("id");
         let data = $('#myTable').DataTable().row(id).data();
-        console.log(data)
     })
+
+    //lấy mã chuyên gia để xóa khi click button xóa trên bảng
+    $("#myTable tbody").on('click', '.btn-delete', function () {
+        let id = $(this).data("id");
+        let data = $('#myTable').DataTable().row(id).data();
+        $("#maChuyenGiaDelete").val(data.maChuyenGia);
+        console.log(data.maChuyenGia);
+        $('#modalDelete').modal('show');
+    })
+
+    //thực hiện xóa dữ liệu khi click button ĐỒNG Ý
+    $("#deleteData").on('click', function () {
+        let maChuyenGia = $("#maChuyenGiaDelete").val();
+        $.ajax({
+            type: "DELETE",
+            url: APIURL + `/api/ChuyenGiaApi/Delete?MaChuyenGia=${maChuyenGia}`,
+            contentType: "application/json; charset=utf-8",
+            success: function (data) {
+                $('#myTable').DataTable().ajax.reload();
+                $('#modalDelete').modal('hide');
+                if (data && data.isSuccess) {
+                    showAlert("Xóa thành công", "success");
+                } else {
+                    showAlert("Xóa không thành công", "error");
+                }
+            },
+            error: function (error) {
+                showAlert("Xóa không thành công", "error");
+
+            }
+        });
+    })
+
+
+    //xóa ảnh đại diện
+    $('#btn-deleteAnhDaiDien').on('click', function () {
+        $("#modalDeleteAnhDaiDien").modal('show');
+    });
+
+    $("#deleteAnhDaiDien").on('click', function () { //chỉ xóa ảnh đại diện
+        let maChuyenGia = $("#maChuyenGiaDeleteAnh").val();
+        console.log(maChuyenGia);
+        if (maChuyenGia != "") {
+            $.ajax({
+                type: "DELETE",
+                url: APIURL + `/api/ChuyenGiaApi/DeleteAnhDaiDien?MaChuyenGia=${maChuyenGia}`,
+                contentType: "application/json; charset=utf-8",
+                success: function (data) {
+                    if (data && data.isSuccess) {
+                        $('#myTable').DataTable().ajax.reload();
+                        showAlert("Xóa thành công", "success");
+                        $('#modalDeleteAnhDaiDien').modal('hide');
+                        $("#anhDaiDienNull").hide();
+                    } else {
+                        showAlert("Xóa không thành công", "error");
+                        $('#modalDeleteAnhDaiDien').modal('hide');
+                    }
+                },
+                error: function (error) {
+                    showAlert("Xóa không thành công", "error");
+                },
+
+            });
+        }
+    })
+
+
+    // clear value khi click button thêm mới
+    $('#modalAdd').on('show.bs.modal', function () {
+        resetForm();
+    });
 
     //render lại bảng khi click button tìm kiếm
     $("#btn-search").on('click', function () {
@@ -304,13 +392,9 @@ $(document).ready(function () {
         }
     })
 
-    
-    //console.log($('.js-example-basic-single').length);
-    //console.log(typeof $('.js-example-basic-single').select2);
-
 })
 function resetForm() {
     $("#modalAdd input").val("");
     $("#modalAdd textarea").val("");
-    $("input[name='trangThaiAdd'][value='1']").prop('checked', true);
+    $('input[name="gioitinhAdd"]').prop('checked', false);
 }

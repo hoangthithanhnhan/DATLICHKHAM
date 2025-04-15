@@ -257,12 +257,14 @@ $(document).ready(function () {
     })
 
 
+    //xóa ảnh đại diện
     $('#btn-deleteAnhDaiDien').on('click', function () {
         $("#modalDeleteAnhDaiDien").modal('show');
     });
 
     $("#deleteAnhDaiDien").on('click', function () { //chỉ xóa ảnh đại diện
         let maDichVu = $("#maDichVuDeleteAnh").val();
+        console.log(maDichVu);
         if (maDichVu != "") {
             $.ajax({
                 type: "DELETE",

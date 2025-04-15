@@ -282,7 +282,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "MaNguoiDung",
+        "Name": "MaChuyenGia",
         "Type": "System.Int32",
         "IsRequired": false
       }
@@ -301,6 +301,32 @@
   },
   {
     "ContainingType": "DATLICHKHAM.APIsController.ChuyenGiaApiController",
+    "Method": "DeleteAnhDaiDien",
+    "RelativePath": "api/ChuyenGiaApi/DeleteAnhDaiDien",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "MaChuyenGia",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Application.Core.Result\u00601[[DATLICHKHAM.Domain.DLK_ChuyenGia, DATLICHKHAM, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DATLICHKHAM.APIsController.ChuyenGiaApiController",
     "Method": "Get",
     "RelativePath": "api/ChuyenGiaApi/Get",
     "HttpMethod": "GET",
@@ -308,7 +334,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "MaNguoiDung",
+        "Name": "MaChuyenGia",
         "Type": "System.Int32",
         "IsRequired": false
       }

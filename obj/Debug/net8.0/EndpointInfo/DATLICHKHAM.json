@@ -418,7 +418,7 @@
         ],
         "parameters": [
           {
-            "name": "MaNguoiDung",
+            "name": "MaChuyenGia",
             "in": "query",
             "schema": {
               "type": "integer",
@@ -608,7 +608,7 @@
         ],
         "parameters": [
           {
-            "name": "MaNguoiDung",
+            "name": "MaChuyenGia",
             "in": "query",
             "schema": {
               "type": "integer",
@@ -633,6 +633,45 @@
               "text/json": {
                 "schema": {
                   "$ref": "#/components/schemas/Int32Result"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ChuyenGiaApi/DeleteAnhDaiDien": {
+      "delete": {
+        "tags": [
+          "ChuyenGiaApi"
+        ],
+        "parameters": [
+          {
+            "name": "MaChuyenGia",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ChuyenGiaResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ChuyenGiaResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ChuyenGiaResult"
                 }
               }
             }
@@ -2388,8 +2427,7 @@
           },
           "maChuyenKhoa": {
             "type": "integer",
-            "format": "int32",
-            "nullable": true
+            "format": "int32"
           },
           "tenChuyenKhoa": {
             "type": "string",
@@ -2409,13 +2447,11 @@
           },
           "gioiTinh": {
             "type": "integer",
-            "format": "int32",
-            "nullable": true
+            "format": "int32"
           },
           "ngaySinh": {
             "type": "string",
-            "format": "date-time",
-            "nullable": true
+            "format": "date-time"
           },
           "soNamKinhNghiem": {
             "type": "integer",
@@ -2448,6 +2484,14 @@
           "anhDaiDien": {
             "type": "string",
             "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "soDienThoai": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -2473,17 +2517,19 @@
           },
           "gioiTinh": {
             "type": "integer",
-            "format": "int32",
-            "nullable": true
+            "format": "int32"
           },
           "ngaySinh": {
             "type": "string",
-            "format": "date-time",
-            "nullable": true
+            "format": "date-time"
           },
           "maNguoiDung": {
             "type": "integer",
             "format": "int64"
+          },
+          "soDienThoai": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false

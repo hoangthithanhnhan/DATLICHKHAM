@@ -28,7 +28,7 @@ namespace DATLICHKHAM.Application.ChuyenGia
                     try
                     {
                         DynamicParameters parameters = new DynamicParameters();
-                        parameters.Add("@MaNguoiDung", request.Entity.MaNguoiDung);
+                        parameters.Add("@MaChuyenGia", request.Entity.MaChuyenGia);
                         parameters.Add("@MaChuyenKhoa", request.Entity.MaChuyenKhoa);
                         parameters.Add("@HoTen", request.Entity.HoTen);
                         parameters.Add("@ChucDanh", request.Entity.ChucDanh);
@@ -43,6 +43,8 @@ namespace DATLICHKHAM.Application.ChuyenGia
                         parameters.Add("@DiaChi", request.Entity.DiaChi);
                         parameters.Add("@TrangThai", request.Entity.TrangThai);
                         parameters.Add("@AnhDaiDien", request.Entity.AnhDaiDien);
+                        parameters.Add("@SoDienThoai", request.Entity.SoDienThoai);
+                        parameters.Add("@Email", request.Entity.Email);
                         var result= await connection.QueryFirstOrDefaultAsync<DLK_ChuyenGia>("SP_Update_ChuyenGia", parameters, commandType: System.Data.CommandType.StoredProcedure);
                         return Result<DLK_ChuyenGia>.Success(result);
 

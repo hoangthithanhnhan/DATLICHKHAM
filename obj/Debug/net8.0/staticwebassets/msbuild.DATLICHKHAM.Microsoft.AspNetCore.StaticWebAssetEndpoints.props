@@ -1992,17 +1992,17 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-eyCG\u002BqTCUaxFbQNz\u002BGVHhd8soJamPaJkEBjFdToznZc="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"5173"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022eyCG\u002BqTCUaxFbQNz\u002BGVHhd8soJamPaJkEBjFdToznZc=\u0022"},{"Name":"Last-Modified","Value":"Tue, 01 Apr 2025 09:45:10 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/DATLICHKHAM/PageScripts/QuanLyChuyenGia.bq1iv2mrad.js">
+    <StaticWebAssetEndpoint Include="_content/DATLICHKHAM/PageScripts/QuanLyChuyenGia.g25ef68rne.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\PageScripts\QuanLyChuyenGia.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"bq1iv2mrad"},{"Name":"integrity","Value":"sha256-Q8AWh7q0GcJ7uFnWGcMO7sCsI/OUmpk7MJM/0qWk4kE="},{"Name":"label","Value":"_content/DATLICHKHAM/PageScripts/QuanLyChuyenGia.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"13162"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022Q8AWh7q0GcJ7uFnWGcMO7sCsI/OUmpk7MJM/0qWk4kE=\u0022"},{"Name":"Last-Modified","Value":"Sat, 12 Apr 2025 10:37:06 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"g25ef68rne"},{"Name":"integrity","Value":"sha256-2Gc9ucXsZjaLlBuLGmXGsLyZMxZ6tFhfG33CBZa0PZ4="},{"Name":"label","Value":"_content/DATLICHKHAM/PageScripts/QuanLyChuyenGia.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"16637"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00222Gc9ucXsZjaLlBuLGmXGsLyZMxZ6tFhfG33CBZa0PZ4=\u0022"},{"Name":"Last-Modified","Value":"Mon, 14 Apr 2025 10:02:20 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/DATLICHKHAM/PageScripts/QuanLyChuyenGia.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\PageScripts\QuanLyChuyenGia.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Q8AWh7q0GcJ7uFnWGcMO7sCsI/OUmpk7MJM/0qWk4kE="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"13162"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022Q8AWh7q0GcJ7uFnWGcMO7sCsI/OUmpk7MJM/0qWk4kE=\u0022"},{"Name":"Last-Modified","Value":"Sat, 12 Apr 2025 10:37:06 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-2Gc9ucXsZjaLlBuLGmXGsLyZMxZ6tFhfG33CBZa0PZ4="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"16637"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00222Gc9ucXsZjaLlBuLGmXGsLyZMxZ6tFhfG33CBZa0PZ4=\u0022"},{"Name":"Last-Modified","Value":"Mon, 14 Apr 2025 10:02:20 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/DATLICHKHAM/PageScripts/QuanLyChuyenKhoa.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\PageScripts\QuanLyChuyenKhoa.js'))</AssetFile>
@@ -2040,17 +2040,17 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-4PK1xLcIAarLrvkb1LxnDYKy1N4anEfa0LaSnKgsn5Y="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3800"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00224PK1xLcIAarLrvkb1LxnDYKy1N4anEfa0LaSnKgsn5Y=\u0022"},{"Name":"Last-Modified","Value":"Tue, 01 Apr 2025 04:07:18 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DATLICHKHAM/PageScripts/QuanLyDichVu.co0d4pw63e.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\PageScripts\QuanLyDichVu.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"co0d4pw63e"},{"Name":"integrity","Value":"sha256-VLMT5O9/WCzElcXqINyakc90A2AqPilgtcmQ33QpRlY="},{"Name":"label","Value":"_content/DATLICHKHAM/PageScripts/QuanLyDichVu.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"12288"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022VLMT5O9/WCzElcXqINyakc90A2AqPilgtcmQ33QpRlY=\u0022"},{"Name":"Last-Modified","Value":"Mon, 14 Apr 2025 07:57:33 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/DATLICHKHAM/PageScripts/QuanLyDichVu.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\PageScripts\QuanLyDichVu.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-/6Tc1\u002Bx02bDg\u002BLsOEejQHMXnRYeVROqlblL0OQQqV3E="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"12224"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022/6Tc1\u002Bx02bDg\u002BLsOEejQHMXnRYeVROqlblL0OQQqV3E=\u0022"},{"Name":"Last-Modified","Value":"Thu, 10 Apr 2025 04:07:28 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/DATLICHKHAM/PageScripts/QuanLyDichVu.thgm2j33u0.js">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\PageScripts\QuanLyDichVu.js'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"thgm2j33u0"},{"Name":"integrity","Value":"sha256-/6Tc1\u002Bx02bDg\u002BLsOEejQHMXnRYeVROqlblL0OQQqV3E="},{"Name":"label","Value":"_content/DATLICHKHAM/PageScripts/QuanLyDichVu.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"12224"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022/6Tc1\u002Bx02bDg\u002BLsOEejQHMXnRYeVROqlblL0OQQqV3E=\u0022"},{"Name":"Last-Modified","Value":"Thu, 10 Apr 2025 04:07:28 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-VLMT5O9/WCzElcXqINyakc90A2AqPilgtcmQ33QpRlY="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"12288"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022VLMT5O9/WCzElcXqINyakc90A2AqPilgtcmQ33QpRlY=\u0022"},{"Name":"Last-Modified","Value":"Mon, 14 Apr 2025 07:57:33 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/DATLICHKHAM/PageScripts/QuanLyLichKham.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\PageScripts\QuanLyLichKham.js'))</AssetFile>
@@ -3071,270 +3071,6 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-q7qALRgeI5fTOSiynBR8\u002Br2Pzr5vI\u002BxnZzmaZ7f187A="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"63220"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u0022q7qALRgeI5fTOSiynBR8\u002Br2Pzr5vI\u002BxnZzmaZ7f187A=\u0022"},{"Name":"Last-Modified","Value":"Tue, 11 Feb 2025 01:06:06 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/DATLICHKHAM/upload/ChuyenGia/ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744336737.47v40gkdv5.png">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744336737.png'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"47v40gkdv5"},{"Name":"integrity","Value":"sha256-8Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc="},{"Name":"label","Value":"_content/DATLICHKHAM/upload/ChuyenGia/ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744336737.png"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3795870"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00228Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc=\u0022"},{"Name":"Last-Modified","Value":"Fri, 11 Apr 2025 01:58:57 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/DATLICHKHAM/upload/ChuyenGia/ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744336737.png">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744336737.png'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-8Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"3795870"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00228Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc=\u0022"},{"Name":"Last-Modified","Value":"Fri, 11 Apr 2025 01:58:57 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/DATLICHKHAM/upload/ChuyenGia/ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744336850.47v40gkdv5.png">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744336850.png'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"47v40gkdv5"},{"Name":"integrity","Value":"sha256-8Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc="},{"Name":"label","Value":"_content/DATLICHKHAM/upload/ChuyenGia/ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744336850.png"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3795870"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00228Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc=\u0022"},{"Name":"Last-Modified","Value":"Fri, 11 Apr 2025 02:00:50 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/DATLICHKHAM/upload/ChuyenGia/ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744336850.png">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744336850.png'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-8Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"3795870"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00228Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc=\u0022"},{"Name":"Last-Modified","Value":"Fri, 11 Apr 2025 02:00:50 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/DATLICHKHAM/upload/ChuyenGia/ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744336961.47v40gkdv5.png">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744336961.png'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"47v40gkdv5"},{"Name":"integrity","Value":"sha256-8Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc="},{"Name":"label","Value":"_content/DATLICHKHAM/upload/ChuyenGia/ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744336961.png"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3795870"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00228Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc=\u0022"},{"Name":"Last-Modified","Value":"Fri, 11 Apr 2025 02:02:41 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/DATLICHKHAM/upload/ChuyenGia/ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744336961.png">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744336961.png'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-8Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"3795870"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00228Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc=\u0022"},{"Name":"Last-Modified","Value":"Fri, 11 Apr 2025 02:02:41 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/DATLICHKHAM/upload/ChuyenGia/ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744336968.47v40gkdv5.png">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744336968.png'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"47v40gkdv5"},{"Name":"integrity","Value":"sha256-8Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc="},{"Name":"label","Value":"_content/DATLICHKHAM/upload/ChuyenGia/ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744336968.png"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3795870"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00228Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc=\u0022"},{"Name":"Last-Modified","Value":"Fri, 11 Apr 2025 02:02:48 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/DATLICHKHAM/upload/ChuyenGia/ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744336968.png">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744336968.png'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-8Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"3795870"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00228Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc=\u0022"},{"Name":"Last-Modified","Value":"Fri, 11 Apr 2025 02:02:48 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/DATLICHKHAM/upload/ChuyenGia/ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744337430.47v40gkdv5.png">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744337430.png'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"47v40gkdv5"},{"Name":"integrity","Value":"sha256-8Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc="},{"Name":"label","Value":"_content/DATLICHKHAM/upload/ChuyenGia/ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744337430.png"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3795870"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00228Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc=\u0022"},{"Name":"Last-Modified","Value":"Fri, 11 Apr 2025 02:10:30 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/DATLICHKHAM/upload/ChuyenGia/ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744337430.png">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744337430.png'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-8Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"3795870"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00228Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc=\u0022"},{"Name":"Last-Modified","Value":"Fri, 11 Apr 2025 02:10:30 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/DATLICHKHAM/upload/ChuyenGia/ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744337474.47v40gkdv5.png">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744337474.png'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"47v40gkdv5"},{"Name":"integrity","Value":"sha256-8Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc="},{"Name":"label","Value":"_content/DATLICHKHAM/upload/ChuyenGia/ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744337474.png"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3795870"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00228Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc=\u0022"},{"Name":"Last-Modified","Value":"Fri, 11 Apr 2025 02:11:14 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/DATLICHKHAM/upload/ChuyenGia/ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744337474.png">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744337474.png'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-8Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"3795870"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00228Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc=\u0022"},{"Name":"Last-Modified","Value":"Fri, 11 Apr 2025 02:11:14 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/DATLICHKHAM/upload/ChuyenGia/ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744337476.47v40gkdv5.png">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744337476.png'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"47v40gkdv5"},{"Name":"integrity","Value":"sha256-8Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc="},{"Name":"label","Value":"_content/DATLICHKHAM/upload/ChuyenGia/ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744337476.png"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3795870"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00228Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc=\u0022"},{"Name":"Last-Modified","Value":"Fri, 11 Apr 2025 02:11:16 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/DATLICHKHAM/upload/ChuyenGia/ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744337476.png">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744337476.png'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-8Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"3795870"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00228Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc=\u0022"},{"Name":"Last-Modified","Value":"Fri, 11 Apr 2025 02:11:16 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/DATLICHKHAM/upload/ChuyenGia/ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744337616.47v40gkdv5.png">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744337616.png'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"47v40gkdv5"},{"Name":"integrity","Value":"sha256-8Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc="},{"Name":"label","Value":"_content/DATLICHKHAM/upload/ChuyenGia/ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744337616.png"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3795870"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00228Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc=\u0022"},{"Name":"Last-Modified","Value":"Fri, 11 Apr 2025 02:13:36 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/DATLICHKHAM/upload/ChuyenGia/ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744337616.png">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744337616.png'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-8Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"3795870"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00228Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc=\u0022"},{"Name":"Last-Modified","Value":"Fri, 11 Apr 2025 02:13:36 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/DATLICHKHAM/upload/ChuyenGia/ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744337796.47v40gkdv5.png">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744337796.png'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"47v40gkdv5"},{"Name":"integrity","Value":"sha256-8Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc="},{"Name":"label","Value":"_content/DATLICHKHAM/upload/ChuyenGia/ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744337796.png"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3795870"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00228Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc=\u0022"},{"Name":"Last-Modified","Value":"Fri, 11 Apr 2025 02:16:36 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/DATLICHKHAM/upload/ChuyenGia/ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744337796.png">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744337796.png'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-8Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"3795870"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00228Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc=\u0022"},{"Name":"Last-Modified","Value":"Fri, 11 Apr 2025 02:16:36 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/DATLICHKHAM/upload/ChuyenGia/ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744338216.47v40gkdv5.png">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744338216.png'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"47v40gkdv5"},{"Name":"integrity","Value":"sha256-8Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc="},{"Name":"label","Value":"_content/DATLICHKHAM/upload/ChuyenGia/ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744338216.png"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3795870"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00228Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc=\u0022"},{"Name":"Last-Modified","Value":"Fri, 11 Apr 2025 02:23:36 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/DATLICHKHAM/upload/ChuyenGia/ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744338216.png">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744338216.png'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-8Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"3795870"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00228Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc=\u0022"},{"Name":"Last-Modified","Value":"Fri, 11 Apr 2025 02:23:36 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/DATLICHKHAM/upload/ChuyenGia/ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744338247.47v40gkdv5.png">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744338247.png'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"47v40gkdv5"},{"Name":"integrity","Value":"sha256-8Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc="},{"Name":"label","Value":"_content/DATLICHKHAM/upload/ChuyenGia/ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744338247.png"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3795870"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00228Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc=\u0022"},{"Name":"Last-Modified","Value":"Fri, 11 Apr 2025 02:24:07 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/DATLICHKHAM/upload/ChuyenGia/ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744338247.png">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744338247.png'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-8Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"3795870"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00228Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc=\u0022"},{"Name":"Last-Modified","Value":"Fri, 11 Apr 2025 02:24:07 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/DATLICHKHAM/upload/ChuyenGia/ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744338294.47v40gkdv5.png">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744338294.png'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"47v40gkdv5"},{"Name":"integrity","Value":"sha256-8Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc="},{"Name":"label","Value":"_content/DATLICHKHAM/upload/ChuyenGia/ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744338294.png"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3795870"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00228Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc=\u0022"},{"Name":"Last-Modified","Value":"Fri, 11 Apr 2025 02:24:54 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/DATLICHKHAM/upload/ChuyenGia/ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744338294.png">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744338294.png'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-8Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"3795870"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00228Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc=\u0022"},{"Name":"Last-Modified","Value":"Fri, 11 Apr 2025 02:24:54 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/DATLICHKHAM/upload/ChuyenGia/ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744338442.47v40gkdv5.png">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744338442.png'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"47v40gkdv5"},{"Name":"integrity","Value":"sha256-8Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc="},{"Name":"label","Value":"_content/DATLICHKHAM/upload/ChuyenGia/ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744338442.png"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3795870"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00228Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc=\u0022"},{"Name":"Last-Modified","Value":"Fri, 11 Apr 2025 02:27:22 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/DATLICHKHAM/upload/ChuyenGia/ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744338442.png">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744338442.png'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-8Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"3795870"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00228Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc=\u0022"},{"Name":"Last-Modified","Value":"Fri, 11 Apr 2025 02:27:22 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/DATLICHKHAM/upload/ChuyenGia/ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744338466.47v40gkdv5.png">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744338466.png'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"47v40gkdv5"},{"Name":"integrity","Value":"sha256-8Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc="},{"Name":"label","Value":"_content/DATLICHKHAM/upload/ChuyenGia/ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744338466.png"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3795870"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00228Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc=\u0022"},{"Name":"Last-Modified","Value":"Fri, 11 Apr 2025 02:27:46 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/DATLICHKHAM/upload/ChuyenGia/ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744338466.png">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744338466.png'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-8Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"3795870"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00228Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc=\u0022"},{"Name":"Last-Modified","Value":"Fri, 11 Apr 2025 02:27:46 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/DATLICHKHAM/upload/ChuyenGia/ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744340506.47v40gkdv5.png">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744340506.png'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"47v40gkdv5"},{"Name":"integrity","Value":"sha256-8Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc="},{"Name":"label","Value":"_content/DATLICHKHAM/upload/ChuyenGia/ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744340506.png"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3795870"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00228Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc=\u0022"},{"Name":"Last-Modified","Value":"Fri, 11 Apr 2025 03:01:46 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/DATLICHKHAM/upload/ChuyenGia/ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744340506.png">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744340506.png'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-8Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"3795870"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00228Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc=\u0022"},{"Name":"Last-Modified","Value":"Fri, 11 Apr 2025 03:01:46 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/DATLICHKHAM/upload/ChuyenGia/ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744340525.47v40gkdv5.png">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744340525.png'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"47v40gkdv5"},{"Name":"integrity","Value":"sha256-8Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc="},{"Name":"label","Value":"_content/DATLICHKHAM/upload/ChuyenGia/ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744340525.png"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3795870"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00228Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc=\u0022"},{"Name":"Last-Modified","Value":"Fri, 11 Apr 2025 03:02:05 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/DATLICHKHAM/upload/ChuyenGia/ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744340525.png">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744340525.png'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-8Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"3795870"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00228Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc=\u0022"},{"Name":"Last-Modified","Value":"Fri, 11 Apr 2025 03:02:05 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/DATLICHKHAM/upload/ChuyenGia/ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744453233.47v40gkdv5.png">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744453233.png'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"47v40gkdv5"},{"Name":"integrity","Value":"sha256-8Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc="},{"Name":"label","Value":"_content/DATLICHKHAM/upload/ChuyenGia/ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744453233.png"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3795870"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00228Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc=\u0022"},{"Name":"Last-Modified","Value":"Sat, 12 Apr 2025 10:20:33 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/DATLICHKHAM/upload/ChuyenGia/ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744453233.png">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744453233.png'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-8Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"3795870"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00228Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc=\u0022"},{"Name":"Last-Modified","Value":"Sat, 12 Apr 2025 10:20:33 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/DATLICHKHAM/upload/ChuyenGia/ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744453291.47v40gkdv5.png">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744453291.png'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"47v40gkdv5"},{"Name":"integrity","Value":"sha256-8Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc="},{"Name":"label","Value":"_content/DATLICHKHAM/upload/ChuyenGia/ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744453291.png"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3795870"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00228Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc=\u0022"},{"Name":"Last-Modified","Value":"Sat, 12 Apr 2025 10:21:31 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/DATLICHKHAM/upload/ChuyenGia/ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744453291.png">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\ChatGPT Image Apr 6, 2025, 04_39_36 PM_1744453291.png'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-8Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"3795870"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00228Dan0eKUI34sATZlk7Pvvr/z\u002BJ4QXcuK7gcgwaYHKHc=\u0022"},{"Name":"Last-Modified","Value":"Sat, 12 Apr 2025 10:21:31 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/DATLICHKHAM/upload/ChuyenGia/Cún_1744336589.png">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\Cún_1744336589.png'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-uOWNthZhHZ6RnlfHHgimMYXZR7RiL/SJoSZXC3uRnGw="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"35316"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022uOWNthZhHZ6RnlfHHgimMYXZR7RiL/SJoSZXC3uRnGw=\u0022"},{"Name":"Last-Modified","Value":"Fri, 11 Apr 2025 01:56:29 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/DATLICHKHAM/upload/ChuyenGia/Cún_1744336589.wao15d7wh1.png">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\Cún_1744336589.png'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"wao15d7wh1"},{"Name":"integrity","Value":"sha256-uOWNthZhHZ6RnlfHHgimMYXZR7RiL/SJoSZXC3uRnGw="},{"Name":"label","Value":"_content/DATLICHKHAM/upload/ChuyenGia/C\u00FAn_1744336589.png"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"35316"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022uOWNthZhHZ6RnlfHHgimMYXZR7RiL/SJoSZXC3uRnGw=\u0022"},{"Name":"Last-Modified","Value":"Fri, 11 Apr 2025 01:56:29 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/DATLICHKHAM/upload/ChuyenGia/Cún_1744453682.png">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\Cún_1744453682.png'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-uOWNthZhHZ6RnlfHHgimMYXZR7RiL/SJoSZXC3uRnGw="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"35316"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022uOWNthZhHZ6RnlfHHgimMYXZR7RiL/SJoSZXC3uRnGw=\u0022"},{"Name":"Last-Modified","Value":"Sat, 12 Apr 2025 10:28:02 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/DATLICHKHAM/upload/ChuyenGia/Cún_1744453682.wao15d7wh1.png">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\Cún_1744453682.png'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"wao15d7wh1"},{"Name":"integrity","Value":"sha256-uOWNthZhHZ6RnlfHHgimMYXZR7RiL/SJoSZXC3uRnGw="},{"Name":"label","Value":"_content/DATLICHKHAM/upload/ChuyenGia/C\u00FAn_1744453682.png"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"35316"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022uOWNthZhHZ6RnlfHHgimMYXZR7RiL/SJoSZXC3uRnGw=\u0022"},{"Name":"Last-Modified","Value":"Sat, 12 Apr 2025 10:28:02 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/DATLICHKHAM/upload/ChuyenGia/DatLichKham-phongkham_ERD_ver2.drawio_1744339728.cxbcnlbgf8.png">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\DatLichKham-phongkham_ERD_ver2.drawio_1744339728.png'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"cxbcnlbgf8"},{"Name":"integrity","Value":"sha256-oJ0BHfS0QP/2CdAlNbOkEPeR1inIjvT1A2N6pWDcXDo="},{"Name":"label","Value":"_content/DATLICHKHAM/upload/ChuyenGia/DatLichKham-phongkham_ERD_ver2.drawio_1744339728.png"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"978801"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022oJ0BHfS0QP/2CdAlNbOkEPeR1inIjvT1A2N6pWDcXDo=\u0022"},{"Name":"Last-Modified","Value":"Fri, 11 Apr 2025 02:48:48 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/DATLICHKHAM/upload/ChuyenGia/DatLichKham-phongkham_ERD_ver2.drawio_1744339728.png">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\DatLichKham-phongkham_ERD_ver2.drawio_1744339728.png'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-oJ0BHfS0QP/2CdAlNbOkEPeR1inIjvT1A2N6pWDcXDo="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"978801"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022oJ0BHfS0QP/2CdAlNbOkEPeR1inIjvT1A2N6pWDcXDo=\u0022"},{"Name":"Last-Modified","Value":"Fri, 11 Apr 2025 02:48:48 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/DATLICHKHAM/upload/ChuyenGia/DatLichKham-phongkham_ERD_ver2.drawio_1744339908.cxbcnlbgf8.png">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\DatLichKham-phongkham_ERD_ver2.drawio_1744339908.png'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"cxbcnlbgf8"},{"Name":"integrity","Value":"sha256-oJ0BHfS0QP/2CdAlNbOkEPeR1inIjvT1A2N6pWDcXDo="},{"Name":"label","Value":"_content/DATLICHKHAM/upload/ChuyenGia/DatLichKham-phongkham_ERD_ver2.drawio_1744339908.png"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"978801"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022oJ0BHfS0QP/2CdAlNbOkEPeR1inIjvT1A2N6pWDcXDo=\u0022"},{"Name":"Last-Modified","Value":"Fri, 11 Apr 2025 02:51:48 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/DATLICHKHAM/upload/ChuyenGia/DatLichKham-phongkham_ERD_ver2.drawio_1744339908.png">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\DatLichKham-phongkham_ERD_ver2.drawio_1744339908.png'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-oJ0BHfS0QP/2CdAlNbOkEPeR1inIjvT1A2N6pWDcXDo="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"978801"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022oJ0BHfS0QP/2CdAlNbOkEPeR1inIjvT1A2N6pWDcXDo=\u0022"},{"Name":"Last-Modified","Value":"Fri, 11 Apr 2025 02:51:48 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/DATLICHKHAM/upload/ChuyenMuc/Cún_1744267920.png">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenMuc\Cún_1744267920.png'))</AssetFile>
