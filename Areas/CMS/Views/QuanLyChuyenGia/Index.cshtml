@@ -26,11 +26,11 @@
 </table>
 
 @* MODAL THÊM MỚI  *@
-<div class="modal fade" id="modalAdd" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
+<div class="modal fade" id="modalAdd" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">Thêm mới tài khoản chuyên gia</h5>
+                <h5 class="modal-title" id="staticBackdropLabel">Thêm mới chuyên gia</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Hủy"></button>
             </div>
             <div class="modal-body">
@@ -75,6 +75,62 @@
                     <label for="ngaySinhAdd" class="form-label">Ngày sinh <span class="text-red">*</span></label>
                     <input type="date" class="form-control" id="ngaySinhAdd" placeholder="dd/mm/yyyy">
                 </div>
+                <div class="mb-3">
+                    <label for="diaChiAdd" class="form-label">Địa chỉ </label>
+                    <input type="text" class="form-control" id="diaChiAdd" placeholder="Nhập địa chỉ">
+                </div>
+                <div class="mb-3">
+                    <label for="chucDanhAdd" class="form-label">Chức danh</label>
+                    <input type="text" class="form-control" id="chucDanhAdd" placeholder="Nhập chức danh">
+                </div>
+                <div class="mb-3">
+                    <label for="chucVuAdd" class="form-label">Chức vụ</label>
+                    <input type="text" class="form-control" id="chucVuAdd" placeholder="Nhập chức vụ">
+                </div>
+                <div class="mb-3" id="chuyenKhoaAddParent">
+                    <label for="chuyenKhoaAdd" class="form-label">Chuyên khoa <span class="text-red">*</span></label>
+                    <select class="form-select" id="chuyenKhoaAdd">
+                        @* render chuyên khoa *@
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="soNamKinhNghiemAdd" class="form-label">Số năm kinh nghiệm</label>
+                    <input type="text" class="form-control" id="soNamKinhNghiemAdd" placeholder="Nhập số năm kinh nghiệm">
+                </div>
+                <div class="mb-3">
+                    <label for="donViCongTacAdd" class="form-label">Đơn vị công tác</label>
+                    <input type="text" class="form-control" id="donViCongTacAdd" placeholder="Nhập đơn vị công tác">
+                </div>
+                <div class="mb-3">
+                    <label for="giaiThuongNghienCuuAdd" class="form-label">Giải thưởng nghiên cứu</label>
+                    <textarea cols="30" rows="3" type="text" class="form-control" id="giaiThuongNghienCuuAdd" placeholder="Nhập giải thưởng nghiên cứu"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="gioiThieuAdd" class="form-label">Giới thiệu</label>
+                    <textarea cols="30" rows="5" type="text" class="form-control" id="gioiThieuAdd" placeholder="Nhập giới thiệu"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="kinhNghiemAdd" class="form-label">Kinh nghiệm</label>
+                    <textarea cols="30" rows="5" type="text" class="form-control" id="kinhNghiemAdd" placeholder="Nhập kinh nghiệm"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="anhDaiDienAdd" class="form-label">Ảnh đại diện</label>
+                    <input type="file" class="form-control" id="anhDaiDienAdd" accept="image/*">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Trạng thái <span class="text-red">*</span></label>
+                    <div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="trangThaiAdd" id="dangLamViecAdd" value="1" checked>
+                            <label class="form-check-label" for="dangLamViecAdd">Đang làm việc</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="trangThaiAdd" id="daNghiViecAdd" value="0">
+                            <label class="form-check-label" for="daNghiViecAdd">Đã nghỉ việc</label>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-cancel btn-secondary" data-bs-dismiss="modal">Hủy</button>
@@ -86,7 +142,7 @@
 
 @* MODAL CẬP NHẬT THÔNG TIN CHUYÊN GIA *@
 <div class="modal fade" id="modalEdit" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="staticBackdropLabel">Cập nhật thông tin chuyên gia</h5>
@@ -139,13 +195,11 @@
                     <label for="chucVuEdit" class="form-label">Chức vụ</label>
                     <input type="text" class="form-control" id="chucVuEdit" placeholder="Nhập chức vụ">
                 </div>
-                <div class="mb-3">
+                <div class="mb-3" id="chuyenKhoaEditParent">
                     <label for="chuyenKhoaEdit" class="form-label">Chuyên khoa <span class="text-red">*</span></label>
-                    <div>
-                        <select class="form-select js-example-basic-single" name="state" id="chuyenKhoaEdit" aria-label="Default select example">
-                            @* render chuyên khoa *@
-                        </select>
-                    </div>
+                    <select class="form-select" id="chuyenKhoaEdit">
+                        @* render chuyên khoa *@
+                    </select>
                 </div>
 
                 <div class="mb-3">
@@ -178,8 +232,8 @@
                 </div>
                 @* chọn ảnh tải lên *@
                 <div class="mb-3">
-                    <label for="anhDaiDienAdd" class="form-label">Ảnh đại diện</label>
-                    <input type="file" class="form-control" id="anhDaiDienAdd" accept="image/*">
+                    <label for="anhDaiDienEdit" class="form-label">Ảnh đại diện</label>
+                    <input type="file" class="form-control" id="anhDaiDienEdit" accept="image/*">
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Trạng thái <span class="text-red">*</span></label>
@@ -204,39 +258,39 @@
 </div>
 
 @* MODAL CẬP NHẬT THÔNG TIN USER *@
-<div class="modal fade" id="modalEditAccount" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">Cập nhật tài khoản chuyên gia</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Hủy"></button>
-            </div>
-            <div class="modal-body">
-                <input type="hidden" class="form-control" id="maChuyenGiaEdit" />
-                <div class="mb-3">
-                    <label for="tenDangNhapEdit" class="form-label">Tên đăng nhập <span class="text-red">*</span></label>
-                    <input type="text" class="form-control" id="tenDangNhapEdit" placeholder="Nhập tên đăng nhập">
-                </div>
-                <div class="mb-3">
-                    <label for="matKhauEdit" class="form-label">Mật khẩu cũ<span class="text-red">*</span></label>
-                    <input type="text" class="form-control" id="matKhauEdit" placeholder="Nhập mật khẩu cũ">
-                </div>
-                <div class="mb-3">
-                    <label for="matKhauMoiEdit" class="form-label">Mật khẩu mới <span class="text-red">*</span></label>
-                    <input type="text" class="form-control" id="matKhauMoiEdit" placeholder="Nhập mật khẩu mới">
-                </div>
-                <div class="mb-3">
-                    <label for="nhapLaiMatKhauEdit" class="form-label">Nhập lại mật khẩu <span class="text-red">*</span></label>
-                    <input type="text" class="form-control" id="nhapLaiMatKhauEdit" placeholder="Nhập lại mật khẩu mới">
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-cancel btn-secondary" data-bs-dismiss="modal">Hủy</button>
-                <button type="button" class="btn btn-active btn-primary" id="editData">Lưu</button>
-            </div>
-        </div>
-    </div>
-</div>
+@* <div class="modal fade" id="modalEditAccount" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true"> *@
+@*     <div class="modal-dialog modal-lg"> *@
+@*         <div class="modal-content"> *@
+@*             <div class="modal-header"> *@
+@*                 <h5 class="modal-title" id="staticBackdropLabel">Cập nhật tài khoản chuyên gia</h5> *@
+@*                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Hủy"></button> *@
+@*             </div> *@
+@*             <div class="modal-body"> *@
+@*                 <input type="hidden" class="form-control" id="maChuyenGiaEdit" /> *@
+@*                 <div class="mb-3"> *@
+@*                     <label for="tenDangNhapEdit" class="form-label">Tên đăng nhập <span class="text-red">*</span></label> *@
+@*                     <input type="text" class="form-control" id="tenDangNhapEdit" placeholder="Nhập tên đăng nhập"> *@
+@*                 </div> *@
+@*                 <div class="mb-3"> *@
+@*                     <label for="matKhauEdit" class="form-label">Mật khẩu cũ<span class="text-red">*</span></label> *@
+@*                     <input type="text" class="form-control" id="matKhauEdit" placeholder="Nhập mật khẩu cũ"> *@
+@*                 </div> *@
+@*                 <div class="mb-3"> *@
+@*                     <label for="matKhauMoiEdit" class="form-label">Mật khẩu mới <span class="text-red">*</span></label> *@
+@*                     <input type="text" class="form-control" id="matKhauMoiEdit" placeholder="Nhập mật khẩu mới"> *@
+@*                 </div> *@
+@*                 <div class="mb-3"> *@
+@*                     <label for="nhapLaiMatKhauEdit" class="form-label">Nhập lại mật khẩu <span class="text-red">*</span></label> *@
+@*                     <input type="text" class="form-control" id="nhapLaiMatKhauEdit" placeholder="Nhập lại mật khẩu mới"> *@
+@*                 </div> *@
+@*             </div> *@
+@*             <div class="modal-footer"> *@
+@*                 <button type="button" class="btn btn-cancel btn-secondary" data-bs-dismiss="modal">Hủy</button> *@
+@*                 <button type="button" class="btn btn-active btn-primary" id="editData">Lưu</button> *@
+@*             </div> *@
+@*         </div> *@
+@*     </div> *@
+@* </div> *@
 
 @* MODAL XÓA *@
 <div class="modal fade" id="modalDelete" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">

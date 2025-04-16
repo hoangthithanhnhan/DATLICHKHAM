@@ -18,6 +18,8 @@
         public string? LyDo { get; set; }
         public string SoDienThoai { get; set; }
         public string? Email { get; set; }
+        public DateTime NgayTao { get; set; }
+        public string? AnhDaiDien { get; set; }
 
     }
     public class DLK_BenhNhanAddInfo
@@ -30,5 +32,9 @@
         public long MaNguoiDung { get; set; }
         public byte? GioiTinh { get; set; }
         public DateTime? NgaySinh { get; set; }
+    }
+    public class DLK_BenhNhanRequestFilter
+    {
+        public string? Keyword { get; set; }
     }
 }

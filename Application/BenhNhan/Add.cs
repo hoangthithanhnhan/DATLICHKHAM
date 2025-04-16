@@ -31,6 +31,8 @@ namespace DATLICHKHAM.Application.BenhNhan
                         DynamicParameters parameters = new DynamicParameters();
                         parameters.Add("@MaNguoiDung", request.Entity.MaNguoiDung);
                         parameters.Add("@HoTen", request.Entity.HoTen);
+                        parameters.Add("@GioiTinh", request.Entity.GioiTinh);
+                        parameters.Add("@NgaySinh", request.Entity.NgaySinh);
                         var result = await connection.QuerySingleOrDefaultAsync<DLK_BenhNhan>("SP_Add_BenhNhan", parameters, commandType: CommandType.StoredProcedure);
                         return Result<DLK_BenhNhan>.Success(result);
                     }

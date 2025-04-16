@@ -10,6 +10,7 @@ namespace DATLICHKHAM.Application.BenhNhan
     {
         public class Query:IRequest<Result<IEnumerable<DLK_BenhNhan>>>
         {
+            public DLK_BenhNhanRequestFilter filter;    
         }
         public class Handler : IRequestHandler<Query, Result<IEnumerable<DLK_BenhNhan>>>
         {
@@ -25,7 +26,9 @@ namespace DATLICHKHAM.Application.BenhNhan
                     await connection.OpenAsync();
                     try
                     {
-                        var result = await connection.QueryAsync<DLK_BenhNhan>("SP_Gets_BenhNhan", null, commandType: System.Data.CommandType.StoredProcedure);
+                        DynamicParameters parameters = new DynamicParameters();
+                        parameters.Add("@keyword", request.filter.Keyword);
+                        var result = await connection.QueryAsync<DLK_BenhNhan>("SP_Gets_BenhNhan", parameters, commandType: System.Data.CommandType.StoredProcedure);
                         return Result<IEnumerable<DLK_BenhNhan>>.Success(result);
                     }
                     catch (Exception ex)

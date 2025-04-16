@@ -2964,8 +2964,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>tzoxt7wllv</Fingerprint>
-      <Integrity>yfXX+SppuAI04JKZpjdVM0p7o6elj0iZggXLkHKdzAA=</Integrity>
+      <Fingerprint>5hl0x1sd6j</Fingerprint>
+      <Integrity>udH5Xcq74PEgjLHqZfE68m6CaW3RvPXycbpI6Wm3EaI=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\PageScripts\QuanLyBenhNhan.js'))</OriginalItemSpec>
@@ -3000,8 +3000,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>g25ef68rne</Fingerprint>
-      <Integrity>2Gc9ucXsZjaLlBuLGmXGsLyZMxZ6tFhfG33CBZa0PZ4=</Integrity>
+      <Fingerprint>p3b4oy6e04</Fingerprint>
+      <Integrity>yy5KfeolXJSmwHN1tittloRZfbM4fJd4SIC26QLB8Mc=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\PageScripts\QuanLyChuyenGia.js'))</OriginalItemSpec>

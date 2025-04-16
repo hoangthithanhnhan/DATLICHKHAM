@@ -5,7 +5,7 @@ $(document).ready(function () {
 
     formatInputDate("#ngaySinhEdit");
 
-    //đổ dữ liệu vào select2
+    //đổ dữ liệu vào select2 CHUYÊN KHOA
     $.ajax({
         url: APIURL + `/api/ChuyenKhoaApi/Gets?trangThai=true`,
         type: "GET",
@@ -13,19 +13,32 @@ $(document).ready(function () {
         success: function (data) {
             if (data && data.isSuccess) {
                 if (data.value && data.value.length > 0) {
-                    let html = "<option>Chọn chuyên khoa</option>";
+                    let html = "<option value=''>Chọn chuyên khoa</option>";
+
                     $.each(data.value, function (index, item) {
                         html += `<option value="${item.maChuyenKhoa}">${item.tenChuyenKhoa}</option>`;
                     });
+
+                    $("#chuyenKhoaAdd").html(html);
                     $("#chuyenKhoaEdit").html(html);
-                    $('.js-example-basic-single').select2({
+
+                    $('#chuyenKhoaAdd').select2({
                         width: "100%",
-                        dropdownParent: $("#modalEdit")
+                        minimumResultsForSearch: Infinity,
+                        //placeholder: "Chọn chuyên khoa",
+                        //dropdownParent: $("#chuyenKhoaAddParent")
+                    });
+                    $('#chuyenKhoaEdit').select2({
+                        width: "100%",
+                        minimumResultsForSearch: Infinity,
+                        //placeholder: "Chọn chuyên khoa",
+                        //dropdownParent: $("#chuyenKhoaEditParent")
                     });
                 }
             }
         }
     })
+
     function buildData() {
         let keyword = $('#search').val();
         let request = {
@@ -89,9 +102,6 @@ $(document).ready(function () {
                 targets: 7,
                 render: function (data, type, row, meta) {
                     return `
-                            <button type="button" data-id="${meta.row}" class="button btn-user">
-                                <img src="../images/user.png" alt="Alternate Text" />
-                            </button> 
                             <button type="button" data-id="${meta.row}" class="button btn-update">
                                 <img src="../images/edit_filled.png" alt="Alternate Text" />
                             </button> 
@@ -122,6 +132,18 @@ $(document).ready(function () {
         let gioiTinh = $("input[name='gioitinhAdd']:checked").val();
         let ngaySinh = $("#ngaySinhAdd").val();
         let soDienThoai = $("#soDienThoaiAdd").val();
+        let diaChi = $("#diaChiAdd").val();
+        let chucDanh = $("#chucDanhAdd").val();
+        let chucVu = $("#chucVuAdd").val();
+        let maChuyenKhoa = $("#chuyenKhoaAdd").val();
+        let soNamKinhNghiem = $("#soNamKinhNghiemAdd").val();
+        let donViCongTac = $("#donViCongTacAdd").val();
+        let giaiThuongNghienCuu = $("#giaiThuongNghienCuuAdd").val();
+        let gioiThieu = $("#gioiThieuAdd").val();
+        let kinhNghiem = $("#kinhNghiemAdd").val();
+        let fileInput = $("#anhDaiDienAdd")[0];
+        let file = fileInput.files[0]; //lấy ảnh đại diện
+        let trangThai = $("input[name='trangThaiAdd']:checked").val();
         let request = {
             username: tenDangNhap.trim(),
             password: matKhau.trim(),
@@ -129,7 +151,22 @@ $(document).ready(function () {
             hoTen: hoTen.trim(),
             gioiTinh: Number(gioiTinh),
             ngaySinh: formatDateSQL(ngaySinh),
-            soDienThoai: soDienThoai
+            soDienThoai: soDienThoai.trim(),
+            diaChi: diaChi,
+            chucDanh: chucDanh,
+            chucVu: chucVu,
+            maChuyenKhoa: maChuyenKhoa,
+            soNamKinhNghiem: soNamKinhNghiem,
+            donViCongTac: donViCongTac,
+            giaiThuong_NghienCuu: giaiThuongNghienCuu,
+            gioiThieu: gioiThieu,
+            kinhNghiem: kinhNghiem,
+            trangThai: Boolean(Number(trangThai))
+        }
+        let formData = new FormData();
+        formData.append("data", JSON.stringify(request));// dữ liệu dạng object
+        if (file) {
+            formData.append("file", file); // ảnh nếu có
         }
         if (checkEmptyString(tenDangNhap.trim())) {
             showAlert("Tên đăng nhập không được để trống", "error");
@@ -147,8 +184,16 @@ $(document).ready(function () {
             showAlert("Số điện thoại không được để trống", "error");
             return;
         }
+        if (checkEmptyString(gioiTinh)) {
+            showAlert("Giới tính không được để trống", "error");
+            return;
+        }
         if (checkEmptyString(ngaySinh)) {
             showAlert("Ngày sinh không được để trống", "error");
+            return;
+        }
+        if (checkEmptyString(maChuyenKhoa)) {
+            showAlert("Chuyên khoa không được để trống", "error");
             return;
         }
         else {
@@ -156,7 +201,9 @@ $(document).ready(function () {
                 type: "POST",
                 url: APIURL + "/api/ChuyenGiaApi/Add",
                 contentType: "application/json; charset=utf-8",
-                data: JSON.stringify(request),
+                data: formData,
+                processData: false,  //bắt buộc khi dùng FormData
+                contentType: false,  //không cho jQuery set header kiểu `application/x-www-form-urlencoded`
                 success: function (data) {
                     if (!data.isSuccess) {
                         showAlert(data.error, "error");
@@ -184,6 +231,7 @@ $(document).ready(function () {
         $("#maChuyenGiaEdit").val(data.maChuyenGia);
         $("#hoTenEdit").val(data.hoTen);
         $("input[name='gioitinhEdit'][value='" + data.gioiTinh + "']").prop("checked", true);
+        console.log(data.gioiTinh,"giới tính")
         $("#ngaySinhEdit").val(formatDate(data.ngaySinh));
         $("#diaChiEdit").val(data.diaChi);
         $("#chucDanhEdit").val(data.chucDanh);
@@ -196,7 +244,9 @@ $(document).ready(function () {
         $("#giaiThuongNghienCuuEdit").val(data.giaiThuong_NghienCuu);
         $("#gioiThieuEdit").val(data.gioiThieu);
         $("#kinhNghiemEdit").val(data.kinhNghiem);
-        $("input[name='trangThaiEdit'][value='" + data.trangThai + "']").prop("checked", true);
+        $("input[name='trangThaiEdit'][value='" + (data.trangThai ? 1 : 0) + "']").prop("checked", true);
+        console.log(data.trangThai)
+        $("#anhDaiDienEdit").val("");
         //nếu có ảnh thì hiển thị preview, không thì ẩn khối preview
         if (data.anhDaiDien != null && data.anhDaiDien != "") {
             $("#currentAnhDaiDienEdit").attr("src", `${APIURL}/` + data.anhDaiDien);
@@ -229,7 +279,7 @@ $(document).ready(function () {
         let soDienThoai = $("#soDienThoaiEdit").val();
         let email = $("#emailEdit").val();
         let trangThai = $("input[name='trangThaiEdit']:checked").val();
-        let fileInput = $("#anhDaiDienAdd")[0];
+        let fileInput = $("#anhDaiDienEdit")[0];
         let file = fileInput.files[0];
         let request = {
             maChuyenGia: maChuyenGia,
@@ -255,18 +305,24 @@ $(document).ready(function () {
         if (file) {
             formData.append("file", file); // ảnh nếu có
         }
-        console.log(formData)
-        console.log(file)
         if (checkEmptyString(hoTen)) {
             showAlert("Họ và tên chuyên gia không được để trống", "error");
             return;
         }
+        if (checkEmptyString(gioiTinh)) {
+            showAlert("Giới tính không được để trống", "error");
+            return;
+        }
         if (checkEmptyString(ngaySinh)) {
-            showAlert("Ngày sinh chuyên gia không được để trống", "error");
+            showAlert("Ngày sinh không được để trống", "error");
             return;
         }
         if (checkEmptyString(soDienThoai)) {
-            showAlert("Số điện thoại chuyên gia không được để trống", "error");
+            showAlert("Số điện thoại không được để trống", "error");
+            return;
+        }
+        if (checkEmptyString(maChuyenKhoa)) {
+            showAlert("Chuyên khoa không được để trống", "error");
             return;
         }
         else {
@@ -348,8 +404,8 @@ $(document).ready(function () {
 
     $("#deleteAnhDaiDien").on('click', function () { //chỉ xóa ảnh đại diện
         let maChuyenGia = $("#maChuyenGiaDeleteAnh").val();
-        console.log(maChuyenGia);
-        if (maChuyenGia != "") {
+        if (maChuyenGia != "")
+        {
             $.ajax({
                 type: "DELETE",
                 url: APIURL + `/api/ChuyenGiaApi/DeleteAnhDaiDien?MaChuyenGia=${maChuyenGia}`,
@@ -363,6 +419,7 @@ $(document).ready(function () {
                     } else {
                         showAlert("Xóa không thành công", "error");
                         $('#modalDeleteAnhDaiDien').modal('hide');
+
                     }
                 },
                 error: function (error) {
@@ -372,6 +429,13 @@ $(document).ready(function () {
             });
         }
     })
+
+    //xử lý modal chồng nhau
+    $('#modalDeleteAnhDaiDien').on('hidden.bs.modal', function () {
+        $("body").addClass("modal-open");
+        $('#modalEdit input[type="file"]').val('');
+        
+    });
 
 
     // clear value khi click button thêm mới
@@ -394,7 +458,8 @@ $(document).ready(function () {
 
 })
 function resetForm() {
-    $("#modalAdd input").val("");
+    $("#modalAdd input:not([type='radio'])").val("");
     $("#modalAdd textarea").val("");
+    $("#modalAdd select").val("").trigger("change");
     $('input[name="gioitinhAdd"]').prop('checked', false);
 }

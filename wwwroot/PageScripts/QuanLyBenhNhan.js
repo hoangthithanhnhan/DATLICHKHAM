@@ -1,28 +1,16 @@
 ﻿$(document).ready(function () {
-    let data = [
-        {
-            "stt": 1,
-            "MaLichHen": 1,
-            "ThoiGianHen": "07:00 - 08:00",
-            "MaBenhNhan": 1,
-            "TenBenhNhan": "Thanh Nn",
-            "TenBacSi": "Võ Lê Bá Tùng",
-            "HinhThucKham": 0,
-            "TrangThai": 0,
-            "LyDoHuyLich": null,
-            "ChucDanh": "TS. BS.",
-            "NgayHen": "2025-03-12 10:09:07.4500000",
-            "SoSao": 4,
-            "NoiDung": "Mình rất thích cách trang web này hoạt động. Giao diện dễ hiểu, đặt lịch nhanh chóng mà không cần gọi điện. Ngoài ra, tính năng nhắc nhở lịch khám giúp mình không bị quên. Tuy nhiên, nếu có thêm thông báo qua SMS thì sẽ tiện hơn.",
-            "ThoiGianDanhGia": "2025-03-12 10:09:07.4500000",
-            "ChucVu": "Chuyên viên tư vấn",
-            "ChuyenKhoa": "Tâm lý học lâm sàng",
-            "NgayPhep": "2025-03-12 10:09:07.4500000",
-            "GioiTinh": 1,
-            "NgayTao": "2025-03-12 10:09:07.4500000",
-            "LyDo": "Bình luận khiếm nhã, không đúng chuẩn mực, phản động"
+    formatInputDate("#ngaySinhAdd");
+
+    formatInputDate("#ngaySinhEdit");
+
+    function buildData() {
+        let keyword = $('#search').val();
+        let request = {
+            keyword: keyword,
         }
-    ]
+        return JSON.stringify(request);
+    }
+
     $('#myTable').DataTable({
         dom: '<"top"f>rt<"bottom d-flex justify-content-end" lp>',
         "pageLength": 10,
@@ -51,7 +39,23 @@
                 "last": '<img src="../images/arrow_next.png" />'
             }
         },
-        "data": data,
+        "ajax": {
+            url: APIURL + `/api/BenhNhanApi/Gets`,
+            type: "POST",
+            data: buildData,
+            contentType: "application/json; charset=utf-8",
+            dataSrc: function (data) {
+                var result = data.value
+                if (result) {
+                    for (let i = 0; i < result.length; i++) {
+                        result[i].stt = i + 1;
+                    }
+                    return result;
+                }
+                return []
+
+            }
+        },
         "columnDefs": [
             {
                 targets: 2,
@@ -60,15 +64,15 @@
                 }
             },
             {
-                targets: 3,
-                render: function (data, type, row, meta) {
-                    return formatDate(data);
-                }
-            },
-            {
                 targets: 4,
                 render: function (data, type, row, meta) {
                     return data == 0 ? "<span class='text-blue'>Đang hoạt động</span>" : "<span class='text-red'>Đã khóa</span>";
+                }
+            },
+            {
+                targets: 5,
+                render: function (data, type, row, meta) {
+                    return data ? data : '--';
                 }
             },
             {
@@ -87,18 +91,99 @@
         ],
         "columns": [
             { data: "stt", "width": "60px", "className": "text-center" },
-            { data: "TenBenhNhan", "width": "250px", "className": "fw-bold" },
-            { data: "GioiTinh", "width": "150px", "className": "text-center" },
-            { data: "NgayTao", "width": "200px", "className": "text-center" },
-            { data: "TrangThai", "width": "200px", "className": "text-center fw-bold" },
-            { data: "LyDo", "width": "450px", "className": "text-center" },
-            { data: "ThaoTac", "width": "auto", "className": "text-center" }
+            { data: "hoTen", "width": "250px", "className": "fw-bold" },
+            { data: "gioiTinh", "width": "150px", "className": "text-center" },
+            { data: "soDienThoai", "width": "200px", "className": "text-center" },
+            { data: "trangThai", "width": "200px", "className": "text-center fw-bold" },
+            { data: "lyDo", "width": "450px", "className": "text-center" },
+            { data: "stt", "width": "auto", "className": "text-center" }
         ]
     })
+
+    //add dữ liệu khi click button Lưu
+    $("#saveData").on('click', function () {
+        let tenDangNhap = $("#tenDangNhapAdd").val();
+        let matKhau = $("#matKhauAdd").val();
+        let hoTen = $("#hotenAdd").val();
+        let soDienThoai = $("#soDienThoaiAdd").val();
+        let gioiTinh = $("input[name='gioitinhAdd']:checked").val();
+        let email = $("#emailAdd").val();
+        let ngaySinh = $("#ngaySinhAdd").val();
+        let request = {
+            username: tenDangNhap.trim(),
+            password: matKhau.trim(),
+            email: email,
+            hoTen: hoTen.trim(),
+            gioiTinh: Number(gioiTinh),
+            ngaySinh: formatDateSQL(ngaySinh),
+            soDienThoai: soDienThoai
+        }
+        if (checkEmptyString(tenDangNhap.trim())) {
+            showAlert("Tên đăng nhập không được để trống", "error");
+            return;
+        }
+        if (checkEmptyString(matKhau.trim())) {
+            showAlert("Mật khẩu không được để trống", "error");
+            return;
+        }
+        if (checkEmptyString(hoTen)) {
+            showAlert("Họ tên không được để trống", "error");
+            return;
+        }
+        if (checkEmptyString(soDienThoai)) {
+            showAlert("Số điện thoại không được để trống", "error");
+            return;
+        }
+        else {
+            $.ajax({
+                type: "POST",
+                url: APIURL + "/api/BenhNhanApi/Add",
+                contentType: "application/json; charset=utf-8",
+                data: JSON.stringify(request),
+                success: function (data) {
+                    if (!data.isSuccess) {
+                        showAlert(data.error, "error");
+                    }
+                    else {
+                        $('#myTable').DataTable().ajax.reload();
+                        $('#modalAdd').modal('hide');
+                        showAlert("Thêm thành công", "success");
+                        //Làm rỗng form sau khi thêm mới
+                        resetForm()
+                    }
+                },
+                error: function (error) {
+                    showAlert("Thêm không thành công", "error");
+                    console.log(error)
+                }
+            });
+        }
+    })
+
+
 
     $("#myTable tbody .btn-update").on('click', function () {
         let id = $(this).data("id");
         let data = $('#myTable').DataTable().row(id).data();
         console.log(data)
     })
+
+    // clear value khi click button thêm mới
+    $('#modalAdd').on('show.bs.modal', function () {
+        resetForm();
+    });
+
+    //render lại bảng khi click button tìm kiếm
+    $("#btn-search").on('click', function () {
+        $('#myTable').DataTable().ajax.reload();
+    })
+
+
+    //search khi nhấn enter
+    $("#search").on('keydown', function (e) {
+        if (e.key === 'Enter') {
+            $('#myTable').DataTable().ajax.reload();
+        }
+    })
+
 })

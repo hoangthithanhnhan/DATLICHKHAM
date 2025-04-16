@@ -29,11 +29,19 @@ namespace DATLICHKHAM.Application.ChuyenGia
                     {
                         DynamicParameters parameters = new DynamicParameters();
                         parameters.Add("@MaNguoiDung", request.Entity.MaNguoiDung);
+                        parameters.Add("@MaChuyenKhoa", request.Entity.MaChuyenKhoa);
                         parameters.Add("@HoTen", request.Entity.HoTen);
                         parameters.Add("@GioiTinh", request.Entity.GioiTinh);
                         parameters.Add("@NgaySinh", request.Entity.NgaySinh);
-                        parameters.Add("SoDienThoai", request.Entity.SoDienThoai);
-                        parameters.Add("@Email", request.Entity.Email);
+                        parameters.Add("@ChucDanh", request.Entity.ChucDanh);
+                        parameters.Add("@ChucVu", request.Entity.ChucVu);
+                        parameters.Add("@SoNamKinhNghiem", request.Entity.SoNamKinhNghiem);
+                        parameters.Add("@GiaiThuong_NghienCuu", request.Entity.GiaiThuong_NghienCuu);
+                        parameters.Add("@GioiThieu", request.Entity.GioiThieu);
+                        parameters.Add("@DonViCongTac", request.Entity.DonViCongTac);
+                        parameters.Add("@KinhNghiem", request.Entity.KinhNghiem);
+                        parameters.Add("@DiaChi", request.Entity.DiaChi);
+                        parameters.Add("@TrangThai", request.Entity.TrangThai);
                         var result = await connection.QueryFirstOrDefaultAsync<DLK_ChuyenGia>("SP_Add_ChuyenGia", parameters, commandType: System.Data.CommandType.StoredProcedure);
                         return Result<DLK_ChuyenGia>.Success(result);
                     }

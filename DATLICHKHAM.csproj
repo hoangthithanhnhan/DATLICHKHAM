@@ -51,6 +51,7 @@
     <Folder Include="wwwroot\upload\DichVu\" />
     <Folder Include="wwwroot\upload\ChuyenMuc\" />
     <Folder Include="wwwroot\upload\ChuyenGia\" />
+    <Folder Include="wwwroot\upload\BenhNhan\" />
   </ItemGroup>
 
 </Project>

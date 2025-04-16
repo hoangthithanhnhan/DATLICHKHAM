@@ -36,43 +36,77 @@ namespace DATLICHKHAM.APIsController
 
         [HttpPost]
         [Route("Add")]
-        public async Task<Result<DLK_ChuyenGia>> Add(DLK_ChuyenGiaAddInfo Entity)
+        public async Task<Result<DLK_ChuyenGia>> Add([FromForm] RequestUploadFile request)
         {
+            //chuyển từ json string sang object DLK_ChuyenGiaAddInfo
+            DLK_ChuyenGiaAddInfo chuyenGia = JsonConvert.DeserializeObject<DLK_ChuyenGiaAddInfo>(request.data);
 
-            //Khởi tạo model create user bằng identity
+            const string avatarPath = "wwwroot\\upload\\ChuyenGia"; // Thư mục lưu trữ file
+            const string pathdb = "\\upload\\ChuyenGia"; // Đường dẫn lưu trong DB
+
+            // Kiểm tra thư mục lưu file đã tồn tại chưa, nếu chưa thì tạo mới
+            if (!Directory.Exists(avatarPath))
+                Directory.CreateDirectory(avatarPath);
+
+            // Xử lý file upload
+            if (request.file != null && request.file.Length > 0)
+            {
+                // Tạo tên file duy nhất để tránh trùng
+                var fileName = Guid.NewGuid().ToString() + Path.GetExtension(request.file.FileName);
+                var fullPath = Path.Combine(avatarPath, fileName);
+
+                using (var stream = new FileStream(fullPath, FileMode.Create))
+                {
+                    await request.file.CopyToAsync(stream);
+                }
+
+                // Gán đường dẫn file vào chuyenGia
+                chuyenGia.AnhDaiDien = Path.Combine(pathdb, fileName).Replace("\\", "/"); // format theo URL
+            }
+
+            // Tạo user bằng Identity
             var userModel = new AppUser
             {
-                UserName = Entity.Username,
-                Email = Entity.Email,
-                DisplayName = Entity.HoTen,
-                PhoneNumber = Entity.SoDienThoai,
-                VaiTro = 1
+                UserName = chuyenGia.Username,
+                Email = chuyenGia.Email,
+                DisplayName = chuyenGia.HoTen,
+                PhoneNumber = chuyenGia.SoDienThoai,
+                VaiTro = 1,
+                Avatar = chuyenGia.AnhDaiDien
             };
 
-            //Tạo user bằng identity
-            var requestUser = await _userManager.CreateAsync(userModel, Entity.Password);
+            var requestUser = await _userManager.CreateAsync(userModel, chuyenGia.Password);
 
-            //Check request create user identity nếu thành công thì get ID để đưa vào model tạo chuyên gia
-            //để tạo chuyên gia bằng account admin
             if (requestUser.Succeeded)
             {
-                var infoUser = await _userManager.FindByNameAsync(Entity.Username);
-                if(infoUser.Id != null)
+                var infoUser = await _userManager.FindByNameAsync(chuyenGia.Username);
+                //kiểm tra username id đã tồn tại hay chưa
+                if (infoUser?.Id != null)
                 {
-                    Entity.MaNguoiDung = infoUser.Id;
-                    return await Mediator.Send(new Add.Command { Entity = Entity });
+                    // Lưu thông tin Chuyên Gia vào bảng ChuyenGia
+                    chuyenGia.MaNguoiDung = infoUser.Id;
+
+                    // Gửi yêu cầu thêm chuyên gia vào cơ sở dữ liệu
+                    var resultChuyenGia = await Mediator.Send(new Add.Command { Entity = chuyenGia });
+
+                    var userInfo = await _userManager.FindByIdAsync(infoUser.Id.ToString());
+
+                    chuyenGia.Email = userInfo.Email;
+                    chuyenGia.SoDienThoai = userInfo.PhoneNumber;
+                    chuyenGia.AnhDaiDien = userInfo.Avatar;
+
+                    return resultChuyenGia;
                 }
             }
             else
             {
-                string error = requestUser.Errors.ToList()[0].Description;
-                
+                string error = requestUser.Errors.FirstOrDefault()?.Description ?? "Lỗi không xác định";
                 return Result<DLK_ChuyenGia>.Failure(error);
             }
-                return Result<DLK_ChuyenGia>.Failure("Thêm mới user không thành công");
 
-            //Gọi service add chuyên gia để đưa thông tin chuyên gia vào cơ sở dữ liệu
+            return Result<DLK_ChuyenGia>.Failure("Thêm mới user không thành công");
         }
+
 
 
         [HttpPut]
@@ -123,12 +157,12 @@ namespace DATLICHKHAM.APIsController
         [Route("Delete")]
         public async Task<Result<int>> Delete(int MaChuyenGia)
         {
-            var ChuyenMucOld = await Mediator.Send(new Get.Query { MaChuyenGia = MaChuyenGia });
-            if (ChuyenMucOld.IsSuccess && !string.IsNullOrEmpty(ChuyenMucOld.Value.AnhDaiDien))
+            var chuyenGiaOld = await Mediator.Send(new Get.Query { MaChuyenGia = MaChuyenGia });
+            if (chuyenGiaOld.IsSuccess && !string.IsNullOrEmpty(chuyenGiaOld.Value.AnhDaiDien))
             {
                 try
                 {
-                    var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", ChuyenMucOld.Value.AnhDaiDien.TrimStart('\\'));
+                    var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", chuyenGiaOld.Value.AnhDaiDien.TrimStart('\\'));
                     if (System.IO.File.Exists(filePath))
                     {
                         System.IO.File.Delete(filePath);

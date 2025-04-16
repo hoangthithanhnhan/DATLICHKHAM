@@ -1968,17 +1968,17 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-XRsxVWAxszwlEjeko4Qjqh6TjJTzWTkm\u002Bwm4JBdAOno="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"5254"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022XRsxVWAxszwlEjeko4Qjqh6TjJTzWTkm\u002Bwm4JBdAOno=\u0022"},{"Name":"Last-Modified","Value":"Thu, 03 Apr 2025 01:21:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DATLICHKHAM/PageScripts/QuanLyBenhNhan.5hl0x1sd6j.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\PageScripts\QuanLyBenhNhan.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"5hl0x1sd6j"},{"Name":"integrity","Value":"sha256-udH5Xcq74PEgjLHqZfE68m6CaW3RvPXycbpI6Wm3EaI="},{"Name":"label","Value":"_content/DATLICHKHAM/PageScripts/QuanLyBenhNhan.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"7068"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022udH5Xcq74PEgjLHqZfE68m6CaW3RvPXycbpI6Wm3EaI=\u0022"},{"Name":"Last-Modified","Value":"Tue, 15 Apr 2025 04:34:43 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/DATLICHKHAM/PageScripts/QuanLyBenhNhan.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\PageScripts\QuanLyBenhNhan.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-yfXX\u002BSppuAI04JKZpjdVM0p7o6elj0iZggXLkHKdzAA="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"4597"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022yfXX\u002BSppuAI04JKZpjdVM0p7o6elj0iZggXLkHKdzAA=\u0022"},{"Name":"Last-Modified","Value":"Tue, 01 Apr 2025 09:09:14 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/DATLICHKHAM/PageScripts/QuanLyBenhNhan.tzoxt7wllv.js">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\PageScripts\QuanLyBenhNhan.js'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"tzoxt7wllv"},{"Name":"integrity","Value":"sha256-yfXX\u002BSppuAI04JKZpjdVM0p7o6elj0iZggXLkHKdzAA="},{"Name":"label","Value":"_content/DATLICHKHAM/PageScripts/QuanLyBenhNhan.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4597"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022yfXX\u002BSppuAI04JKZpjdVM0p7o6elj0iZggXLkHKdzAA=\u0022"},{"Name":"Last-Modified","Value":"Tue, 01 Apr 2025 09:09:14 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-udH5Xcq74PEgjLHqZfE68m6CaW3RvPXycbpI6Wm3EaI="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"7068"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022udH5Xcq74PEgjLHqZfE68m6CaW3RvPXycbpI6Wm3EaI=\u0022"},{"Name":"Last-Modified","Value":"Tue, 15 Apr 2025 04:34:43 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/DATLICHKHAM/PageScripts/QuanLyChungChi.7xl2p36px1.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\PageScripts\QuanLyChungChi.js'))</AssetFile>
@@ -1992,17 +1992,17 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-eyCG\u002BqTCUaxFbQNz\u002BGVHhd8soJamPaJkEBjFdToznZc="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"5173"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022eyCG\u002BqTCUaxFbQNz\u002BGVHhd8soJamPaJkEBjFdToznZc=\u0022"},{"Name":"Last-Modified","Value":"Tue, 01 Apr 2025 09:45:10 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/DATLICHKHAM/PageScripts/QuanLyChuyenGia.g25ef68rne.js">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\PageScripts\QuanLyChuyenGia.js'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"g25ef68rne"},{"Name":"integrity","Value":"sha256-2Gc9ucXsZjaLlBuLGmXGsLyZMxZ6tFhfG33CBZa0PZ4="},{"Name":"label","Value":"_content/DATLICHKHAM/PageScripts/QuanLyChuyenGia.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"16637"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00222Gc9ucXsZjaLlBuLGmXGsLyZMxZ6tFhfG33CBZa0PZ4=\u0022"},{"Name":"Last-Modified","Value":"Mon, 14 Apr 2025 10:02:20 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/DATLICHKHAM/PageScripts/QuanLyChuyenGia.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\PageScripts\QuanLyChuyenGia.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-2Gc9ucXsZjaLlBuLGmXGsLyZMxZ6tFhfG33CBZa0PZ4="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"16637"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00222Gc9ucXsZjaLlBuLGmXGsLyZMxZ6tFhfG33CBZa0PZ4=\u0022"},{"Name":"Last-Modified","Value":"Mon, 14 Apr 2025 10:02:20 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-yy5KfeolXJSmwHN1tittloRZfbM4fJd4SIC26QLB8Mc="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"19502"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022yy5KfeolXJSmwHN1tittloRZfbM4fJd4SIC26QLB8Mc=\u0022"},{"Name":"Last-Modified","Value":"Tue, 15 Apr 2025 17:36:35 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DATLICHKHAM/PageScripts/QuanLyChuyenGia.p3b4oy6e04.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\PageScripts\QuanLyChuyenGia.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"p3b4oy6e04"},{"Name":"integrity","Value":"sha256-yy5KfeolXJSmwHN1tittloRZfbM4fJd4SIC26QLB8Mc="},{"Name":"label","Value":"_content/DATLICHKHAM/PageScripts/QuanLyChuyenGia.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"19502"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022yy5KfeolXJSmwHN1tittloRZfbM4fJd4SIC26QLB8Mc=\u0022"},{"Name":"Last-Modified","Value":"Tue, 15 Apr 2025 17:36:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/DATLICHKHAM/PageScripts/QuanLyChuyenKhoa.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\PageScripts\QuanLyChuyenKhoa.js'))</AssetFile>
