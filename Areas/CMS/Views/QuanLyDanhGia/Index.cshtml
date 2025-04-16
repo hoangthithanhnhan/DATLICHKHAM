@@ -1,6 +1,12 @@
 ﻿@{
     ViewBag.Title = "Quản lý đánh giá";
 }
+<div class="d-flex align-items-center block-header">
+    <div class="search-block">
+        <input id="search" type="text" placeholder="Tìm kiếm...">
+        <button id="btn-search"> <img src="~/images/search-cms.png" alt=""></button>
+    </div>
+</div>
 <table class="table table-border" id="myTable">
     <thead>
         <tr>
@@ -14,6 +20,8 @@
         </tr>
     </thead>
 </table>
+
+
 @section Scripts {
     <script src="~/PageScripts/QuanLyDanhGia.js"></script>
 }

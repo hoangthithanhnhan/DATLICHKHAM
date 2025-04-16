@@ -33,6 +33,15 @@ namespace DATLICHKHAM.Application.BenhNhan
                         parameters.Add("@HoTen", request.Entity.HoTen);
                         parameters.Add("@GioiTinh", request.Entity.GioiTinh);
                         parameters.Add("@NgaySinh", request.Entity.NgaySinh);
+                        parameters.Add("@DiaChi", request.Entity.DiaChi);
+                        parameters.Add("@TienSuBenh", request.Entity.TienSuBenh);
+                        parameters.Add("@ThoiQuenSinhHoat", request.Entity.ThoiQuenSinhHoat);
+                        parameters.Add("@GhiChuKhac", request.Entity.GhiChuKhac);
+                        parameters.Add("@NgheNghiep", request.Entity.NgheNghiep);
+                        parameters.Add("@TinhTrangHonNhan", request.Entity.TinhTrangHonNhan);
+                        parameters.Add("@ThuocDangDung", request.Entity.ThuocDangDung);
+                        parameters.Add("@LyDo", request.Entity.LyDo);
+                        parameters.Add("@TrangThai", request.Entity.TrangThai);
                         var result = await connection.QuerySingleOrDefaultAsync<DLK_BenhNhan>("SP_Add_BenhNhan", parameters, commandType: CommandType.StoredProcedure);
                         return Result<DLK_BenhNhan>.Success(result);
                     }

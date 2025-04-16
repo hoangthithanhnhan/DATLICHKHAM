@@ -125,7 +125,7 @@ body:not(.sidebar-mini-md):not(.sidebar-mini-xs):not(.layout-top-nav) .content-w
                 font-weight: 800;
                 border: none;
                 background: none;
-                margin: 0px 10px;
+                margin: 0px 5px;
             }
 
         .content-wrapper > .content .table tbody > tr td, th {
@@ -301,8 +301,8 @@ div.dt-container select.dt-input {
     object-fit:cover
 }
 #currentAnhDaiDienEdit {
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
 }
 
@@ -311,5 +311,5 @@ div.dt-container select.dt-input {
     background: none;
 }
 #btn-deleteAnhDaiDien >img{
-    width:30px;
+    width:24px;
 }

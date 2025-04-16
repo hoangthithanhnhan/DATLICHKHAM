@@ -63,7 +63,10 @@
             {
                 targets: 6,
                 render: function (data, type, row, meta) {
-                    return `<button type="button" data-id="${meta.row}" class="button btn-delete" data-bs-toggle="modal" data-bs-target="#modalDelete">
+                    return `<button type="button" data-id="${meta.row}" class="button btn-replyrating" data-bs-toggle="modal" data-bs-target="#modalDelete">
+                                <img src="../images/replyrating.png" alt="Alternate Text" />
+                            </button>
+                            <button type="button" data-id="${meta.row}" class="button btn-delete" data-bs-toggle="modal" data-bs-target="#modalDelete">
                                 <img src="../images/delete_filled.png" alt="Alternate Text" />
                             </button>`;
 
@@ -73,12 +76,12 @@
         ],
         "columns": [
             { data: "stt", "width": "60px", "className": "text-center" },
-            { data: "TenBenhNhan", "width": "250px", "className": "fw-bold" },
-            { data: "TrangThai", "width": "200px", "className": "text-center fw-bold" },
-            { data: "SoSao", "width": "100px", "className": "text-center" },
-            { data: "ThoiGianDanhGia", "width": "170px", "className": "text-center" },
-            { data: "NoiDung", "width": "600px", "className": "text-center" },
-            { data: "ThaoTac", "width": "auto", "className": "text-center" }
+            { data: "hoTen", "width": "250px", "className": "fw-bold" },
+            { data: "trangThai", "width": "200px", "className": "text-center fw-bold" },
+            { data: "soSao", "width": "100px", "className": "text-center" },
+            { data: "thoiGianDanhGia", "width": "170px", "className": "text-center" },
+            { data: "noiDung", "width": "600px", "className": "text-center" },
+            { data: "thaoTac", "width": "auto", "className": "text-center" }
         ]
     })
 

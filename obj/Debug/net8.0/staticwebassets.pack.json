@@ -17,10 +17,6 @@
       "PackagePath": "staticwebassets\\PageScripts\\QuanLyBenhNhan.js"
     },
     {
-      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\QuanLyChungChi.js",
-      "PackagePath": "staticwebassets\\PageScripts\\QuanLyChungChi.js"
-    },
-    {
       "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\QuanLyChuyenGia.js",
       "PackagePath": "staticwebassets\\PageScripts\\QuanLyChuyenGia.js"
     },
@@ -39,6 +35,10 @@
     {
       "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\QuanLyDichVu.js",
       "PackagePath": "staticwebassets\\PageScripts\\QuanLyDichVu.js"
+    },
+    {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\QuanLyHeThong.js",
+      "PackagePath": "staticwebassets\\PageScripts\\QuanLyHeThong.js"
     },
     {
       "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\QuanLyLichKham.js",
@@ -67,6 +67,10 @@
     {
       "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\css\\style.css",
       "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\images\\addchungchi.png",
+      "PackagePath": "staticwebassets\\images\\addchungchi.png"
     },
     {
       "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\images\\arrow_next.png",
@@ -189,8 +193,16 @@
       "PackagePath": "staticwebassets\\images\\null-image.jpg"
     },
     {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\images\\null.png",
+      "PackagePath": "staticwebassets\\images\\null.png"
+    },
+    {
       "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\images\\rating.png",
       "PackagePath": "staticwebassets\\images\\rating.png"
+    },
+    {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\images\\replyrating.png",
+      "PackagePath": "staticwebassets\\images\\replyrating.png"
     },
     {
       "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\images\\search-cms.png",
@@ -1023,6 +1035,14 @@
     {
       "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\scss\\bootstrap\\scss\\vendor\\_rfs.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\vendor\\_rfs.scss"
+    },
+    {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\BenhNhan\\done_1744789747.png",
+      "PackagePath": "staticwebassets\\upload\\BenhNhan\\done_1744789747.png"
+    },
+    {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\ChuyenGia\\Cún_1744798057.png",
+      "PackagePath": "staticwebassets\\upload\\ChuyenGia\\Cún_1744798057.png"
     },
     {
       "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\ChuyenMuc\\Cún_1744267920.png",

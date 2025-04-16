@@ -2,7 +2,15 @@
 @{
     ViewBag.Title = "Quản lý lịch khám";
 }
-
+<div class="d-flex align-items-center block-header">
+    <div class="search-block">
+        <input id="search" type="text" placeholder="Tìm kiếm...">
+        <button id="btn-search"> <img src="~/images/search-cms.png" alt=""></button>
+    </div>
+    <button style="height: 40px; margin-left: 25px;" class="btn" type="button" data-bs-toggle="modal" data-bs-target="#modalAdd" id="btn-create">
+        Thêm mới
+    </button>
+</div>
 <table class="table table-border" id="myTable">
     <thead>
         <tr>

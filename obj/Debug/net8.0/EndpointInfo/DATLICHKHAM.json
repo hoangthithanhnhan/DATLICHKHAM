@@ -99,19 +99,26 @@
         ],
         "requestBody": {
           "content": {
-            "application/json": {
+            "multipart/form-data": {
               "schema": {
-                "$ref": "#/components/schemas/DLK_BenhNhanAddInfo"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/DLK_BenhNhanAddInfo"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/DLK_BenhNhanAddInfo"
+                "type": "object",
+                "properties": {
+                  "file": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "data": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "file": {
+                  "style": "form"
+                },
+                "data": {
+                  "style": "form"
+                }
               }
             }
           }
@@ -348,19 +355,29 @@
         ],
         "requestBody": {
           "content": {
-            "application/json": {
+            "multipart/form-data": {
               "schema": {
-                "$ref": "#/components/schemas/DLK_ChungChiChuyenGiaAdd"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/DLK_ChungChiChuyenGiaAdd"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/DLK_ChungChiChuyenGiaAdd"
+                "type": "object",
+                "properties": {
+                  "files": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "format": "binary"
+                    }
+                  },
+                  "data": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "files": {
+                  "style": "form"
+                },
+                "data": {
+                  "style": "form"
+                }
               }
             }
           }
@@ -2189,19 +2206,28 @@
           },
           "maNguoiDung": {
             "type": "integer",
-            "format": "int32"
+            "format": "int64"
           },
           "hoTen": {
             "type": "string",
             "nullable": true
           },
+          "ngayTao": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "trangThai": {
+            "type": "boolean"
+          },
           "gioiTinh": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
           },
           "ngaySinh": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "diaChi": {
             "type": "string",
@@ -2232,9 +2258,6 @@
             "type": "string",
             "nullable": true
           },
-          "trangThai": {
-            "type": "boolean"
-          },
           "lyDo": {
             "type": "string",
             "nullable": true
@@ -2247,52 +2270,8 @@
             "type": "string",
             "nullable": true
           },
-          "ngayTao": {
-            "type": "string",
-            "format": "date-time"
-          },
           "anhDaiDien": {
             "type": "string",
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "DLK_BenhNhanAddInfo": {
-        "type": "object",
-        "properties": {
-          "username": {
-            "type": "string",
-            "nullable": true
-          },
-          "password": {
-            "type": "string",
-            "nullable": true
-          },
-          "email": {
-            "type": "string",
-            "nullable": true
-          },
-          "hoTen": {
-            "type": "string",
-            "nullable": true
-          },
-          "soDienThoai": {
-            "type": "string",
-            "nullable": true
-          },
-          "maNguoiDung": {
-            "type": "integer",
-            "format": "int64"
-          },
-          "gioiTinh": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
-          "ngaySinh": {
-            "type": "string",
-            "format": "date-time",
             "nullable": true
           }
         },
@@ -2351,38 +2330,6 @@
             "type": "string",
             "format": "uuid"
           },
-          "maChuyenGia": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "tenChungChi": {
-            "type": "string",
-            "nullable": true
-          },
-          "ngayCap": {
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
-          "ngayHetHan": {
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
-          "soHieuChungChi": {
-            "type": "string",
-            "nullable": true
-          },
-          "toChucCap": {
-            "type": "string",
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "DLK_ChungChiChuyenGiaAdd": {
-        "type": "object",
-        "properties": {
           "maChuyenGia": {
             "type": "integer",
             "format": "int32"

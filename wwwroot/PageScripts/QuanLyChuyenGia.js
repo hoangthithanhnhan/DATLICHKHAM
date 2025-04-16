@@ -1,9 +1,16 @@
 ﻿let APIURL = window.location.origin;
 $(document).ready(function () {
 
+    //ngày sinh
     formatInputDate("#ngaySinhAdd");
-
     formatInputDate("#ngaySinhEdit");
+    //ngày cấp chứng chỉ
+    formatInputDate("#ngayCapAdd");
+    formatInputDate("#ngayCapEdit");
+
+    //ngày hết hạn chứng chỉ
+    formatInputDate("#ngayHetHanAdd");
+    formatInputDate("#ngayHetHanEdit");
 
     //đổ dữ liệu vào select2 CHUYÊN KHOA
     $.ajax({
@@ -102,6 +109,9 @@ $(document).ready(function () {
                 targets: 7,
                 render: function (data, type, row, meta) {
                     return `
+                            <button type="button" data-id="${meta.row}" class="button btn-addChungChi" data-bs-toggle="modal" data-bs-target="#modalAddChungChi">
+                                <img src="../images/addchungchi.png" alt="Alternate Text" />
+                            </button> 
                             <button type="button" data-id="${meta.row}" class="button btn-update">
                                 <img src="../images/edit_filled.png" alt="Alternate Text" />
                             </button> 
@@ -231,7 +241,6 @@ $(document).ready(function () {
         $("#maChuyenGiaEdit").val(data.maChuyenGia);
         $("#hoTenEdit").val(data.hoTen);
         $("input[name='gioitinhEdit'][value='" + data.gioiTinh + "']").prop("checked", true);
-        console.log(data.gioiTinh,"giới tính")
         $("#ngaySinhEdit").val(formatDate(data.ngaySinh));
         $("#diaChiEdit").val(data.diaChi);
         $("#chucDanhEdit").val(data.chucDanh);
@@ -245,7 +254,6 @@ $(document).ready(function () {
         $("#gioiThieuEdit").val(data.gioiThieu);
         $("#kinhNghiemEdit").val(data.kinhNghiem);
         $("input[name='trangThaiEdit'][value='" + (data.trangThai ? 1 : 0) + "']").prop("checked", true);
-        console.log(data.trangThai)
         $("#anhDaiDienEdit").val("");
         //nếu có ảnh thì hiển thị preview, không thì ẩn khối preview
         if (data.anhDaiDien != null && data.anhDaiDien != "") {
@@ -299,7 +307,6 @@ $(document).ready(function () {
             email: email,
             trangThai: Boolean(Number(trangThai))
         }
-        console.log(request)
         let formData = new FormData();
         formData.append("data", JSON.stringify(request));// dữ liệu dạng object
         if (file) {
@@ -345,20 +352,6 @@ $(document).ready(function () {
         }
     })
 
-
-    //sửa tài khoản chuyên gia
-    $("#myTable tbody").on('click', '.btn-user', function () {
-        let id = $(this).data("id");
-        let data = $('#myTable').DataTable().row(id).data();
-        //console.log(data);
-        //$("#maChuyenGiaEdit").val(data.maChuyenGia);
-        //$("#tenDangNhapEdit").val(data.tenDangNhap);
-        //$("#matKhauEdit").val(data.matKhau);
-        //$("#hoTenEdit").val(data.hoTen);
-        //$("input[name='gioitinhEdit'][value='" + (data.trangThai ? 1 : 0) + "']").prop("checked", true);
-        $('#modalEditAccount').modal('show');
-    })
-
     $("#myTable tbody .btn-update").on('click', function () {
         let id = $(this).data("id");
         let data = $('#myTable').DataTable().row(id).data();
@@ -369,7 +362,6 @@ $(document).ready(function () {
         let id = $(this).data("id");
         let data = $('#myTable').DataTable().row(id).data();
         $("#maChuyenGiaDelete").val(data.maChuyenGia);
-        console.log(data.maChuyenGia);
         $('#modalDelete').modal('show');
     })
 
@@ -429,6 +421,7 @@ $(document).ready(function () {
             });
         }
     })
+
 
     //xử lý modal chồng nhau
     $('#modalDeleteAnhDaiDien').on('hidden.bs.modal', function () {

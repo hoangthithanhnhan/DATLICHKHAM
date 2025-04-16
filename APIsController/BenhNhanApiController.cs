@@ -37,38 +37,74 @@ namespace DATLICHKHAM.APIsController
 
         [HttpPost]
         [Route("Add")]
-        public async Task<Result<DLK_BenhNhan>> Add(DLK_BenhNhanAddInfo Entity)
+        public async Task<Result<DLK_BenhNhan>> Add([FromForm] RequestUploadFile request)
         {
+            //chuyển từ json string sang object DLK_BenhNhanAddInfo
+            DLK_BenhNhanAddInfo benhNhan = JsonConvert.DeserializeObject<DLK_BenhNhanAddInfo>(request.data);
+
+            const string avatarPath = "wwwroot\\upload\\BenhNhan"; // Thư mục lưu trữ file
+            const string pathdb = "\\upload\\BenhNhan"; // Đường dẫn lưu trong DB
+
+            // Kiểm tra thư mục lưu file đã tồn tại chưa, nếu chưa thì tạo mới
+            if (!Directory.Exists(avatarPath))
+                Directory.CreateDirectory(avatarPath);
+
+            // Xử lý file upload
+            if (request.file != null && request.file.Length > 0)
+            {
+                // Tạo tên file duy nhất để tránh trùng
+                var fileName = Guid.NewGuid().ToString() + Path.GetExtension(request.file.FileName);
+                var fullPath = Path.Combine(avatarPath, fileName);
+
+                using (var stream = new FileStream(fullPath, FileMode.Create))
+                {
+                    await request.file.CopyToAsync(stream);
+                }
+
+                // Gán đường dẫn file vào benhNhan
+                benhNhan.AnhDaiDien = Path.Combine(pathdb, fileName).Replace("\\", "/"); // format theo URL
+            }
+
+            // Tạo user bằng Identity
             var userModel = new AppUser
             {
-                UserName = Entity.Username,
-                Email = Entity.Email,
-                DisplayName = Entity.HoTen,
-                PhoneNumber = Entity.SoDienThoai,
-                VaiTro = 2
+                UserName = benhNhan.Username,
+                Email = benhNhan.Email,
+                DisplayName = benhNhan.HoTen,
+                PhoneNumber = benhNhan.SoDienThoai,
+                VaiTro = 2,
+                Avatar = benhNhan.AnhDaiDien
             };
 
-            //Tạo user bằng identity
-            var requestUser = await _userManager.CreateAsync(userModel, Entity.Password);
+            var requestUser = await _userManager.CreateAsync(userModel, benhNhan.Password);
 
-            //Check request create user identity nếu thành công thì get ID để đưa vào model tạo chuyên gia
-            //để tạo chuyên gia bằng account admin
             if (requestUser.Succeeded)
             {
-                var infoUser = await _userManager.FindByNameAsync(Entity.Username);
-                if (infoUser.Id != null)
+                var infoUser = await _userManager.FindByNameAsync(benhNhan.Username);
+                //kiểm tra username id đã tồn tại hay chưa
+                if (infoUser?.Id != null)
                 {
-                    Entity.MaNguoiDung = infoUser.Id;
-                    //Gọi service add chuyên gia để đưa thông tin chuyên gia vào cơ sở dữ liệu
-                    return await Mediator.Send(new Add.Command { Entity = Entity });
+                    // Lưu thông tin Chuyên Gia vào bảng ChuyenGia
+                    benhNhan.MaNguoiDung = infoUser.Id;
+
+                    // Gửi yêu cầu thêm chuyên gia vào cơ sở dữ liệu
+                    var resultChuyenGia = await Mediator.Send(new Add.Command { Entity = benhNhan });
+
+                    var userInfo = await _userManager.FindByIdAsync(infoUser.Id.ToString());
+
+                    benhNhan.Email = userInfo.Email;
+                    benhNhan.SoDienThoai = userInfo.PhoneNumber;
+                    benhNhan.AnhDaiDien = userInfo.Avatar;
+
+                    return resultChuyenGia;
                 }
             }
             else
             {
-                string error = requestUser.Errors.ToList()[0].Description;
-
+                string error = requestUser.Errors.FirstOrDefault()?.Description ?? "Lỗi không xác định";
                 return Result<DLK_BenhNhan>.Failure(error);
             }
+
             return Result<DLK_BenhNhan>.Failure("Thêm mới user không thành công");
         }
 

@@ -14,6 +14,12 @@
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
                 data-accordion="false">
                 <li class="nav-item">
+                    <a asp-area="CMS" asp-controller="ThongKe" asp-action="Index" class="nav-link">
+                        <img src="~/images/thongke.png" alt="">
+                        <p>Thống kê</p>
+                    </a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link">
                         <img src="~/images/dichvu1.png" alt="">
                         <p>
@@ -32,11 +38,6 @@
                                 <p>&bull; Thanh toán</p>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a asp-area="CMS" asp-controller="QuanLyDanhGia" asp-action="Index" class="nav-link">
-                                <p>&bull; Đánh giá dịch vụ</p>
-                            </a>
-                        </li>
                     </ul>
                 </li>
 
@@ -44,7 +45,7 @@
                     <a href="#" class="nav-link">
                         <img src="~/images/nguoidung.png" alt="">
                         <p>
-                            Quản lý người dùng
+                            Quản lý đối tượng
                             <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
@@ -62,6 +63,12 @@
                     </ul>
                 </li>
                 <li class="nav-item">
+                    <a asp-area="CMS" asp-controller="QuanLyHeThong" asp-action="Index" class="nav-link">
+                        <img src="~/images/thongke.png" alt="">
+                        <p>Quản lý hệ thống</p>
+                    </a>
+                </li>
+                <li class="nav-item">
                     <a href="#" class="nav-link">
                         <img src="~/images/chuyenmon.png" alt="">
                         <p>
@@ -76,11 +83,6 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a asp-area="CMS" asp-controller="QuanLyChungChi" asp-action="Index" class="nav-link">
-                                <p>&bull; Chứng chỉ</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
                             <a asp-area="CMS" asp-controller="QuanLyDichVu" asp-action="Index" class="nav-link">
                                 <p>&bull; Dịch vụ</p>
                             </a>
@@ -92,7 +94,7 @@
                     <a href="#" class="nav-link">
                         <img src="~/images/baiviet.png" alt="">
                         <p>
-                            Quản lý blog
+                            Quản lý nội dung
                             <i class="fas fa-angle-left right"></i>
                         </p>
                     </a>
@@ -107,13 +109,12 @@
                                 <p>&bull; Bài viết </p>
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a asp-area="CMS" asp-controller="QuanLyDanhGia" asp-action="Index" class="nav-link">
+                                <p>&bull; Đánh giá dịch vụ</p>
+                            </a>
+                        </li>
                     </ul>
-                </li>
-                <li class="nav-item">
-                    <a asp-area="CMS" asp-controller="ThongKe" asp-action="Index" class="nav-link">
-                        <img src="~/images/thongke.png" alt="">
-                        <p>Thống kê</p>
-                    </a>
                 </li>
             </ul>
             <div class="user-panel mt-3 pb-3 d-flex">

@@ -8,9 +8,14 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "Entity",
-        "Type": "DATLICHKHAM.Domain.DLK_BenhNhanAddInfo",
-        "IsRequired": true
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "data",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
@@ -169,9 +174,14 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "Entity",
-        "Type": "DATLICHKHAM.Domain.DLK_ChungChiChuyenGiaAdd",
-        "IsRequired": true
+        "Name": "files",
+        "Type": "System.Collections.Generic.List\u00601[[Microsoft.AspNetCore.Http.IFormFile, Microsoft.AspNetCore.Http.Features, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "data",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [

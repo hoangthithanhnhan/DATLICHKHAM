@@ -40,10 +40,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ01TXFZpZXdzXFF1YW5MeUJlbmhOaGFuXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TTTN2025/DATLICHKHAM/Areas/CMS/Views/QuanLyChungChi/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ01TXFZpZXdzXFF1YW5MeUNodW5nQ2hpXEluZGV4LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [D:/TTTN2025/DATLICHKHAM/Areas/CMS/Views/QuanLyChuyenGia/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ01TXFZpZXdzXFF1YW5MeUNodXllbkdpYVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -62,6 +58,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/TTTN2025/DATLICHKHAM/Areas/CMS/Views/QuanLyDichVu/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ01TXFZpZXdzXFF1YW5MeURpY2hWdVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/TTTN2025/DATLICHKHAM/Areas/CMS/Views/QuanLyHeThong/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ01TXFZpZXdzXFF1YW5MeUhlVGhvbmdcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/TTTN2025/DATLICHKHAM/Areas/CMS/Views/QuanLyLichKham/Index.cshtml]

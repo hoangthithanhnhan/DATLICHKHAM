@@ -44,6 +44,7 @@ namespace DATLICHKHAM.Application.BenhNhan
                         parameters.Add("@ThuocDangDung", request.Entity.ThuocDangDung);
                         parameters.Add("@TrangThai", request.Entity.TrangThai);
                         parameters.Add("@LyDo", request.Entity.LyDo);
+                        parameters.Add("@AnhDaiDien", request.Entity.AnhDaiDien);
 
                         var result = await connection.QueryFirstOrDefaultAsync<DLK_BenhNhan>("SP_Update_BenhNhan", parameters, commandType: CommandType.StoredProcedure);
                         return Result<DLK_BenhNhan>.Success(result);

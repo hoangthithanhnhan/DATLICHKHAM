@@ -2,6 +2,7 @@ wwwroot\css\base.css
 wwwroot\css\cms.css
 wwwroot\css\site.css
 wwwroot\css\style.css
+wwwroot\images\addchungchi.png
 wwwroot\images\arrow_next.png
 wwwroot\images\arrow_previous.png
 wwwroot\images\bacsi.jpg
@@ -29,10 +30,12 @@ wwwroot\images\i4.jpg
 wwwroot\images\image.png
 wwwroot\images\logo.jpg
 wwwroot\images\mess.png
+wwwroot\images\null.png
 wwwroot\images\null-image.jpg
 wwwroot\images\nguoidung.png
 wwwroot\images\nguoidung1.png
 wwwroot\images\rating.png
+wwwroot\images\replyrating.png
 wwwroot\images\search.png
 wwwroot\images\search-cms.png
 wwwroot\images\sign_out.png
@@ -162,12 +165,12 @@ wwwroot\lib\wow\wow.min.js
 wwwroot\PageScripts\Layout.js
 wwwroot\PageScripts\QuanLyBaiViet.js
 wwwroot\PageScripts\QuanLyBenhNhan.js
-wwwroot\PageScripts\QuanLyChungChi.js
 wwwroot\PageScripts\QuanLyChuyenGia.js
 wwwroot\PageScripts\QuanLyChuyenKhoa.js
 wwwroot\PageScripts\QuanLyChuyenMuc.js
 wwwroot\PageScripts\QuanLyDanhGia.js
 wwwroot\PageScripts\QuanLyDichVu.js
+wwwroot\PageScripts\QuanLyHeThong.js
 wwwroot\PageScripts\QuanLyLichKham.js
 wwwroot\PageScripts\QuanLyThanhToan.js
 wwwroot\PageScripts\ThongKe.js
@@ -253,4 +256,6 @@ wwwroot\scss\bootstrap\scss\mixins\_utilities.scss
 wwwroot\scss\bootstrap\scss\mixins\_visually-hidden.scss
 wwwroot\scss\bootstrap\scss\utilities\_api.scss
 wwwroot\scss\bootstrap\scss\vendor\_rfs.scss
+wwwroot\upload\BenhNhan\done_1744789747.png
+wwwroot\upload\ChuyenGia\Cún_1744798057.png
 wwwroot\upload\ChuyenMuc\Cún_1744267920.png

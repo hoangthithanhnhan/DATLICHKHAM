@@ -3,7 +3,7 @@
 namespace RouteLinks.Areas.CMS.Controllers
 {
     [Area("CMS")]
-    public class QuanLyChungChiController : Controller
+    public class QuanLyHeThongController : Controller
     {
         public IActionResult Index()
         {

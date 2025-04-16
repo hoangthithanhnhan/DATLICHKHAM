@@ -1,4 +1,5 @@
 ﻿using Application.Core;
+using DATLICHKHAM.Domain;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -49,6 +50,38 @@ namespace DATLICHKHAM.Controllers
             }
 
             return noiluutru;
+        }
+
+        protected async Task<List<DLK_TepDinhKemAddModel>> SaveFileUpload(List<IFormFile> files, Guid idObj, string targetDirectory, string pathdb)
+        {
+            var uploadedFiles = new List<DLK_TepDinhKemAddModel>();
+
+            foreach (var file in files)
+            {
+                if (file.Length <= 0) continue;
+
+                string pre = new DateTimeOffset(DateTime.UtcNow).ToUnixTimeSeconds().ToString() + DateTimeOffset.UtcNow.Millisecond;
+                string fileName = file.FileName;
+                int idx = fileName.LastIndexOf('.');
+                string newFileName = $"{fileName.Substring(0, idx)}_{pre}{fileName.Substring(idx)}";
+                var filePath = Path.Combine(targetDirectory, newFileName);
+
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    await file.CopyToAsync(stream);
+
+                    DLK_TepDinhKemAddModel e = new DLK_TepDinhKemAddModel
+                    {
+                        MaDoiTuong = idObj,
+                        TenFile = fileName,
+                        DuongDan = $"{pathdb}/{newFileName}"
+                    };
+
+                    uploadedFiles.Add(e);
+                }
+            }
+
+            return uploadedFiles;
         }
     }
 }

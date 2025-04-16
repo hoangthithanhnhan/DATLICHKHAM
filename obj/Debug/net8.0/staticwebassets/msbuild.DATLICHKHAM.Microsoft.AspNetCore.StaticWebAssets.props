@@ -30,8 +30,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>1vq2613j8i</Fingerprint>
-      <Integrity>fU7SwwFdqr9Ie+3J920/o00a5PRN5ktgilUhEf0jxsI=</Integrity>
+      <Fingerprint>lspv2ii3y2</Fingerprint>
+      <Integrity>VT5dIRHbLlowzZRcvP1YgOCtcw9KK34QYijkryAIaus=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\cms.css'))</OriginalItemSpec>
@@ -89,6 +89,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\DATLICHKHAM.y7jl1ueduo.bundle.scp.css'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\addchungchi.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DATLICHKHAM</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DATLICHKHAM</BasePath>
+      <RelativePath>images/addchungchi.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>bvmmsjgsc2</Fingerprint>
+      <Integrity>R+VbjetIbzQ1Cena/VgUHMYA74g5JfizOeHnP4ZwiLY=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\addchungchi.png'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\arrow_next.png'))">
       <SourceType>Package</SourceType>
@@ -612,6 +630,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\nguoidung1.png'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\null.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DATLICHKHAM</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DATLICHKHAM</BasePath>
+      <RelativePath>images/null.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>rr99aly1hh</Fingerprint>
+      <Integrity>SUjW9Gv+v8jXnTkqeiDImWGskX+mTBXBakFmHG81gEU=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\null.png'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\null-image.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>DATLICHKHAM</SourceId>
@@ -647,6 +683,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\rating.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\replyrating.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DATLICHKHAM</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DATLICHKHAM</BasePath>
+      <RelativePath>images/replyrating.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>94q9hf7ezb</Fingerprint>
+      <Integrity>h9alpPd9GLnj7OF8QZXI3bqZGy9VN71h4T5cm37NEys=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\replyrating.png'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\search.png'))">
       <SourceType>Package</SourceType>
@@ -2964,29 +3018,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>5hl0x1sd6j</Fingerprint>
-      <Integrity>udH5Xcq74PEgjLHqZfE68m6CaW3RvPXycbpI6Wm3EaI=</Integrity>
+      <Fingerprint>uzvc8lliuj</Fingerprint>
+      <Integrity>+ngM+zGbp7d2aBUkBLKfD3ByGsDmthQrk/0fEQbirrM=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\PageScripts\QuanLyBenhNhan.js'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\PageScripts\QuanLyChungChi.js'))">
-      <SourceType>Package</SourceType>
-      <SourceId>DATLICHKHAM</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/DATLICHKHAM</BasePath>
-      <RelativePath>PageScripts/QuanLyChungChi.js</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>7xl2p36px1</Fingerprint>
-      <Integrity>eyCG+qTCUaxFbQNz+GVHhd8soJamPaJkEBjFdToznZc=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\PageScripts\QuanLyChungChi.js'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\PageScripts\QuanLyChuyenGia.js'))">
       <SourceType>Package</SourceType>
@@ -3000,8 +3036,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>p3b4oy6e04</Fingerprint>
-      <Integrity>yy5KfeolXJSmwHN1tittloRZfbM4fJd4SIC26QLB8Mc=</Integrity>
+      <Fingerprint>uenz837kos</Fingerprint>
+      <Integrity>RsW0ajsyZ24cgehW2Ih+wgxww0ka+0B260iN2z77BSU=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\PageScripts\QuanLyChuyenGia.js'))</OriginalItemSpec>
@@ -3054,8 +3090,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>0c3p0s4wa4</Fingerprint>
-      <Integrity>4PK1xLcIAarLrvkb1LxnDYKy1N4anEfa0LaSnKgsn5Y=</Integrity>
+      <Fingerprint>9jk2ymdi8y</Fingerprint>
+      <Integrity>dZ4XvOF9zvxEbtuB7mAKrIXa7AHCELlPgRVHdeqyXPo=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\PageScripts\QuanLyDanhGia.js'))</OriginalItemSpec>
@@ -3077,6 +3113,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\PageScripts\QuanLyDichVu.js'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\PageScripts\QuanLyHeThong.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DATLICHKHAM</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DATLICHKHAM</BasePath>
+      <RelativePath>PageScripts/QuanLyHeThong.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>7xl2p36px1</Fingerprint>
+      <Integrity>eyCG+qTCUaxFbQNz+GVHhd8soJamPaJkEBjFdToznZc=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\PageScripts\QuanLyHeThong.js'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\PageScripts\QuanLyLichKham.js'))">
       <SourceType>Package</SourceType>
@@ -4607,6 +4661,42 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\scss\bootstrap\scss\_variables.scss'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\BenhNhan\done_1744789747.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DATLICHKHAM</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DATLICHKHAM</BasePath>
+      <RelativePath>upload/BenhNhan/done_1744789747.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>hwz1gexbcq</Fingerprint>
+      <Integrity>AUTS4XS2JOtOONQOTyxTQfPn7uubMCF4z8UE0zAMvig=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\BenhNhan\done_1744789747.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\Cún_1744798057.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DATLICHKHAM</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DATLICHKHAM</BasePath>
+      <RelativePath>upload/ChuyenGia/Cún_1744798057.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>wao15d7wh1</Fingerprint>
+      <Integrity>uOWNthZhHZ6RnlfHHgimMYXZR7RiL/SJoSZXC3uRnGw=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\Cún_1744798057.png'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenMuc\Cún_1744267920.png'))">
       <SourceType>Package</SourceType>
