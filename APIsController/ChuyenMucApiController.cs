@@ -111,10 +111,10 @@ namespace DATLICHKHAM.APIsController
         [Route("DeleteAnhDaiDien")]
         public async Task<Result<DLK_ChuyenMuc>> DeleteAnhDaiDien(int MaChuyenMuc)
         {
-            var DichVuOld = await Mediator.Send(new Get.Query { MaChuyenMuc = MaChuyenMuc });
-            var relativePath = DichVuOld.Value.AnhDaiDien.Replace("/", Path.DirectorySeparatorChar.ToString()).TrimStart('\\');
+            var ChuyenMucOld = await Mediator.Send(new Get.Query { MaChuyenMuc = MaChuyenMuc });
+            var relativePath = ChuyenMucOld.Value.AnhDaiDien.Replace("/", Path.DirectorySeparatorChar.ToString()).TrimStart('\\');
             var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", relativePath);
-            if (DichVuOld.IsSuccess && !string.IsNullOrEmpty(DichVuOld.Value.AnhDaiDien))
+            if (ChuyenMucOld.IsSuccess && !string.IsNullOrEmpty(ChuyenMucOld.Value.AnhDaiDien))
             {
                 try
                 {
@@ -128,7 +128,7 @@ namespace DATLICHKHAM.APIsController
                     return Result<DLK_ChuyenMuc>.Failure(ex.Message);
                 }
             }
-            var entity = DichVuOld.Value;
+            var entity = ChuyenMucOld.Value;
             entity.AnhDaiDien = null;
             return await Mediator.Send(new Update.Command { Entity = entity });
         }

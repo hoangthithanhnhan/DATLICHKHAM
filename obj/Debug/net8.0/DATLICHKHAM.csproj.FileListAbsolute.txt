@@ -282,6 +282,7 @@ D:\TTTN2025\DATLICHKHAM\bin\Debug\net8.0\Humanizer.dll
 D:\TTTN2025\DATLICHKHAM\bin\Debug\net8.0\MediatR.dll
 D:\TTTN2025\DATLICHKHAM\bin\Debug\net8.0\MediatR.Contracts.dll
 D:\TTTN2025\DATLICHKHAM\bin\Debug\net8.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+D:\TTTN2025\DATLICHKHAM\bin\Debug\net8.0\Microsoft.AspNet.Identity.Core.dll
 D:\TTTN2025\DATLICHKHAM\bin\Debug\net8.0\System.Web.Mvc.dll
 D:\TTTN2025\DATLICHKHAM\bin\Debug\net8.0\System.Web.Razor.dll
 D:\TTTN2025\DATLICHKHAM\bin\Debug\net8.0\System.Web.Helpers.dll
@@ -535,10 +536,10 @@ D:\TTTN2025\DATLICHKHAM\obj\Debug\net8.0\DATLICHKHAM.MvcApplicationPartsAssembly
 D:\TTTN2025\DATLICHKHAM\obj\Debug\net8.0\DATLICHKHAM.MvcApplicationPartsAssemblyInfo.cache
 D:\TTTN2025\DATLICHKHAM\obj\Debug\net8.0\DATLICHKHAM.RazorAssemblyInfo.cache
 D:\TTTN2025\DATLICHKHAM\obj\Debug\net8.0\DATLICHKHAM.RazorAssemblyInfo.cs
+D:\TTTN2025\DATLICHKHAM\obj\Debug\net8.0\DATLICHKHAM.sourcelink.json
 D:\TTTN2025\DATLICHKHAM\obj\Debug\net8.0\scopedcss\Areas\CMS\Views\Shared\Common\_Filter.cshtml.rz.scp.css
 D:\TTTN2025\DATLICHKHAM\obj\Debug\net8.0\scopedcss\Areas\CMS\Views\Shared\Common\_Header.cshtml.rz.scp.css
 D:\TTTN2025\DATLICHKHAM\obj\Debug\net8.0\scopedcss\Areas\CMS\Views\Shared\Common\_Menu.cshtml.rz.scp.css
-D:\TTTN2025\DATLICHKHAM\obj\Debug\net8.0\scopedcss\Areas\CMS\Views\Shared\Common\_Search.cshtml.rz.scp.css
 D:\TTTN2025\DATLICHKHAM\obj\Debug\net8.0\scopedcss\Areas\CMS\Views\Shared\_Layout.cshtml.rz.scp.css
 D:\TTTN2025\DATLICHKHAM\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 D:\TTTN2025\DATLICHKHAM\obj\Debug\net8.0\scopedcss\bundle\DATLICHKHAM.styles.css
@@ -559,5 +560,3 @@ D:\TTTN2025\DATLICHKHAM\obj\Debug\net8.0\refint\DATLICHKHAM.dll
 D:\TTTN2025\DATLICHKHAM\obj\Debug\net8.0\DATLICHKHAM.pdb
 D:\TTTN2025\DATLICHKHAM\obj\Debug\net8.0\DATLICHKHAM.genruntimeconfig.cache
 D:\TTTN2025\DATLICHKHAM\obj\Debug\net8.0\ref\DATLICHKHAM.dll
-D:\TTTN2025\DATLICHKHAM\bin\Debug\net8.0\Microsoft.AspNet.Identity.Core.dll
-D:\TTTN2025\DATLICHKHAM\obj\Debug\net8.0\DATLICHKHAM.sourcelink.json

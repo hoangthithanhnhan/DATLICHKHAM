@@ -1,6 +1,6 @@
 ﻿<aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="index3.html" class="brand-link">
+    <a class="brand-link" asp-area="CMS" asp-controller="Home" asp-action="Index">
         <img alt="AdminLTE Logo" class="brand-image" style="opacity: 1" data-cfsrc="dist/img/AdminLTELogo.png"
              src="~/images/footer-logo.jpg">
         <span class="brand-text font-weight-light">Hoàng Minh Center</span>
@@ -14,7 +14,7 @@
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
                 data-accordion="false">
                 <li class="nav-item">
-                    <a asp-area="CMS" asp-controller="ThongKe" asp-action="Index" class="nav-link">
+                    <a asp-area="CMS" asp-controller="Home" asp-action="Index" class="nav-link">
                         <img src="~/images/thongke.png" alt="">
                         <p>Thống kê</p>
                     </a>
@@ -121,10 +121,10 @@
                 <div class="info">
                     <a href="#" class="d-block">Admin</a>
                 </div>
-                <div class="image">
+                <a class="image" style="display:inline-block;" asp-action="Logout" asp-controller="Home">
                     <img alt="User Image" data-cfsrc="dist/img/user2-160x160.jpg"
-                         src="~/images/sign_out.png">
-                </div>
+                         src="~/images/sign_out.png" >
+                </a>
             </div>
         </nav>
     </div>

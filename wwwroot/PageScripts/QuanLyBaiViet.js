@@ -1,35 +1,51 @@
-﻿$(document).ready(function () {
-    let data = [
-        {
-            "stt": 1,
-            "MaLichHen": 1,
-            "ThoiGianHen": "07:00 - 08:00",
-            "MaBenhNhan": 1,
-            "TenBenhNhan": "Thanh Nn",
-            "TenBacSi": "Võ Lê Bá Tùng",
-            "HinhThucKham": 0,
-            "TrangThai": 1,
-            "LyDoHuyLich": null,
-            "ChucDanh": "TS. BS.",
-            "NgayHen": "2025-03-12 10:09:07.4500000",
-            "SoSao": 4,
-            "NoiDung": "Mình rất thích cách trang web này hoạt động. Giao diện dễ hiểu, đặt lịch nhanh chóng mà không cần gọi điện. Ngoài ra, tính năng nhắc nhở lịch khám giúp mình không bị quên. Tuy nhiên, nếu có thêm thông báo qua SMS thì sẽ tiện hơn.",
-            "ThoiGianDanhGia": "2025-03-12 10:09:07.4500000",
-            "ChucVu": "Chuyên viên tư vấn",
-            "ChuyenKhoa": "Tâm lý học lâm sàng",
-            "NgayPhep": "2025-03-12 10:09:07.4500000",
-            "TenChuyenKhoa": "Tâm lý học lâm sàng",
-            "MoTa": "Chuyên khoa Tư vấn & Trị liệu Tâm lý cho người lớn chuyên hỗ trợ các vấn đề về tâm lý, cảm xúc và sức khỏe tinh thần. Các bác sĩ và chuyên gia tư vấn giúp người bệnh vượt qua căng thẳng, lo âu, trầm cảm, rối loạn giấc ngủ và các khó khăn tâm lý khác thông qua liệu pháp tâm lý và hướng dẫn can thiệp phù hợp.",
-            "TenChungChi": "Tin học ứng dụng",
-            "NgayCap": "2025-03-12 10:09:07.4500000",
-            "NgayHetHan": "2025-03-12 10:09:07.4500000",
-            "SoHieuChungChi": "ABC/1234",
-            "ToChucCap": "Hiệp hội y tế VN",
-            "TieuDe": "Trầm cảm",
-            "NguoiDang": "Thanh Nhàn",
-            "NgayDang": "2025-03-12 10:09:07.4500000"
+﻿let APIURL = window.location.origin;
+$(document).ready(function () {
+
+    //keyword ở ô input tìm kiếm
+    function buildData() {
+        let keyword = $('#search').val();
+        let request = {
+            keyword: keyword,
         }
-    ]
+        return JSON.stringify(request);
+    }
+
+    //đổ dữ liệu vào select2 CHUYÊN MỤC
+    $.ajax({
+        url: APIURL + `/api/ChuyenMucApi/Gets`,
+        type: "POST",
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        data: JSON.stringify({ trangThai: true }), // gửi đúng format JSON body
+        success: function (data) {
+            if (data && data.isSuccess) {
+                if (data.value && data.value.length > 0) {
+                    let html = "<option value=''>Chọn chuyên mục</option>";
+
+                    $.each(data.value, function (index, item) {
+                        html += `<option value="${item.maChuyenMuc}">${item.tenChuyenMuc}</option>`;
+                    });
+
+                    $("#chuyenMucAdd").html(html);
+                    $("#chuyenMucEdit").html(html);
+
+                    $('#chuyenMucAdd').select2({
+                        width: "100%",
+                        minimumResultsForSearch: Infinity
+                    });
+
+                    $('#chuyenMucEdit').select2({
+                        width: "100%",
+                        minimumResultsForSearch: Infinity
+                    });
+                }
+            }
+        },
+        error: function (xhr) {
+            console.error("Lỗi khi gọi API chuyên mục:", xhr);
+        }
+    });
+
     $('#myTable').DataTable({
         dom: '<"top"f>rt<"bottom d-flex justify-content-end" lp>',
         "pageLength": 10,
@@ -58,28 +74,41 @@
                 "last": '<img src="../images/arrow_next.png" />'
             }
         },
-        "data": data,
+        "ajax": {
+            url: APIURL + "/api/BaiVietApi/Gets",
+            type: "POST",
+            contentType: "application/json; charset=utf-8",
+            data: buildData,
+            dataSrc: function (data) {
+                var result = data.value
+                if (result) {
+                    for (let i = 0; i < result.length; i++) {
+                        result[i].stt = i + 1;
+                    }
+                    return result;
+                }
+                return []
+
+            }
+        },
         "columnDefs": [
             {
                 targets: 3,
                 render: function (data, type, row, meta) {
-                    return formatTime(data) +"<br>"+ formatDate(data);
+                    return formatTime(data) + "<br>" +formatDate(data)
                 }
             },
             {
                 targets: 4,
                 render: function (data, type, row, meta) {
-                    return data == 0 ? "<span class='text-pink'>Công khai</span>" : "<span class='text-blue'>Ẩn danh</span>";
+                    return data == 1 ? "<span class='text-pink'>Công khai</span>" : "<span class='text-blue'>Ẩn danh</span>";
 
                 }
             },
             {
                 targets: 5,
                 render: function (data, type, row, meta) {
-                    return `<button type="button" data-id="${meta.row}" class="button btn-view-image">
-                                <img src="../images/view-image.png" alt="Alternate Text" />
-                            </button> 
-                            <button type="button" data-id="${meta.row}" class="button btn-update">
+                    return `<button type="button" data-id="${meta.row}" class="button btn-update">
                                 <img src="../images/edit_filled.png" alt="Alternate Text" />
                             </button> 
                             <button type="button" data-id="${meta.row}" class="button btn-delete" data-bs-toggle="modal" data-bs-target="#modalDelete">
@@ -91,17 +120,260 @@
         ],
         "columns": [
             { data: "stt", "width": "60px", "className": "text-center" },
-            { data: "TieuDe", "width": "600px", "className": "fw-bold" },
-            { data: "NguoiDang", "width": "250px", "className": "text-center" },
-            { data: "NgayDang", "width": "250px", "className": "text-center " },
-            { data: "TrangThai", "width": "200px", "className": "text-center fw-bold" },
-            { data: "stt", "width": "auto", "className": "text-center" }
+            { data: "tieuDe", "width": "600px", "className": "fw-bold" },
+            { data: "nguoiDang", "width": "250px", "className": "text-center" },
+            { data: "thoiGianDangBai", "width": "250px", "className": "text-center" },
+            { data: "trangThai", "width": "200px", "className": "text-center fw-bold" },
+            { data: "maBaiViet", "width": "auto", "className": "text-center" }
         ]
     })
 
-    $("#myTable tbody .btn-update").on('click', function () {
+    $('#saveData').on('click', function () {
+        let machuyenMuc = $('#chuyenMucAdd').val();
+        let tieuDe = $('#tieuDeAdd').val();
+        let tomTat = $('#tomTatAdd').val();
+        let noiDung = editorThemMoiInstance.getData();
+        let trangThai = $("#congKhaiAdd").is(":checked");
+        let file = $("#anhDaiDienBaiVietAdd")[0].files[0];
+        let request = {
+            machuyenMuc: machuyenMuc,
+            tieuDe: tieuDe,
+            tomTat: tomTat,
+            noiDung: noiDung,
+            trangThai: trangThai,
+        }
+        console.log(request)
+        let formData = new FormData();
+        formData.append("file", file);
+        formData.append("data", JSON.stringify(request));
+        console.log(formData)
+        if (checkEmptyString(machuyenMuc)) {
+            showAlert("Chuyên mục bài viết không được để trống", "error");
+            return;
+        }
+        if (checkEmptyString(tieuDe)) {
+            showAlert("Tiêu đề bài viết không được để trống", "error");
+            return;
+        }
+        if (checkEmptyString(noiDung)) {
+            showAlert("Nội dung bài viết không được để trống", "error");
+            return;
+        }
+        else {
+            $.ajax({
+                type: "POST",
+                url: APIURL + "/api/BaiVietApi/Add",
+                processData: false,
+                contentType: false,
+                async: false,
+                data: formData,
+                success: function (data) {
+                    $('#myTable').DataTable().ajax.reload();
+                    $('#modalAdd').modal('hide');
+                    showAlert("Thêm thành công", "success");
+                    //Làm rỗng form sau khi thêm mới
+                    resetForm()
+                },
+                error: function (error) {
+                    showAlert("Thêm không thành công", "error");
+                }
+            });
+        }
+    })
+
+    // clear value khi click button thêm mới
+    $('#modalAdd').on('show.bs.modal', function () {
+        resetForm();
+    });
+
+    //click button edit và lấy value
+    $("#myTable tbody").on('click','.btn-update', function () {
         let id = $(this).data("id");
         let data = $('#myTable').DataTable().row(id).data();
-        console.log(data)
+        $('#maBaiVietEdit').val(data.maBaiViet);
+        $('#chuyenMucEdit').val(data.maChuyenMuc).trigger("change");
+        $('#tieuDeEdit').val(data.tieuDe);
+        $('#tomTatEdit').val(data.tomTat);
+        editorEditInstance.setData(data.noiDung);
+        $("input[name='trangThaiEdit'][value='" + (data.trangThai ? 1 : 0) + "']").prop("checked", true);
+        $('#modalEdit').modal('show');
+
+        if (data.anhDaiDien != null && data.anhDaiDien != "") {
+            $("#currentAnhDaiDienEdit").attr("src", `${APIURL}/` + data.anhDaiDien);
+            $("#anhDaiDienNull").show(); //nếu có ảnh đại diện thì cho xem preview
+            $("#maBaiVietDeleteAnh").val(data.maBaiViet);
+        } else {
+            $("#anhDaiDienNull").hide();
+            $("#maBaiVietDeleteAnh").val("");
+        };
+        $("#anhDaiDienBaiVietEdit").val("");
+        $('#modalEdit').modal('show');
+    })
+
+    //update dữ liệu khi click button Lưu
+    $("#editData").on('click', function () {
+        let maBaiViet = $("#maBaiVietEdit").val();
+        let maChuyenMuc = $("#chuyenMucEdit").val();
+        let tieuDe = $("#chuyenMucEdit").val();
+        let tomTat = $("#tomTatEdit").val();
+        let noiDung = editorEditInstance.getData();
+        let trangThai = $("input[name='trangThaiEdit']:checked").val();
+        let fileInput = $("#anhDaiDienBaiVietEdit")[0];
+        let file = fileInput.files[0];
+        let request = {
+            maBaiViet: maBaiViet,
+            maChuyenMuc: maChuyenMuc,
+            tieuDe: tieuDe,
+            tomTat: tomTat,
+            noiDung: noiDung,
+            trangThai: Boolean(Number(trangThai))
+        }
+        let formData = new FormData();
+        formData.append("data", JSON.stringify(request)); // dữ liệu dạng object
+        if (file) {
+            formData.append("file", file); // ảnh nếu có
+        }
+
+        if (checkEmptyString(maChuyenMuc)) {
+            showAlert("Chuyên mục không được để trống", "error");
+            return;
+        }
+        if (checkEmptyString(tieuDe)) {
+            showAlert("Tiêu đề không được để trống", "error");
+            return;
+        }
+        else {
+            $.ajax({
+                type: "PUT",
+                url: APIURL + "/api/BaiVietApi/Update",
+                processData: false,  // Không xử lý dữ liệu thành query string
+                contentType: false,  // Không đặt Content-Type, để browser tự thêm multipart
+                data: formData,
+                success: function (data) {
+                    $('#myTable').DataTable().ajax.reload();
+                    $('#modalEdit').modal('hide');
+                    showAlert("Cập nhật thành công", "success");
+                },
+                error: function (error) {
+                    showAlert("Cập nhật không thành công", "error");
+                }
+            });
+        }
+    })
+
+    $('#btn-deleteAnhDaiDien').on('click', function () {
+        $('#modalDeleteAnhDaiDien').modal('show');
+    })
+
+    $('#deleteAnhDaiDien').on('click', function () {
+        let maBaiViet = $('#maBaiVietDeleteAnh').val();
+        if (maBaiViet != "") {
+            $.ajax({
+                type: "DELETE",
+                url: APIURL + `/api/BaiVietApi/DeleteAnhDaiDien?MaBaiViet=${maBaiViet}`,
+                contentType: "application/json; charset=utf-8",
+                success: function (data) {
+                    if (data && data.isSuccess) {
+                        $('#myTable').DataTable().ajax.reload();
+                        showAlert("Xóa thành công", "success");
+                        $('#modalDeleteAnhDaiDien').modal('hide');
+                        $("#anhDaiDienNull").hide();
+                    } else {
+                        showAlert("Xóa không thành công", "error");
+                        $('#modalDeleteAnhDaiDien').modal('hide');
+                    }
+                },
+                error: function (error) {
+                    showAlert("Xóa không thành công", "error");
+                },
+
+            });
+        }
+    })
+
+    //lấy Mã chuyên mục khi click button xóa
+    $("#myTable tbody").on('click', '.btn-delete', function () {
+        let id = $(this).data("id");
+        let data = $('#myTable').DataTable().row(id).data();
+        $("#maBaiVietDelete").val(data.maBaiViet);
+        $('#modalDelete').modal('show');
+    })
+
+
+    //xóa dữ liệu khi click button đồng ý
+    $("#deleteData").on('click', function () {
+        let maBaiViet = $("#maBaiVietDelete").val();
+        $.ajax({
+            type: "DELETE",
+            url: APIURL + `/api/BaiVietApi/Delete?MaBaiViet=${maBaiViet}`,
+            contentType: "application/json; charset=utf-8",
+            success: function (data) {
+                $('#myTable').DataTable().ajax.reload();
+                if (data && data.isSuccess) {
+                    showAlert("Xóa thành công", "success");
+                    $('#modalDelete').modal('hide');
+                } else {
+                    showAlert("Xóa không thành công", "error");
+                    $('#modalDelete').modal('hide');
+                }
+            },
+            error: function (error) {
+                showAlert("Xóa không thành công", "error");
+
+            }
+        });
+    })
+
+
+    ClassicEditor
+        .create(document.querySelector('#noiDungAdd'), {
+            ckfinder: {
+                uploadUrl: APIURL + `/api/Upload/imageBlog`,
+            },
+        })
+        .then(editor => {
+            editorThemMoiInstance = editor;
+        })
+        .catch(error => {
+            console.error(error);
+        });
+
+    ClassicEditor
+        .create(document.querySelector('#noiDungEdit'), {
+            ckfinder: {
+                uploadUrl: APIURL + `/api/Upload/imageBlog`,
+            },
+        })
+        .then(editor => {
+            editorEditInstance = editor;
+        })
+        .catch(error => {
+            console.error(error);
+        });
+
+    $('#modalDeleteAnhDaiDien').on('hidden.bs.modal', function () {
+        $("body").addClass("modal-open");
+        $('#modalEdit input[type="file"]').val('');
+
+    });
+
+    //search khi click button tìm kiếm
+    $("#btn-search").on('click', function () {
+        $('#myTable').DataTable().ajax.reload();
+    })
+
+
+    //search khi enter
+    $("#search").on('keyup', function (e) {
+        if (e.keyCode === 13) {
+            $('#myTable').DataTable().ajax.reload();
+        }
     })
 })
+function resetForm() {
+    $("#modalAdd input:not([type='radio'])").val("");
+    $("#modalAdd textarea").val("");
+    $("#modalAdd select").val("").trigger("change");
+    $("#modalAdd input[name='trangThaiAdd'][value='1']").prop('checked', true);
+    editorThemMoiInstance.setData('');
+}

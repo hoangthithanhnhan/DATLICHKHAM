@@ -1,4 +1,5 @@
 ﻿using Application.Core;
+using DATLICHKHAM.Application.TepKemTheo;
 using DATLICHKHAM.Domain;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -82,6 +83,33 @@ namespace DATLICHKHAM.Controllers
             }
 
             return uploadedFiles;
+        }
+
+        protected async Task<int> DeletePhysicalFile(Guid MaDoiTuong)
+        {
+            var result = await Mediator.Send(new GetTepKemTheoByMaDoiTuong.Query { MaDoiTuong = MaDoiTuong });
+            var resultObj = result.Value.ToList();
+            var vanbanPath = "wwwroot";
+            if (resultObj.Count > 0 && resultObj != null)
+            {
+                foreach (var item in resultObj)
+                {
+                    await Mediator.Send(new Delete.Command { MaTepDinhKem = item.MaTepDinhKem });
+                    string fullPath = item.DuongDan;
+                    string fullPathNormalized = fullPath.Replace("/", "\\").TrimStart('\\');
+                    if (fullPath != null)
+                    {
+                        string oldFilePath = Path.Combine(vanbanPath, fullPathNormalized);
+                        if (System.IO.File.Exists(oldFilePath))
+                        {
+                            // Nếu tồn tại, xóa file cũ
+                            System.IO.File.Delete(oldFilePath);
+                        }
+                    }
+                }
+                return 0;
+            }
+            return 1;
         }
     }
 }

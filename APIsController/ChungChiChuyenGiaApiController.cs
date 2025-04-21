@@ -53,16 +53,41 @@ namespace DATLICHKHAM.APIsController
 
         [HttpPut]
         [Route("Update")]
-        public async Task<Result<DLK_ChungChiChuyenGia>> Update(DLK_ChungChiChuyenGia Entity)
+        public async Task<Result<DLK_ChungChiChuyenGia>> Update([FromForm] RequestUploadMultiFile _request)
         {
-            return await Mediator.Send(new Update.Command { Entity = Entity });
+            DLK_ChungChiChuyenGia Entity = JsonConvert.DeserializeObject<DLK_ChungChiChuyenGia>(_request.data);
+            var result = await Mediator.Send(new Update.Command { Entity = Entity });
+
+            const string vanbanPath = "wwwroot\\upload\\ChungChi";
+            const string pathdb = "\\upload\\ChungChi";
+            if (result.IsSuccess)
+            {
+                for (int i = 0; i < _request.files.Count; i++)
+                {
+                    var uploadedFiles = await SaveFileUpload(_request.files, result.Value.MaChungChi, vanbanPath, pathdb);
+                    foreach (var e in uploadedFiles)
+                    {
+                        await Mediator.Send(new AddTepKemTheo.Command { Entity = e });
+                    }
+                }
+
+            }
+
+            return result;
         }
 
         [HttpDelete]
         [Route("Delete")]
         public async Task<Result<int>> Delete(Guid MaChungChi)
         {
-            return await Mediator.Send(new Delete.Command { MaChungChi = MaChungChi });
+            var resultDelete = await DeletePhysicalFile(MaChungChi);
+            if (resultDelete == 0)
+            {
+                return await Mediator.Send(new Application.ChungChiChuyenGia.Delete.Command { MaChungChi = MaChungChi });
+            }
+            return await Mediator.Send(new Application.ChungChiChuyenGia.Delete.Command { MaChungChi = MaChungChi });
         }
+
+
     }
 }

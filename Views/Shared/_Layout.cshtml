@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -16,13 +17,13 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" asp-controller="Home" asp-action="Index">
                     <img src="~/images/logo.jpg" alt="Logo" width="80" height="80" class="d-inline-block align-text-top logo">
                     <span class="name-center">HOÀNG MINH <span class="center">CENTER</span></span>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                        aria-label="Toggle navigation">
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-right">
@@ -45,9 +46,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="login-btn">
-                        <a type="button" class="btn btn-outline-primary" asp-controller="DangNhap" asp-action="Index">Đăng nhập</a>
-                    </div>
+                    @await Component.InvokeAsync("User")
                 </div>
             </div>
         </nav>
@@ -77,10 +76,12 @@
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/sweetAlert/sweetalert.js"></script>
     <script src="~/lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
 
     @await RenderSectionAsync("Scripts", required: false)
+
     <script>
         $('.owl-carousel').owlCarousel({
             loop: true,

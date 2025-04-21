@@ -3,12 +3,15 @@ wwwroot\css\cms.css
 wwwroot\css\site.css
 wwwroot\css\style.css
 wwwroot\images\addchungchi.png
+wwwroot\images\anhdaidien.jpg
 wwwroot\images\arrow_next.png
 wwwroot\images\arrow_previous.png
 wwwroot\images\bacsi.jpg
 wwwroot\images\baiviet.png
 wwwroot\images\baiviet1.png
 wwwroot\images\bg.png
+wwwroot\images\bgg.jpeg
+wwwroot\images\bgg.jpg
 wwwroot\images\cancel.png
 wwwroot\images\chevron_left.png
 wwwroot\images\chevron_right.png
@@ -28,6 +31,10 @@ wwwroot\images\i2.jpg
 wwwroot\images\i3.jpg
 wwwroot\images\i4.jpg
 wwwroot\images\image.png
+wwwroot\images\introchuyengia.jpg
+wwwroot\images\introdichvu.jpg
+wwwroot\images\introphongkham.jpg
+wwwroot\images\introtongquan.jpg
 wwwroot\images\logo.jpg
 wwwroot\images\mess.png
 wwwroot\images\null.png
@@ -96,6 +103,8 @@ wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
 wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
 wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
 wwwroot\lib\bootstrap\LICENSE
+wwwroot\lib\ckeditor\ckeditor5.css
+wwwroot\lib\ckeditor\ckeditor5.js
 wwwroot\lib\DataTable\datatables.css
 wwwroot\lib\DataTable\datatables.js
 wwwroot\lib\DataTable\datatables.min.css
@@ -162,6 +171,7 @@ wwwroot\lib\webfonts\fa-solid-900.ttf
 wwwroot\lib\webfonts\fa-solid-900.woff2
 wwwroot\lib\wow\wow.js
 wwwroot\lib\wow\wow.min.js
+wwwroot\PageScripts\DangKy.js
 wwwroot\PageScripts\Layout.js
 wwwroot\PageScripts\QuanLyBaiViet.js
 wwwroot\PageScripts\QuanLyBenhNhan.js
@@ -256,6 +266,12 @@ wwwroot\scss\bootstrap\scss\mixins\_utilities.scss
 wwwroot\scss\bootstrap\scss\mixins\_visually-hidden.scss
 wwwroot\scss\bootstrap\scss\utilities\_api.scss
 wwwroot\scss\bootstrap\scss\vendor\_rfs.scss
-wwwroot\upload\BenhNhan\done_1744789747.png
+wwwroot\upload\BaiViet\chung-chi-tu-van-tam-ly-hoc-duong_1744966437.jpg
+wwwroot\upload\BaiViet\chung-chi-tu-van-tam-ly-hoc-duong_1744967244.jpg
+wwwroot\upload\BaiViet\null_1744973714.png
+wwwroot\upload\BenhNhan\Cún_1745169221.png
+wwwroot\upload\Blog\5e7e0897-67ea-4d2c-9352-cf478d6fa394_chung-chi-tu-van-tam-ly-hoc-duong.jpg
+wwwroot\upload\Blog\e0b719ac-9bef-4d15-bd1e-7eddc8f94c89_chung-chi-tu-van-tam-ly-hoc-duong.jpg
+wwwroot\upload\Blog\fc2b6edf-087a-4029-aedb-3d0e1a8e9a54_chung-chi-tu-van-tam-ly-hoc-duong.jpg
 wwwroot\upload\ChuyenGia\Cún_1744798057.png
 wwwroot\upload\ChuyenMuc\Cún_1744267920.png

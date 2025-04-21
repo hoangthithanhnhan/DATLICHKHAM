@@ -2,7 +2,11 @@
   "Files": [
     {
       "Id": "D:\\TTTN2025\\DATLICHKHAM\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\DATLICHKHAM.bundle.scp.css",
-      "PackagePath": "staticwebassets\\DATLICHKHAM.y7jl1ueduo.bundle.scp.css"
+      "PackagePath": "staticwebassets\\DATLICHKHAM.phg8eyrk8a.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\DangKy.js",
+      "PackagePath": "staticwebassets\\PageScripts\\DangKy.js"
     },
     {
       "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\Layout.js",
@@ -73,6 +77,10 @@
       "PackagePath": "staticwebassets\\images\\addchungchi.png"
     },
     {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\images\\anhdaidien.jpg",
+      "PackagePath": "staticwebassets\\images\\anhdaidien.jpg"
+    },
+    {
       "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\images\\arrow_next.png",
       "PackagePath": "staticwebassets\\images\\arrow_next.png"
     },
@@ -95,6 +103,14 @@
     {
       "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\images\\bg.png",
       "PackagePath": "staticwebassets\\images\\bg.png"
+    },
+    {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\images\\bgg.jpeg",
+      "PackagePath": "staticwebassets\\images\\bgg.jpeg"
+    },
+    {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\images\\bgg.jpg",
+      "PackagePath": "staticwebassets\\images\\bgg.jpg"
     },
     {
       "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\images\\cancel.png",
@@ -171,6 +187,22 @@
     {
       "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\images\\image.png",
       "PackagePath": "staticwebassets\\images\\image.png"
+    },
+    {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\images\\introchuyengia.jpg",
+      "PackagePath": "staticwebassets\\images\\introchuyengia.jpg"
+    },
+    {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\images\\introdichvu.jpg",
+      "PackagePath": "staticwebassets\\images\\introdichvu.jpg"
+    },
+    {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\images\\introphongkham.jpg",
+      "PackagePath": "staticwebassets\\images\\introphongkham.jpg"
+    },
+    {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\images\\introtongquan.jpg",
+      "PackagePath": "staticwebassets\\images\\introtongquan.jpg"
     },
     {
       "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\images\\logo.jpg",
@@ -459,6 +491,14 @@
     {
       "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\lib\\ckeditor\\ckeditor5.css",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5.css"
+    },
+    {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\lib\\ckeditor\\ckeditor5.js",
+      "PackagePath": "staticwebassets\\lib\\ckeditor\\ckeditor5.js"
     },
     {
       "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\lib\\easing\\easing.js",
@@ -1037,8 +1077,32 @@
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\vendor\\_rfs.scss"
     },
     {
-      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\BenhNhan\\done_1744789747.png",
-      "PackagePath": "staticwebassets\\upload\\BenhNhan\\done_1744789747.png"
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\BaiViet\\chung-chi-tu-van-tam-ly-hoc-duong_1744966437.jpg",
+      "PackagePath": "staticwebassets\\upload\\BaiViet\\chung-chi-tu-van-tam-ly-hoc-duong_1744966437.jpg"
+    },
+    {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\BaiViet\\chung-chi-tu-van-tam-ly-hoc-duong_1744967244.jpg",
+      "PackagePath": "staticwebassets\\upload\\BaiViet\\chung-chi-tu-van-tam-ly-hoc-duong_1744967244.jpg"
+    },
+    {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\BaiViet\\null_1744973714.png",
+      "PackagePath": "staticwebassets\\upload\\BaiViet\\null_1744973714.png"
+    },
+    {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\BenhNhan\\Cún_1745169221.png",
+      "PackagePath": "staticwebassets\\upload\\BenhNhan\\Cún_1745169221.png"
+    },
+    {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\Blog\\5e7e0897-67ea-4d2c-9352-cf478d6fa394_chung-chi-tu-van-tam-ly-hoc-duong.jpg",
+      "PackagePath": "staticwebassets\\upload\\Blog\\5e7e0897-67ea-4d2c-9352-cf478d6fa394_chung-chi-tu-van-tam-ly-hoc-duong.jpg"
+    },
+    {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\Blog\\e0b719ac-9bef-4d15-bd1e-7eddc8f94c89_chung-chi-tu-van-tam-ly-hoc-duong.jpg",
+      "PackagePath": "staticwebassets\\upload\\Blog\\e0b719ac-9bef-4d15-bd1e-7eddc8f94c89_chung-chi-tu-van-tam-ly-hoc-duong.jpg"
+    },
+    {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\Blog\\fc2b6edf-087a-4029-aedb-3d0e1a8e9a54_chung-chi-tu-van-tam-ly-hoc-duong.jpg",
+      "PackagePath": "staticwebassets\\upload\\Blog\\fc2b6edf-087a-4029-aedb-3d0e1a8e9a54_chung-chi-tu-van-tam-ly-hoc-duong.jpg"
     },
     {
       "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\ChuyenGia\\Cún_1744798057.png",

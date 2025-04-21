@@ -112,15 +112,45 @@ header {
                 header .navbar .login-btn .btn:hover {
                     background-color: var(--pink);
                     color: var(--white);
-                } 
+                }
+        header .navbar .user-logged {
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+            position: relative;
+        }
+            header .navbar .user-logged #userDropdown{
+                text-decoration:none;
+            }
+            header .navbar .user-logged #userDropdown img {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+            header .navbar .user-logged #userDropdown .displayName {
+                font-size: 16px;
+                font-weight: 700;
+                max-width: 175px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: inline-block;
+                vertical-align: middle;
+                color:var(--black);
+            }
+.dropdown-toggle::after{
+    color:var(--black);
+}
+.dropdown-menu.show{
+    width:100%;
+}
 /*ENDHEADER*/
-
 /*FOOTER*/
 footer .footer {
     background-color: var(--body);
     padding: 10px 60px;
-     margin-top: 60px; 
-     position:initial !important;
+    position: initial !important;
 }
 
     footer .footer .heading-footer {
@@ -553,89 +583,98 @@ main.block-trangchu {
         object-fit: cover;
     }
 
-main .block-page{
-    padding:80px 120px;
+.about-header {
+    position: relative;
+    background-image: url('../images/bg.png');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-    main .block-page h3.heading-page {
-        color: var(--greystr)!important;
-        font-size: 25px !important;
-        font-weight: 500;
-    }
-    main .block-page .main-content {
-        border-radius: 10px;
-        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
-        padding: 50px 60px;
-        margin-top:38px;
-    }
-        main .block-page .main-content p{
-            font-size:25px;
-        }
-        main .block-page .main-content ul>li {
-            font-size: 25px;
-        }
-            main .block-page .main-content img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-            main .block-page .main-content .introTen{
-                font-size: 25px;
-                font-weight: 700;
-            }
-    main .block-page .blockChuyenGia {
+
+    .about-header .overlay {
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.6); /* overlay mờ */
+        padding: 40px;
+        width: 100%;
+        height: 70%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 0px 160px;
+        justify-content: center;
     }
 
-        main .block-page .blockChuyenGia .chuyenGia {
-            box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.25);
-            border-radius: 10px;
-            margin-top: 40px;
-            width: 100%;
-            display: flex;
-            align-items: center;
-        }
-        main .block-page .blockChuyenGia .chuyenGia .chuyenGiaLeft{
-            padding:30px 50px;
-            display:flex;
-            flex-direction:column;
-        }
-            main .block-page .blockChuyenGia .chuyenGia .chuyenGiaLeft .anhDaiDienChuyenGia{
-                width:250px;
-                height:250px;
-                border-radius:50%;
-                object-fit:cover;
-                margin-bottom:15px;
-            }
-            main .block-page .blockChuyenGia .chuyenGia .chuyenGiaLeft .datKhamNgay{
-                text-decoration:none;
-                font-size:25px;
-                color:var(--white);
-                background:var(--blue);
-                text-align:center;
-                border-radius:20px;
-                padding:15px 35px;
-                line-height:30px;
-            }
-            main .block-page .blockChuyenGia .chuyenGia .chuyenGiaRight{
-                padding:30px 50px 30px 0px;
-            }
-            main .block-page .blockChuyenGia .chuyenGia .chuyenGiaRight .tenChuyenGia {
-                font-size: 30px;
-                font-weight: 500;
-            }
-            main .block-page .blockChuyenGia .chuyenGia .chuyenGiaRight .gioiThieuChuyenGia{
-                font-size:25px;
-                color:var(--black);
-                margin:0;
-            }
-                main .block-page .blockChuyenGia .chuyenGia .chuyenGiaRight .gioiThieuChuyenGia .thongtinChuyenGia{
-                    color:var(--grey);
-                    display:inline-block;
-                    width:200px;
-                }
+    .about-header h1 {
+        font-size: 35px;
+        margin-bottom: 10px;
+        font-family: "Playfair_Display";
+        font-weight:700;
+    }
+
+    .about-header p {
+        font-size: 20px;
+        margin:0;
+        font-weight:700;
+    }
+
+    .about-header a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .about-header .current {
+        color: white;
+        font-weight: bold;
+    }
+
+.section-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+    padding: 60px 100px;
+    box-sizing: border-box;
+}
+
+.section-block {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+    .section-block:nth-child(even) {
+        flex-direction: row-reverse; /* Đổi vị trí ảnh và nội dung xen kẽ nhau */
+    }
+
+.section-image {
+    flex: 1;
+}
+
+    .section-image img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+.section-content {
+    flex: 1;
+    border-radius: 8px;
+}
+    .section-content h2 {
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .section-content p {
+        font-size: 20px;
+        margin: 0;
+        line-height: 1.5;
+        text-align:justify;
+    }
+
     main .block-page .blockDichVu {
         padding: 10px 200px;
         display: flex;
@@ -653,3 +692,115 @@ main .block-page{
             padding: 20px;
             border: 1px solid #ddd; /* Chỉ để dễ nhìn */
         }
+
+main .auth-background {
+    background-image: url("../images/bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    min-height: 90vh;
+    position: relative;
+}
+        main .auth-background .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.25);
+            width: 100%;
+            height: 100%;
+        }
+    main .auth-background form#login {
+        width: 600px;
+        padding: 30px;
+        background: #ffffff;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 1;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+            main .auth-background form#login .title {
+                font-family: "Playfair_Display";    
+                font-weight: 700;
+                font-size: 23px;
+                color: var(--lightblue);
+                line-height: 30px;
+                margin-bottom: 20px;
+            }
+            main .auth-background form#login .auth-footer {
+                font-size: 15px;
+                font-weight: 600;
+                margin:0;
+            }
+                main .auth-background form#login .auth-footer .auth-link{
+                    color: var(--red);
+                }
+                main .auth-background form#login .notice-login {
+                    margin-bottom: 20px;
+                }
+        main .auth-background form#login .login-form{
+            width:100%;
+        }
+            main .auth-background form#login .login-form .form-group {
+                margin-bottom: 20px;
+            }
+            main .auth-background form#login .form-control {
+                border: none;
+                background: #F2F5FF;
+                padding: 10px 20px;
+                border-radius: 10px;
+                height: 50px;
+            }
+                main .auth-background form#login .form-control::placeholder {
+                    color: var(--grey);
+                    font-size: 15px;
+                    font-weight: 600 ;
+                }
+            main .auth-background form#login #login-submit {
+                background: var(--lightblue);
+                border: none;
+                font-size: 15px;
+                font-weight: 600;
+                padding: 10px;
+                box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+                height: 50px;
+                margin-bottom:20px;
+            }
+#saveData {
+    background: var(--lightblue);
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* Để các thẻ card có thể chuyển sang hàng mới khi không đủ chỗ */
+    justify-content: space-between; /* Căn đều các thẻ card trong container */
+    gap: 30px; /* Khoảng cách giữa các thẻ card */
+    padding: 60px 30px;
+}
+
+.card {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%; /* Điều chỉnh độ rộng của mỗi thẻ */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Đảm bảo padding không làm thay đổi kích thước */
+}
+
+/* Khi có số lượng chuyên gia lẻ */
+.card-container:only-child {
+    justify-content: center; /* Căn giữa khi chỉ có một thẻ */
+}

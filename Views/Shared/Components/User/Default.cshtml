@@ -1,0 +1,43 @@
+﻿@using System.Security.Claims;
+@using Microsoft.AspNetCore.Identity;
+
+@if (!User.Identity.IsAuthenticated)
+{
+    <div class="login-btn user-logged">
+        <a type="button" class="btn btn-outline-primary" asp-page="/Account/Login" asp-area="Identity">Đăng nhập</a>
+    </div>
+}
+else
+{
+    <div class="user-logged">
+        <a class="d-flex align-items-center dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            @if (!String.IsNullOrEmpty(ViewBag.Avatar))
+            {
+                <img src="@ViewBag.Avatar" alt="Avatar" class="rounded-circle" width="50" height="50" />
+            }
+            else
+            {
+                <img src="./images/anhdaidien.jpg" alt="Avatar" class="rounded-circle" width="40" height="40" />
+            }
+            <span class="displayName ms-2">@ViewBag.DisplayName</span>
+        </a>
+        @if(ViewBag.VaiTro == 1)
+        {
+            <ul class="dropdown-menu" aria-labelledby="userDropdown">
+                <li><a class="dropdown-item" href="/NguoiDung/ThongTinCaNhan">Thông tin cá nhân</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="/NguoiDung/ThongTinCaNhan">Quản lý lịch khám</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" asp-action="Logout" asp-controller="Home">Đăng xuất</a></li>
+            </ul>
+        }
+        else
+        {
+            <ul class="dropdown-menu" aria-labelledby="userDropdown">
+                <li><a class="dropdown-item" href="/NguoiDung/ThongTinCaNhan">Thông tin cá nhân</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" asp-action="Logout" asp-controller="Home">Đăng xuất</a></li>
+            </ul>
+        }
+    </div>
+}
