@@ -43,16 +43,15 @@
   <ItemGroup>
     <Folder Include="Application\HoaDon\" />
     <Folder Include="Application\DanhGia\" />
-    <Folder Include="Application\BaiViet\" />
     <Folder Include="Application\BinhLuan\" />
-    <Folder Include="Areas\CMS\Data\" />
-    <Folder Include="Areas\CMS\Views\Home\Models\" />
     <Folder Include="wwwroot\lib\flatpickr\" />
     <Folder Include="wwwroot\upload\DichVu\" />
     <Folder Include="wwwroot\upload\ChuyenMuc\" />
     <Folder Include="wwwroot\upload\ChuyenGia\" />
     <Folder Include="wwwroot\upload\BenhNhan\" />
     <Folder Include="wwwroot\upload\ChungChi\" />
+    <Folder Include="wwwroot\upload\BaiViet\" />
+    <Folder Include="wwwroot\upload\Blog\" />
   </ItemGroup>
 
 </Project>

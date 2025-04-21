@@ -109,7 +109,7 @@ $(document).ready(function () {
                 targets: 7,
                 render: function (data, type, row, meta) {
                     return `
-                            <button type="button" data-id="${meta.row}" class="button btn-addChungChi" data-bs-toggle="modal" data-bs-target="#modalAddChungChi">
+                            <button type="button" data-id="${meta.row}" class="button btn-ListChungChi">
                                 <img src="../images/addchungchi.png" alt="Alternate Text" />
                             </button> 
                             <button type="button" data-id="${meta.row}" class="button btn-update">
@@ -120,7 +120,6 @@ $(document).ready(function () {
                             </button>`;
                 }
             }
-
         ],
         "columns": [
             { data: "stt", "width": "60px", "className": "text-center" },
@@ -233,6 +232,7 @@ $(document).ready(function () {
             });
         }
     })
+
 
     //lấy giá trị gán vào các input trong modal edit khi click button sửa
     $("#myTable tbody").on('click', '.btn-update', function () {
@@ -352,10 +352,7 @@ $(document).ready(function () {
         }
     })
 
-    $("#myTable tbody .btn-update").on('click', function () {
-        let id = $(this).data("id");
-        let data = $('#myTable').DataTable().row(id).data();
-    })
+   
 
     //lấy mã chuyên gia để xóa khi click button xóa trên bảng
     $("#myTable tbody").on('click', '.btn-delete', function () {
@@ -388,13 +385,13 @@ $(document).ready(function () {
         });
     })
 
-
     //xóa ảnh đại diện
     $('#btn-deleteAnhDaiDien').on('click', function () {
         $("#modalDeleteAnhDaiDien").modal('show');
     });
 
-    $("#deleteAnhDaiDien").on('click', function () { //chỉ xóa ảnh đại diện
+    //chỉ xóa ảnh đại diện
+    $("#deleteAnhDaiDien").on('click', function () { 
         let maChuyenGia = $("#maChuyenGiaDeleteAnh").val();
         if (maChuyenGia != "")
         {
@@ -421,6 +418,303 @@ $(document).ready(function () {
             });
         }
     })
+
+
+    //show modal list chứng chỉ khi click btn chứng chỉ ở trên table
+    $("#myTable tbody").on('click', '.btn-ListChungChi', function () {
+        let id = $(this).data("id");
+        let data = $('#myTable').DataTable().row(id).data();
+        $('#maChuyenGiaChungChiAdd').val(data.maChuyenGia);
+        $('#modalListChungChi').modal('show');
+    })
+
+
+    //Render bảng - show chứng chỉ
+    $('#tableChungChi').DataTable({
+        dom: '<"top"f>rt<"bottom d-flex justify-content-end" lp>',
+        "pageLength": 5,
+        "autoWidth": false,
+        "ordering": false,
+        //"scrollY": "400px",
+        //"scrollCollapse": true,
+        //"bPaginate": true,
+        "bInfo": false,
+        "bDestroy": true,
+        searching: false,
+        lengthMenu: [
+            [5, 10, 20, 50, 100],
+            [5, 10, 20, 50, 100]
+        ],
+        language: {
+            "sProcessing": "Đang xử lý...",
+            "sLengthMenu": "_MENU_",
+            "sZeroRecords": "Không có dữ liệu",
+            "sEmptyTable": "Bảng trống",
+            "sInfo": "Hiện dòng _START_ đến _END_ trong tổng _TOTAL_ dòng",
+            "sInfoEmpty": "Hiện dòng 0 đến 0 trong tổng 0 dòng",
+            "sSearch": "Tìm kiếm",
+            "sLoadingRecords": "Đang tải...",
+            "paginate": {
+                "first": '<img src="../images/arrow_previous.png" />',
+                "previous": '<img src="../images/chevron_left.png" />',
+                "next": '<img src="../images/chevron_right.png" />',
+                "last": '<img src="../images/arrow_next.png" />'
+            }
+        },
+        "ajax": {
+            url: APIURL + `/api/ChungChiChuyenGiaApi/Gets`,
+            type: "GET",
+            data: buildData,
+            contentType: "application/json; charset=utf-8",
+            dataSrc: function (data) {
+                var result = data.value
+                if (result) {
+                    for (let i = 0; i < result.length; i++) {
+                        result[i].stt = i + 1;
+                    }
+                    return result;
+                }
+                return []
+
+            }
+        },
+        "columnDefs": [
+            {
+                targets: 4,
+                render: function (data, type, row, meta) {
+                    return formatDate(data);
+                }
+            },
+            {
+                targets: 5,
+                render: function (data, type, row, meta) {
+                    return formatDate(data);
+                }
+            },
+            {
+                targets: 6,
+                render: function (data, type, row, meta) {
+                    if (!data) return "";
+
+                    const imageUrls = data.split(";"); // hoặc row.hinhAnh nếu cần
+                    let html = '<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">';
+
+                    imageUrls.forEach(url => {
+                        if (url.trim() !== "") {
+                            html += `<img src="${url.trim()}" style="width: 100px; height: 100px; object-fit: cover;" />`;
+                        }
+                    });
+                    html += '</div>';
+                    return html;
+                }
+            },
+            {
+                targets: 7,
+                render: function (data, type, row, meta) {
+                    return `
+                            <button type="button" data-id="${meta.row}" class="button btn-update">
+                                <img src="../images/edit_filled.png" alt="Alternate Text" />
+                            </button> 
+                            <button type="button" data-id="${meta.row}" class="button btn-delete" id="btn-modalDeleteChungChi">
+                                <img src="../images/delete_filled.png" alt="Alternate Text" />
+                            </button>`;
+                }
+            }
+        ],
+        "columns": [
+            { data: "stt", "width": "50px", "className": "text-center" },
+            { data: "tenChungChi", "width": "170px", "className": "fw-bold" },
+            { data: "soHieuChungChi", "width": "170px", "className": "text-center" },
+            { data: "toChucCap", "width": "130px", "className": "text-center fw-bold" },
+            { data: "ngayCap", "width": "130px", "className": "text-center" },
+            { data: "ngayHetHan", "width": "130px", "className": "text-center" },
+            { data: "hinhAnh", "width": "200px", "className": "text-center fw-bold" },
+            { data: "maChungChi", "width": "auto", "className": "text-center" }
+        ]
+    })
+
+    $('#btn-createChungChi').on('click', function () {
+        resetForm();
+        $('#AddChungChi').removeClass('d-none');
+        $('#EditChungChi').addClass('d-none');
+    });
+    $('#modalListChungChi .btn-cancel').on('click', function () {
+        $('#AddChungChi').addClass('d-none');
+        $('#EditChungChi').addClass('d-none');
+    });
+
+    //Thêm mới chứng chỉ
+    $("#saveChungChi").on('click', function () {
+        let maChuyenGia = $("#maChuyenGiaChungChiAdd").val();
+        let tenChungChi = $("#tenChungChiAdd").val();
+        let soHieuChungChi = $("#soHieuChungChiAdd").val();
+        let toChucCap = $("#toChucCapAdd").val();
+        let ngayCap = $("#ngayCapAdd").val();
+        let ngayHetHan = $("#ngayHetHanAdd").val();
+        let fileInput = $("#anhChungChiAdd")[0];
+        let file = fileInput.files; // Trả về đối tượng file kiểu object
+        
+        let request = {
+            maChuyenGia: maChuyenGia,
+            tenChungChi: tenChungChi,
+            soHieuChungChi: soHieuChungChi,
+            toChucCap: toChucCap,
+            ngayCap: formatDateSQL(ngayCap),
+            ngayHetHan: formatDateSQL(ngayHetHan)
+        }
+        let formData = new FormData();
+        formData.append("data", JSON.stringify(request));// dữ liệu dạng object
+        if (file) {
+
+            let files = Object.values(file); // Convert object thành array  
+
+            // Đối tượng files truyền vào là List, lặp qua các phần tử của mảng đối tượng files để append vào formData
+            // => List file
+            $.each(files, function (index, item) {
+                formData.append("files", item); // ảnh nếu có
+            });
+        }
+        
+        if (checkEmptyString(tenChungChi)) {
+            showAlert("Tên chứng chỉ không được để trống", "error");
+            return;
+        }
+        //if (checkEmptyString(file)) {
+        //    showAlert("Hình ảnh không được để trống", "error");
+        //    return;
+        //}
+        else {
+            $.ajax({
+                type: "POST",
+                url: APIURL + "/api/ChungChiChuyenGiaApi/Add",
+                contentType: false,
+                processData: false,
+                data: formData,
+                success: function (data) {
+                    console.log(data)
+                    $('#tableChungChi').DataTable().ajax.reload();
+                    showAlert("Thêm thành công", "success");
+                    resetFormChungChi()
+                },
+                error: function (error) {
+                    showAlert("Thêm không thành công", "error");
+                    console.log(error)
+                }
+            });
+        }
+
+    })
+
+    $('#tableChungChi tbody').on('click','.btn-delete', function () {
+        let id = $(this).data("id");
+        let data = $('#tableChungChi').DataTable().row(id).data();
+        $('#maDeleteChungChi').val(data.maChungChi);
+        $('#modalDeleteChungChi').modal('show');
+    })
+
+    $('#btn-deleteChungChi').on('click', function () {
+        let maChungChi = $("#maDeleteChungChi").val();
+        $.ajax({
+            type: "DELETE",
+            async: false,
+            url: APIURL + `/api/ChungChiChuyenGiaApi/Delete?MaChungChi=${maChungChi}`,
+            contentType: "application/json; charset=utf-8",
+            success: function (data) {
+                $('#tableChungChi').DataTable().ajax.reload();
+                $('#modalDeleteChungChi').modal('hide');
+                if (data && data.isSuccess) {
+                    showAlert("Xóa thành công", "success");
+                } else {
+                    showAlert("Xóa không thành công", "error");
+                }
+            },
+            error: function (error) {
+                showAlert("Xóa không thành công", "error");
+            }
+        });
+    })
+
+    $('#tableChungChi tbody').on('click', '.btn-update', function () {
+        let id = $(this).data("id");
+        let data = $('#tableChungChi').DataTable().row(id).data();
+        $('#maChuyenGiaChungChiEdit').val(data.maChungChi);
+        $('#AddChungChi').addClass('d-none');
+        $('#EditChungChi').removeClass('d-none');
+        $('#tenChungChiEdit').val(data.tenChungChi);
+        $('#soHieuChungChiEdit').val(data.soHieuChungChi);
+        $('#toChucCapEdit').val(data.toChucCap);
+        $('#ngayCapEdit').val(formatDate(data.ngayCap));
+        $('#ngayHetHanEdit').val(formatDate(data.ngayHetHan));
+        const imageUrls = data.hinhAnh.split(";");
+        console.log(imageUrls)
+        let html = '<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">';
+        imageUrls.forEach(url => {
+            if (url.trim() !== "") {
+                html += `<img src="${url.trim()}" style="width: 150px; height: 150px; object-fit: cover;" />`;
+            }
+        });
+        html += '</div>';
+        $('#previewAnhChungChi').html(html);
+    })
+
+    $('#editChungChi').on('click', function () {
+        let maChungChi = $("#maChuyenGiaChungChiEdit").val();
+        let tenChungChi = $("#tenChungChiEdit").val();
+        let soHieuChungChi = $("#soHieuChungChiEdit").val();
+        let toChucCap = $("#toChucCapEdit").val();
+        let ngayCap = $("#ngayCapEdit").val();
+        let ngayHetHan = $("#ngayHetHanEdit").val();
+        let fileInput = $("#anhChungChiEdit")[0];
+        let file = fileInput.files; // Trả về đối tượng file kiểu object
+        let request = {
+            maChungChi: maChungChi,
+            tenChungChi: tenChungChi,
+            soHieuChungChi: soHieuChungChi,
+            toChucCap: toChucCap,
+            ngayCap: formatDateSQL(ngayCap),
+            ngayHetHan: formatDateSQL(ngayHetHan)
+        }
+        let formData = new FormData();
+        formData.append("data", JSON.stringify(request));// dữ liệu dạng object
+        if (file) {
+            let files = Object.values(file); // Convert object thành array  
+            // Đối tượng files truyền vào là List, lặp qua các phần tử của mảng đối tượng files để append vào formData
+            // => List file
+            $.each(files, function (index, item) {
+                formData.append("files", item); // ảnh nếu có
+            });
+        }
+
+        if (checkEmptyString(tenChungChi)) {
+            showAlert("Tên chứng chỉ không được để trống", "error");
+            return;
+        }
+        //if (checkEmptyString(file)) {
+        //    showAlert("Hình ảnh không được để trống", "error");
+        //    return;
+        //}
+        else {
+            $.ajax({
+                type: "PUT",
+                url: APIURL + "/api/ChungChiChuyenGiaApi/Update",
+                contentType: false,
+                processData: false,
+                data: formData,
+                success: function (data) {
+                    $('#tableChungChi').DataTable().ajax.reload();
+                    showAlert("Cập nhật thành công", "success");
+                    resetForm()
+                },
+                error: function (error) {
+                    showAlert("Cập nhật không thành công", "error");
+                }
+            });
+        }
+    })
+
+    $('#modalAddChungChi').on('hidden.bs.modal', function () {
+        $('#modalListChungChi').modal('show');
+    });
 
 
     //xử lý modal chồng nhau
@@ -455,4 +749,8 @@ function resetForm() {
     $("#modalAdd textarea").val("");
     $("#modalAdd select").val("").trigger("change");
     $('input[name="gioitinhAdd"]').prop('checked', false);
+}
+
+function resetFormChungChi() {
+    $('#modalListChungChi input:not(#maChuyenGiaChungChiAdd)').val("");
 }

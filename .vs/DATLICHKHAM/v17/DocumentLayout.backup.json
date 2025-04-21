@@ -3,40 +3,12 @@
   "WorkspaceRootPath": "D:\\TTTN2025\\DATLICHKHAM\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{103D04BA-3A84-42D5-BAB8-49526333C26D}|DATLICHKHAM.csproj|d:\\tttn2025\\datlichkham\\apiscontroller\\chungchichuyengiaapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{103D04BA-3A84-42D5-BAB8-49526333C26D}|DATLICHKHAM.csproj|solutionrelative:apiscontroller\\chungchichuyengiaapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{103D04BA-3A84-42D5-BAB8-49526333C26D}|DATLICHKHAM.csproj|d:\\tttn2025\\datlichkham\\views\\doinguchuyengia\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{103D04BA-3A84-42D5-BAB8-49526333C26D}|DATLICHKHAM.csproj|solutionrelative:views\\doinguchuyengia\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{103D04BA-3A84-42D5-BAB8-49526333C26D}|DATLICHKHAM.csproj|d:\\tttn2025\\datlichkham\\controllers\\baseapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{103D04BA-3A84-42D5-BAB8-49526333C26D}|DATLICHKHAM.csproj|solutionrelative:controllers\\baseapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{103D04BA-3A84-42D5-BAB8-49526333C26D}|DATLICHKHAM.csproj|d:\\tttn2025\\datlichkham\\domain\\dlk_tepdinhkem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{103D04BA-3A84-42D5-BAB8-49526333C26D}|DATLICHKHAM.csproj|solutionrelative:domain\\dlk_tepdinhkem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{103D04BA-3A84-42D5-BAB8-49526333C26D}|DATLICHKHAM.csproj|d:\\tttn2025\\datlichkham\\application\\tepkemtheo\\addtepkemtheo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{103D04BA-3A84-42D5-BAB8-49526333C26D}|DATLICHKHAM.csproj|solutionrelative:application\\tepkemtheo\\addtepkemtheo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{103D04BA-3A84-42D5-BAB8-49526333C26D}|DATLICHKHAM.csproj|d:\\tttn2025\\datlichkham\\domain\\requestuploadfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{103D04BA-3A84-42D5-BAB8-49526333C26D}|DATLICHKHAM.csproj|solutionrelative:domain\\requestuploadfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{103D04BA-3A84-42D5-BAB8-49526333C26D}|DATLICHKHAM.csproj|d:\\tttn2025\\datlichkham\\apiscontroller\\chuyengiaapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{103D04BA-3A84-42D5-BAB8-49526333C26D}|DATLICHKHAM.csproj|solutionrelative:apiscontroller\\chuyengiaapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{103D04BA-3A84-42D5-BAB8-49526333C26D}|DATLICHKHAM.csproj|d:\\tttn2025\\datlichkham\\wwwroot\\css\\cms.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{103D04BA-3A84-42D5-BAB8-49526333C26D}|DATLICHKHAM.csproj|solutionrelative:wwwroot\\css\\cms.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{103D04BA-3A84-42D5-BAB8-49526333C26D}|DATLICHKHAM.csproj|d:\\tttn2025\\datlichkham\\wwwroot\\pagescripts\\quanlychuyengia.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{103D04BA-3A84-42D5-BAB8-49526333C26D}|DATLICHKHAM.csproj|solutionrelative:wwwroot\\pagescripts\\quanlychuyengia.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{103D04BA-3A84-42D5-BAB8-49526333C26D}|DATLICHKHAM.csproj|d:\\tttn2025\\datlichkham\\areas\\cms\\views\\quanlychuyengia\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{103D04BA-3A84-42D5-BAB8-49526333C26D}|DATLICHKHAM.csproj|solutionrelative:areas\\cms\\views\\quanlychuyengia\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{103D04BA-3A84-42D5-BAB8-49526333C26D}|DATLICHKHAM.csproj|d:\\tttn2025\\datlichkham\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{103D04BA-3A84-42D5-BAB8-49526333C26D}|DATLICHKHAM.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 250,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,119 +26,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ChuyenGiaApiController.cs",
-              "DocumentMoniker": "D:\\TTTN2025\\DATLICHKHAM\\APIsController\\ChuyenGiaApiController.cs",
-              "RelativeDocumentMoniker": "APIsController\\ChuyenGiaApiController.cs",
-              "ToolTip": "D:\\TTTN2025\\DATLICHKHAM\\APIsController\\ChuyenGiaApiController.cs",
-              "RelativeToolTip": "APIsController\\ChuyenGiaApiController.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAgwC8AAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T11:17:32.918Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "RequestUploadFile.cs",
-              "DocumentMoniker": "D:\\TTTN2025\\DATLICHKHAM\\Domain\\RequestUploadFile.cs",
-              "RelativeDocumentMoniker": "Domain\\RequestUploadFile.cs",
-              "ToolTip": "D:\\TTTN2025\\DATLICHKHAM\\Domain\\RequestUploadFile.cs",
-              "RelativeToolTip": "Domain\\RequestUploadFile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T11:10:30.758Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AddTepKemTheo.cs",
-              "DocumentMoniker": "D:\\TTTN2025\\DATLICHKHAM\\Application\\TepKemTheo\\AddTepKemTheo.cs",
-              "RelativeDocumentMoniker": "Application\\TepKemTheo\\AddTepKemTheo.cs",
-              "ToolTip": "D:\\TTTN2025\\DATLICHKHAM\\Application\\TepKemTheo\\AddTepKemTheo.cs",
-              "RelativeToolTip": "Application\\TepKemTheo\\AddTepKemTheo.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAqwBkAAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T10:57:28.962Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DLK_TepDinhKem.cs",
-              "DocumentMoniker": "D:\\TTTN2025\\DATLICHKHAM\\Domain\\DLK_TepDinhKem.cs",
-              "RelativeDocumentMoniker": "Domain\\DLK_TepDinhKem.cs",
-              "ToolTip": "D:\\TTTN2025\\DATLICHKHAM\\Domain\\DLK_TepDinhKem.cs",
-              "RelativeToolTip": "Domain\\DLK_TepDinhKem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T10:56:39.406Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "BaseApiController.cs",
-              "DocumentMoniker": "D:\\TTTN2025\\DATLICHKHAM\\Controllers\\BaseApiController.cs",
-              "RelativeDocumentMoniker": "Controllers\\BaseApiController.cs",
-              "ToolTip": "D:\\TTTN2025\\DATLICHKHAM\\Controllers\\BaseApiController.cs",
-              "RelativeToolTip": "Controllers\\BaseApiController.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAgwEQAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T10:49:05.441Z",
+              "Title": "site.css",
+              "DocumentMoniker": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\css\\site.css*",
+              "RelativeToolTip": "wwwroot\\css\\site.css*",
+              "ViewState": "AgIAAPQCAAAAAAAAAAAAABEDAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-21T09:25:58.196Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ChungChiChuyenGiaApiController.cs",
-              "DocumentMoniker": "D:\\TTTN2025\\DATLICHKHAM\\APIsController\\ChungChiChuyenGiaApiController.cs",
-              "RelativeDocumentMoniker": "APIsController\\ChungChiChuyenGiaApiController.cs",
-              "ToolTip": "D:\\TTTN2025\\DATLICHKHAM\\APIsController\\ChungChiChuyenGiaApiController.cs",
-              "RelativeToolTip": "APIsController\\ChungChiChuyenGiaApiController.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAgwC0AAABdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T10:37:29.917Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "cms.css",
-              "DocumentMoniker": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\css\\cms.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\cms.css",
-              "ToolTip": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\css\\cms.css",
-              "RelativeToolTip": "wwwroot\\css\\cms.css",
-              "ViewState": "AgIAAB0BAAAAAAAAAAAAADgBAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-04-16T09:37:54.172Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "QuanLyChuyenGia.js",
-              "DocumentMoniker": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\QuanLyChuyenGia.js",
-              "RelativeDocumentMoniker": "wwwroot\\PageScripts\\QuanLyChuyenGia.js",
-              "ToolTip": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\QuanLyChuyenGia.js",
-              "RelativeToolTip": "wwwroot\\PageScripts\\QuanLyChuyenGia.js",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-04-16T09:35:58.969Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\TTTN2025\\DATLICHKHAM\\Areas\\CMS\\Views\\QuanLyChuyenGia\\Index.cshtml",
-              "RelativeDocumentMoniker": "Areas\\CMS\\Views\\QuanLyChuyenGia\\Index.cshtml",
-              "ToolTip": "D:\\TTTN2025\\DATLICHKHAM\\Areas\\CMS\\Views\\QuanLyChuyenGia\\Index.cshtml",
-              "RelativeToolTip": "Areas\\CMS\\Views\\QuanLyChuyenGia\\Index.cshtml",
-              "ViewState": "AgIAADUBAAAAAAAAAAAAAFYBAAAOAAAAAAAAAA==",
+              "DocumentMoniker": "D:\\TTTN2025\\DATLICHKHAM\\Views\\DoiNguChuyenGia\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\DoiNguChuyenGia\\Index.cshtml",
+              "ToolTip": "D:\\TTTN2025\\DATLICHKHAM\\Views\\DoiNguChuyenGia\\Index.cshtml*",
+              "RelativeToolTip": "Views\\DoiNguChuyenGia\\Index.cshtml*",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADAAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-16T09:20:53.028Z",
+              "WhenOpened": "2025-04-21T09:21:31.115Z",
               "EditorCaption": ""
             }
           ]

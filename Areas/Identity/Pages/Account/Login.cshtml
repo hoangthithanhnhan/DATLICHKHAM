@@ -1,90 +1,75 @@
 ﻿@page
-@using QuanLyCayXanh.Areas.Identity.Pages.Account;
+@using Login.Areas.Identity.Pages.Account;
+@using Microsoft.AspNetCore.Identity;
+@using Microsoft.AspNetCore.Mvc;
 @model LoginModel;
 @{
     Layout = "~/Views/Shared/_layout.cshtml";
 }
-
-<div class="bgcms">
-    <div id="particles-js"></div>
-    <div class="backgroudCMS">
-        <form id="login" method="post">
-            <div class="loginCMSBus">
-                <div class="loginCus">
-                    <div class="loginLogo">
-                        <img src="~/lib/images/logo-horizontal-purple.svg" />
-                    </div>
-                    <div class="login-form">
-                        <div class="form-group user">
-                            <span class="icon-form-login fluent-ui fluent-ui-filled"></span>
-                            <input asp-for="Input.Email" type="text" class="form-control" placeholder="Tên đăng nhập" autocomplete="username" aria-required="true" />
-                            <div class="notice-login"><span asp-validation-for="Input.Email" class="text-danger"></span></div>
-                            @* <div asp-validation-summary="ModelOnly" class="text-danger"></div> *@
-                        </div>
-                        <div class="form-group pwd">
-                            <span class="icon-form-pass fluent-ui fluent-ui-filled"></span>
-                            <input asp-for="Input.Password" type="password" class="form-control" placeholder="Mật khẩu" autocomplete="current-password" aria-required="true" />
-                            <i toggle="#password-field" id="pwd-icon" class="fluent-ui fluent-ui-filled fill toggle-password"></i>
-                            <div class="notice-login"><span asp-validation-for="Input.Password" class="text-danger"></span></div>
-                        </div>
-                        <div class="form-group inputSSO">
-                            <select asp-for="Input.SSO" class="form-control select-ns">
-                                <option value="1" selected>Chuẩn</option>
-                                <option value="0">SSO</option>
-                            </select>
-                            <div class="notice-login"><div asp-validation-summary="ModelOnly" class="text-danger"></div></div>
-                        </div>
-                        @*<div class="supportEmail">
-                            <div class="forgotPass customAcc"><a id="forgot-password" asp-page="./ForgotPassword">Quên mật khẩu?</a></div>
-                        </div>*@
-                        <div class="main-event-detail main-btn">
-                            <div class="btn-event btn-special btn-red">
-                                <button id="login-submit" type="submit" class="w-100 btn btn-lg btn-primary">Đăng nhập</button>
-                            </div>
-                        </div>
-                    </div>
+<div class="auth-background">
+    <div class="overlay"></div>
+    <form id="login" method="post">
+        <h4 class="title">ĐĂNG NHẬP</h4>
+        <div class="login-form">
+            <div class="form-group user">
+                <span class="icon-form-login fluent-ui fluent-ui-filled"></span>
+                <input asp-for="Input.Username" type="text" class="form-control" placeholder="Tên đăng nhập" autocomplete="username" aria-required="true" />
+                <div class="notice-login"><span asp-validation-for="Input.Username" class="text-danger"></span></div>
+            </div>
+            <div class="form-group pwd">
+                <span class="icon-form-pass fluent-ui fluent-ui-filled"></span>
+                <input asp-for="Input.Password" type="password" class="form-control" placeholder="Mật khẩu" autocomplete="current-password" aria-required="true" />
+                <i toggle="#password-field" id="pwd-icon" class="fluent-ui fluent-ui-filled fill toggle-password"></i>
+                <div class="notice-login"><span asp-validation-for="Input.Password" class="text-danger"></span></div>
+            </div>
+            <div class="main-event-detail main-btn">
+                <div class="btn-event btn-special btn-red">
+                    <button id="login-submit" type="submit" class="w-100 btn btn-lg btn-primary">Đăng nhập</button>
                 </div>
             </div>
-        </form>
-    </div>
+        </div>
+        <p class="auth-footer">Chưa có tài khoản? <a class="auth-link text-red" asp-controller="DangKy" asp-action="Index">Đăng ký ngay</a></p>
+    </form>
 </div>
+
+
 @section Scripts {
-    @*<partial name="_ValidationScriptsPartial" />*@
+@*<partial name="_ValidationScriptsPartial" />*@
 
-    <script>
-        $('.groupMenu').addClass('d-none');
-        $('.footerHome').addClass('d-none');
-        var iconpwd = document.getElementById("pwd-icon");
+    @* <script> *@
+    @*     $('.groupMenu').addClass('d-none'); *@
+    @*     $('.footerHome').addClass('d-none'); *@
+    @*     var iconpwd = document.getElementById("pwd-icon"); *@
 
-        $(".toggle-password").click(function () {
-            var input = $($(this).parent().find('input'));
-            if (input.attr("type") == "password") {
-                input.attr("type", "text");
-                $('#pwd-icon').addClass('on-password')
-                $('#pwd-icon').removeClass('toggle-password')
+    @*     $(".toggle-password").click(function () { *@
+    @*         var input = $($(this).parent().find('input')); *@
+    @*         if (input.attr("type") == "password") { *@
+    @*             input.attr("type", "text"); *@
+    @*             $('#pwd-icon').addClass('on-password') *@
+    @*             $('#pwd-icon').removeClass('toggle-password') *@
 
-            } 
-            else {
-                input.attr("type", "password");
-                $('#pwd-icon').addClass('toggle-password')
-                $('#pwd-icon').removeClass('on-password')
-            }
-        });
-        $('select').select2({
-            placeholder: "Chọn",
-            theme: 'bootstrap4',
-            width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
-            language: "vi",
-            allowClear: true,
-            minimumResultsForSearch: Infinity
-        });
-        particlesJS("particles-js",
-            { "particles": { "number": { "value": 80, "density": { "enable": true, "value_area": 800 } }, "color": { "value": "#003ECF" }, "shape": { "type": "circle", "stroke": { "width": 0, "color": "#000000" }, "polygon": { "nb_sides": 5 }, "image": { "src": "img/github.svg", "width": 100, "height": 100 } }, "opacity": { "value": 0.5, "random": false, "anim": { "enable": false, "speed": 1, "opacity_min": 0.1, "sync": false } }, "size": { "value": 3, "random": true, "anim": { "enable": false, "speed": 40, "size_min": 0.1, "sync": false } }, "line_linked": { "enable": true, "distance": 150, "color": "#003ECF", "opacity": 0.4, "width": 1 }, "move": { "enable": true, "speed": 6, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false, "attract": { "enable": false, "rotateX": 600, "rotateY": 1200 } } }, "interactivity": { "detect_on": "canvas", "events": { "onhover": { "enable": true, "mode": "repulse" }, "onclick": { "enable": true, "mode": "push" }, "resize": true }, "modes": { "grab": { "distance": 400, "line_linked": { "opacity": 1 } }, "bubble": { "distance": 400, "size": 40, "duration": 2, "opacity": 8, "speed": 3 }, "repulse": { "distance": 200, "duration": 0.4 }, "push": { "particles_nb": 4 }, "remove": { "particles_nb": 2 } } }, "retina_detect": true }
-        )
-        function preventBack() {
-            window.history.forward();
-        }
-        setTimeout(preventBack(), 0);
-        window.onunload = function () { null }
-    </script>
+    @*         } *@
+    @*         else { *@
+    @*             input.attr("type", "password"); *@
+    @*             $('#pwd-icon').addClass('toggle-password') *@
+    @*             $('#pwd-icon').removeClass('on-password') *@
+    @*         } *@
+    @*     }); *@
+    @*     $('select').select2({ *@
+    @*         placeholder: "Chọn", *@
+    @*         theme: 'bootstrap4', *@
+    @*         width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style', *@
+    @*         language: "vi", *@
+    @*         allowClear: true, *@
+    @*         minimumResultsForSearch: Infinity *@
+    @*     }); *@
+    @*     particlesJS("particles-js", *@
+    @*         { "particles": { "number": { "value": 80, "density": { "enable": true, "value_area": 800 } }, "color": { "value": "#003ECF" }, "shape": { "type": "circle", "stroke": { "width": 0, "color": "#000000" }, "polygon": { "nb_sides": 5 }, "image": { "src": "img/github.svg", "width": 100, "height": 100 } }, "opacity": { "value": 0.5, "random": false, "anim": { "enable": false, "speed": 1, "opacity_min": 0.1, "sync": false } }, "size": { "value": 3, "random": true, "anim": { "enable": false, "speed": 40, "size_min": 0.1, "sync": false } }, "line_linked": { "enable": true, "distance": 150, "color": "#003ECF", "opacity": 0.4, "width": 1 }, "move": { "enable": true, "speed": 6, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false, "attract": { "enable": false, "rotateX": 600, "rotateY": 1200 } } }, "interactivity": { "detect_on": "canvas", "events": { "onhover": { "enable": true, "mode": "repulse" }, "onclick": { "enable": true, "mode": "push" }, "resize": true }, "modes": { "grab": { "distance": 400, "line_linked": { "opacity": 1 } }, "bubble": { "distance": 400, "size": 40, "duration": 2, "opacity": 8, "speed": 3 }, "repulse": { "distance": 200, "duration": 0.4 }, "push": { "particles_nb": 4 }, "remove": { "particles_nb": 2 } } }, "retina_detect": true } *@
+    @*     ) *@
+    @*     function preventBack() { *@
+    @*         window.history.forward(); *@
+    @*     } *@
+    @*     setTimeout(preventBack(), 0); *@
+    @*     window.onunload = function () { null } *@
+    @* </script> *@
 }

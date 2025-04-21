@@ -1,16 +1,17 @@
 ﻿@{
     ViewBag.Title = "Quản lý chuyên khoa";
 }
-<div class="d-flex align-items-center block-header">
-    <div class="search-block">
-        <input id="search" type="text" placeholder="Tìm kiếm...">
-        <button id="btn-search"> <img src="~/images/search-cms.png" alt=""></button>
+<div class="content">
+    <div class="d-flex align-items-center block-header">
+        <div class="search-block">
+            <input id="search" type="text" placeholder="Tìm kiếm...">
+            <button id="btn-search"> <img src="~/images/search-cms.png" alt=""></button>
+        </div>
+        <button style="height: 40px; margin-left: 25px;" class="btn" type="button" data-bs-toggle="modal" data-bs-target="#modalAdd" id="btn-create">
+            Thêm mới
+        </button>
     </div>
-    <button style="height: 40px; margin-left: 25px;" class="btn" type="button" data-bs-toggle="modal" data-bs-target="#modalAdd" id="btn-create">
-        Thêm mới
-    </button>
-</div>
-<table class="table table-border" id="myTable">
+    <table class="table table-border" id="myTable">
     <thead>
         <tr>
             <th>Stt</th>
@@ -21,7 +22,7 @@
         </tr>
     </thead>
 </table>
-
+</div>
 @* MODAL THÊM MỚI  *@
 <div class="modal fade" id="modalAdd" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">

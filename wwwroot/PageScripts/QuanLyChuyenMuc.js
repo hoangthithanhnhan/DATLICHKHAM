@@ -220,8 +220,10 @@ $(document).ready(function () {
                 $('#myTable').DataTable().ajax.reload();
                 if (data && data.isSuccess) {
                     showAlert("Xóa thành công", "success");
+                    $('#modalDelete').modal('hide');
                 } else {
                     showAlert("Xóa không thành công", "error");
+                    $('#modalDelete').modal('hide');
                 }
             },
             error: function (error) {

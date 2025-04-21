@@ -23,18 +23,7 @@
         @await Html.PartialAsync("Common/_Menu")
         @await Html.PartialAsync("Common/_Header")
         <div class="content-wrapper">
-            @if (ViewData["ShowThongKe"] as bool? == true)
-            {
-                @RenderBody()
-            }
-            else
-            {
-                <div class="content">
-                    @RenderBody()
-                </div>
-            }
-
-
+            @RenderBody()
             <button type="button" class="box-chat"><img src="~/images/mess.png" alt=""></button>
         </div>
         <div id="sidebar-overlay">
@@ -50,6 +39,7 @@
     <script src="~/lib/pagination/jquery.twbsPagination.min.js"></script>
     <script src="~/lib/sweetAlert/sweetalert.js"></script>
     <script src="~/lib/flatpickr/flatpickr.js"></script>
+    <script src="~/lib/ckeditor/ckeditor5.js"></script>
     <script src="~/PageScripts/Layout.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>

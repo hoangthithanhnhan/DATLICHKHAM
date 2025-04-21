@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "fKqX91MBr5n0gsJSxXRLONqaFzYHaz+RzGmGDSkKw70=",
+  "Hash": "wSa+gNjOEAVHrINWnPLzeHGmPB3bh3VyYS4Rt9/pPvY=",
   "Source": "DATLICHKHAM",
   "BasePath": "_content/DATLICHKHAM",
   "Mode": "Default",
@@ -1291,8 +1291,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "y7jl1ueduo",
-      "Integrity": "jk3SeNDHw7xg/AUESh4xcx8wCvNr8oVNHLgZbQA+Sa0=",
+      "Fingerprint": "phg8eyrk8a",
+      "Integrity": "fUsa4CQ/HZxEzeAajmCgLGTWUgzi+ezfkBnbbU43h/8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\TTTN2025\\DATLICHKHAM\\obj\\Debug\\net8.0\\scopedcss\\bundle\\DATLICHKHAM.styles.css"
@@ -1312,8 +1312,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "y7jl1ueduo",
-      "Integrity": "jk3SeNDHw7xg/AUESh4xcx8wCvNr8oVNHLgZbQA+Sa0=",
+      "Fingerprint": "phg8eyrk8a",
+      "Integrity": "fUsa4CQ/HZxEzeAajmCgLGTWUgzi+ezfkBnbbU43h/8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\TTTN2025\\DATLICHKHAM\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\DATLICHKHAM.bundle.scp.css"
@@ -1354,8 +1354,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "lspv2ii3y2",
-      "Integrity": "VT5dIRHbLlowzZRcvP1YgOCtcw9KK34QYijkryAIaus=",
+      "Fingerprint": "kxxd2yslll",
+      "Integrity": "+AgPVeZpI566yTMvDPytVMr7G0VNq+HeDJTMMaJN6g4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\cms.css"
@@ -1375,8 +1375,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "5716h5n0my",
-      "Integrity": "b19K5whHgHOEPfkg3rEJyvToOkfkZQRnWP88IurNyrI=",
+      "Fingerprint": "gt01tuayyp",
+      "Integrity": "nLBHFmefRP7XS9I0alVtaqb2fJ/plCzMuBs1zOUDsvI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -1422,6 +1422,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\addchungchi.png"
+    },
+    {
+      "Identity": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\images\\anhdaidien.jpg",
+      "SourceId": "DATLICHKHAM",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\",
+      "BasePath": "_content/DATLICHKHAM",
+      "RelativePath": "images/anhdaidien#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "3totyi7v8j",
+      "Integrity": "KcPMy5bbDNKEQFXik+YXkn8un3zo6T9QSXvTekixIKw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\anhdaidien.jpg"
     },
     {
       "Identity": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\images\\arrow_next.png",
@@ -1548,6 +1569,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\bg.png"
+    },
+    {
+      "Identity": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\images\\bgg.jpeg",
+      "SourceId": "DATLICHKHAM",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\",
+      "BasePath": "_content/DATLICHKHAM",
+      "RelativePath": "images/bgg#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2kld723i5x",
+      "Integrity": "nvKG7t5Z0YuYM9Stx6QnkaCl8NBB+P8FE4jSm2TXLNE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\bgg.jpeg"
+    },
+    {
+      "Identity": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\images\\bgg.jpg",
+      "SourceId": "DATLICHKHAM",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\",
+      "BasePath": "_content/DATLICHKHAM",
+      "RelativePath": "images/bgg#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "gjrxvfvn2g",
+      "Integrity": "rNSOS5qFmhlKUWVTddRX5/nDijpoT7BOYn/h3fJEneE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\bgg.jpg"
     },
     {
       "Identity": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\images\\cancel.png",
@@ -1949,6 +2012,90 @@
       "OriginalItemSpec": "wwwroot\\images\\image.png"
     },
     {
+      "Identity": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\images\\introchuyengia.jpg",
+      "SourceId": "DATLICHKHAM",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\",
+      "BasePath": "_content/DATLICHKHAM",
+      "RelativePath": "images/introchuyengia#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "oyyxynmlw1",
+      "Integrity": "QO1Okdp2VTls5eTeAnLE4f31BKkHM7L8nXRu3bPepbo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\introchuyengia.jpg"
+    },
+    {
+      "Identity": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\images\\introdichvu.jpg",
+      "SourceId": "DATLICHKHAM",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\",
+      "BasePath": "_content/DATLICHKHAM",
+      "RelativePath": "images/introdichvu#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hsife29010",
+      "Integrity": "4bIfptlQJCwkacy1INsJ6T9fAeH90ImstynAZcIxl/0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\introdichvu.jpg"
+    },
+    {
+      "Identity": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\images\\introphongkham.jpg",
+      "SourceId": "DATLICHKHAM",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\",
+      "BasePath": "_content/DATLICHKHAM",
+      "RelativePath": "images/introphongkham#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "21fctdibm8",
+      "Integrity": "FkisNNK+ooxWVl09C7J+WquBbK1xYj7eTGsEcxX7CG4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\introphongkham.jpg"
+    },
+    {
+      "Identity": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\images\\introtongquan.jpg",
+      "SourceId": "DATLICHKHAM",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\",
+      "BasePath": "_content/DATLICHKHAM",
+      "RelativePath": "images/introtongquan#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "o33p8dwifc",
+      "Integrity": "9LdawUUlasNNnfCZ6puhekikrVKOp5pwSALb8r0CQDw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\introtongquan.jpg"
+    },
+    {
       "Identity": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\images\\logo.jpg",
       "SourceId": "DATLICHKHAM",
       "SourceType": "Discovered",
@@ -2341,8 +2488,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "bma1hql1mb",
-      "Integrity": "/Sp6m40STd/MHlkJk+MVZ7kXnWSvhqSuHpBoEVh09Rg=",
+      "Fingerprint": "94nj6hagdi",
+      "Integrity": "N7oDgjj3IUfJ5ONQktMMwmTz6/3JOmPtT1JIf7ZlPEE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\main.js"
@@ -3375,6 +3522,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
+    },
+    {
+      "Identity": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\lib\\ckeditor\\ckeditor5.css",
+      "SourceId": "DATLICHKHAM",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\",
+      "BasePath": "_content/DATLICHKHAM",
+      "RelativePath": "lib/ckeditor/ckeditor5#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7bgtdt6rj5",
+      "Integrity": "LSdHOLhFc8H+HFHUSJNLZLjnmH3FRJRAtyTMHUYFLp4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\ckeditor\\ckeditor5.css"
+    },
+    {
+      "Identity": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\lib\\ckeditor\\ckeditor5.js",
+      "SourceId": "DATLICHKHAM",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\",
+      "BasePath": "_content/DATLICHKHAM",
+      "RelativePath": "lib/ckeditor/ckeditor5#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fiywmtv45z",
+      "Integrity": "SS8TEkI6Ds/n+5Qud9GuGU8u61OKUWRRnAOrInS+Tk0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\ckeditor\\ckeditor5.js"
     },
     {
       "Identity": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\lib\\DataTable\\datatables.css",
@@ -4763,6 +4952,27 @@
       "OriginalItemSpec": "wwwroot\\lib\\wow\\wow.min.js"
     },
     {
+      "Identity": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\DangKy.js",
+      "SourceId": "DATLICHKHAM",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\",
+      "BasePath": "_content/DATLICHKHAM",
+      "RelativePath": "PageScripts/DangKy#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "dxbe1dbvey",
+      "Integrity": "4ZizWUiZRUxmiTaPj0YqHPjrppRNBZNI8IKKR8ahO8c=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\PageScripts\\DangKy.js"
+    },
+    {
       "Identity": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\Layout.js",
       "SourceId": "DATLICHKHAM",
       "SourceType": "Discovered",
@@ -4798,8 +5008,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "95e741f36q",
-      "Integrity": "XRsxVWAxszwlEjeko4Qjqh6TjJTzWTkm+wm4JBdAOno=",
+      "Fingerprint": "f4ipazq2sz",
+      "Integrity": "AQJNrQEfOpXKLWgaxe2/8T6FHuIvrFvCRdD+WaA19JI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\PageScripts\\QuanLyBaiViet.js"
@@ -4819,8 +5029,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "uzvc8lliuj",
-      "Integrity": "+ngM+zGbp7d2aBUkBLKfD3ByGsDmthQrk/0fEQbirrM=",
+      "Fingerprint": "78s94oinph",
+      "Integrity": "J7ugIvBSZZg7YYXE8toBMtErUyLoSR2523QCvELYvg0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\PageScripts\\QuanLyBenhNhan.js"
@@ -4840,8 +5050,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "uenz837kos",
-      "Integrity": "RsW0ajsyZ24cgehW2Ih+wgxww0ka+0B260iN2z77BSU=",
+      "Fingerprint": "3jwb6cv8kg",
+      "Integrity": "kSAlJG56LIPQpoKCYFzmo3ylGfEVCbrTQ/tLBt89W7Y=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\PageScripts\\QuanLyChuyenGia.js"
@@ -4882,8 +5092,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "4x1qk0061y",
-      "Integrity": "yF9OTQ/M0zaqp1ni+YqdL17nWrDPkusSWLDka/gT6EI=",
+      "Fingerprint": "z2nibl2bzy",
+      "Integrity": "W4RsxAIjTGRv9hG2FNKfx/mjrDwpZwL2SehduxKeusA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\PageScripts\\QuanLyChuyenMuc.js"
@@ -6737,12 +6947,12 @@
       "OriginalItemSpec": "wwwroot\\scss\\bootstrap\\scss\\vendor\\_rfs.scss"
     },
     {
-      "Identity": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\BenhNhan\\done_1744789747.png",
+      "Identity": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\BaiViet\\chung-chi-tu-van-tam-ly-hoc-duong_1744966437.jpg",
       "SourceId": "DATLICHKHAM",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\",
       "BasePath": "_content/DATLICHKHAM",
-      "RelativePath": "upload/BenhNhan/done_1744789747#[.{fingerprint}]?.png",
+      "RelativePath": "upload/BaiViet/chung-chi-tu-van-tam-ly-hoc-duong_1744966437#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -6751,11 +6961,137 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "hwz1gexbcq",
-      "Integrity": "AUTS4XS2JOtOONQOTyxTQfPn7uubMCF4z8UE0zAMvig=",
+      "Fingerprint": "bxln4zqumi",
+      "Integrity": "v96Mwxt8AH0cZu5aS5k4/xz87yexHJoSb/xE1Kny8V4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\upload\\BenhNhan\\done_1744789747.png"
+      "OriginalItemSpec": "wwwroot\\upload\\BaiViet\\chung-chi-tu-van-tam-ly-hoc-duong_1744966437.jpg"
+    },
+    {
+      "Identity": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\BaiViet\\chung-chi-tu-van-tam-ly-hoc-duong_1744967244.jpg",
+      "SourceId": "DATLICHKHAM",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\",
+      "BasePath": "_content/DATLICHKHAM",
+      "RelativePath": "upload/BaiViet/chung-chi-tu-van-tam-ly-hoc-duong_1744967244#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bxln4zqumi",
+      "Integrity": "v96Mwxt8AH0cZu5aS5k4/xz87yexHJoSb/xE1Kny8V4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\upload\\BaiViet\\chung-chi-tu-van-tam-ly-hoc-duong_1744967244.jpg"
+    },
+    {
+      "Identity": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\BaiViet\\null_1744973714.png",
+      "SourceId": "DATLICHKHAM",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\",
+      "BasePath": "_content/DATLICHKHAM",
+      "RelativePath": "upload/BaiViet/null_1744973714#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "rr99aly1hh",
+      "Integrity": "SUjW9Gv+v8jXnTkqeiDImWGskX+mTBXBakFmHG81gEU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\upload\\BaiViet\\null_1744973714.png"
+    },
+    {
+      "Identity": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\BenhNhan\\Cún_1745169221.png",
+      "SourceId": "DATLICHKHAM",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\",
+      "BasePath": "_content/DATLICHKHAM",
+      "RelativePath": "upload/BenhNhan/Cún_1745169221#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wao15d7wh1",
+      "Integrity": "uOWNthZhHZ6RnlfHHgimMYXZR7RiL/SJoSZXC3uRnGw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\upload\\BenhNhan\\Cún_1745169221.png"
+    },
+    {
+      "Identity": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\Blog\\5e7e0897-67ea-4d2c-9352-cf478d6fa394_chung-chi-tu-van-tam-ly-hoc-duong.jpg",
+      "SourceId": "DATLICHKHAM",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\",
+      "BasePath": "_content/DATLICHKHAM",
+      "RelativePath": "upload/Blog/5e7e0897-67ea-4d2c-9352-cf478d6fa394_chung-chi-tu-van-tam-ly-hoc-duong#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bxln4zqumi",
+      "Integrity": "v96Mwxt8AH0cZu5aS5k4/xz87yexHJoSb/xE1Kny8V4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\upload\\Blog\\5e7e0897-67ea-4d2c-9352-cf478d6fa394_chung-chi-tu-van-tam-ly-hoc-duong.jpg"
+    },
+    {
+      "Identity": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\Blog\\e0b719ac-9bef-4d15-bd1e-7eddc8f94c89_chung-chi-tu-van-tam-ly-hoc-duong.jpg",
+      "SourceId": "DATLICHKHAM",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\",
+      "BasePath": "_content/DATLICHKHAM",
+      "RelativePath": "upload/Blog/e0b719ac-9bef-4d15-bd1e-7eddc8f94c89_chung-chi-tu-van-tam-ly-hoc-duong#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bxln4zqumi",
+      "Integrity": "v96Mwxt8AH0cZu5aS5k4/xz87yexHJoSb/xE1Kny8V4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\upload\\Blog\\e0b719ac-9bef-4d15-bd1e-7eddc8f94c89_chung-chi-tu-van-tam-ly-hoc-duong.jpg"
+    },
+    {
+      "Identity": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\Blog\\fc2b6edf-087a-4029-aedb-3d0e1a8e9a54_chung-chi-tu-van-tam-ly-hoc-duong.jpg",
+      "SourceId": "DATLICHKHAM",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\",
+      "BasePath": "_content/DATLICHKHAM",
+      "RelativePath": "upload/Blog/fc2b6edf-087a-4029-aedb-3d0e1a8e9a54_chung-chi-tu-van-tam-ly-hoc-duong#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bxln4zqumi",
+      "Integrity": "v96Mwxt8AH0cZu5aS5k4/xz87yexHJoSb/xE1Kny8V4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\upload\\Blog\\fc2b6edf-087a-4029-aedb-3d0e1a8e9a54_chung-chi-tu-van-tam-ly-hoc-duong.jpg"
     },
     {
       "Identity": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\ChuyenGia\\Cún_1744798057.png",
@@ -6824,7 +7160,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 08 Apr 2025 04:27:06 GMT"
+          "Value": "Mon, 21 Apr 2025 09:21:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6869,7 +7205,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 08 Apr 2025 04:27:06 GMT"
+          "Value": "Mon, 21 Apr 2025 09:21:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6894,7 +7230,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7122"
+          "Value": "8116"
         },
         {
           "Name": "Content-Type",
@@ -6902,11 +7238,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"VT5dIRHbLlowzZRcvP1YgOCtcw9KK34QYijkryAIaus=\""
+          "Value": "\"+AgPVeZpI566yTMvDPytVMr7G0VNq+HeDJTMMaJN6g4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 16 Apr 2025 10:34:14 GMT"
+          "Value": "Fri, 18 Apr 2025 12:02:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6916,12 +7252,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-VT5dIRHbLlowzZRcvP1YgOCtcw9KK34QYijkryAIaus="
+          "Value": "sha256-+AgPVeZpI566yTMvDPytVMr7G0VNq+HeDJTMMaJN6g4="
         }
       ]
     },
     {
-      "Route": "css/cms.lspv2ii3y2.css",
+      "Route": "css/cms.kxxd2yslll.css",
       "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\css\\cms.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -6931,7 +7267,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7122"
+          "Value": "8116"
         },
         {
           "Name": "Content-Type",
@@ -6939,11 +7275,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"VT5dIRHbLlowzZRcvP1YgOCtcw9KK34QYijkryAIaus=\""
+          "Value": "\"+AgPVeZpI566yTMvDPytVMr7G0VNq+HeDJTMMaJN6g4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 16 Apr 2025 10:34:14 GMT"
+          "Value": "Fri, 18 Apr 2025 12:02:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6953,7 +7289,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "lspv2ii3y2"
+          "Value": "kxxd2yslll"
         },
         {
           "Name": "label",
@@ -6961,52 +7297,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-VT5dIRHbLlowzZRcvP1YgOCtcw9KK34QYijkryAIaus="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.5716h5n0my.css",
-      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\css\\site.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "19041"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"b19K5whHgHOEPfkg3rEJyvToOkfkZQRnWP88IurNyrI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 02 Apr 2025 09:49:23 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "5716h5n0my"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-b19K5whHgHOEPfkg3rEJyvToOkfkZQRnWP88IurNyrI="
+          "Value": "sha256-+AgPVeZpI566yTMvDPytVMr7G0VNq+HeDJTMMaJN6g4="
         }
       ]
     },
@@ -7021,7 +7312,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "19041"
+          "Value": "21917"
         },
         {
           "Name": "Content-Type",
@@ -7029,11 +7320,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"b19K5whHgHOEPfkg3rEJyvToOkfkZQRnWP88IurNyrI=\""
+          "Value": "\"nLBHFmefRP7XS9I0alVtaqb2fJ/plCzMuBs1zOUDsvI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 02 Apr 2025 09:49:23 GMT"
+          "Value": "Mon, 21 Apr 2025 09:28:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7043,7 +7334,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-b19K5whHgHOEPfkg3rEJyvToOkfkZQRnWP88IurNyrI="
+          "Value": "sha256-nLBHFmefRP7XS9I0alVtaqb2fJ/plCzMuBs1zOUDsvI="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.gt01tuayyp.css",
+      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "21917"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nLBHFmefRP7XS9I0alVtaqb2fJ/plCzMuBs1zOUDsvI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 09:28:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gt01tuayyp"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nLBHFmefRP7XS9I0alVtaqb2fJ/plCzMuBs1zOUDsvI="
         }
       ]
     },
@@ -7140,7 +7476,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6850"
+          "Value": "5704"
         },
         {
           "Name": "Content-Type",
@@ -7148,11 +7484,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"jk3SeNDHw7xg/AUESh4xcx8wCvNr8oVNHLgZbQA+Sa0=\""
+          "Value": "\"fUsa4CQ/HZxEzeAajmCgLGTWUgzi+ezfkBnbbU43h/8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 03 Apr 2025 05:28:16 GMT"
+          "Value": "Mon, 21 Apr 2025 03:27:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7162,7 +7498,97 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-jk3SeNDHw7xg/AUESh4xcx8wCvNr8oVNHLgZbQA+Sa0="
+          "Value": "sha256-fUsa4CQ/HZxEzeAajmCgLGTWUgzi+ezfkBnbbU43h/8="
+        }
+      ]
+    },
+    {
+      "Route": "DATLICHKHAM.phg8eyrk8a.bundle.scp.css",
+      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\DATLICHKHAM.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5704"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fUsa4CQ/HZxEzeAajmCgLGTWUgzi+ezfkBnbbU43h/8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 03:27:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "phg8eyrk8a"
+        },
+        {
+          "Name": "label",
+          "Value": "DATLICHKHAM.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fUsa4CQ/HZxEzeAajmCgLGTWUgzi+ezfkBnbbU43h/8="
+        }
+      ]
+    },
+    {
+      "Route": "DATLICHKHAM.phg8eyrk8a.styles.css",
+      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\obj\\Debug\\net8.0\\scopedcss\\bundle\\DATLICHKHAM.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5704"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fUsa4CQ/HZxEzeAajmCgLGTWUgzi+ezfkBnbbU43h/8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 03:27:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "phg8eyrk8a"
+        },
+        {
+          "Name": "label",
+          "Value": "DATLICHKHAM.styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fUsa4CQ/HZxEzeAajmCgLGTWUgzi+ezfkBnbbU43h/8="
         }
       ]
     },
@@ -7177,7 +7603,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6850"
+          "Value": "5704"
         },
         {
           "Name": "Content-Type",
@@ -7185,11 +7611,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"jk3SeNDHw7xg/AUESh4xcx8wCvNr8oVNHLgZbQA+Sa0=\""
+          "Value": "\"fUsa4CQ/HZxEzeAajmCgLGTWUgzi+ezfkBnbbU43h/8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 03 Apr 2025 05:28:16 GMT"
+          "Value": "Mon, 21 Apr 2025 03:27:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7199,97 +7625,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-jk3SeNDHw7xg/AUESh4xcx8wCvNr8oVNHLgZbQA+Sa0="
-        }
-      ]
-    },
-    {
-      "Route": "DATLICHKHAM.y7jl1ueduo.bundle.scp.css",
-      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\DATLICHKHAM.bundle.scp.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "6850"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"jk3SeNDHw7xg/AUESh4xcx8wCvNr8oVNHLgZbQA+Sa0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 03 Apr 2025 05:28:16 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "y7jl1ueduo"
-        },
-        {
-          "Name": "label",
-          "Value": "DATLICHKHAM.bundle.scp.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-jk3SeNDHw7xg/AUESh4xcx8wCvNr8oVNHLgZbQA+Sa0="
-        }
-      ]
-    },
-    {
-      "Route": "DATLICHKHAM.y7jl1ueduo.styles.css",
-      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\obj\\Debug\\net8.0\\scopedcss\\bundle\\DATLICHKHAM.styles.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "6850"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"jk3SeNDHw7xg/AUESh4xcx8wCvNr8oVNHLgZbQA+Sa0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 03 Apr 2025 05:28:16 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "y7jl1ueduo"
-        },
-        {
-          "Name": "label",
-          "Value": "DATLICHKHAM.styles.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-jk3SeNDHw7xg/AUESh4xcx8wCvNr8oVNHLgZbQA+Sa0="
+          "Value": "sha256-fUsa4CQ/HZxEzeAajmCgLGTWUgzi+ezfkBnbbU43h/8="
         }
       ]
     },
@@ -9596,6 +9932,88 @@
       ]
     },
     {
+      "Route": "images/anhdaidien.3totyi7v8j.jpg",
+      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\images\\anhdaidien.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2978"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KcPMy5bbDNKEQFXik+YXkn8un3zo6T9QSXvTekixIKw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 20 Apr 2025 16:40:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3totyi7v8j"
+        },
+        {
+          "Name": "label",
+          "Value": "images/anhdaidien.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-KcPMy5bbDNKEQFXik+YXkn8un3zo6T9QSXvTekixIKw="
+        }
+      ]
+    },
+    {
+      "Route": "images/anhdaidien.jpg",
+      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\images\\anhdaidien.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2978"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KcPMy5bbDNKEQFXik+YXkn8un3zo6T9QSXvTekixIKw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 20 Apr 2025 16:40:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-KcPMy5bbDNKEQFXik+YXkn8un3zo6T9QSXvTekixIKw="
+        }
+      ]
+    },
+    {
       "Route": "images/arrow_next.png",
       "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\images\\arrow_next.png",
       "Selectors": [],
@@ -10084,6 +10502,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-jqmBsN4N+6mkopYOge/UknkshZGkGGzALgAByvWsz7w="
+        }
+      ]
+    },
+    {
+      "Route": "images/bgg.2kld723i5x.jpeg",
+      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\images\\bgg.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33157"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nvKG7t5Z0YuYM9Stx6QnkaCl8NBB+P8FE4jSm2TXLNE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 07:56:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2kld723i5x"
+        },
+        {
+          "Name": "label",
+          "Value": "images/bgg.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nvKG7t5Z0YuYM9Stx6QnkaCl8NBB+P8FE4jSm2TXLNE="
+        }
+      ]
+    },
+    {
+      "Route": "images/bgg.gjrxvfvn2g.jpg",
+      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\images\\bgg.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1390382"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rNSOS5qFmhlKUWVTddRX5/nDijpoT7BOYn/h3fJEneE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 07:52:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gjrxvfvn2g"
+        },
+        {
+          "Name": "label",
+          "Value": "images/bgg.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rNSOS5qFmhlKUWVTddRX5/nDijpoT7BOYn/h3fJEneE="
+        }
+      ]
+    },
+    {
+      "Route": "images/bgg.jpeg",
+      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\images\\bgg.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33157"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nvKG7t5Z0YuYM9Stx6QnkaCl8NBB+P8FE4jSm2TXLNE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 07:56:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-nvKG7t5Z0YuYM9Stx6QnkaCl8NBB+P8FE4jSm2TXLNE="
+        }
+      ]
+    },
+    {
+      "Route": "images/bgg.jpg",
+      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\images\\bgg.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1390382"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rNSOS5qFmhlKUWVTddRX5/nDijpoT7BOYn/h3fJEneE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 07:52:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rNSOS5qFmhlKUWVTddRX5/nDijpoT7BOYn/h3fJEneE="
         }
       ]
     },
@@ -11646,6 +12228,334 @@
       ]
     },
     {
+      "Route": "images/introchuyengia.jpg",
+      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\images\\introchuyengia.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "161031"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QO1Okdp2VTls5eTeAnLE4f31BKkHM7L8nXRu3bPepbo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 08:46:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-QO1Okdp2VTls5eTeAnLE4f31BKkHM7L8nXRu3bPepbo="
+        }
+      ]
+    },
+    {
+      "Route": "images/introchuyengia.oyyxynmlw1.jpg",
+      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\images\\introchuyengia.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "161031"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QO1Okdp2VTls5eTeAnLE4f31BKkHM7L8nXRu3bPepbo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 08:46:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "oyyxynmlw1"
+        },
+        {
+          "Name": "label",
+          "Value": "images/introchuyengia.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-QO1Okdp2VTls5eTeAnLE4f31BKkHM7L8nXRu3bPepbo="
+        }
+      ]
+    },
+    {
+      "Route": "images/introdichvu.hsife29010.jpg",
+      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\images\\introdichvu.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10835194"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4bIfptlQJCwkacy1INsJ6T9fAeH90ImstynAZcIxl/0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 08:20:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hsife29010"
+        },
+        {
+          "Name": "label",
+          "Value": "images/introdichvu.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4bIfptlQJCwkacy1INsJ6T9fAeH90ImstynAZcIxl/0="
+        }
+      ]
+    },
+    {
+      "Route": "images/introdichvu.jpg",
+      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\images\\introdichvu.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10835194"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4bIfptlQJCwkacy1INsJ6T9fAeH90ImstynAZcIxl/0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 08:20:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4bIfptlQJCwkacy1INsJ6T9fAeH90ImstynAZcIxl/0="
+        }
+      ]
+    },
+    {
+      "Route": "images/introphongkham.21fctdibm8.jpg",
+      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\images\\introphongkham.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "166078"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FkisNNK+ooxWVl09C7J+WquBbK1xYj7eTGsEcxX7CG4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 08:27:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "21fctdibm8"
+        },
+        {
+          "Name": "label",
+          "Value": "images/introphongkham.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-FkisNNK+ooxWVl09C7J+WquBbK1xYj7eTGsEcxX7CG4="
+        }
+      ]
+    },
+    {
+      "Route": "images/introphongkham.jpg",
+      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\images\\introphongkham.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "166078"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FkisNNK+ooxWVl09C7J+WquBbK1xYj7eTGsEcxX7CG4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 08:27:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-FkisNNK+ooxWVl09C7J+WquBbK1xYj7eTGsEcxX7CG4="
+        }
+      ]
+    },
+    {
+      "Route": "images/introtongquan.jpg",
+      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\images\\introtongquan.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "42133"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9LdawUUlasNNnfCZ6puhekikrVKOp5pwSALb8r0CQDw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 08:21:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9LdawUUlasNNnfCZ6puhekikrVKOp5pwSALb8r0CQDw="
+        }
+      ]
+    },
+    {
+      "Route": "images/introtongquan.o33p8dwifc.jpg",
+      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\images\\introtongquan.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "42133"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9LdawUUlasNNnfCZ6puhekikrVKOp5pwSALb8r0CQDw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 08:21:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "o33p8dwifc"
+        },
+        {
+          "Name": "label",
+          "Value": "images/introtongquan.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9LdawUUlasNNnfCZ6puhekikrVKOp5pwSALb8r0CQDw="
+        }
+      ]
+    },
+    {
       "Route": "images/logo.jpg",
       "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\images\\logo.jpg",
       "Selectors": [],
@@ -13122,7 +14032,7 @@
       ]
     },
     {
-      "Route": "js/main.bma1hql1mb.js",
+      "Route": "js/main.94nj6hagdi.js",
       "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\js\\main.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -13132,7 +14042,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2805"
+          "Value": "2807"
         },
         {
           "Name": "Content-Type",
@@ -13140,11 +14050,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"/Sp6m40STd/MHlkJk+MVZ7kXnWSvhqSuHpBoEVh09Rg=\""
+          "Value": "\"N7oDgjj3IUfJ5ONQktMMwmTz6/3JOmPtT1JIf7ZlPEE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 08 Apr 2025 02:13:20 GMT"
+          "Value": "Mon, 21 Apr 2025 01:38:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13154,7 +14064,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "bma1hql1mb"
+          "Value": "94nj6hagdi"
         },
         {
           "Name": "label",
@@ -13162,7 +14072,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-/Sp6m40STd/MHlkJk+MVZ7kXnWSvhqSuHpBoEVh09Rg="
+          "Value": "sha256-N7oDgjj3IUfJ5ONQktMMwmTz6/3JOmPtT1JIf7ZlPEE="
         }
       ]
     },
@@ -13177,7 +14087,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2805"
+          "Value": "2807"
         },
         {
           "Name": "Content-Type",
@@ -13185,11 +14095,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"/Sp6m40STd/MHlkJk+MVZ7kXnWSvhqSuHpBoEVh09Rg=\""
+          "Value": "\"N7oDgjj3IUfJ5ONQktMMwmTz6/3JOmPtT1JIf7ZlPEE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 08 Apr 2025 02:13:20 GMT"
+          "Value": "Mon, 21 Apr 2025 01:38:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13199,7 +14109,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-/Sp6m40STd/MHlkJk+MVZ7kXnWSvhqSuHpBoEVh09Rg="
+          "Value": "sha256-N7oDgjj3IUfJ5ONQktMMwmTz6/3JOmPtT1JIf7ZlPEE="
         }
       ]
     },
@@ -17218,6 +18128,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-ZH6pA6BSx6fuHZvdaKph1DwUJ+VSYilIiEQu8ilnvqk="
+        }
+      ]
+    },
+    {
+      "Route": "lib/ckeditor/ckeditor5.7bgtdt6rj5.css",
+      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\lib\\ckeditor\\ckeditor5.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "236438"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LSdHOLhFc8H+HFHUSJNLZLjnmH3FRJRAtyTMHUYFLp4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 06:04:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7bgtdt6rj5"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/ckeditor/ckeditor5.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-LSdHOLhFc8H+HFHUSJNLZLjnmH3FRJRAtyTMHUYFLp4="
+        }
+      ]
+    },
+    {
+      "Route": "lib/ckeditor/ckeditor5.css",
+      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\lib\\ckeditor\\ckeditor5.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "236438"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LSdHOLhFc8H+HFHUSJNLZLjnmH3FRJRAtyTMHUYFLp4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 06:04:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LSdHOLhFc8H+HFHUSJNLZLjnmH3FRJRAtyTMHUYFLp4="
+        }
+      ]
+    },
+    {
+      "Route": "lib/ckeditor/ckeditor5.fiywmtv45z.js",
+      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\lib\\ckeditor\\ckeditor5.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1149887"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SS8TEkI6Ds/n+5Qud9GuGU8u61OKUWRRnAOrInS+Tk0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 08:31:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fiywmtv45z"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/ckeditor/ckeditor5.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SS8TEkI6Ds/n+5Qud9GuGU8u61OKUWRRnAOrInS+Tk0="
+        }
+      ]
+    },
+    {
+      "Route": "lib/ckeditor/ckeditor5.js",
+      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\lib\\ckeditor\\ckeditor5.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1149887"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SS8TEkI6Ds/n+5Qud9GuGU8u61OKUWRRnAOrInS+Tk0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 08:31:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SS8TEkI6Ds/n+5Qud9GuGU8u61OKUWRRnAOrInS+Tk0="
         }
       ]
     },
@@ -22634,6 +23708,88 @@
       ]
     },
     {
+      "Route": "PageScripts/DangKy.dxbe1dbvey.js",
+      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\DangKy.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2473"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4ZizWUiZRUxmiTaPj0YqHPjrppRNBZNI8IKKR8ahO8c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 07:16:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dxbe1dbvey"
+        },
+        {
+          "Name": "label",
+          "Value": "PageScripts/DangKy.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4ZizWUiZRUxmiTaPj0YqHPjrppRNBZNI8IKKR8ahO8c="
+        }
+      ]
+    },
+    {
+      "Route": "PageScripts/DangKy.js",
+      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\DangKy.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2473"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4ZizWUiZRUxmiTaPj0YqHPjrppRNBZNI8IKKR8ahO8c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 07:16:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4ZizWUiZRUxmiTaPj0YqHPjrppRNBZNI8IKKR8ahO8c="
+        }
+      ]
+    },
+    {
       "Route": "PageScripts/Layout.js",
       "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\Layout.js",
       "Selectors": [],
@@ -22716,7 +23872,7 @@
       ]
     },
     {
-      "Route": "PageScripts/QuanLyBaiViet.95e741f36q.js",
+      "Route": "PageScripts/QuanLyBaiViet.f4ipazq2sz.js",
       "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\QuanLyBaiViet.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -22726,7 +23882,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5254"
+          "Value": "14421"
         },
         {
           "Name": "Content-Type",
@@ -22734,11 +23890,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"XRsxVWAxszwlEjeko4Qjqh6TjJTzWTkm+wm4JBdAOno=\""
+          "Value": "\"AQJNrQEfOpXKLWgaxe2/8T6FHuIvrFvCRdD+WaA19JI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 03 Apr 2025 01:21:35 GMT"
+          "Value": "Fri, 18 Apr 2025 10:54:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22748,7 +23904,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "95e741f36q"
+          "Value": "f4ipazq2sz"
         },
         {
           "Name": "label",
@@ -22756,7 +23912,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-XRsxVWAxszwlEjeko4Qjqh6TjJTzWTkm+wm4JBdAOno="
+          "Value": "sha256-AQJNrQEfOpXKLWgaxe2/8T6FHuIvrFvCRdD+WaA19JI="
         }
       ]
     },
@@ -22771,7 +23927,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5254"
+          "Value": "14421"
         },
         {
           "Name": "Content-Type",
@@ -22779,11 +23935,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"XRsxVWAxszwlEjeko4Qjqh6TjJTzWTkm+wm4JBdAOno=\""
+          "Value": "\"AQJNrQEfOpXKLWgaxe2/8T6FHuIvrFvCRdD+WaA19JI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 03 Apr 2025 01:21:35 GMT"
+          "Value": "Fri, 18 Apr 2025 10:54:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22793,7 +23949,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-XRsxVWAxszwlEjeko4Qjqh6TjJTzWTkm+wm4JBdAOno="
+          "Value": "sha256-AQJNrQEfOpXKLWgaxe2/8T6FHuIvrFvCRdD+WaA19JI="
+        }
+      ]
+    },
+    {
+      "Route": "PageScripts/QuanLyBenhNhan.78s94oinph.js",
+      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\QuanLyBenhNhan.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16560"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"J7ugIvBSZZg7YYXE8toBMtErUyLoSR2523QCvELYvg0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 06:49:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "78s94oinph"
+        },
+        {
+          "Name": "label",
+          "Value": "PageScripts/QuanLyBenhNhan.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-J7ugIvBSZZg7YYXE8toBMtErUyLoSR2523QCvELYvg0="
         }
       ]
     },
@@ -22808,7 +24009,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "16522"
+          "Value": "16560"
         },
         {
           "Name": "Content-Type",
@@ -22816,11 +24017,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"+ngM+zGbp7d2aBUkBLKfD3ByGsDmthQrk/0fEQbirrM=\""
+          "Value": "\"J7ugIvBSZZg7YYXE8toBMtErUyLoSR2523QCvELYvg0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 16 Apr 2025 07:48:41 GMT"
+          "Value": "Mon, 21 Apr 2025 06:49:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22830,13 +24031,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-+ngM+zGbp7d2aBUkBLKfD3ByGsDmthQrk/0fEQbirrM="
+          "Value": "sha256-J7ugIvBSZZg7YYXE8toBMtErUyLoSR2523QCvELYvg0="
         }
       ]
     },
     {
-      "Route": "PageScripts/QuanLyBenhNhan.uzvc8lliuj.js",
-      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\QuanLyBenhNhan.js",
+      "Route": "PageScripts/QuanLyChuyenGia.3jwb6cv8kg.js",
+      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\QuanLyChuyenGia.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -22845,7 +24046,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "16522"
+          "Value": "31360"
         },
         {
           "Name": "Content-Type",
@@ -22853,11 +24054,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"+ngM+zGbp7d2aBUkBLKfD3ByGsDmthQrk/0fEQbirrM=\""
+          "Value": "\"kSAlJG56LIPQpoKCYFzmo3ylGfEVCbrTQ/tLBt89W7Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 16 Apr 2025 07:48:41 GMT"
+          "Value": "Fri, 18 Apr 2025 10:56:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22867,15 +24068,15 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "uzvc8lliuj"
+          "Value": "3jwb6cv8kg"
         },
         {
           "Name": "label",
-          "Value": "PageScripts/QuanLyBenhNhan.js"
+          "Value": "PageScripts/QuanLyChuyenGia.js"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-+ngM+zGbp7d2aBUkBLKfD3ByGsDmthQrk/0fEQbirrM="
+          "Value": "sha256-kSAlJG56LIPQpoKCYFzmo3ylGfEVCbrTQ/tLBt89W7Y="
         }
       ]
     },
@@ -22890,7 +24091,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "19141"
+          "Value": "31360"
         },
         {
           "Name": "Content-Type",
@@ -22898,11 +24099,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"RsW0ajsyZ24cgehW2Ih+wgxww0ka+0B260iN2z77BSU=\""
+          "Value": "\"kSAlJG56LIPQpoKCYFzmo3ylGfEVCbrTQ/tLBt89W7Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 16 Apr 2025 10:13:15 GMT"
+          "Value": "Fri, 18 Apr 2025 10:56:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22912,52 +24113,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-RsW0ajsyZ24cgehW2Ih+wgxww0ka+0B260iN2z77BSU="
-        }
-      ]
-    },
-    {
-      "Route": "PageScripts/QuanLyChuyenGia.uenz837kos.js",
-      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\QuanLyChuyenGia.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "19141"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"RsW0ajsyZ24cgehW2Ih+wgxww0ka+0B260iN2z77BSU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 16 Apr 2025 10:13:15 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "uenz837kos"
-        },
-        {
-          "Name": "label",
-          "Value": "PageScripts/QuanLyChuyenGia.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-RsW0ajsyZ24cgehW2Ih+wgxww0ka+0B260iN2z77BSU="
+          "Value": "sha256-kSAlJG56LIPQpoKCYFzmo3ylGfEVCbrTQ/tLBt89W7Y="
         }
       ]
     },
@@ -23044,51 +24200,6 @@
       ]
     },
     {
-      "Route": "PageScripts/QuanLyChuyenMuc.4x1qk0061y.js",
-      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\QuanLyChuyenMuc.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "11484"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"yF9OTQ/M0zaqp1ni+YqdL17nWrDPkusSWLDka/gT6EI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 06:54:09 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "4x1qk0061y"
-        },
-        {
-          "Name": "label",
-          "Value": "PageScripts/QuanLyChuyenMuc.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-yF9OTQ/M0zaqp1ni+YqdL17nWrDPkusSWLDka/gT6EI="
-        }
-      ]
-    },
-    {
       "Route": "PageScripts/QuanLyChuyenMuc.js",
       "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\QuanLyChuyenMuc.js",
       "Selectors": [],
@@ -23099,7 +24210,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "11484"
+          "Value": "11592"
         },
         {
           "Name": "Content-Type",
@@ -23107,11 +24218,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"yF9OTQ/M0zaqp1ni+YqdL17nWrDPkusSWLDka/gT6EI=\""
+          "Value": "\"W4RsxAIjTGRv9hG2FNKfx/mjrDwpZwL2SehduxKeusA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 06:54:09 GMT"
+          "Value": "Fri, 18 Apr 2025 10:53:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -23121,7 +24232,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-yF9OTQ/M0zaqp1ni+YqdL17nWrDPkusSWLDka/gT6EI="
+          "Value": "sha256-W4RsxAIjTGRv9hG2FNKfx/mjrDwpZwL2SehduxKeusA="
+        }
+      ]
+    },
+    {
+      "Route": "PageScripts/QuanLyChuyenMuc.z2nibl2bzy.js",
+      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\QuanLyChuyenMuc.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11592"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"W4RsxAIjTGRv9hG2FNKfx/mjrDwpZwL2SehduxKeusA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 10:53:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "z2nibl2bzy"
+        },
+        {
+          "Name": "label",
+          "Value": "PageScripts/QuanLyChuyenMuc.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-W4RsxAIjTGRv9hG2FNKfx/mjrDwpZwL2SehduxKeusA="
         }
       ]
     },
@@ -30342,8 +31498,8 @@
       ]
     },
     {
-      "Route": "upload/BenhNhan/done_1744789747.hwz1gexbcq.png",
-      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\BenhNhan\\done_1744789747.png",
+      "Route": "upload/BaiViet/chung-chi-tu-van-tam-ly-hoc-duong_1744966437.bxln4zqumi.jpg",
+      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\BaiViet\\chung-chi-tu-van-tam-ly-hoc-duong_1744966437.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -30352,19 +31508,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4975"
+          "Value": "746853"
         },
         {
           "Name": "Content-Type",
-          "Value": "image/png"
+          "Value": "image/jpeg"
         },
         {
           "Name": "ETag",
-          "Value": "\"AUTS4XS2JOtOONQOTyxTQfPn7uubMCF4z8UE0zAMvig=\""
+          "Value": "\"v96Mwxt8AH0cZu5aS5k4/xz87yexHJoSb/xE1Kny8V4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 16 Apr 2025 07:49:07 GMT"
+          "Value": "Fri, 18 Apr 2025 08:53:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -30374,21 +31530,21 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "hwz1gexbcq"
+          "Value": "bxln4zqumi"
         },
         {
           "Name": "label",
-          "Value": "upload/BenhNhan/done_1744789747.png"
+          "Value": "upload/BaiViet/chung-chi-tu-van-tam-ly-hoc-duong_1744966437.jpg"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-AUTS4XS2JOtOONQOTyxTQfPn7uubMCF4z8UE0zAMvig="
+          "Value": "sha256-v96Mwxt8AH0cZu5aS5k4/xz87yexHJoSb/xE1Kny8V4="
         }
       ]
     },
     {
-      "Route": "upload/BenhNhan/done_1744789747.png",
-      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\BenhNhan\\done_1744789747.png",
+      "Route": "upload/BaiViet/chung-chi-tu-van-tam-ly-hoc-duong_1744966437.jpg",
+      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\BaiViet\\chung-chi-tu-van-tam-ly-hoc-duong_1744966437.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -30397,19 +31553,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4975"
+          "Value": "746853"
         },
         {
           "Name": "Content-Type",
-          "Value": "image/png"
+          "Value": "image/jpeg"
         },
         {
           "Name": "ETag",
-          "Value": "\"AUTS4XS2JOtOONQOTyxTQfPn7uubMCF4z8UE0zAMvig=\""
+          "Value": "\"v96Mwxt8AH0cZu5aS5k4/xz87yexHJoSb/xE1Kny8V4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 16 Apr 2025 07:49:07 GMT"
+          "Value": "Fri, 18 Apr 2025 08:53:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -30419,7 +31575,499 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-AUTS4XS2JOtOONQOTyxTQfPn7uubMCF4z8UE0zAMvig="
+          "Value": "sha256-v96Mwxt8AH0cZu5aS5k4/xz87yexHJoSb/xE1Kny8V4="
+        }
+      ]
+    },
+    {
+      "Route": "upload/BaiViet/chung-chi-tu-van-tam-ly-hoc-duong_1744967244.bxln4zqumi.jpg",
+      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\BaiViet\\chung-chi-tu-van-tam-ly-hoc-duong_1744967244.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "746853"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"v96Mwxt8AH0cZu5aS5k4/xz87yexHJoSb/xE1Kny8V4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 09:07:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bxln4zqumi"
+        },
+        {
+          "Name": "label",
+          "Value": "upload/BaiViet/chung-chi-tu-van-tam-ly-hoc-duong_1744967244.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-v96Mwxt8AH0cZu5aS5k4/xz87yexHJoSb/xE1Kny8V4="
+        }
+      ]
+    },
+    {
+      "Route": "upload/BaiViet/chung-chi-tu-van-tam-ly-hoc-duong_1744967244.jpg",
+      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\BaiViet\\chung-chi-tu-van-tam-ly-hoc-duong_1744967244.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "746853"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"v96Mwxt8AH0cZu5aS5k4/xz87yexHJoSb/xE1Kny8V4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 09:07:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-v96Mwxt8AH0cZu5aS5k4/xz87yexHJoSb/xE1Kny8V4="
+        }
+      ]
+    },
+    {
+      "Route": "upload/BaiViet/null_1744973714.png",
+      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\BaiViet\\null_1744973714.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2109"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SUjW9Gv+v8jXnTkqeiDImWGskX+mTBXBakFmHG81gEU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 10:55:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SUjW9Gv+v8jXnTkqeiDImWGskX+mTBXBakFmHG81gEU="
+        }
+      ]
+    },
+    {
+      "Route": "upload/BaiViet/null_1744973714.rr99aly1hh.png",
+      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\BaiViet\\null_1744973714.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2109"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SUjW9Gv+v8jXnTkqeiDImWGskX+mTBXBakFmHG81gEU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 10:55:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rr99aly1hh"
+        },
+        {
+          "Name": "label",
+          "Value": "upload/BaiViet/null_1744973714.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SUjW9Gv+v8jXnTkqeiDImWGskX+mTBXBakFmHG81gEU="
+        }
+      ]
+    },
+    {
+      "Route": "upload/BenhNhan/Cún_1745169221.png",
+      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\BenhNhan\\Cún_1745169221.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "35316"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uOWNthZhHZ6RnlfHHgimMYXZR7RiL/SJoSZXC3uRnGw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 20 Apr 2025 17:13:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-uOWNthZhHZ6RnlfHHgimMYXZR7RiL/SJoSZXC3uRnGw="
+        }
+      ]
+    },
+    {
+      "Route": "upload/BenhNhan/Cún_1745169221.wao15d7wh1.png",
+      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\BenhNhan\\Cún_1745169221.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "35316"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uOWNthZhHZ6RnlfHHgimMYXZR7RiL/SJoSZXC3uRnGw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 20 Apr 2025 17:13:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wao15d7wh1"
+        },
+        {
+          "Name": "label",
+          "Value": "upload/BenhNhan/Cún_1745169221.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-uOWNthZhHZ6RnlfHHgimMYXZR7RiL/SJoSZXC3uRnGw="
+        }
+      ]
+    },
+    {
+      "Route": "upload/Blog/5e7e0897-67ea-4d2c-9352-cf478d6fa394_chung-chi-tu-van-tam-ly-hoc-duong.bxln4zqumi.jpg",
+      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\Blog\\5e7e0897-67ea-4d2c-9352-cf478d6fa394_chung-chi-tu-van-tam-ly-hoc-duong.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "746853"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"v96Mwxt8AH0cZu5aS5k4/xz87yexHJoSb/xE1Kny8V4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 10:24:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bxln4zqumi"
+        },
+        {
+          "Name": "label",
+          "Value": "upload/Blog/5e7e0897-67ea-4d2c-9352-cf478d6fa394_chung-chi-tu-van-tam-ly-hoc-duong.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-v96Mwxt8AH0cZu5aS5k4/xz87yexHJoSb/xE1Kny8V4="
+        }
+      ]
+    },
+    {
+      "Route": "upload/Blog/5e7e0897-67ea-4d2c-9352-cf478d6fa394_chung-chi-tu-van-tam-ly-hoc-duong.jpg",
+      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\Blog\\5e7e0897-67ea-4d2c-9352-cf478d6fa394_chung-chi-tu-van-tam-ly-hoc-duong.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "746853"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"v96Mwxt8AH0cZu5aS5k4/xz87yexHJoSb/xE1Kny8V4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 10:24:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-v96Mwxt8AH0cZu5aS5k4/xz87yexHJoSb/xE1Kny8V4="
+        }
+      ]
+    },
+    {
+      "Route": "upload/Blog/e0b719ac-9bef-4d15-bd1e-7eddc8f94c89_chung-chi-tu-van-tam-ly-hoc-duong.bxln4zqumi.jpg",
+      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\Blog\\e0b719ac-9bef-4d15-bd1e-7eddc8f94c89_chung-chi-tu-van-tam-ly-hoc-duong.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "746853"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"v96Mwxt8AH0cZu5aS5k4/xz87yexHJoSb/xE1Kny8V4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 10:49:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bxln4zqumi"
+        },
+        {
+          "Name": "label",
+          "Value": "upload/Blog/e0b719ac-9bef-4d15-bd1e-7eddc8f94c89_chung-chi-tu-van-tam-ly-hoc-duong.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-v96Mwxt8AH0cZu5aS5k4/xz87yexHJoSb/xE1Kny8V4="
+        }
+      ]
+    },
+    {
+      "Route": "upload/Blog/e0b719ac-9bef-4d15-bd1e-7eddc8f94c89_chung-chi-tu-van-tam-ly-hoc-duong.jpg",
+      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\Blog\\e0b719ac-9bef-4d15-bd1e-7eddc8f94c89_chung-chi-tu-van-tam-ly-hoc-duong.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "746853"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"v96Mwxt8AH0cZu5aS5k4/xz87yexHJoSb/xE1Kny8V4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 10:49:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-v96Mwxt8AH0cZu5aS5k4/xz87yexHJoSb/xE1Kny8V4="
+        }
+      ]
+    },
+    {
+      "Route": "upload/Blog/fc2b6edf-087a-4029-aedb-3d0e1a8e9a54_chung-chi-tu-van-tam-ly-hoc-duong.bxln4zqumi.jpg",
+      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\Blog\\fc2b6edf-087a-4029-aedb-3d0e1a8e9a54_chung-chi-tu-van-tam-ly-hoc-duong.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "746853"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"v96Mwxt8AH0cZu5aS5k4/xz87yexHJoSb/xE1Kny8V4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 10:54:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bxln4zqumi"
+        },
+        {
+          "Name": "label",
+          "Value": "upload/Blog/fc2b6edf-087a-4029-aedb-3d0e1a8e9a54_chung-chi-tu-van-tam-ly-hoc-duong.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-v96Mwxt8AH0cZu5aS5k4/xz87yexHJoSb/xE1Kny8V4="
+        }
+      ]
+    },
+    {
+      "Route": "upload/Blog/fc2b6edf-087a-4029-aedb-3d0e1a8e9a54_chung-chi-tu-van-tam-ly-hoc-duong.jpg",
+      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\Blog\\fc2b6edf-087a-4029-aedb-3d0e1a8e9a54_chung-chi-tu-van-tam-ly-hoc-duong.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "746853"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"v96Mwxt8AH0cZu5aS5k4/xz87yexHJoSb/xE1Kny8V4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 10:54:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-v96Mwxt8AH0cZu5aS5k4/xz87yexHJoSb/xE1Kny8V4="
         }
       ]
     },

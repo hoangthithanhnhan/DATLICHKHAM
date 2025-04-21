@@ -9,6 +9,7 @@
         public DateTime? NgayHetHan {  get; set; }
         public string? SoHieuChungChi { get; set; }
         public string? ToChucCap { get; set; }
+        public string? HinhAnh { get; set; }
     }
     public class DLK_ChungChiChuyenGiaAdd
     {

@@ -1,8 +1,4 @@
-﻿// Licensed to the .NET Foundation under one or more agreements.
-// The .NET Foundation licenses this file to you under the MIT license.
-#nullable disable
-
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using DATLICHKHAM.Models;
 using MediatR;
 using Microsoft.AspNetCore.Authentication;
@@ -12,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 
-namespace QuanLyCayXanh.Areas.Identity.Pages.Account
+namespace Login.Areas.Identity.Pages.Account
 {
     public class LoginModel : PageModel
     {
@@ -50,7 +46,7 @@ namespace QuanLyCayXanh.Areas.Identity.Pages.Account
         {
 
             [Required(ErrorMessage = "Tài khoản không được bỏ trống!")]
-            public string Email { get; set; }
+            public string Username { get; set; }
 
             [Required(ErrorMessage = "Mật khẩu không được bỏ trống!")]
 
@@ -81,18 +77,24 @@ namespace QuanLyCayXanh.Areas.Identity.Pages.Account
 
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
 
-
-
             if (ModelState.IsValid)
             {
-                var user = await _userManager.FindByNameAsync(Input.Email);
+                var user = await _userManager.FindByNameAsync(Input.Username);
                 if (user != null)
                 {
-                    var result = await _signInManager.PasswordSignInAsync(Input.Email, Input.Password, true, lockoutOnFailure: false);
+                    var result = await _signInManager.PasswordSignInAsync(Input.Username, Input.Password, true, lockoutOnFailure: false);
                     if (result.Succeeded)
                     {
-                        _logger.LogInformation("Đăng nhập thành công");
-                        return LocalRedirect(returnUrl);
+                        //VaiTro ==0 là Admin, sẽ điều hướng đến trang quản trị
+                        if (user.VaiTro == 0 )
+                        {
+                            return LocalRedirect(returnUrl);
+                        }
+                        else
+                        {
+                            return LocalRedirect("~/");
+                        }
+
                     }
                     if (result.RequiresTwoFactor)
                     {
@@ -109,7 +111,6 @@ namespace QuanLyCayXanh.Areas.Identity.Pages.Account
                         return Page();
                     }
                 }
-                // If we got this far, something failed, redisplay form
                 return Page();
             }
             return Page();

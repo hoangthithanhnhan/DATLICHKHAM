@@ -5,6 +5,281 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/BaiVietApi/Gets": {
+      "post": {
+        "tags": [
+          "BaiVietApi"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_BaiVietRequestFilter"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_BaiVietRequestFilter"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_BaiVietRequestFilter"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_BaiVietIEnumerableResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_BaiVietIEnumerableResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_BaiVietIEnumerableResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/BaiVietApi/Get": {
+      "get": {
+        "tags": [
+          "BaiVietApi"
+        ],
+        "parameters": [
+          {
+            "name": "MaBaiViet",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_BaiVietResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_BaiVietResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_BaiVietResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/BaiVietApi/Add": {
+      "post": {
+        "tags": [
+          "BaiVietApi"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "file": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "data": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "file": {
+                  "style": "form"
+                },
+                "data": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_BaiVietResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_BaiVietResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_BaiVietResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/BaiVietApi/Update": {
+      "put": {
+        "tags": [
+          "BaiVietApi"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "file": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "data": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "file": {
+                  "style": "form"
+                },
+                "data": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_BaiVietResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_BaiVietResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_BaiVietResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/BaiVietApi/Delete": {
+      "delete": {
+        "tags": [
+          "BaiVietApi"
+        ],
+        "parameters": [
+          {
+            "name": "MaBaiViet",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Int32Result"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Int32Result"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Int32Result"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/BaiVietApi/DeleteAnhDaiDien": {
+      "delete": {
+        "tags": [
+          "BaiVietApi"
+        ],
+        "parameters": [
+          {
+            "name": "MaBaiViet",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_BaiVietResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_BaiVietResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_BaiVietResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/BenhNhanApi/Get": {
       "get": {
         "tags": [
@@ -413,19 +688,29 @@
         ],
         "requestBody": {
           "content": {
-            "application/json": {
+            "multipart/form-data": {
               "schema": {
-                "$ref": "#/components/schemas/DLK_ChungChiChuyenGia"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/DLK_ChungChiChuyenGia"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/DLK_ChungChiChuyenGia"
+                "type": "object",
+                "properties": {
+                  "files": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "format": "binary"
+                    }
+                  },
+                  "data": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "files": {
+                  "style": "form"
+                },
+                "data": {
+                  "style": "form"
+                }
               }
             }
           }
@@ -2193,10 +2478,138 @@
           }
         }
       }
+    },
+    "/api/Upload/imageBlog": {
+      "post": {
+        "tags": [
+          "Upload"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "upload": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "upload": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {
     "schemas": {
+      "DLK_BaiViet": {
+        "type": "object",
+        "properties": {
+          "maBaiViet": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "maNguoiDung": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "maChuyenMuc": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tenChuyenMuc": {
+            "type": "string",
+            "nullable": true
+          },
+          "nguoiDang": {
+            "type": "string",
+            "nullable": true
+          },
+          "tieuDe": {
+            "type": "string",
+            "nullable": true
+          },
+          "noiDung": {
+            "type": "string",
+            "nullable": true
+          },
+          "thoiGianDangBai": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "trangThai": {
+            "type": "boolean"
+          },
+          "anhDaiDien": {
+            "type": "string",
+            "nullable": true
+          },
+          "tomTat": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DLK_BaiVietIEnumerableResult": {
+        "type": "object",
+        "properties": {
+          "isSuccess": {
+            "type": "boolean"
+          },
+          "value": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DLK_BaiViet"
+            },
+            "nullable": true
+          },
+          "error": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DLK_BaiVietRequestFilter": {
+        "type": "object",
+        "properties": {
+          "keyword": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DLK_BaiVietResult": {
+        "type": "object",
+        "properties": {
+          "isSuccess": {
+            "type": "boolean"
+          },
+          "value": {
+            "$ref": "#/components/schemas/DLK_BaiViet"
+          },
+          "error": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "DLK_BenhNhan": {
         "type": "object",
         "properties": {
@@ -2353,6 +2766,10 @@
             "nullable": true
           },
           "toChucCap": {
+            "type": "string",
+            "nullable": true
+          },
+          "hinhAnh": {
             "type": "string",
             "nullable": true
           }

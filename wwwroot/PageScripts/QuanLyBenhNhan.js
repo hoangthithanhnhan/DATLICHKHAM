@@ -1,4 +1,5 @@
-﻿$(document).ready(function () {
+﻿let APIURL = window.location.origin;
+$(document).ready(function () {
     formatInputDate("#ngaySinhAdd");
 
     formatInputDate("#ngaySinhEdit");

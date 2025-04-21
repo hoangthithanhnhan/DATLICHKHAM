@@ -313,3 +313,56 @@ div.dt-container select.dt-input {
 #btn-deleteAnhDaiDien >img{
     width:24px;
 }
+#btn-deleteChungChi {
+    background: var(--body);
+    border: none;
+}
+#currentChungChiEdit {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+#modalListChungChi .block-header{
+    justify-content:flex-end;
+}
+
+#btn-createChungChi {
+    background-color: #38C793;
+    width: 120px;
+    color: white;
+    font-weight: 700;
+    border: none;
+}
+
+.block-info {
+    border: solid 1px #dee2e6;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+.editor-label{
+    color:var(--body);
+}
+h4 {
+    color: var(--body);
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom:20px;
+}
+#saveChungChi, #editChungChi, .btn-cancel {
+    border-radius: 4px;
+    border-color: var(--body);
+    width: 120px;
+    font-size: 16px;
+    font-weight: 600;
+    background: var(--body);
+    margin-left: 20px;
+}
+.btn-cancel {
+    background: none;
+    color: var(--body);
+}
+.ck-editor__editable_inline {
+    min-height: 300px;
+}
