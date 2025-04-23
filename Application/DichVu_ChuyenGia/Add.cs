@@ -31,7 +31,7 @@ namespace DATLICHKHAM.Application.DichVu_ChuyenGia
                         DynamicParameters parameters = new DynamicParameters();
                         parameters.Add("@MaDichVu", request.Entity.MaDichVu);
                         parameters.Add("@MaChuyenGia", request.Entity.MaChuyenGia);
-                        var result = await connection.QuerySingleOrDefaultAsync<DLK_DichVu_ChuyenGia>("SP_Add_DichVu_ChuyenGia", parameters, commandType: System.Data.CommandType.StoredProcedure);
+                        var result = await connection.QueryFirstOrDefaultAsync<DLK_DichVu_ChuyenGia>("SP_Add_DichVu_ChuyenGia", parameters, commandType: System.Data.CommandType.StoredProcedure);
                         return Result<DLK_DichVu_ChuyenGia>.Success(result);
                     }
                     catch (Exception ex)

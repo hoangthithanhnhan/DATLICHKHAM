@@ -31,13 +31,13 @@ $(document).ready(function () {
 
                     $('#chuyenKhoaAdd').select2({
                         width: "100%",
-                        minimumResultsForSearch: Infinity,
+                        minimumResultsForSearch: Infinity
                         //placeholder: "Chọn chuyên khoa",
                         //dropdownParent: $("#chuyenKhoaAddParent")
                     });
                     $('#chuyenKhoaEdit').select2({
                         width: "100%",
-                        minimumResultsForSearch: Infinity,
+                        minimumResultsForSearch: Infinity
                         //placeholder: "Chọn chuyên khoa",
                         //dropdownParent: $("#chuyenKhoaEditParent")
                     });
@@ -45,6 +45,41 @@ $(document).ready(function () {
             }
         }
     })
+    
+    $.ajax({
+        url: APIURL + `/api/DichVuApi/Gets`,
+        type: "POST",
+        contentType: "application/json; charset=utf-8",
+        data: JSON.stringify({
+            filter: null,
+            trangThai: true
+        }),
+        success: function (data) {
+            if (data && data.isSuccess) {
+                if (data.value && data.value.length > 0) {
+                    let html = "";
+
+                    $.each(data.value, function (index, item) {
+                        html += `<option value="${item.maDichVu}">${item.tenDichVu}</option>`;
+                    });
+
+                    $("#dichVuAdd").html(html);
+                    $("#dichVuEdit").html(html);
+
+                    $('#dichVuAdd').select2({
+                        width: "100%",
+                        minimumResultsForSearch: Infinity
+                    });
+                    $('#dichVuEdit').select2({
+                        width: "100%",
+                        minimumResultsForSearch: Infinity
+                    });
+                }
+            }
+        }
+    })
+
+    
 
     function buildData() {
         let keyword = $('#search').val();
@@ -153,6 +188,7 @@ $(document).ready(function () {
         let fileInput = $("#anhDaiDienAdd")[0];
         let file = fileInput.files[0]; //lấy ảnh đại diện
         let trangThai = $("input[name='trangThaiAdd']:checked").val();
+        let listDichVu = $("#dichVuAdd").val();
         let request = {
             username: tenDangNhap.trim(),
             password: matKhau.trim(),
@@ -213,14 +249,38 @@ $(document).ready(function () {
                 data: formData,
                 processData: false,  //bắt buộc khi dùng FormData
                 contentType: false,  //không cho jQuery set header kiểu `application/x-www-form-urlencoded`
-                success: function (data) {
+                success: async function (data) {
+                    console.log(data)
                     if (!data.isSuccess) {
                         showAlert(data.error, "error");
                     }
                     else {
                         $('#myTable').DataTable().ajax.reload();
-                        $('#modalAdd').modal('hide');
-                        showAlert("Thêm thành công", "success");
+                        
+                        if (listDichVu.length > 0) {
+                            let listApi = []
+                            listDichVu.forEach((item, index) => {
+                                let request = {
+                                    "maDichVu": Number(item),
+                                    "maChuyenGia": data.value.maChuyenGia
+                                }
+                                listApi.push(getDataWithApi("POST", "/api/DichVuChuyenGiaApi/Add", JSON.stringify(request)))
+                            })
+
+                            if (listApi.length > 0) {
+                                await Promise.all(listApi)
+                                    .then((res) => {
+                                        if (res.length > 0) {
+                                            $('#modalAdd').modal('hide');
+                                            showAlert("Thêm thành công", "success");
+                                        }
+                                       
+                                    })
+                                    .catch((err) => {
+                                        console.log(err)
+                                    })
+                            }
+                        }
                         //Làm rỗng form sau khi thêm mới
                         resetForm()
                     }
@@ -239,6 +299,7 @@ $(document).ready(function () {
         let id = $(this).data("id");
         let data = $('#myTable').DataTable().row(id).data();
         $("#maChuyenGiaEdit").val(data.maChuyenGia);
+        $("#dichVuEdit").val("").trigger("change")
         $("#hoTenEdit").val(data.hoTen);
         $("input[name='gioitinhEdit'][value='" + data.gioiTinh + "']").prop("checked", true);
         $("#ngaySinhEdit").val(formatDate(data.ngaySinh));
@@ -265,6 +326,25 @@ $(document).ready(function () {
             $("#maChuyenGiaDeleteAnh").val("");
         };
         $("#anhDaiDienChuyenGiaEdit").val("");
+
+        $.ajax({
+            url: APIURL + `/api/DichVuChuyenGiaApi/GetDichVuByChuyenGia?MaChuyenGia=${data.maChuyenGia}`,
+            type: "GET",
+            contentType: "application/json; charset=utf-8",
+            success: function (data) {
+                if (data && data.isSuccess) {
+                    if (data.value && data.value.length > 0) {
+                        let listDichVu = []
+                        data.value.forEach((item, index) => {
+                            listDichVu.push(item.maDichVu)
+                        })
+
+                        $("#dichVuEdit").val(listDichVu).trigger("change")
+                    }
+                }
+            }
+        })
+
         $('#modalEdit').modal('show');
     })
 
@@ -287,6 +367,7 @@ $(document).ready(function () {
         let soDienThoai = $("#soDienThoaiEdit").val();
         let email = $("#emailEdit").val();
         let trangThai = $("input[name='trangThaiEdit']:checked").val();
+        let listDichVu = $("#dichVuEdit").val();
         let fileInput = $("#anhDaiDienEdit")[0];
         let file = fileInput.files[0];
         let request = {
@@ -339,10 +420,41 @@ $(document).ready(function () {
                 processData: false,  // Không xử lý dữ liệu thành query string
                 contentType: false,  // Không đặt Content-Type, để browser tự thêm multipart
                 data: formData,
-                success: function (data) {
-                    $('#myTable').DataTable().ajax.reload();
-                    $('#modalEdit').modal('hide');
-                    showAlert("Cập nhật thành công", "success");
+                success: async function (data) {
+                    if (!data.isSuccess) {
+                        showAlert(data.error, "error");
+                    }
+                    else {
+                        $('#myTable').DataTable().ajax.reload();
+
+                            if (listDichVu.length > 0) {
+                                let listApi = []
+                                listDichVu.forEach((item, index) => {
+                                    let request = {
+                                        "maDichVu": Number(item),
+                                        "maChuyenGia": data.value.maChuyenGia
+                                    }
+                                    listApi.push(getDataWithApi("POST", "/api/DichVuChuyenGiaApi/Add", JSON.stringify(request)))
+                                })
+
+                                if (listApi.length > 0) {
+                                    await Promise.all(listApi)
+                                        .then((res) => {
+                                            if (res.length > 0) {
+                                                $('#modalAdd').modal('hide');
+                                                showAlert("Thêm thành công", "success");
+                                            }
+
+                                        })
+                                        .catch((err) => {
+                                            console.log(err)
+                                        })
+                                }
+                            }
+
+                        $('#modalEdit').modal('hide');
+                        showAlert("Cập nhật thành công", "success");
+                    }
                 },
                 error: function (error) {
                     showAlert("Cập nhật không thành công", "error");
@@ -512,10 +624,10 @@ $(document).ready(function () {
                 targets: 7,
                 render: function (data, type, row, meta) {
                     return `
-                            <button type="button" data-id="${meta.row}" class="button btn-update">
+                            <button type="button" style=" border:none; background:none;" data-id="${meta.row}" class="button btn-update">
                                 <img src="../images/edit_filled.png" alt="Alternate Text" />
                             </button> 
-                            <button type="button" data-id="${meta.row}" class="button btn-delete" id="btn-modalDeleteChungChi">
+                            <button type="button" style=" border:none; background:none;" data-id="${meta.row}" class="button btn-delete" id="btn-modalDeleteChungChi">
                                 <img src="../images/delete_filled.png" alt="Alternate Text" />
                             </button>`;
                 }
@@ -637,7 +749,8 @@ $(document).ready(function () {
     $('#tableChungChi tbody').on('click', '.btn-update', function () {
         let id = $(this).data("id");
         let data = $('#tableChungChi').DataTable().row(id).data();
-        $('#maChuyenGiaChungChiEdit').val(data.maChungChi);
+        $('#maChuyenGiaChungChiEdit').val(data.maChuyenGia);
+        $('#maChungChiEdit').val(data.maChungChi);
         $('#AddChungChi').addClass('d-none');
         $('#EditChungChi').removeClass('d-none');
         $('#tenChungChiEdit').val(data.tenChungChi);
@@ -646,7 +759,6 @@ $(document).ready(function () {
         $('#ngayCapEdit').val(formatDate(data.ngayCap));
         $('#ngayHetHanEdit').val(formatDate(data.ngayHetHan));
         const imageUrls = data.hinhAnh.split(";");
-        console.log(imageUrls)
         let html = '<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">';
         imageUrls.forEach(url => {
             if (url.trim() !== "") {
@@ -658,7 +770,8 @@ $(document).ready(function () {
     })
 
     $('#editChungChi').on('click', function () {
-        let maChungChi = $("#maChuyenGiaChungChiEdit").val();
+        let maChuyenGia = $("#maChuyenGiaChungChiEdit").val(); 
+        let maChungChi = $("#maChungChiEdit").val(); 
         let tenChungChi = $("#tenChungChiEdit").val();
         let soHieuChungChi = $("#soHieuChungChiEdit").val();
         let toChucCap = $("#toChucCapEdit").val();
@@ -667,6 +780,7 @@ $(document).ready(function () {
         let fileInput = $("#anhChungChiEdit")[0];
         let file = fileInput.files; // Trả về đối tượng file kiểu object
         let request = {
+            maChuyenGia: maChuyenGia,
             maChungChi: maChungChi,
             tenChungChi: tenChungChi,
             soHieuChungChi: soHieuChungChi,
@@ -677,22 +791,23 @@ $(document).ready(function () {
         let formData = new FormData();
         formData.append("data", JSON.stringify(request));// dữ liệu dạng object
         if (file) {
+
             let files = Object.values(file); // Convert object thành array  
+
             // Đối tượng files truyền vào là List, lặp qua các phần tử của mảng đối tượng files để append vào formData
             // => List file
             $.each(files, function (index, item) {
                 formData.append("files", item); // ảnh nếu có
             });
         }
-
         if (checkEmptyString(tenChungChi)) {
             showAlert("Tên chứng chỉ không được để trống", "error");
             return;
         }
-        //if (checkEmptyString(file)) {
-        //    showAlert("Hình ảnh không được để trống", "error");
-        //    return;
-        //}
+        if (checkEmptyString(file)) {
+            showAlert("Hình ảnh không được để trống", "error");
+            return;
+        }
         else {
             $.ajax({
                 type: "PUT",
@@ -701,9 +816,14 @@ $(document).ready(function () {
                 processData: false,
                 data: formData,
                 success: function (data) {
-                    $('#tableChungChi').DataTable().ajax.reload();
-                    showAlert("Cập nhật thành công", "success");
-                    resetForm()
+                    if (!data.isSuccess) {
+                        showAlert(data.error, "error");
+                    }
+                    else {
+                        $('#tableChungChi').DataTable().ajax.reload();
+                        showAlert("Cập nhật thành công", "success");
+                        resetForm()
+                    }
                 },
                 error: function (error) {
                     showAlert("Cập nhật không thành công", "error");
@@ -754,3 +874,21 @@ function resetForm() {
 function resetFormChungChi() {
     $('#modalListChungChi input:not(#maChuyenGiaChungChiAdd)').val("");
 }
+
+function getDataWithApi(method, uri, data) {
+    if (data) {
+        return $.ajax({
+            type: method,
+            contentType: 'application/json; charset=utf-8',
+            url: APIURL + uri,
+            data: data
+        });
+    }
+
+    return $.ajax({
+        type: method,
+        contentType: 'application/json; charset=utf-8',
+        url: APIURL + uri,
+    });
+};
+

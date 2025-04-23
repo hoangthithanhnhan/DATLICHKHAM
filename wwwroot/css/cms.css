@@ -366,3 +366,13 @@ h4 {
 .ck-editor__editable_inline {
     min-height: 300px;
 }
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    padding-left: 35px;
+    height: 27px;
+    border: none;
+    background: var(--lightblue);
+}
+.select2-container .select2-search--inline .select2-search__field {
+    width:96% !important;
+    height: 27px;
+}

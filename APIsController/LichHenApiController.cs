@@ -14,9 +14,9 @@ namespace DATLICHKHAM.APIsController
 
         [HttpGet]
         [Route("Gets")]
-        public async Task<Result<IEnumerable<DLK_LichHen>>> Gets()
+        public async Task<Result<IEnumerable<DLK_LichHen>>> Gets(string? keyword=null)
         {
-            return await Mediator.Send(new Gets.Query { });
+            return await Mediator.Send(new Gets.Query { keyword = keyword });
         }
 
         [HttpGet]
@@ -35,7 +35,7 @@ namespace DATLICHKHAM.APIsController
 
         [HttpPut]
         [Route("Update")]
-        public async Task<Result<DLK_LichHen>> Update(DLK_LichHen Entity)
+        public async Task<Result<DLK_LichHenUpdate>> Update(DLK_LichHenUpdate Entity)
         {
             return await Mediator.Send(new Update.Command { Entity = Entity });
         }

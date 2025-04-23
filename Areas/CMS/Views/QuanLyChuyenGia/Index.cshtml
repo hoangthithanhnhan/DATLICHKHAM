@@ -94,7 +94,12 @@
                         @* render chuyên khoa *@
                     </select>
                 </div>
-
+                <div class="mb-3" id="dichVuAddParent">
+                    <label for="dichVuAdd" class="form-label">Dịch vụ <span class="text-red">*</span></label>
+                    <select class="form-select" id="dichVuAdd" multiple>
+                        @* render dịch vụ*@
+                    </select>
+                </div>
                 <div class="mb-3">
                     <label for="soNamKinhNghiemAdd" class="form-label">Số năm kinh nghiệm</label>
                     <input type="text" class="form-control" id="soNamKinhNghiemAdd" placeholder="Nhập số năm kinh nghiệm">
@@ -202,7 +207,12 @@
                         @* render chuyên khoa *@
                     </select>
                 </div>
-
+                <div class="mb-3" id="dichVuEditParent">
+                    <label for="dichVuEdit" class="form-label">Dịch vụ <span class="text-red">*</span></label>
+                    <select class="form-select" id="dichVuEdit" multiple>
+                        @* render dịch vụ *@
+                    </select>
+                </div>
                 <div class="mb-3">
                     <label for="soNamKinhNghiemEdit" class="form-label">Số năm kinh nghiệm</label>
                     <input type="text" class="form-control" id="soNamKinhNghiemEdit" placeholder="Nhập số năm kinh nghiệm">
@@ -257,41 +267,6 @@
         </div>
     </div>
 </div>
-
-@* MODAL CẬP NHẬT THÔNG TIN USER *@
-@* <div class="modal fade" id="modalEditAccount" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true"> *@
-@*     <div class="modal-dialog modal-lg"> *@
-@*         <div class="modal-content"> *@
-@*             <div class="modal-header"> *@
-@*                 <h5 class="modal-title" id="staticBackdropLabel">Cập nhật tài khoản chuyên gia</h5> *@
-@*                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Hủy"></button> *@
-@*             </div> *@
-@*             <div class="modal-body"> *@
-@*                 <input type="hidden" class="form-control" id="maChuyenGiaEdit" /> *@
-@*                 <div class="mb-3"> *@
-@*                     <label for="tenDangNhapEdit" class="form-label">Tên đăng nhập <span class="text-red">*</span></label> *@
-@*                     <input type="text" class="form-control" id="tenDangNhapEdit" placeholder="Nhập tên đăng nhập"> *@
-@*                 </div> *@
-@*                 <div class="mb-3"> *@
-@*                     <label for="matKhauEdit" class="form-label">Mật khẩu cũ<span class="text-red">*</span></label> *@
-@*                     <input type="text" class="form-control" id="matKhauEdit" placeholder="Nhập mật khẩu cũ"> *@
-@*                 </div> *@
-@*                 <div class="mb-3"> *@
-@*                     <label for="matKhauMoiEdit" class="form-label">Mật khẩu mới <span class="text-red">*</span></label> *@
-@*                     <input type="text" class="form-control" id="matKhauMoiEdit" placeholder="Nhập mật khẩu mới"> *@
-@*                 </div> *@
-@*                 <div class="mb-3"> *@
-@*                     <label for="nhapLaiMatKhauEdit" class="form-label">Nhập lại mật khẩu <span class="text-red">*</span></label> *@
-@*                     <input type="text" class="form-control" id="nhapLaiMatKhauEdit" placeholder="Nhập lại mật khẩu mới"> *@
-@*                 </div> *@
-@*             </div> *@
-@*             <div class="modal-footer"> *@
-@*                 <button type="button" class="btn btn-cancel btn-secondary" data-bs-dismiss="modal">Hủy</button> *@
-@*                 <button type="button" class="btn btn-active btn-primary" id="editData">Lưu</button> *@
-@*             </div> *@
-@*         </div> *@
-@*     </div> *@
-@* </div> *@
 
 
 @* MODAL DANH SÁCH CHỨNG CHỈ *@
@@ -352,6 +327,7 @@
                     <h4>Chỉnh sửa văn bằng</h4>
                     <div class="form-group">
                         <input type="text" class="form-control" id="maChuyenGiaChungChiEdit" hidden />
+                        <input type="text" class="form-control" id="maChungChiEdit" hidden />
                         <div class="row">
                             <div class="col-md-4">
                                 <label class="editor-label">Tên văn bằng <span class="text-red">*</span></label>

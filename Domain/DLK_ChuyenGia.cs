@@ -6,6 +6,8 @@
         public int MaNguoiDung { get; set; }
         public int MaChuyenKhoa { get; set; }
         public string TenChuyenKhoa { get; set; }
+        public int? MaDichVu { get; set; }
+        public string? TenDichVu { get; set; }
         public string HoTen { get; set; }
         public string? ChucDanh { get; set; }
         public string? ChucVu { get; set; }
@@ -32,6 +34,7 @@
         public byte GioiTinh { get; set; }
         public DateTime NgaySinh { get; set; }
         public int MaChuyenKhoa { get; set; }
+        public int MaDichVu { get; set; }
         public long MaNguoiDung { get; set; }
         public string? ChucDanh { get; set; }
         public string? ChucVu { get; set; }

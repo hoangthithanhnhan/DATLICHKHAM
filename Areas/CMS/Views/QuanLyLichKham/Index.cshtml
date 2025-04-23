@@ -1,6 +1,5 @@
-﻿
-@{
-    ViewBag.Title = "Quản lý lịch khám";
+﻿@{
+    ViewBag.Title = "Quản lý lịch hẹn";
 }
 <div class="content">
     <div class="d-flex align-items-center block-header">
@@ -13,34 +12,185 @@
         </button>
     </div>
     <table class="table table-border" id="myTable">
-    <thead>
-        <tr>
-            <th>Stt</th>
-            <th>Ngày</th>
-            <th>Thời gian</th>
-            <th>Bệnh nhân</th>
-            <th>Bác sĩ</th>
-            <th>Hình thức khám</th>
-            <th>Trạng thái</th>
-            <th>Lý do hủy lịch</th>
-            <th>Thao tác</th>
-        </tr>
-    </thead>
-</table>
+        <thead>
+            <tr>
+                <th>Stt</th>
+                <th>Mã lịch hẹn</th>
+                <th>Ngày</th>
+                <th>Thời gian</th>
+                <th>Bệnh nhân</th>
+                <th>Chuyên gia</th>
+                <th>Hình thức</th>
+                <th>Trạng thái</th>
+                <th>Thao tác</th>
+            </tr>
+        </thead>
+    </table>
 </div>
-<div class="modal fade" id="modalDelete" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+
+@* MODAL THÊM MỚI  *@
+<div class="modal fade" id="modalAdd" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">
-            @* <div class="modal-header"> *@
-            @*     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> *@
-            @* </div> *@
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Thêm mới lịch hẹn</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Hủy"></button>
+            </div>
             <div class="modal-body">
-                <img src="~/images/delete.png" alt="Alternate Text" />
-                <h5 class="modal-title text-red" id="exampleModalLabel">Chắc chắn xóa?</h5>
+                <div class="mb-3" id="dichVuAddParent">
+                    <label for="dichVuAdd" class="form-label">Dịch vụ <span class="text-red">*</span></label>
+                    <select class="form-select" id="dichVuAdd">
+                        @* render dịch vụ*@
+                    </select>
+                </div>
+                <div class="mb-3" id="chuyenGiaAddParent">
+                    <label for="chuyenGiaAdd" class="form-label">Chuyên gia <span class="text-red">*</span></label>
+                    <select class="form-select" id="chuyenGiaAdd">
+                        @* render chuyên gia *@
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="ngayHenAdd" class="form-label">Ngày hẹn <span class="text-red">*</span></label>
+                    <input type="date" class="form-control" id="ngayHenAdd" placeholder="dd/mm/yyyy">
+                </div>
+                <div class="mb-3">
+                    <label for="thoiGianHenAdd" class="form-label">Thời gian hẹn <span class="text-red">*</span></label>
+                    <input type="email" class="form-control" id="thoiGianHenAdd" placeholder="Nhập thời gian">
+                </div>
+                <div class="mb-3">
+                    <label for="ghiChuAdd" class="form-label">Ghi chú <span class="text-red">*</span></label>
+                    <textarea type="text" class="form-control" id="ghiChuAdd" placeholder="Nhập ghi chú"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Hình thức<span class="text-red">*</span></label>
+                    <div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="hinhThucAdd" id="trucTiepAdd" value="1">
+                            <label class="form-check-label" for="trucTiepAdd">Trực tiếp</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="hinhThucAdd" id="onlineAdd" value="0">
+                            <label class="form-check-label" for="onlineAdd">Online</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Trạng thái <span class="text-red">*</span></label>
+                    <div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="trangThaiAdd" id="daDatLichAdd" value="0">
+                            <label class="form-check-label" for="daDatLichAdd">Đã đặt lịch</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="trangThaiAdd" id="hoanThanhAdd" value="1">
+                            <label class="form-check-label" for="hoanThanhAdd">Hoàn thành</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="trangThaiAdd" id="daHuyLichAdd" value="2">
+                            <label class="form-check-label" for="daHuyLichAdd">Đã hủy lịch</label>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary btnModalCancel" data-bs-dismiss="modal">Hủy</button>
-                <button type="button" class="btn btn-primary btnModalDelete">Xóa</button>
+                <button type="button" class="btn btn-cancel btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                <button type="button" class="btn btn-active btn-primary" id="saveData">Lưu</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@* MODAL CHỈNH SỬA *@
+<div class="modal fade" id="editAdd" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Cập nhật lịch hẹn</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Hủy"></button>
+            </div>
+            <div class="modal-body">
+                <input type="text" class="form-control" id="maLichHenEdit" hidden>
+                <div class="mb-3" id="chuyenGiaEditParent">
+                    <label for="chuyenGiaEdit" class="form-label">Chuyên gia <span class="text-red">*</span></label>
+                    <select class="form-select" id="chuyenGiaEdit">
+                        @* render chuyên gia *@
+                    </select>
+                </div>
+                <div class="mb-3" id="dichVuEditParent">
+                    <label for="dichVuEdit" class="form-label">Dịch vụ <span class="text-red">*</span></label>
+                    <select class="form-select" id="dichVuEdit">
+                        @* render dịch vụ*@
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="ngayHenEdit" class="form-label">Ngày hẹn <span class="text-red">*</span></label>
+                    <input type="date" class="form-control" id="ngayHenEdit" placeholder="dd/mm/yyyy">
+                </div>
+                <div class="mb-3">
+                    <label for="thoiGianHenEdit" class="form-label">Thời gian hẹn <span class="text-red">*</span></label>
+                    <input type="email" class="form-control" id="thoiGianHenEdit" placeholder="Nhập thời gian">
+                </div>
+                <div class="mb-3">
+                    <label for="ghiChuEdit" class="form-label">Ghi chú</label>
+                    <textarea type="text" class="form-control" id="ghiChuEdit" placeholder="Nhập ghi chú"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Hình thức <span class="text-red">*</span></label>
+                    <div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="hinhThucEdit" id="trucTiepEdit" value="1">
+                            <label class="form-check-label" for="trucTiepEdit">Trực tiếp</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="hinhThucEdit" id="onlineEdit" value="0">
+                            <label class="form-check-label" for="onlineEdit">Online</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="lyDoHuyLichEdit" class="form-label">Lý do hủy lịch</label>
+                    <textarea type="text" class="form-control" id="lyDoHuyLichEdit" placeholder="Nhập lý do hủy lịch hẹn"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Trạng thái <span class="text-red">*</span></label>
+                    <div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="trangThaiEdit" id="daDatLichEdit" value="0">
+                            <label class="form-check-label" for="daDatLichEdit">Đã đặt lịch</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="trangThaiEdit" id="hoanThanhEdit" value="1">
+                            <label class="form-check-label" for="hoanThanhEdit">Hoàn thành</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="trangThaiEdit" id="daHuyLichEdit" value="2">
+                            <label class="form-check-label" for="daHuyLichEdit">Đã hủy lịch</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-cancel btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                <button type="button" class="btn btn-active btn-primary" id="editData">Lưu</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalDelete" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Xóa lịch hẹn</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Hủy"></button>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" class="form-control" id="maLichHenDelete" />
+                <p>Bạn có chắc chắn muốn xóa lịch hẹn này không?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-cancel btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                <button type="button" class="btn btn-active btn-primary" id="deleteData">Đồng ý</button>
             </div>
         </div>
     </div>
