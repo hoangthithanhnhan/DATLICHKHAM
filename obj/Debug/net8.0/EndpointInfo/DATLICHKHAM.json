@@ -865,6 +865,45 @@
         }
       }
     },
+    "/api/ChuyenGiaApi/GetChuyenGiaByDichVu": {
+      "get": {
+        "tags": [
+          "ChuyenGiaApi"
+        ],
+        "parameters": [
+          {
+            "name": "MaDichVu",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ChuyenGiaIEnumerableResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ChuyenGiaIEnumerableResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ChuyenGiaIEnumerableResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/ChuyenGiaApi/Add": {
       "post": {
         "tags": [
@@ -1870,10 +1909,58 @@
         }
       }
     },
+    "/api/DichVuChuyenGiaApi/GetDichVuByChuyenGia": {
+      "get": {
+        "tags": [
+          "DichVuChuyenGiaApi"
+        ],
+        "parameters": [
+          {
+            "name": "MaChuyenGia",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_DichVu_ChuyenGiaIEnumerableResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_DichVu_ChuyenGiaIEnumerableResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_DichVu_ChuyenGiaIEnumerableResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/LichHenApi/Gets": {
       "get": {
         "tags": [
           "LichHenApi"
+        ],
+        "parameters": [
+          {
+            "name": "keyword",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
         ],
         "responses": {
           "200": {
@@ -1995,17 +2082,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/DLK_LichHen"
+                "$ref": "#/components/schemas/DLK_LichHenUpdate"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/DLK_LichHen"
+                "$ref": "#/components/schemas/DLK_LichHenUpdate"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/DLK_LichHen"
+                "$ref": "#/components/schemas/DLK_LichHenUpdate"
               }
             }
           }
@@ -2016,17 +2103,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/DLK_LichHenResult"
+                  "$ref": "#/components/schemas/DLK_LichHenUpdateResult"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/DLK_LichHenResult"
+                  "$ref": "#/components/schemas/DLK_LichHenUpdateResult"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/DLK_LichHenResult"
+                  "$ref": "#/components/schemas/DLK_LichHenUpdateResult"
                 }
               }
             }
@@ -2831,6 +2918,15 @@
             "type": "string",
             "nullable": true
           },
+          "maDichVu": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "tenDichVu": {
+            "type": "string",
+            "nullable": true
+          },
           "hoTen": {
             "type": "string",
             "nullable": true
@@ -3141,6 +3237,10 @@
           "keyword": {
             "type": "string",
             "nullable": true
+          },
+          "trangThai": {
+            "type": "boolean",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -3175,6 +3275,26 @@
         },
         "additionalProperties": false
       },
+      "DLK_DichVu_ChuyenGiaIEnumerableResult": {
+        "type": "object",
+        "properties": {
+          "isSuccess": {
+            "type": "boolean"
+          },
+          "value": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DLK_DichVu_ChuyenGia"
+            },
+            "nullable": true
+          },
+          "error": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "DLK_DichVu_ChuyenGiaResult": {
         "type": "object",
         "properties": {
@@ -3202,9 +3322,25 @@
             "type": "integer",
             "format": "int32"
           },
+          "tenChuyenGia": {
+            "type": "string",
+            "nullable": true
+          },
           "maBenhNhan": {
             "type": "integer",
             "format": "int32"
+          },
+          "tenBenhNhan": {
+            "type": "string",
+            "nullable": true
+          },
+          "maDichVu": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tenDichVu": {
+            "type": "string",
+            "nullable": true
           },
           "ngayHen": {
             "type": "string",
@@ -3242,6 +3378,10 @@
             "format": "int32"
           },
           "maBenhNhan": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "maDichVu": {
             "type": "integer",
             "format": "int32"
           },
@@ -3301,6 +3441,69 @@
           },
           "value": {
             "$ref": "#/components/schemas/DLK_LichHen"
+          },
+          "error": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DLK_LichHenUpdate": {
+        "type": "object",
+        "properties": {
+          "maChuyenGia": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "maBenhNhan": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "maDichVu": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "ngayHen": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "thoiGianHen": {
+            "type": "string",
+            "nullable": true
+          },
+          "trangThai": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "hinhThucKham": {
+            "type": "boolean"
+          },
+          "lyDoHuyLich": {
+            "type": "string",
+            "nullable": true
+          },
+          "ghiChu": {
+            "type": "string",
+            "nullable": true
+          },
+          "maLichHen": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "DLK_LichHenUpdateResult": {
+        "type": "object",
+        "properties": {
+          "isSuccess": {
+            "type": "boolean"
+          },
+          "value": {
+            "$ref": "#/components/schemas/DLK_LichHenUpdate"
           },
           "error": {
             "type": "string",

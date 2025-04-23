@@ -1,4 +1,8 @@
-﻿
+﻿@{
+    var currentController = ViewContext.RouteData.Values["controller"]?.ToString();
+    var currentAction = ViewContext.RouteData.Values["action"]?.ToString();
+}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,19 +34,19 @@
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" asp-controller="Home" asp-action="Index">TRANG CHỦ</a>
+                                <a class="nav-link @(currentController == "Home" ? "active" : "")" aria-current="page" asp-controller="Home" asp-action="Index">TRANG CHỦ</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" asp-controller="VeChungToi" asp-action="Index">VỀ CHÚNG TÔI</a>
+                                <a class="nav-link @(currentController == "VeChungToi" ? "active" : "")" asp-controller="VeChungToi" asp-action="Index">VỀ CHÚNG TÔI</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" asp-controller="DoiNguChuyenGia" asp-action="Index">ĐỘI NGŨ CHUYÊN GIA</a>
+                                <a class="nav-link @(currentController == "DoiNguChuyenGia" ? "active" : "")" asp-controller="DoiNguChuyenGia" asp-action="Index">ĐỘI NGŨ CHUYÊN GIA</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" asp-controller="DichVu" asp-action="Index">DỊCH VỤ</a>
+                                <a class="nav-link @(currentController == "DichVu" ? "active" : "")" asp-controller="DichVu" asp-action="Index">DỊCH VỤ</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" asp-controller="Blog" asp-action="Index">BLOG</a>
+                                <a class="nav-link @(currentController == "Blog" ? "active" : "")" asp-controller="Blog" asp-action="Index">BLOG</a>
                             </li>
                         </ul>
                     </div>

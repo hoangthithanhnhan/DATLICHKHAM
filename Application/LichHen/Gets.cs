@@ -10,6 +10,7 @@ namespace DATLICHKHAM.Application.LichHen
     {
         public class Query : IRequest<Result<IEnumerable<DLK_LichHen>>>
         {
+            public string keyword { get; set; }
         }
         public class Handler : IRequestHandler<Query, Result<IEnumerable<DLK_LichHen>>>
         {
@@ -25,7 +26,9 @@ namespace DATLICHKHAM.Application.LichHen
                     await connection.OpenAsync();
                     try
                     {
-                        var result = await connection.QueryAsync<DLK_LichHen>("SP_Gets_LichHen", commandType: System.Data.CommandType.StoredProcedure);
+                        DynamicParameters parameters = new DynamicParameters();
+                        parameters.Add("@keyword", request.keyword);
+                        var result = await connection.QueryAsync<DLK_LichHen>("SP_Gets_LichHen", parameters, commandType: System.Data.CommandType.StoredProcedure);
                         return Result<IEnumerable<DLK_LichHen>>.Success(result);
                     }
                     catch (Exception ex)

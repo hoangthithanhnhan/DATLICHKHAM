@@ -22,5 +22,6 @@ namespace DATLICHKHAM.Domain
     public class DLK_DichVuRequestFilter
     {
         public string? Keyword { get; set; }
+        public bool? TrangThai { get; set; }
     }
 }

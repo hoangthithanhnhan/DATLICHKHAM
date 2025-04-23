@@ -34,6 +34,13 @@ namespace DATLICHKHAM.APIsController
             return await Mediator.Send(new Gets.Query {filter=filter});
         }
 
+        [HttpGet]
+        [Route("GetChuyenGiaByDichVu")]
+        public Task<Result<IEnumerable<DLK_ChuyenGia>>> GetChuyenGiaByDichVu(int MaDichVu)
+        {
+            return Mediator.Send(new GetChuyenGiaByDichVu.Query { MaDichVu = MaDichVu });
+        }
+
         [HttpPost]
         [Route("Add")]
         public async Task<Result<DLK_ChuyenGia>> Add([FromForm] RequestUploadFile request)
@@ -158,6 +165,14 @@ namespace DATLICHKHAM.APIsController
         public async Task<Result<int>> Delete(int MaChuyenGia)
         {
             var chuyenGiaOld = await Mediator.Send(new Get.Query { MaChuyenGia = MaChuyenGia });
+
+            //Lấy danh sách chứng chỉ của chiên da
+
+            // Mapping danh sách chứng chỉ của chiên da
+
+            //Trong mapping danh sách chứng chỉ của chiên da thì gọi thủ tục lấy ra danh sách tệp kèm theo của chứng chỉ
+
+            //Sau khi có được danh sách file của chứng chỉ thì mapping danh sách file, xóa file vật lý, rồi gọi thủ tục để xóa DB
             if (chuyenGiaOld.IsSuccess && !string.IsNullOrEmpty(chuyenGiaOld.Value.AnhDaiDien))
             {
                 try

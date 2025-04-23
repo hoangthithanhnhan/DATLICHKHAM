@@ -18,5 +18,9 @@ namespace DATLICHKHAM.Controllers
             return View();
         }
 
+        public IActionResult DanhSachChuyenGia()
+        {
+            return View();
+        }
     }
 }

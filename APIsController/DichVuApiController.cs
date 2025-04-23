@@ -16,7 +16,7 @@ namespace DATLICHKHAM.APIsController
 
         [HttpPost]
         [Route("Gets")]
-        public async Task<Result<IEnumerable<DLK_DichVu>>> Gets(DLK_DichVuRequestFilter filter)
+        public async Task<Result<IEnumerable<DLK_DichVu>>> Gets( DLK_DichVuRequestFilter? filter)
         {
             return await Mediator.Send(new Gets.Query {filter=filter});
         }

@@ -54,3 +54,4 @@ function checkEmptyString(str) {
     }
     return false;
 }
+

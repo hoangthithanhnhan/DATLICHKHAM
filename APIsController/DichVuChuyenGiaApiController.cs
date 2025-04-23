@@ -18,5 +18,12 @@ namespace DATLICHKHAM.APIsController
         {
             return await Mediator.Send(new Add.Command { Entity = Entity });
         }
+
+        [HttpGet]
+        [Route("GetDichVuByChuyenGia")]
+        public Task<Result<IEnumerable<DLK_DichVu_ChuyenGia>>> GetDichVuByChuyenGia(int MaChuyenGia)
+        {
+            return Mediator.Send(new GetDichVuByChuyenGia.Query { MaChuyenGia = MaChuyenGia });
+        }
     }
 }
