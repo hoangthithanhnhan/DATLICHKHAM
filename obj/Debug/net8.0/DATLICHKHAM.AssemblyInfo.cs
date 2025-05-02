@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DATLICHKHAM")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+08ab0eb46d76825d9bb03c65241f1a0fb9ad6c21")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f6d268b687fe6dd4ff1c674d23dd2dd73462ae48")]
 [assembly: System.Reflection.AssemblyProductAttribute("DATLICHKHAM")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DATLICHKHAM")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
