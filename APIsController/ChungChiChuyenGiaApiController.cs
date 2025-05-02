@@ -6,6 +6,7 @@ using DATLICHKHAM.Domain;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using System.Diagnostics.Contracts;
+using static Dapper.SqlMapper;
 
 namespace DATLICHKHAM.APIsController
 {
@@ -23,9 +24,9 @@ namespace DATLICHKHAM.APIsController
 
         [HttpGet]
         [Route("Gets")]
-        public async Task<Result<IEnumerable<DLK_ChungChiChuyenGia>>> Gets()
+        public async Task<Result<IEnumerable<DLK_ChungChiChuyenGia_TepKemTheo>>> Gets(int? MaChuyenGia)
         {
-            return await Mediator.Send(new Gets.Query { });
+            return await Mediator.Send(new Gets.Query { MaChuyenGia = MaChuyenGia});
         }
 
         [HttpPost]
@@ -62,15 +63,18 @@ namespace DATLICHKHAM.APIsController
             const string pathdb = "\\upload\\ChungChi";
             if (result.IsSuccess)
             {
-                for (int i = 0; i < _request.files.Count; i++)
+                if (_request.files != null)
                 {
                     var uploadedFiles = await SaveFileUpload(_request.files, result.Value.MaChungChi, vanbanPath, pathdb);
-                    foreach (var e in uploadedFiles)
+                
+                    if (uploadedFiles != null)
                     {
-                        await Mediator.Send(new AddTepKemTheo.Command { Entity = e });
+                        foreach(var item in uploadedFiles)
+                        {
+                            await Mediator.Send(new AddTepKemTheo.Command { Entity = item });
+                        } 
                     }
                 }
-
             }
 
             return result;
@@ -88,6 +92,29 @@ namespace DATLICHKHAM.APIsController
             return await Mediator.Send(new Application.ChungChiChuyenGia.Delete.Command { MaChungChi = MaChungChi });
         }
 
+        [HttpDelete]
+        [Route("DeleteAnhChungChi")]
+        public async Task<Result<int>> DeleteAnhChungChi(int MaTepDinhKem)
+        {
+            var tepDinhKemOld = await Mediator.Send(new GetTepKemTheoByMaTepKemTheo.Query { MaTepDinhKem = MaTepDinhKem});
+            var relativePath = tepDinhKemOld.Value.DuongDan.Replace("/", Path.DirectorySeparatorChar.ToString()).TrimStart('\\');
+            var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", relativePath);
+            if (tepDinhKemOld.IsSuccess && !string.IsNullOrEmpty(tepDinhKemOld.Value.DuongDan))
+            {
+                try
+                {
+                    if (System.IO.File.Exists(filePath))
+                    {
+                        System.IO.File.Delete(filePath);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    return Result<int>.Failure(ex.Message);
+                }
+            }
+            return await Mediator.Send(new DATLICHKHAM.Application.TepKemTheo.Delete.Command { MaTepDinhKem = MaTepDinhKem});
+        }
 
     }
 }

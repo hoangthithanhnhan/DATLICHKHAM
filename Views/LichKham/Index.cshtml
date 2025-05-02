@@ -1,0 +1,80 @@
+﻿
+
+<div class="row blockLichHen">
+    <div class="col showLichHen">
+        <h3 class="title text-center">Lịch hẹn</h3>
+        <div class="lichHen">
+            <label for="lichHen" class="form-label" style="font-weight:700;">Chọn ngày</label>
+            <input type="date" id="lichHen" class="form-control" placeholder="dd/mm/yyyy" />
+            <div id="thongTinLichHen">
+                <p class="thongTin">Không có lịch hẹn</p>
+            </div>
+        </div>
+    </div>
+    <div class="col setLichLamViec">
+        <h3 class="title text-center">Thiết lập lịch làm việc</h3>
+        <div class="lichHen">
+            <label for="setNgay" class="form-label" style="font-weight:700;">Chọn ngày</label>
+            <input type="date" id="setNgay" class="form-control" placeholder="dd/mm/yyyy" />
+            <input type="text" id="maChuyenGia" class="form-control" hidden/>
+            <div class="blockSetThoiGian">
+                <div class="inputThoiGian">
+                    <input type="text" id="addThoiGian" placeholder="00:00-00:00"/>
+                    <button id="btn-addThoiGian"><i class="fa fa-plus"></i> Thêm thời gian</button>
+                </div>
+                <div id="setThoiGian">
+                    <p class="thongTin">Chưa thêm lịch</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="chiTietLichHen" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content" style="border:none;">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Thông tin chi tiết lịch hẹn</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <input type="hidden" id="getMaLichHen" class="form-control"/>
+                    <div class="form-group col-md-6">
+                        <label class="form-label fw-bold">Họ tên</label>
+                        <p id="getHoTen"></p>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label class="form-label fw-bold">Dịch vụ</label>
+                        <p id="getDichVu"></p>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label class="form-label fw-bold">Ngày hẹn</label>
+                        <p id="getNgayHen"></p>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label class="form-label fw-bold">Thời gian hẹn</label>
+                        <p id="getThoiGian"></p>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label class="form-label fw-bold">Ghi chú</label>
+                        <p id="getGhiChu"></p>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label class="form-label fw-bold">Hình thức</label>
+                        <p id="getHinhThuc"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" id="btn-HoanThanh">Hoàn thành</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btn-cancel">Hủy</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts { 
+     <script src="~/PageScripts/LichLamViecChuyenGia.js"></script> 
+} 

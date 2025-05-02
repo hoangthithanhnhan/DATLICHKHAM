@@ -1,0 +1,118 @@
+﻿
+<div class="blockTrangCaNhan row">
+    <div class="col-5 taiKhoan">
+        <div class="avatar-wrapper">
+            <img src="~/images/anhdaidien.jpg" alt="Avatar" class="rounded-circle avatar-img" width="200" height="200" />
+            <button class="avatar-edit-btn">
+                <i class="fa fa-camera"></i> <!-- Hoặc dùng icon cây viết, fa fa-pencil -->
+            </button>
+        </div>
+        <div class="mb-3">
+            <label for="tenDangNhap" class="form-label">Tên đăng nhập</label>
+            <input type="text" class="form-control" id="tenDangNhap" placeholder="Nhập tên đăng nhập">
+        </div>
+        <div class="mb-3">
+            <label for="matKhauHienTai" class="form-label">Mật khẩu hiện tại</label>
+            <input type="text" class="form-control" id="matKhauHienTai" placeholder="Nhập mật khẩu hiện tại">
+        </div>
+        <div class="mb-3">
+            <label for="matKhauMoi" class="form-label">Mật khẩu mới</label>
+            <input type="text" class="form-control" id="matKhauMoi" placeholder="Nhập mật khẩu mới">
+        </div>
+        <div class="mb-3">
+            <label for="matKhauMoi1" class="form-label">Nhập lại mật khẩu mới</label>
+            <input type="text" class="form-control" id="matKhauMoi1" placeholder="Nhập lại mật khẩu mới">
+        </div>
+        <div class="mb-3">
+            <button id="saveInfoTaiKhoan">Lưu thông tin tài khoản</button>
+        </div>
+    </div>
+    <div class="col thongTin">
+        <div class="mb-3">
+                    <label for="hoTenEdit" class="form-label">Họ và tên</label>
+                    <input type="text" class="form-control" id="hoTenEdit" placeholder="Nhập họ và tên">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Giới tính </label>
+                    <div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gioitinhEdit" id="nuEdit" value="1">
+                            <label class="form-check-label" for="nuEdit">Nữ</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gioitinhEdit" id="namEdit" value="0">
+                            <label class="form-check-label" for="namEdit">Nam</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gioitinhEdit" id="khacEdit" value="2">
+                            <label class="form-check-label" for="khacEdit">Khác</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="ngaySinhEdit" class="form-label">Ngày sinh</label>
+                    <input type="date" class="form-control" id="ngaySinhEdit" placeholder="dd/mm/yyyy">
+                </div>
+                <div class="mb-3">
+                    <label for="soDienThoaiEdit" class="form-label">Số điện thoại</label>
+                    <input type="text" class="form-control" id="soDienThoaiEdit" placeholder="Nhập số điện thoại">
+                </div>
+                <div class="mb-3">
+                    <label for="emailEdit" class="form-label">Email </label>
+                    <input type="email" class="form-control" id="emailEdit" placeholder="Nhập email">
+                </div>
+                <div class="mb-3">
+                    <label for="diaChiEdit" class="form-label">Địa chỉ </label>
+                    <input type="text" class="form-control" id="diaChiEdit" placeholder="Nhập địa chỉ">
+                </div>
+                <div class="mb-3">
+                    <label for="chucDanhEdit" class="form-label">Chức danh</label>
+                    <input type="text" class="form-control" id="chucDanhEdit" placeholder="Nhập chức danh">
+                </div>
+                <div class="mb-3">
+                    <label for="chucVuEdit" class="form-label">Chức vụ</label>
+                    <input type="text" class="form-control" id="chucVuEdit" placeholder="Nhập chức vụ">
+                </div>
+                <div class="mb-3" id="chuyenKhoaEditParent">
+                    <label for="chuyenKhoaEdit" class="form-label">Chuyên khoa</label>
+                    <select class="form-select" id="chuyenKhoaEdit">
+                @* render chuyên khoa *@
+                    </select>
+                </div>
+                <div class="mb-3" id="dichVuEditParent">
+                    <label for="dichVuEdit" class="form-label">Dịch vụ</label>
+                    <select class="form-select" id="dichVuEdit" multiple>
+                @* render dịch vụ *@
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="soNamKinhNghiemEdit" class="form-label">Số năm kinh nghiệm</label>
+                    <input type="text" class="form-control" id="soNamKinhNghiemEdit" placeholder="Nhập số năm kinh nghiệm">
+                </div>
+                <div class="mb-3">
+                    <label for="donViCongTacEdit" class="form-label">Đơn vị công tác</label>
+                    <input type="text" class="form-control" id="donViCongTacEdit" placeholder="Nhập đơn vị công tác">
+                </div>
+                <div class="mb-3">
+                    <label for="giaiThuongNghienCuuEdit" class="form-label">Giải thưởng nghiên cứu</label>
+                    <textarea cols="30" rows="3" type="text" class="form-control" id="giaiThuongNghienCuuEdit" placeholder="Nhập giải thưởng nghiên cứu"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="gioiThieuEdit" class="form-label">Giới thiệu</label>
+                    <textarea cols="30" rows="5" type="text" class="form-control" id="gioiThieuEdit" placeholder="Nhập giới thiệu"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="kinhNghiemEdit" class="form-label">Kinh nghiệm</label>
+                    <textarea cols="30" rows="5" type="text" class="form-control" id="kinhNghiemEdit" placeholder="Nhập kinh nghiệm"></textarea>
+                </div>
+        <div class="mb-3">
+            <button id="saveInfoCaNhan">Lưu thông tin cá nhân</button>
+        </div>
+    </div>
+</div>
+
+
+
+@* @section Scripts { *@
+@*     <script src="~/PageScripts/DichVu.js"></script> *@
+@* } *@

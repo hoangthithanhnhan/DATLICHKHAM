@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using DATLICHKHAM.Application.ChuyenGia;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 using Newtonsoft.Json;
+using System.Security.Claims;
 
 namespace DATLICHKHAM.APIsController
 {
@@ -18,13 +19,20 @@ namespace DATLICHKHAM.APIsController
         {
             _userManager = userManager;
         }
-
+        
+        [HttpGet]
+        [Route("user-info")]
+        public async Task<Result<DLK_ChuyenGia>> GetUserInfo()
+        {
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            return await Mediator.Send(new Get.Query { MaChuyenGia = null , MaNguoiDung = userId });
+        }
 
         [HttpGet]
         [Route("Get")]
-        public async Task<Result<DLK_ChuyenGia>> Get(int MaChuyenGia)
+        public async Task<Result<DLK_ChuyenGia>> Get(int? MaChuyenGia)
         {
-            return await Mediator.Send(new Get.Query { MaChuyenGia = MaChuyenGia });
+            return await Mediator.Send(new Get.Query { MaChuyenGia = MaChuyenGia , MaNguoiDung = null});
         }
 
         [HttpPost]

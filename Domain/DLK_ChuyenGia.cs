@@ -5,9 +5,9 @@
         public int MaChuyenGia { get; set; }
         public int MaNguoiDung { get; set; }
         public int MaChuyenKhoa { get; set; }
+        public int MaDichVu { get; set; }
         public string TenChuyenKhoa { get; set; }
-        public int? MaDichVu { get; set; }
-        public string? TenDichVu { get; set; }
+        public string? DichVu { get; set; }
         public string HoTen { get; set; }
         public string? ChucDanh { get; set; }
         public string? ChucVu { get; set; }
