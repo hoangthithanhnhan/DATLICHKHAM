@@ -11,7 +11,8 @@ namespace DATLICHKHAM.Application.BenhNhan
     {
         public class Query : IRequest<Result<DLK_BenhNhan>>
         {
-            public int MaBenhNhan;
+            public int? MaBenhNhan;
+            public string? MaNguoiDung;
         }
         public class Handler : IRequestHandler<Query, Result<DLK_BenhNhan>>
         {
@@ -29,6 +30,7 @@ namespace DATLICHKHAM.Application.BenhNhan
                     {
                         DynamicParameters parameters = new DynamicParameters();
                         parameters.Add("@MaBenhNhan", request.MaBenhNhan);
+                        parameters.Add("@MaNguoiDung", request.MaNguoiDung);
                         var result = await connection.QuerySingleOrDefaultAsync<DLK_BenhNhan>("SP_Get_BenhNhan", parameters, commandType: CommandType.StoredProcedure);
                         return Result<DLK_BenhNhan>.Success(result);
                     }

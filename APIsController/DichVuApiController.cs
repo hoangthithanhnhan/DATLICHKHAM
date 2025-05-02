@@ -16,9 +16,9 @@ namespace DATLICHKHAM.APIsController
 
         [HttpPost]
         [Route("Gets")]
-        public async Task<Result<IEnumerable<DLK_DichVu>>> Gets( DLK_DichVuRequestFilter? filter)
+        public async Task<Result<IEnumerable<DLK_DichVu>>> Gets(bool? trangThai, string filter = null)
         {
-            return await Mediator.Send(new Gets.Query {filter=filter});
+            return await Mediator.Send(new Gets.Query { filter = filter, trangthai = trangThai });
         }
 
         [HttpGet]
@@ -49,8 +49,8 @@ namespace DATLICHKHAM.APIsController
         public async Task<Result<DLK_DichVu>> Update([FromForm] RequestUploadFile request)
         {
 
-            // Deserialize JSON string từ "data" thành object DLK_DichVuAdd
-            DLK_DichVu DichVu = JsonConvert.DeserializeObject<DLK_DichVu>(request.data);
+            //request.data truyền vào là JSON, FromForm chỉ làm việc với OBJECT nên phải convert sang
+            DLK_DichVu DichVu = JsonConvert.DeserializeObject<DLK_DichVu>(request.data); //đây sẽ là data vừa điền để update
             const string avatarPath = "wwwroot\\upload\\DichVu"; //nơi lưu file vật lý vừa upload
             const string pathdb = "\\upload\\DichVu"; //đường dẫn để lưu trong DB
             //Lấy lại thông tin cũ của dịch vụ từ DB, để mình biết ảnh cũ là ảnh gì.
@@ -61,6 +61,7 @@ namespace DATLICHKHAM.APIsController
                 //Gọi API lấy dịch vụ cũ thành công Và có ảnh cũ tồn tại
                 if (DichVuOld.IsSuccess && !string.IsNullOrEmpty(DichVuOld.Value.AnhDaiDien))
                 {
+                    //đây là nơi lưu file vật lý ảnh cũ, lấy link ảnh cũ ở DB để truy cập đến file vật lý
                     string oldFilePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", DichVuOld.Value.AnhDaiDien.TrimStart('\\'));
 
                     if (System.IO.File.Exists(oldFilePath))
@@ -111,8 +112,11 @@ namespace DATLICHKHAM.APIsController
         [Route("DeleteAnhDaiDien")]
         public async Task<Result<DLK_DichVu>> DeleteAnhDaiDien(int MaDichVu)
         {
+            // lấy thông tin của dịch vụ
             var DichVuOld = await Mediator.Send(new Get.Query { MaDichVu = MaDichVu });
+            //thay thế / của đường dẫn thành \\
             var relativePath = DichVuOld.Value.AnhDaiDien.Replace("/", Path.DirectorySeparatorChar.ToString()).TrimStart('\\');
+            //nơi lưu trữ file vật lý
             var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", relativePath);
             if (DichVuOld.IsSuccess && !string.IsNullOrEmpty(DichVuOld.Value.AnhDaiDien))
             {

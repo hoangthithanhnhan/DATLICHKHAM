@@ -4,18 +4,82 @@
 
 }
 
-@* <div class="container-fluid block-page"> *@
-@*     <h3 class="heading-page">TRANG CHỦ / ĐẶT LỊCH KHÁM</h3> *@
-@*     <div class="block-content"> *@
-@*         <div class="content-header"> *@
-@*             <img class="header-left" src="~/images/bacsi.jpg" alt="Alternate Text" /> *@
-@*             <div class="header-right"> *@
-@*                 <p class="tenBacSi">Tiến sĩ, Bác sĩ Hoàng Thanh Tùng</p> *@
-@*                 <p class="namKinhNghiem"><span class="nam">10</span> năm kinh nghiệm</p> *@
-@*                 <p class="congTacTai intro">Công tác tại<span class="title"> Bệnh viện Đại Học Y Dược Huế</span></p> *@
-@*                 <p class="chuyenKhoa intro">Chuyên khoa<span class="title"> Tâm lý học xã hội, tâm lý học thần kinh</span></p> *@
-@*                 <p class="dichVu intro">Chức vụ<span class="title"> Chuyên viên tư vấn tâm lý</span></p> *@
-@*             </div> *@
-@*         </div> *@
-@*     </div> *@
-@* </div> *@
+<div class="block-main">
+    <div class="blockDatLichKham">
+        <div class="section-ThongTinLich">
+            <img class="anhDaiDien" src="" alt="Ảnh đại diện chuyên gia" />
+            <div class="section-right">
+                <h4 class="tenChuyenGia"></h4>
+                <h5 class="tenDichVu"></h5>
+                <p class="giaDichVu"></p>
+                <p class="soNamKinhNghiem"><span class="soNam"></span> <span>năm kinh nghiệm</span></p>
+                <p class="thongTin congTacTai">Công tác tại <span class="valueCongTacTai"></span></p>
+                <p class="thongTin chuyenKhoa">Chuyên khoa <span class="valueChuyenKhoa"></span></p>
+                <p class="thongTin chucVu">Chức vụ <span class="valueChucVu"></span></p>
+                <input type="hidden" id="maBenhNhan" value="@ViewBag.MaBenhNhan" />
+            </div>
+        </div>
+        <div class="secsion-DatLich">
+            <div class="section-NgayHen">
+                <div class="mb-3">
+                    <label class="form-label">Chọn hình thức</label>
+                    <div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="hinhThucAdd" id="trucTiepAdd" value="1">
+                            <label class="form-check-label" for="trucTiepAdd">Trực tiếp</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="hinhThucAdd" id="onlineAdd" value="0">
+                            <label class="form-check-label" for="onlineAdd">Online</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="ngayHenAdd" class="form-label">Chọn ngày hẹn</label>
+                    <input type="date" class="form-control" id="ngayHenAdd" placeholder="dd/mm/yyyy">
+                </div>
+                <div class="mb-3">
+                    @* <label for="ghiChuAdd" class="form-label">Ghi chú</label> *@
+                    <textarea cols="3" rows="2" type="text" class="form-control" id="ghiChuAdd" placeholder="Nhập ghi chú"></textarea>
+                </div>
+            </div>
+            <div class="section-ThoiGianHen">
+                <p class="thongTin">Chọn ngày hẹn</p>
+            </div>
+        </div>
+        <div class="section-gioiThieu gioiThieuChuyenGia">
+            <h5 class="title">Giới thiệu</h5>
+            <p class="gioiThieu">
+                
+            </p>
+        </div>
+        <div class="section-KinhNghiem gioiThieuChuyenGia">
+            <h5 class="title">Kinh nghiệm</h5>
+            <p class="kinhNghiem">
+                
+            </p>
+        </div>
+        <div class="section-GiaiThuongNghienCuu gioiThieuChuyenGia">
+            <h5 class="title">Giải thưởng nghiên cứu</h5>
+            <p class="giaiThuong">
+                
+            </p>
+        </div>
+        <div class="section-chungNhan gioiThieuChuyenGia">
+            <h5 class="title">Chứng nhận chuyên môn</h5>
+            <div id="block-chungNhan" class="">
+                @* render chứng chỉ *@
+            </div>
+        </div>
+        <p class="notice" style="font-size:20px; color:red;text-align:justify">Nếu vì lý do cá nhân bạn không thể đến khám đúng hẹn, vui lòng hủy lịch khám ít nhất 12 tiếng trước và chọn một thời gian khác phù hợp. Chúng tôi rất cảm ơn sự hợp tác của bạn!</p>
+        <div class="datKhamNgay">
+            <a  class="btn btn-primary" id="btn-datLichNgay">ĐẶT LỊCH NGAY</a>
+        </div>
+    </div>
+</div>
+
+@* href="/DatLichKham/DatLichKhamChiTiet" *@
+
+@section Scripts {
+    <script src="~/PageScripts/DatLichKham.js"></script>
+}

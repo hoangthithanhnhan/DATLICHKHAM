@@ -10,7 +10,8 @@ namespace DATLICHKHAM.Application.ChuyenGia
     {
         public class Query : IRequest<Result<DLK_ChuyenGia>>
         {
-            public int MaChuyenGia;
+            public int? MaChuyenGia;
+            public string? MaNguoiDung;
         }
         public class Handler : IRequestHandler<Query, Result<DLK_ChuyenGia>>
         {
@@ -29,6 +30,7 @@ namespace DATLICHKHAM.Application.ChuyenGia
                     {
                         DynamicParameters parameters = new DynamicParameters();
                         parameters.Add("@MaChuyenGia", request.MaChuyenGia);
+                        parameters.Add("@MaNguoiDung", request.MaNguoiDung);
                         var result = await connection.QueryFirstOrDefaultAsync<DLK_ChuyenGia>("SP_Get_ChuyenGia", parameters, commandType: System.Data.CommandType.StoredProcedure);
                         return Result<DLK_ChuyenGia>.Success(result);
                     }

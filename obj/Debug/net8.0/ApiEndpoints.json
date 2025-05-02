@@ -283,9 +283,14 @@
     "Order": 0,
     "Parameters": [
       {
+        "Name": "trangThai",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
         "Name": "filter",
-        "Type": "DATLICHKHAM.Domain.DLK_BenhNhanRequestFilter",
-        "IsRequired": true
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
@@ -319,6 +324,26 @@
         "IsRequired": false
       }
     ],
+    "ReturnTypes": [
+      {
+        "Type": "Application.Core.Result\u00601[[DATLICHKHAM.Domain.DLK_BenhNhan, DATLICHKHAM, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DATLICHKHAM.APIsController.BenhNhanApiController",
+    "Method": "GetUserInfo",
+    "RelativePath": "api/BenhNhanApi/user-info",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": [
       {
         "Type": "Application.Core.Result\u00601[[DATLICHKHAM.Domain.DLK_BenhNhan, DATLICHKHAM, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
@@ -390,6 +415,32 @@
   },
   {
     "ContainingType": "DATLICHKHAM.APIsController.ChungChiChuyenGiaApiController",
+    "Method": "DeleteAnhChungChi",
+    "RelativePath": "api/ChungChiChuyenGiaApi/DeleteAnhChungChi",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "MaTepDinhKem",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Application.Core.Result\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DATLICHKHAM.APIsController.ChungChiChuyenGiaApiController",
     "Method": "Get",
     "RelativePath": "api/ChungChiChuyenGiaApi/Get",
     "HttpMethod": "GET",
@@ -421,10 +472,16 @@
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "MaChuyenGia",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": [
       {
-        "Type": "Application.Core.Result\u00601[[System.Collections.Generic.IEnumerable\u00601[[DATLICHKHAM.Domain.DLK_ChungChiChuyenGia, DATLICHKHAM, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "Type": "Application.Core.Result\u00601[[System.Collections.Generic.IEnumerable\u00601[[DATLICHKHAM.Domain.DLK_ChungChiChuyenGia_TepKemTheo, DATLICHKHAM, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -558,7 +615,7 @@
     "Parameters": [
       {
         "Name": "MaChuyenGia",
-        "Type": "System.Int32",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "IsRequired": false
       }
     ],
@@ -645,6 +702,26 @@
         "IsRequired": false
       }
     ],
+    "ReturnTypes": [
+      {
+        "Type": "Application.Core.Result\u00601[[DATLICHKHAM.Domain.DLK_ChuyenGia, DATLICHKHAM, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DATLICHKHAM.APIsController.ChuyenGiaApiController",
+    "Method": "GetUserInfo",
+    "RelativePath": "api/ChuyenGiaApi/user-info",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": [
       {
         "Type": "Application.Core.Result\u00601[[DATLICHKHAM.Domain.DLK_ChuyenGia, DATLICHKHAM, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
@@ -1076,8 +1153,13 @@
     "Order": 0,
     "Parameters": [
       {
+        "Name": "trangThai",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
         "Name": "filter",
-        "Type": "DATLICHKHAM.Domain.DLK_DichVuRequestFilter",
+        "Type": "System.String",
         "IsRequired": false
       }
     ],
@@ -1256,6 +1338,37 @@
   },
   {
     "ContainingType": "DATLICHKHAM.APIsController.LichHenApiController",
+    "Method": "GetLichHenByChuyenGiaByNgay",
+    "RelativePath": "api/LichHenApi/GetLichHenByChuyenGiaByNgay",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "MaChuyenGia",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "NgayHen",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Application.Core.Result\u00601[[System.Collections.Generic.IEnumerable\u00601[[DATLICHKHAM.Domain.DLK_LichHen, DATLICHKHAM, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DATLICHKHAM.APIsController.LichHenApiController",
     "Method": "Gets",
     "RelativePath": "api/LichHenApi/Gets",
     "HttpMethod": "GET",
@@ -1297,6 +1410,32 @@
     "ReturnTypes": [
       {
         "Type": "Application.Core.Result\u00601[[DATLICHKHAM.Domain.DLK_LichHenUpdate, DATLICHKHAM, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DATLICHKHAM.APIsController.LichHenApiController",
+    "Method": "UpdateTrangThai",
+    "RelativePath": "api/LichHenApi/UpdateTrangThai",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "MaLichHen",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Application.Core.Result\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -1392,6 +1531,47 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Application.Core.Result\u00601[[System.Collections.Generic.IEnumerable\u00601[[DATLICHKHAM.Domain.DLK_LichLamViecChuyenGia, DATLICHKHAM, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DATLICHKHAM.APIsController.LichLamViecChuyenGiaApiController",
+    "Method": "GetsByNgay",
+    "RelativePath": "api/LichLamViecChuyenGiaApi/GetsLichLamViecChuyenGiaByNgay",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Ngay",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "MaChuyenGia",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "TrangThai",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "MaLichLamViec",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": [
       {
         "Type": "Application.Core.Result\u00601[[System.Collections.Generic.IEnumerable\u00601[[DATLICHKHAM.Domain.DLK_LichLamViecChuyenGia, DATLICHKHAM, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",

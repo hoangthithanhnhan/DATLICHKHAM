@@ -6,6 +6,7 @@ using DATLICHKHAM.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
+using System.Security.Claims;
 
 namespace DATLICHKHAM.APIsController
 {
@@ -20,6 +21,13 @@ namespace DATLICHKHAM.APIsController
             _userManager = userManager;
         }
 
+        [HttpGet]
+        [Route("user-info")]
+        public async Task<Result<DLK_BenhNhan>> GetUserInfo()
+        {
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            return await Mediator.Send(new Get.Query { MaBenhNhan = null, MaNguoiDung = userId });
+        }
 
         [HttpGet]
         [Route("Get")]
@@ -30,9 +38,9 @@ namespace DATLICHKHAM.APIsController
 
         [HttpPost]
         [Route("Gets")]
-        public async Task<Result<IEnumerable<DLK_BenhNhan>>> Gets(DLK_BenhNhanRequestFilter filter)
+        public async Task<Result<IEnumerable<DLK_BenhNhan>>> Gets(bool? trangThai, string filter = null)
         {
-            return await Mediator.Send(new Gets.Query { filter = filter });
+            return await Mediator.Send(new Gets.Query { filter = filter, trangthai = trangThai });
         }
 
         [HttpPost]

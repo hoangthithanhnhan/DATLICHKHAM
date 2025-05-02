@@ -10,7 +10,8 @@ namespace DATLICHKHAM.Application.DichVu
     {
         public class Query: IRequest<Result<IEnumerable<DLK_DichVu>>>
         {
-            public DLK_DichVuRequestFilter filter;
+            public string filter;
+            public bool? trangthai;
         }
         public class Handler : IRequestHandler<Query, Result<IEnumerable<DLK_DichVu>>>
         {
@@ -27,7 +28,8 @@ namespace DATLICHKHAM.Application.DichVu
                     try
                     {
                         DynamicParameters parameters = new DynamicParameters();
-                        parameters.Add("@keyword", request.filter.Keyword);
+                        parameters.Add("@keyword", request.filter);
+                        parameters.Add("@trangthai", request.trangthai);
                         var result = await connection.QueryAsync<DLK_DichVu>("SP_Gets_DichVu",parameters, commandType: System.Data.CommandType.StoredProcedure);
                         return Result<IEnumerable<DLK_DichVu>>.Success(result);
                     }

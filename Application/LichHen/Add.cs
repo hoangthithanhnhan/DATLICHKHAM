@@ -33,7 +33,6 @@ namespace DATLICHKHAM.Application.LichHen
                         parameters.Add("@NgayHen", request.Entity.NgayHen);
                         parameters.Add("@MaDichVu", request.Entity.MaDichVu);
                         parameters.Add("@ThoiGianHen", request.Entity.ThoiGianHen);
-                        parameters.Add("@TrangThai", request.Entity.TrangThai);
                         parameters.Add("@HinhThucKham", request.Entity.HinhThucKham);
                         parameters.Add("@LyDoHuyLich", request.Entity.LyDoHuyLich);
                         parameters.Add("@GhiChu", request.Entity.GhiChu);

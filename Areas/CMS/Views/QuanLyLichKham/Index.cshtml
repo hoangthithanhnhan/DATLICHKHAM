@@ -37,6 +37,12 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Hủy"></button>
             </div>
             <div class="modal-body">
+                <div class="mb-3" id="benhNhanAddParent">
+                    <label for="benhNhanAdd" class="form-label">Bệnh nhân <span class="text-red">*</span></label>
+                    <select class="form-select" id="benhNhanAdd">
+                        @* render bệnh nhân*@
+                    </select>
+                </div>
                 <div class="mb-3" id="dichVuAddParent">
                     <label for="dichVuAdd" class="form-label">Dịch vụ <span class="text-red">*</span></label>
                     <select class="form-select" id="dichVuAdd">
@@ -53,19 +59,21 @@
                     <label for="ngayHenAdd" class="form-label">Ngày hẹn <span class="text-red">*</span></label>
                     <input type="date" class="form-control" id="ngayHenAdd" placeholder="dd/mm/yyyy">
                 </div>
-                <div class="mb-3">
+                <div class="mb-3" id="thoiGianHenAddParent">
                     <label for="thoiGianHenAdd" class="form-label">Thời gian hẹn <span class="text-red">*</span></label>
-                    <input type="email" class="form-control" id="thoiGianHenAdd" placeholder="Nhập thời gian">
+                    <select class="form-select" id="thoiGianHenAdd">
+                        @* render thời gian hẹn *@
+                    </select>
                 </div>
                 <div class="mb-3">
-                    <label for="ghiChuAdd" class="form-label">Ghi chú <span class="text-red">*</span></label>
+                    <label for="ghiChuAdd" class="form-label">Ghi chú</label>
                     <textarea type="text" class="form-control" id="ghiChuAdd" placeholder="Nhập ghi chú"></textarea>
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Hình thức<span class="text-red">*</span></label>
                     <div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="hinhThucAdd" id="trucTiepAdd" value="1">
+                            <input class="form-check-input" type="radio" name="hinhThucAdd" id="trucTiepAdd" value="1" checked>
                             <label class="form-check-label" for="trucTiepAdd">Trực tiếp</label>
                         </div>
                         <div class="form-check form-check-inline">
@@ -74,11 +82,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="mb-3">
+                @* <div class="mb-3">
                     <label class="form-label">Trạng thái <span class="text-red">*</span></label>
                     <div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="trangThaiAdd" id="daDatLichAdd" value="0">
+                            <input class="form-check-input" type="radio" name="trangThaiAdd" id="daDatLichAdd" value="0" checked>
                             <label class="form-check-label" for="daDatLichAdd">Đã đặt lịch</label>
                         </div>
                         <div class="form-check form-check-inline">
@@ -90,7 +98,7 @@
                             <label class="form-check-label" for="daHuyLichAdd">Đã hủy lịch</label>
                         </div>
                     </div>
-                </div>
+                </div> *@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-cancel btn-secondary" data-bs-dismiss="modal">Hủy</button>
@@ -101,7 +109,7 @@
 </div>
 
 @* MODAL CHỈNH SỬA *@
-<div class="modal fade" id="editAdd" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal fade" id="modalEdit" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">
             <div class="modal-header">
@@ -110,10 +118,10 @@
             </div>
             <div class="modal-body">
                 <input type="text" class="form-control" id="maLichHenEdit" hidden>
-                <div class="mb-3" id="chuyenGiaEditParent">
-                    <label for="chuyenGiaEdit" class="form-label">Chuyên gia <span class="text-red">*</span></label>
-                    <select class="form-select" id="chuyenGiaEdit">
-                        @* render chuyên gia *@
+                <div class="mb-3" id="benhNhanEditParent">
+                    <label for="benhNhanEdit" class="form-label">Bệnh nhân <span class="text-red">*</span></label>
+                    <select class="form-select" id="benhNhanEdit">
+                        @* render bệnh nhân*@
                     </select>
                 </div>
                 <div class="mb-3" id="dichVuEditParent">
@@ -122,23 +130,33 @@
                         @* render dịch vụ*@
                     </select>
                 </div>
+                <div class="mb-3" id="chuyenGiaEditParent">
+                    <label for="chuyenGiaEdit" class="form-label">Chuyên gia <span class="text-red">*</span></label>
+                    <select class="form-select" id="chuyenGiaEdit">
+                        @* render chuyên gia *@
+                    </select>
+                </div>
                 <div class="mb-3">
                     <label for="ngayHenEdit" class="form-label">Ngày hẹn <span class="text-red">*</span></label>
                     <input type="date" class="form-control" id="ngayHenEdit" placeholder="dd/mm/yyyy">
                 </div>
-                <div class="mb-3">
+                
+                <div class="mb-3" id="thoiGianHenEditParent">
                     <label for="thoiGianHenEdit" class="form-label">Thời gian hẹn <span class="text-red">*</span></label>
-                    <input type="email" class="form-control" id="thoiGianHenEdit" placeholder="Nhập thời gian">
+                    <select class="form-select" id="thoiGianHenEdit">
+                        @* render thời gian hẹn *@
+                    </select>
+                    <input id="thoiGianHenCurrent" type="hidden"/>
                 </div>
                 <div class="mb-3">
                     <label for="ghiChuEdit" class="form-label">Ghi chú</label>
                     <textarea type="text" class="form-control" id="ghiChuEdit" placeholder="Nhập ghi chú"></textarea>
                 </div>
                 <div class="mb-3">
-                    <label class="form-label">Hình thức <span class="text-red">*</span></label>
+                    <label class="form-label">Hình thức<span class="text-red">*</span></label>
                     <div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="hinhThucEdit" id="trucTiepEdit" value="1">
+                            <input class="form-check-input" type="radio" name="hinhThucEdit" id="trucTiepEdit" value="1" checked>
                             <label class="form-check-label" for="trucTiepEdit">Trực tiếp</label>
                         </div>
                         <div class="form-check form-check-inline">
@@ -148,14 +166,10 @@
                     </div>
                 </div>
                 <div class="mb-3">
-                    <label for="lyDoHuyLichEdit" class="form-label">Lý do hủy lịch</label>
-                    <textarea type="text" class="form-control" id="lyDoHuyLichEdit" placeholder="Nhập lý do hủy lịch hẹn"></textarea>
-                </div>
-                <div class="mb-3">
                     <label class="form-label">Trạng thái <span class="text-red">*</span></label>
                     <div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="trangThaiEdit" id="daDatLichEdit" value="0">
+                            <input class="form-check-input" type="radio" name="trangThaiEdit" id="daDatLichEdit" value="0" checked>
                             <label class="form-check-label" for="daDatLichEdit">Đã đặt lịch</label>
                         </div>
                         <div class="form-check form-check-inline">
@@ -167,6 +181,10 @@
                             <label class="form-check-label" for="daHuyLichEdit">Đã hủy lịch</label>
                         </div>
                     </div>
+                </div>
+                <div class="mb-3 d-none" id="lyDoHuyLich">
+                    <label for="lyDoEdit" class="form-label">Lý do hủy lịch <span class="text-red">*</span></label>
+                    <textarea type="text" class="form-control" id="lyDoEdit" placeholder="Nhập lý do"></textarea>
                 </div>
             </div>
             <div class="modal-footer">

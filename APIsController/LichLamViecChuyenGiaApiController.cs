@@ -20,6 +20,13 @@ namespace DATLICHKHAM.APIsController
         }
 
         [HttpGet]
+        [Route("GetsLichLamViecChuyenGiaByNgay")]
+        public async Task<Result<IEnumerable<DLK_LichLamViecChuyenGia>>> GetsByNgay(DateTime? Ngay,int? MaChuyenGia,bool? TrangThai,int? MaLichLamViec)
+        {
+            return await Mediator.Send(new GetsLichLamViecChuyenGiaByNgay.Query { Ngay = Ngay , MaChuyenGia=MaChuyenGia, TrangThai = TrangThai, MaLichLamViec = MaLichLamViec});
+        }
+
+        [HttpGet]
         [Route("Get")]
         public async Task<Result<DLK_LichLamViecChuyenGia>> Get(int MaLichLamViec)
         {

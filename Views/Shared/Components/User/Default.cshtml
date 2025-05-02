@@ -23,21 +23,22 @@ else
         </a>
         @if(ViewBag.VaiTro == 1)
         {
-            <ul class="dropdown-menu" aria-labelledby="userDropdown">
-                <li><a class="dropdown-item" href="/NguoiDung/ThongTinCaNhan">Thông tin cá nhân</a></li>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                <li><a class="dropdown-item" asp-controller="ThongTinCaNhanChuyenGia" asp-action="Index"><i class="fa fa-user"></i> Thông tin cá nhân</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="/NguoiDung/ThongTinCaNhan">Quản lý lịch khám</a></li>
+                <li><a class="dropdown-item" asp-controller="LichKham" asp-action="Index"><i class="fa fa-calendar"></i> Quản lý lịch khám</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" asp-action="Logout" asp-controller="Home">Đăng xuất</a></li>
+                <li><a class="dropdown-item" asp-action="Logout" asp-controller="Home"><i class="fa fa-sign-out-alt"></i> Đăng xuất</a></li>
             </ul>
         }
         else
         {
-            <ul class="dropdown-menu" aria-labelledby="userDropdown">
-                <li><a class="dropdown-item" href="/NguoiDung/ThongTinCaNhan">Thông tin cá nhân</a></li>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                <li><a class="dropdown-item" asp-controller="ThongTinCaNhanBenhNhan" asp-action="Index"><i class="fa fa-user"></i> Thông tin cá nhân</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" asp-action="Logout" asp-controller="Home">Đăng xuất</a></li>
+                <li><a class="dropdown-item" asp-action="Logout" asp-controller="Home"><i class="fa fa-sign-out-alt"></i> Đăng xuất</a></li>
             </ul>
         }
     </div>
 }
+

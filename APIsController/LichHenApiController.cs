@@ -26,6 +26,13 @@ namespace DATLICHKHAM.APIsController
             return await Mediator.Send(new Get.Query { MaLichHen = MaLichHen });
         }
 
+        [HttpGet]
+        [Route("GetLichHenByChuyenGiaByNgay")]
+        public async Task<Result<IEnumerable<DLK_LichHen>>> GetLichHenByChuyenGiaByNgay(int MaChuyenGia, DateTime NgayHen)
+        {
+            return await Mediator.Send(new GetLichHenByChuyenGiaByNgay.Query { MaChuyenGia = MaChuyenGia, NgayHen = NgayHen });
+        }
+
         [HttpPost]
         [Route("Add")]
         public async Task<Result<DLK_LichHen>> Add(DLK_LichHenAdd Entity)
@@ -38,6 +45,13 @@ namespace DATLICHKHAM.APIsController
         public async Task<Result<DLK_LichHenUpdate>> Update(DLK_LichHenUpdate Entity)
         {
             return await Mediator.Send(new Update.Command { Entity = Entity });
+        }
+
+        [HttpPut]
+        [Route("UpdateTrangThai")]
+        public async Task<Result<int>> UpdateTrangThai(int MaLichHen)
+        {
+            return await Mediator.Send(new UpdateTrangThai.Command {MaLichHen=MaLichHen});
         }
 
         [HttpDelete]

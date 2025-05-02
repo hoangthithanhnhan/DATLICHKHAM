@@ -1,4 +1,5 @@
 ﻿using DATLICHKHAM.Models;
+using MediatR;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
@@ -7,9 +8,11 @@ namespace DATLICHKHAM.ViewComponents
     public class UserViewComponent : ViewComponent
     {
         private readonly UserManager<AppUser> _userManager;
-        public UserViewComponent(UserManager<AppUser> userManager)
+        private readonly IMediator _mediator;
+        public UserViewComponent(UserManager<AppUser> userManager, IMediator mediator)
         {
             _userManager = userManager;
+            _mediator = mediator;
         }
         public async Task<IViewComponentResult> InvokeAsync()
         {

@@ -31,7 +31,6 @@ namespace DATLICHKHAM.Application.LichLamViecChuyenGia
                         parameters.Add("@MaChuyenGia", request.Entity.MaChuyenGia);
                         parameters.Add("@Ngay", request.Entity.Ngay);
                         parameters.Add("@ThoiGianLamViec", request.Entity.ThoiGianLamViec);
-                        parameters.Add("@TrangThai", request.Entity.TrangThai);
                         var result = await connection.QueryFirstOrDefaultAsync<DLK_LichLamViecChuyenGia>("SP_Add_LichLamViecChuyenGia", parameters, commandType: System.Data.CommandType.StoredProcedure);
                         return Result<DLK_LichLamViecChuyenGia>.Success(result);
                     }
