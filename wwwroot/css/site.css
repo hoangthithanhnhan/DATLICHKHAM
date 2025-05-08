@@ -318,7 +318,21 @@ main.block-trangchu {
                 box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.25);
                 margin-left: 36px;
                 transition: all 0.1s ease-in-out;
+                animation: pulse 1.5s infinite;
             }
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
 
 /*END BANNER TRANG CHỦ*/
 
@@ -787,7 +801,7 @@ main.block-trangchu {
     }
     .block-trangchu .blockChuyenGia .chuyenGia .chuyenGiaAvatar .anhDaiDienChuyenGia {
         width: 100%;
-        height:250px;
+        height:280px;
         object-fit:cover;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
@@ -886,7 +900,7 @@ main.block-trangchu {
             width: 40%;
         }
     .block-trangchu .blockDichVu .dichVu .dichVuAvatar .anhDaiDienDichVu {
-        height: 230px;
+        height: 100%;
         width: 100%;
         object-fit:cover;
         border-top-left-radius:10px;
@@ -1099,7 +1113,30 @@ main.block-trangchu {
             .block-main .blockDatLichKham .datKhamNgay #btn-datLichNgay:hover {
                 cursor: pointer;
             }
+main #modalXacNhanDatLich .modal-title {
+    font-weight: 700;
+    font-size: 20px;
+}
+main #modalXacNhanDatLich .modal-body p {
+    font-size: 20px;
+    font-weight: 500;
+    margin:10px 0px;
+}
+#modalXacNhanDatLich .modal-footer #xacNhan {
+    background: var(--blue);
+    border-color: var(--blue);
+}
+main #modalXacNhanDatLich .modal-footer button {
+    border-radius: 10px;
+    padding: 5px 25px;
+    font-size: 18px;
+}
 
+main #modalXacNhanDatLich .modal-footer .btn-cancel {
+    background: none;
+    border-color: var(--blue);
+    color: var(--blue);
+}
 main #chonDichVu .modal-header .modal-title {
     font-weight: 700;
     font-size: 20px;
@@ -1221,11 +1258,48 @@ textarea {
             background-color: #004a99;
         }
 
-main .blockLichHen {
-    margin: 160px 160px 60px 160px;
-    border-radius: 10px;
-    box-shadow:0px 0px 21px 0px rgba(0,0,0,0.2);
+main .block-main .booking-card.detail {
+    flex-direction: column;
+    align-items: center;
 }
+    main .block-main .booking-card.detail .header{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+        main .block-main .booking-card.detail .header h3 {
+            font-size: 25px;
+            font-weight:600;
+            margin-top:10px;
+        }
+        main .block-main .booking-card.detail .header .done-img {
+            width: 100px;
+        }
+            main .block-main .booking-card.detail .header .done-img
+
+            main .blockLichHen {
+                margin: 160px 160px 60px 160px;
+                border-radius: 10px;
+                box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.2);
+            }
+    main .block-main .booking-card.detail .info-booking {
+        margin-top: 20px;
+    }
+    main .block-main .booking-card.detail .info-booking .block-left .heading {
+        font-size: 20px;
+        font-weight: 700;
+    }
+    main .block-main .booking-card.detail .info-booking .block-right p {
+        font-size: 20px;
+        font-weight: 500;
+    }
+        main .block-main .booking-card.detail .info-booking .block-right #ghiChu {
+            font-size: 18px;
+            font-style: italic;
+        }
+        main .block-main .booking-card.detail .info-booking .block-qr #QR {
+            width: 100%;
+        }
     main .blockLichHen .showLichHen {
         border-right: solid 0.5px #DBDDE2;
     }

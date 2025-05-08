@@ -48,8 +48,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>9ueez1cfqs</Fingerprint>
-      <Integrity>X5ZFZG2/ZZLh/Ypme5UT34dtN2v0Q7Twvm/Xhltvfb0=</Integrity>
+      <Fingerprint>gphj6jv3e4</Fingerprint>
+      <Integrity>nH0iRxmnBDbnt4nYAGcyLahgzut4plVn8zI1qyu+H4I=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</OriginalItemSpec>
@@ -287,6 +287,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\cancel.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\checked.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DATLICHKHAM</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DATLICHKHAM</BasePath>
+      <RelativePath>images/checked.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>lqs90py291</Fingerprint>
+      <Integrity>vZ0aPKBTRLQQZIbljykei6UDRggET/Cl8FZxgCxnUMo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\checked.png'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\chevron_left.png'))">
       <SourceType>Package</SourceType>
@@ -791,6 +809,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\null-image.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\qr.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DATLICHKHAM</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DATLICHKHAM</BasePath>
+      <RelativePath>images/qr.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>pv74rmdt28</Fingerprint>
+      <Integrity>G9wbYqTZDSX3ccPhjmmnGAfdFVs6xo49j19fuOIqnR8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\qr.png'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\rating.png'))">
       <SourceType>Package</SourceType>
@@ -2118,8 +2154,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>kh0fzjuzos</Fingerprint>
-      <Integrity>yIDrPSXHZdOZhAqiBP7CKzIwMQmRCJ8UeB8Jo17YC4o=</Integrity>
+      <Fingerprint>ejoe9ihy1g</Fingerprint>
+      <Integrity>RstJZltJnfOsnz7PS10/xXaWEkeXUIumyuJxDwK27x4=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\fontawesome\all.min.css'))</OriginalItemSpec>
@@ -3216,11 +3252,29 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>jkubh9tcxw</Fingerprint>
-      <Integrity>g7T8Tnyko/A0Wp3KgpPxmxl0AJlu42uVBsDsv6UlCOc=</Integrity>
+      <Fingerprint>e170evjthn</Fingerprint>
+      <Integrity>XsI2XBLsI7PeRORV6msYzvzZHftN/K9/0yKqldh2+H0=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\PageScripts\DatLichKham.js'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\PageScripts\DatLichKhamChiTiet.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DATLICHKHAM</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DATLICHKHAM</BasePath>
+      <RelativePath>PageScripts/DatLichKhamChiTiet.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>cf8to8ght3</Fingerprint>
+      <Integrity>GLii4Gj4iHrPgf/GahZYTNCC5Te7l94WPulupY+KNDg=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\PageScripts\DatLichKhamChiTiet.js'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\PageScripts\DichVu.js'))">
       <SourceType>Package</SourceType>
@@ -3252,8 +3306,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>60yr9gv3n5</Fingerprint>
-      <Integrity>5n3t4Rza+mx8JUrK/0Ss+ljhnmnDM4rdoN33xAR6Pkc=</Integrity>
+      <Fingerprint>f0xf14vwv3</Fingerprint>
+      <Integrity>IYpqL/p0F+uOyGJQEkc7KTFE1V8AkO9nuVW0Fginr7Y=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\PageScripts\DoiNguChuyenGia.js'))</OriginalItemSpec>
@@ -3306,8 +3360,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>f4ipazq2sz</Fingerprint>
-      <Integrity>AQJNrQEfOpXKLWgaxe2/8T6FHuIvrFvCRdD+WaA19JI=</Integrity>
+      <Fingerprint>obrrvsp0li</Fingerprint>
+      <Integrity>FML94ZlK83wuNlW5gIcuAWZmVLMciunnHMj4ajh6XO4=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\PageScripts\QuanLyBaiViet.js'))</OriginalItemSpec>
@@ -3378,8 +3432,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>z2nibl2bzy</Fingerprint>
-      <Integrity>W4RsxAIjTGRv9hG2FNKfx/mjrDwpZwL2SehduxKeusA=</Integrity>
+      <Fingerprint>zbbqz1xxjo</Fingerprint>
+      <Integrity>37IogyrFDo0j4rVkfc4ndQeTNh3eez3/yW97A5UF9dU=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\PageScripts\QuanLyChuyenMuc.js'))</OriginalItemSpec>
@@ -4968,480 +5022,300 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\scss\bootstrap\scss\_variables.scss'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\BaiViet\chung-chi-tu-van-tam-ly-hoc-duong_1744966437.jpg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\BaiViet\tam ly hoc sinh_1746504825.png'))">
       <SourceType>Package</SourceType>
       <SourceId>DATLICHKHAM</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/DATLICHKHAM</BasePath>
-      <RelativePath>upload/BaiViet/chung-chi-tu-van-tam-ly-hoc-duong_1744966437.jpg</RelativePath>
+      <RelativePath>upload/BaiViet/tam ly hoc sinh_1746504825.png</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>bxln4zqumi</Fingerprint>
-      <Integrity>v96Mwxt8AH0cZu5aS5k4/xz87yexHJoSb/xE1Kny8V4=</Integrity>
+      <Fingerprint>tnme7yy22d</Fingerprint>
+      <Integrity>x8Y1M/OKjXXCAfU1FfQbQXBnF/a48Z3+l/5A2Q5FHVk=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\BaiViet\chung-chi-tu-van-tam-ly-hoc-duong_1744966437.jpg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\BaiViet\tam ly hoc sinh_1746504825.png'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\BaiViet\chung-chi-tu-van-tam-ly-hoc-duong_1744967244.jpg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\BaiViet\_MG_8932(1)_1746505617.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>DATLICHKHAM</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/DATLICHKHAM</BasePath>
-      <RelativePath>upload/BaiViet/chung-chi-tu-van-tam-ly-hoc-duong_1744967244.jpg</RelativePath>
+      <RelativePath>upload/BaiViet/_MG_8932(1)_1746505617.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>bxln4zqumi</Fingerprint>
-      <Integrity>v96Mwxt8AH0cZu5aS5k4/xz87yexHJoSb/xE1Kny8V4=</Integrity>
+      <Fingerprint>mrnx5ixuwy</Fingerprint>
+      <Integrity>bszzrLf+QxCGmPVArDhexR0GFhzsgH/WA7H3clEXPyQ=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\BaiViet\chung-chi-tu-van-tam-ly-hoc-duong_1744967244.jpg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\BaiViet\_MG_8932(1)_1746505617.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\BenhNhan\Cún_1745169221.png'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\BenhNhan\25bf4d9f-ce4a-4985-bd86-8b40f276d967.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>DATLICHKHAM</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/DATLICHKHAM</BasePath>
-      <RelativePath>upload/BenhNhan/Cún_1745169221.png</RelativePath>
+      <RelativePath>upload/BenhNhan/25bf4d9f-ce4a-4985-bd86-8b40f276d967.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>wao15d7wh1</Fingerprint>
-      <Integrity>uOWNthZhHZ6RnlfHHgimMYXZR7RiL/SJoSZXC3uRnGw=</Integrity>
+      <Fingerprint>qtr1mmyr1w</Fingerprint>
+      <Integrity>4u6u/w0Iupq/0kWwkdqPIec2Dl4QsSLWWAGZCDvfg58=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\BenhNhan\Cún_1745169221.png'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\BenhNhan\25bf4d9f-ce4a-4985-bd86-8b40f276d967.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\Blog\5e7e0897-67ea-4d2c-9352-cf478d6fa394_chung-chi-tu-van-tam-ly-hoc-duong.jpg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\BenhNhan\z6576553943492_fb32e47726557a75789c006ecf6c5f33_1746589881.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>DATLICHKHAM</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/DATLICHKHAM</BasePath>
-      <RelativePath>upload/Blog/5e7e0897-67ea-4d2c-9352-cf478d6fa394_chung-chi-tu-van-tam-ly-hoc-duong.jpg</RelativePath>
+      <RelativePath>upload/BenhNhan/z6576553943492_fb32e47726557a75789c006ecf6c5f33_1746589881.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>bxln4zqumi</Fingerprint>
-      <Integrity>v96Mwxt8AH0cZu5aS5k4/xz87yexHJoSb/xE1Kny8V4=</Integrity>
+      <Fingerprint>gkmyb2v2mt</Fingerprint>
+      <Integrity>wEnh5+0qo6wBQd3nrfH6I9BiMx8ITYNs6Uaj3Ie/2wc=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\Blog\5e7e0897-67ea-4d2c-9352-cf478d6fa394_chung-chi-tu-van-tam-ly-hoc-duong.jpg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\BenhNhan\z6576553943492_fb32e47726557a75789c006ecf6c5f33_1746589881.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\Blog\7f611b36-709f-40a4-aaf7-377aa78683ba_Tien-trinh-tham-van-la-gi.jpg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\Blog\4c42a82b-834b-4de0-80f2-da7956063395_images.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>DATLICHKHAM</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/DATLICHKHAM</BasePath>
-      <RelativePath>upload/Blog/7f611b36-709f-40a4-aaf7-377aa78683ba_Tien-trinh-tham-van-la-gi.jpg</RelativePath>
+      <RelativePath>upload/Blog/4c42a82b-834b-4de0-80f2-da7956063395_images.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>99sypb63m9</Fingerprint>
-      <Integrity>c1cC0qTM3zD3VPWKCYsdvt12hwiJ5FXzU5eyzC73mMU=</Integrity>
+      <Fingerprint>9hre4i90zq</Fingerprint>
+      <Integrity>nR5THdxc7B8oLbWmaEo4RvFbRyK1BvbsYu79ytskWWo=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\Blog\7f611b36-709f-40a4-aaf7-377aa78683ba_Tien-trinh-tham-van-la-gi.jpg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\Blog\4c42a82b-834b-4de0-80f2-da7956063395_images.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\Blog\e0b719ac-9bef-4d15-bd1e-7eddc8f94c89_chung-chi-tu-van-tam-ly-hoc-duong.jpg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\6a4bdccc-2a07-427b-8c17-dc5626deec63.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>DATLICHKHAM</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/DATLICHKHAM</BasePath>
-      <RelativePath>upload/Blog/e0b719ac-9bef-4d15-bd1e-7eddc8f94c89_chung-chi-tu-van-tam-ly-hoc-duong.jpg</RelativePath>
+      <RelativePath>upload/ChuyenGia/6a4bdccc-2a07-427b-8c17-dc5626deec63.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>bxln4zqumi</Fingerprint>
-      <Integrity>v96Mwxt8AH0cZu5aS5k4/xz87yexHJoSb/xE1Kny8V4=</Integrity>
+      <Fingerprint>phbs1sttr8</Fingerprint>
+      <Integrity>0zV7A8taBKi0DpZ0tRzNt2G8E1eOdQjrjEW1q7p8Qw4=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\Blog\e0b719ac-9bef-4d15-bd1e-7eddc8f94c89_chung-chi-tu-van-tam-ly-hoc-duong.jpg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\6a4bdccc-2a07-427b-8c17-dc5626deec63.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\Blog\fc2b6edf-087a-4029-aedb-3d0e1a8e9a54_chung-chi-tu-van-tam-ly-hoc-duong.jpg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\7898b7fd-92d6-47a8-9deb-8df6e77aaed9.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>DATLICHKHAM</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/DATLICHKHAM</BasePath>
-      <RelativePath>upload/Blog/fc2b6edf-087a-4029-aedb-3d0e1a8e9a54_chung-chi-tu-van-tam-ly-hoc-duong.jpg</RelativePath>
+      <RelativePath>upload/ChuyenGia/7898b7fd-92d6-47a8-9deb-8df6e77aaed9.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>bxln4zqumi</Fingerprint>
-      <Integrity>v96Mwxt8AH0cZu5aS5k4/xz87yexHJoSb/xE1Kny8V4=</Integrity>
+      <Fingerprint>mj5rez63x2</Fingerprint>
+      <Integrity>LlFj0prvVjudlO/3Jlp2l/C45EnbXS7T1CmhcrxHVvI=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\Blog\fc2b6edf-087a-4029-aedb-3d0e1a8e9a54_chung-chi-tu-van-tam-ly-hoc-duong.jpg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\7898b7fd-92d6-47a8-9deb-8df6e77aaed9.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChungChi\bac-si-tam-ly-hon-nhan-gia-dinh-ha-Noi-2_1746113228352.png'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\anh-bac-si_1746588725.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>DATLICHKHAM</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/DATLICHKHAM</BasePath>
-      <RelativePath>upload/ChungChi/bac-si-tam-ly-hon-nhan-gia-dinh-ha-Noi-2_1746113228352.png</RelativePath>
+      <RelativePath>upload/ChuyenGia/anh-bac-si_1746588725.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>5xx5t00qnu</Fingerprint>
-      <Integrity>Bwhzunf3OeXqvuPCBF4u/cZ9418KJz1HaZX/qUuFUXI=</Integrity>
+      <Fingerprint>l9dxirlfuu</Fingerprint>
+      <Integrity>l5Cz2U6t+PfuQzltJAzXbMBCzfzQR9JIImf6kVlOP+c=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChungChi\bac-si-tam-ly-hon-nhan-gia-dinh-ha-Noi-2_1746113228352.png'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\anh-bac-si_1746588725.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChungChi\phuc-hoi-chuc-nang-tre-tu-ky-7_1746113228351.jpg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\b97e9f5b-b58b-4827-8382-17b3f19e277e.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>DATLICHKHAM</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/DATLICHKHAM</BasePath>
-      <RelativePath>upload/ChungChi/phuc-hoi-chuc-nang-tre-tu-ky-7_1746113228351.jpg</RelativePath>
+      <RelativePath>upload/ChuyenGia/b97e9f5b-b58b-4827-8382-17b3f19e277e.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>epxsgoorb8</Fingerprint>
-      <Integrity>XrasDjr7nUigNjsq9idBefUsWn7TrxLAaku1Aoz31U8=</Integrity>
+      <Fingerprint>35dzu0357u</Fingerprint>
+      <Integrity>uYQir5JlFMyu3umRcwiE5kujvkxj3Fy7G8mPlQ4clGI=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChungChi\phuc-hoi-chuc-nang-tre-tu-ky-7_1746113228351.jpg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\b97e9f5b-b58b-4827-8382-17b3f19e277e.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChungChi\phuc-hoi-chuc-nang-tre-tu-ky-7_174611334970.jpg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\de0d718a-e05f-4b22-88cb-e9ca9f2405ec.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>DATLICHKHAM</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/DATLICHKHAM</BasePath>
-      <RelativePath>upload/ChungChi/phuc-hoi-chuc-nang-tre-tu-ky-7_174611334970.jpg</RelativePath>
+      <RelativePath>upload/ChuyenGia/de0d718a-e05f-4b22-88cb-e9ca9f2405ec.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>epxsgoorb8</Fingerprint>
-      <Integrity>XrasDjr7nUigNjsq9idBefUsWn7TrxLAaku1Aoz31U8=</Integrity>
+      <Fingerprint>akdqfqf0zr</Fingerprint>
+      <Integrity>Ks5oeBPlazI2KNF1mzIzWbKnPZ9saJTEegEnXde2F5Q=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChungChi\phuc-hoi-chuc-nang-tre-tu-ky-7_174611334970.jpg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\de0d718a-e05f-4b22-88cb-e9ca9f2405ec.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChungChi\Rối loạn giải thể nhân cách_1746030132668.webp'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\ffc3e29b-6628-4c60-9f36-4726c39579aa.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>DATLICHKHAM</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/DATLICHKHAM</BasePath>
-      <RelativePath>upload/ChungChi/Rối loạn giải thể nhân cách_1746030132668.webp</RelativePath>
+      <RelativePath>upload/ChuyenGia/ffc3e29b-6628-4c60-9f36-4726c39579aa.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>g6309xk395</Fingerprint>
-      <Integrity>GN16B1rl5NIHM07zOUz3GBkFTpYR7dkAVdgZ2P1vZH4=</Integrity>
+      <Fingerprint>qjvkw6mf0k</Fingerprint>
+      <Integrity>Sgusdd9y6RCSeLbR6tT/t/hfN9/Uyp3vx4CGrD+Ag6k=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChungChi\Rối loạn giải thể nhân cách_1746030132668.webp'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\ffc3e29b-6628-4c60-9f36-4726c39579aa.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChungChi\Tien-trinh-tham-van-la-gi_1746028792195.jpg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenMuc\1-tri-lieu-tam-ly-shutterstock-5870_1746503705.jpeg'))">
       <SourceType>Package</SourceType>
       <SourceId>DATLICHKHAM</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/DATLICHKHAM</BasePath>
-      <RelativePath>upload/ChungChi/Tien-trinh-tham-van-la-gi_1746028792195.jpg</RelativePath>
+      <RelativePath>upload/ChuyenMuc/1-tri-lieu-tam-ly-shutterstock-5870_1746503705.jpeg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>99sypb63m9</Fingerprint>
-      <Integrity>c1cC0qTM3zD3VPWKCYsdvt12hwiJ5FXzU5eyzC73mMU=</Integrity>
+      <Fingerprint>rhazpmeogs</Fingerprint>
+      <Integrity>39CcjHFRoJUzhUsNhJ3W2nhLBjOUlDn8L2BMgI/wjX0=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChungChi\Tien-trinh-tham-van-la-gi_1746028792195.jpg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenMuc\1-tri-lieu-tam-ly-shutterstock-5870_1746503705.jpeg'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChungChi\Tien-trinh-tham-van-la-gi_1746032596601.jpg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenMuc\103785348_145313730492932_5772214164823743607_o-2_1746503735.png'))">
       <SourceType>Package</SourceType>
       <SourceId>DATLICHKHAM</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/DATLICHKHAM</BasePath>
-      <RelativePath>upload/ChungChi/Tien-trinh-tham-van-la-gi_1746032596601.jpg</RelativePath>
+      <RelativePath>upload/ChuyenMuc/103785348_145313730492932_5772214164823743607_o-2_1746503735.png</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>99sypb63m9</Fingerprint>
-      <Integrity>c1cC0qTM3zD3VPWKCYsdvt12hwiJ5FXzU5eyzC73mMU=</Integrity>
+      <Fingerprint>ur0wa0uaxg</Fingerprint>
+      <Integrity>FoplcENlhr2su8lPzM0n1+x3+nlXH/TRe0B/q1GibdY=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChungChi\Tien-trinh-tham-van-la-gi_1746032596601.jpg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenMuc\103785348_145313730492932_5772214164823743607_o-2_1746503735.png'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChungChi\Tien-trinh-tham-van-la-gi_1746113228344.jpg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenMuc\20190622_042043_347343_phong_kham_tam_ly_2_max_1800x1800_jpg_762fae02b8_1746503529.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>DATLICHKHAM</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/DATLICHKHAM</BasePath>
-      <RelativePath>upload/ChungChi/Tien-trinh-tham-van-la-gi_1746113228344.jpg</RelativePath>
+      <RelativePath>upload/ChuyenMuc/20190622_042043_347343_phong_kham_tam_ly_2_max_1800x1800_jpg_762fae02b8_1746503529.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>99sypb63m9</Fingerprint>
-      <Integrity>c1cC0qTM3zD3VPWKCYsdvt12hwiJ5FXzU5eyzC73mMU=</Integrity>
+      <Fingerprint>pxuqe195z5</Fingerprint>
+      <Integrity>HWGagq/d/ug+rQVLytfz0V6RC9T+empEWV1ONmfG+nY=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChungChi\Tien-trinh-tham-van-la-gi_1746113228344.jpg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenMuc\20190622_042043_347343_phong_kham_tam_ly_2_max_1800x1800_jpg_762fae02b8_1746503529.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\1492910e-238f-434f-93b1-be9ed743c10b.jpg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenMuc\8ca08d6c-bf7e-4bc6-8a3b-9527c1293d48_1746503679.png'))">
       <SourceType>Package</SourceType>
       <SourceId>DATLICHKHAM</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/DATLICHKHAM</BasePath>
-      <RelativePath>upload/ChuyenGia/1492910e-238f-434f-93b1-be9ed743c10b.jpg</RelativePath>
+      <RelativePath>upload/ChuyenMuc/8ca08d6c-bf7e-4bc6-8a3b-9527c1293d48_1746503679.png</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>99sypb63m9</Fingerprint>
-      <Integrity>c1cC0qTM3zD3VPWKCYsdvt12hwiJ5FXzU5eyzC73mMU=</Integrity>
+      <Fingerprint>q2dxfimtc5</Fingerprint>
+      <Integrity>jqifKeMUGCqIOLpxFHPOr3dA63liBgF2SKD+xsjLY78=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\1492910e-238f-434f-93b1-be9ed743c10b.jpg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenMuc\8ca08d6c-bf7e-4bc6-8a3b-9527c1293d48_1746503679.png'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\2bb94bb2-9e7c-4aa8-8b42-fa5c7a8b7ceb.jpg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenMuc\images_1746503611.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>DATLICHKHAM</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/DATLICHKHAM</BasePath>
-      <RelativePath>upload/ChuyenGia/2bb94bb2-9e7c-4aa8-8b42-fa5c7a8b7ceb.jpg</RelativePath>
+      <RelativePath>upload/ChuyenMuc/images_1746503611.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>99sypb63m9</Fingerprint>
-      <Integrity>c1cC0qTM3zD3VPWKCYsdvt12hwiJ5FXzU5eyzC73mMU=</Integrity>
+      <Fingerprint>9hre4i90zq</Fingerprint>
+      <Integrity>nR5THdxc7B8oLbWmaEo4RvFbRyK1BvbsYu79ytskWWo=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\2bb94bb2-9e7c-4aa8-8b42-fa5c7a8b7ceb.jpg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenMuc\images_1746503611.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\354f9162-7ec6-47fc-9c86-effacf85ac35.jpg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenMuc\tham-van-tam-ly-hoc-duong-1_1746503472.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>DATLICHKHAM</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/DATLICHKHAM</BasePath>
-      <RelativePath>upload/ChuyenGia/354f9162-7ec6-47fc-9c86-effacf85ac35.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>jfae7pwfs6</Fingerprint>
-      <Integrity>T1fjeXWcVYtD9q5h1maUpmipC7QRddxFpaOz7koXOas=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\354f9162-7ec6-47fc-9c86-effacf85ac35.jpg'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\41788190-a336-46ec-ac3b-ba0678f464f8.jpg'))">
-      <SourceType>Package</SourceType>
-      <SourceId>DATLICHKHAM</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/DATLICHKHAM</BasePath>
-      <RelativePath>upload/ChuyenGia/41788190-a336-46ec-ac3b-ba0678f464f8.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>c99lm217fn</Fingerprint>
-      <Integrity>IBAWO+DMr1NqKMmWknNpOtPe0msbiVRdujA4eT4Qd/U=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\41788190-a336-46ec-ac3b-ba0678f464f8.jpg'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\Cún_1744798057.png'))">
-      <SourceType>Package</SourceType>
-      <SourceId>DATLICHKHAM</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/DATLICHKHAM</BasePath>
-      <RelativePath>upload/ChuyenGia/Cún_1744798057.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>wao15d7wh1</Fingerprint>
-      <Integrity>uOWNthZhHZ6RnlfHHgimMYXZR7RiL/SJoSZXC3uRnGw=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\Cún_1744798057.png'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\tri-lieu-tam-ly-la-gi-7-phuong-phap-tri-lieu-tam-7-800x450_1745827249.jpg'))">
-      <SourceType>Package</SourceType>
-      <SourceId>DATLICHKHAM</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/DATLICHKHAM</BasePath>
-      <RelativePath>upload/ChuyenGia/tri-lieu-tam-ly-la-gi-7-phuong-phap-tri-lieu-tam-7-800x450_1745827249.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>jfae7pwfs6</Fingerprint>
-      <Integrity>T1fjeXWcVYtD9q5h1maUpmipC7QRddxFpaOz7koXOas=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenGia\tri-lieu-tam-ly-la-gi-7-phuong-phap-tri-lieu-tam-7-800x450_1745827249.jpg'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenMuc\Cún_1744267920.png'))">
-      <SourceType>Package</SourceType>
-      <SourceId>DATLICHKHAM</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/DATLICHKHAM</BasePath>
-      <RelativePath>upload/ChuyenMuc/Cún_1744267920.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>wao15d7wh1</Fingerprint>
-      <Integrity>uOWNthZhHZ6RnlfHHgimMYXZR7RiL/SJoSZXC3uRnGw=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenMuc\Cún_1744267920.png'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\DichVu\5-phut-trac-nghiem-kiem-tra-tam-ly-hoc-tang-co-hoi-thanh-cong-tai-sao-khong_1745294274.jpg'))">
-      <SourceType>Package</SourceType>
-      <SourceId>DATLICHKHAM</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/DATLICHKHAM</BasePath>
-      <RelativePath>upload/DichVu/5-phut-trac-nghiem-kiem-tra-tam-ly-hoc-tang-co-hoi-thanh-cong-tai-sao-khong_1745294274.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>0mvwiqm138</Fingerprint>
-      <Integrity>CAKWzmiWR1sQOoXF4LPz7R7y+GQV/0mkEusXCMVXaTI=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\DichVu\5-phut-trac-nghiem-kiem-tra-tam-ly-hoc-tang-co-hoi-thanh-cong-tai-sao-khong_1745294274.jpg'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\DichVu\bac-si-tam-ly-hon-nhan-gia-dinh-ha-Noi-2_1745294316.png'))">
-      <SourceType>Package</SourceType>
-      <SourceId>DATLICHKHAM</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/DATLICHKHAM</BasePath>
-      <RelativePath>upload/DichVu/bac-si-tam-ly-hon-nhan-gia-dinh-ha-Noi-2_1745294316.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>5xx5t00qnu</Fingerprint>
-      <Integrity>Bwhzunf3OeXqvuPCBF4u/cZ9418KJz1HaZX/qUuFUXI=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\DichVu\bac-si-tam-ly-hon-nhan-gia-dinh-ha-Noi-2_1745294316.png'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\DichVu\dt-hero-1024x756_1745293930.png'))">
-      <SourceType>Package</SourceType>
-      <SourceId>DATLICHKHAM</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/DATLICHKHAM</BasePath>
-      <RelativePath>upload/DichVu/dt-hero-1024x756_1745293930.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>ykzo7uaqsv</Fingerprint>
-      <Integrity>3nbapBTBHTLGfePLmlXo9i67XTsqx/Xut1VQqcUlPao=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\DichVu\dt-hero-1024x756_1745293930.png'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\DichVu\phuc-hoi-chuc-nang-tre-tu-ky-7_1745294373.jpg'))">
-      <SourceType>Package</SourceType>
-      <SourceId>DATLICHKHAM</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/DATLICHKHAM</BasePath>
-      <RelativePath>upload/DichVu/phuc-hoi-chuc-nang-tre-tu-ky-7_1745294373.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>epxsgoorb8</Fingerprint>
-      <Integrity>XrasDjr7nUigNjsq9idBefUsWn7TrxLAaku1Aoz31U8=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\DichVu\phuc-hoi-chuc-nang-tre-tu-ky-7_1745294373.jpg'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\DichVu\Rối loạn giải thể nhân cách_1745293843.webp'))">
-      <SourceType>Package</SourceType>
-      <SourceId>DATLICHKHAM</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/DATLICHKHAM</BasePath>
-      <RelativePath>upload/DichVu/Rối loạn giải thể nhân cách_1745293843.webp</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>g6309xk395</Fingerprint>
-      <Integrity>GN16B1rl5NIHM07zOUz3GBkFTpYR7dkAVdgZ2P1vZH4=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\DichVu\Rối loạn giải thể nhân cách_1745293843.webp'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\DichVu\tham-van-tam-ly-hoc-duong-1_1745293673.jpg'))">
-      <SourceType>Package</SourceType>
-      <SourceId>DATLICHKHAM</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/DATLICHKHAM</BasePath>
-      <RelativePath>upload/DichVu/tham-van-tam-ly-hoc-duong-1_1745293673.jpg</RelativePath>
+      <RelativePath>upload/ChuyenMuc/tham-van-tam-ly-hoc-duong-1_1746503472.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -5452,25 +5326,133 @@
       <Integrity>gz8eOhqI0SsAQ2WFudeSOfFiOu4MEpPtTfNAk71OhTU=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\DichVu\tham-van-tam-ly-hoc-duong-1_1745293673.jpg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenMuc\tham-van-tam-ly-hoc-duong-1_1746503472.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\DichVu\Tien-trinh-tham-van-la-gi_1745294424.jpg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenMuc\tri-lieu-cap-doi-1_1746503588.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>DATLICHKHAM</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/DATLICHKHAM</BasePath>
-      <RelativePath>upload/DichVu/Tien-trinh-tham-van-la-gi_1745294424.jpg</RelativePath>
+      <RelativePath>upload/ChuyenMuc/tri-lieu-cap-doi-1_1746503588.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>99sypb63m9</Fingerprint>
-      <Integrity>c1cC0qTM3zD3VPWKCYsdvt12hwiJ5FXzU5eyzC73mMU=</Integrity>
+      <Fingerprint>hufo32uudd</Fingerprint>
+      <Integrity>OfFTCcKEst5BOfEbB317QtmqkRFvGHCNsn24iVsdq5w=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\DichVu\Tien-trinh-tham-van-la-gi_1745294424.jpg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\ChuyenMuc\tri-lieu-cap-doi-1_1746503588.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\DichVu\1_1746502333.jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DATLICHKHAM</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DATLICHKHAM</BasePath>
+      <RelativePath>upload/DichVu/1_1746502333.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>lyq9ok72dn</Fingerprint>
+      <Integrity>vcjx+GrHWcJG7mo92ncSfeICGiPms+Lh2Wh8WxgvA0A=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\DichVu\1_1746502333.jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\DichVu\2_1746502001.jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DATLICHKHAM</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DATLICHKHAM</BasePath>
+      <RelativePath>upload/DichVu/2_1746502001.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>740gdrcy45</Fingerprint>
+      <Integrity>aeIm13qt6JWiE71RNy73iC25spHhgAMlyU/EL1zstsc=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\DichVu\2_1746502001.jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\DichVu\3_1746502107.jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DATLICHKHAM</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DATLICHKHAM</BasePath>
+      <RelativePath>upload/DichVu/3_1746502107.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>wwcj5e20u7</Fingerprint>
+      <Integrity>4PpkFxsW/JrnmrZjRm0WLQJjnRgkiU8Q9Q1uc3mLyRE=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\DichVu\3_1746502107.jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\DichVu\4_1746502155.jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DATLICHKHAM</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DATLICHKHAM</BasePath>
+      <RelativePath>upload/DichVu/4_1746502155.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>4h026jezoa</Fingerprint>
+      <Integrity>GP90q8AksgOZ2RKMzxAZOWlcoTwgXOwiqYHOFOErqhc=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\DichVu\4_1746502155.jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\DichVu\5_1746502389.jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DATLICHKHAM</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DATLICHKHAM</BasePath>
+      <RelativePath>upload/DichVu/5_1746502389.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>pryjqlwki9</Fingerprint>
+      <Integrity>xQTtKDZtf10ESnmzMjN5v3VB/VU8uFy7inX6c+Q40wk=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\DichVu\5_1746502389.jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\DichVu\6_1746502322.jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DATLICHKHAM</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DATLICHKHAM</BasePath>
+      <RelativePath>upload/DichVu/6_1746502322.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>r9mlqulhvw</Fingerprint>
+      <Integrity>AXqJ84lLbVOZXwWyWsYZevnsElovz+985vHc1h37CuI=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\upload\DichVu\6_1746502322.jpeg'))</OriginalItemSpec>
     </StaticWebAsset>
   </ItemGroup>
 </Project>

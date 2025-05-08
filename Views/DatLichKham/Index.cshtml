@@ -78,7 +78,24 @@
     </div>
 </div>
 
-@* href="/DatLichKham/DatLichKhamChiTiet" *@
+<div class="modal fade" id="modalXacNhanDatLich" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Xác nhận đặt lịch</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Hủy"></button>
+            </div>
+            <div class="modal-body">
+                <p>Bạn có chắc chắn muốn đặt lịch hẹn này không?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-cancel btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                <button type="button" class="btn btn-active btn-primary" id="xacNhan">Xác nhận</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 @section Scripts {
     <script src="~/PageScripts/DatLichKham.js"></script>

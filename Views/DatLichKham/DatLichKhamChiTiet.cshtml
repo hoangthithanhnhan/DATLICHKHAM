@@ -5,35 +5,37 @@
 }
 
 <div class="block-main">
-    <div class="booking-card">
-        <div class="left-info">
-            <div class="doctor-info">
-                <img src="https://i.imgur.com/8Km9tLL.png" alt="Doctor">
-                <div class="doctor-details">
-                    <div class="doctor-name">TS. BS. Nguyễn Thanh Tùng</div>
-                    <div class="doctor-price">800.000 VND</div>
-                </div>
+    <div class="booking-card detail">
+        <div class="header">
+            <img src="~/images/checked.png" alt="Đặt lịch thành công" class="done-img" />
+            <h3>Đặt lịch thành công!</h3>
+        </div>
+        <div class="info-booking row" style="width:100%;">
+            <div class="block-left col-2">
+                <p class="heading">Mã lịch hẹn</p>
+                <p class="heading">Chuyên gia</p>
+                <p class="heading">Ngày</p>
+                <p class="heading">Thời gian</p>
+                <p class="heading">Dịch vụ</p>
+                <p class="heading">Giá dịch vụ</p>
+                <p class="heading">Ghi chú</p>
             </div>
-            <div class="info-line"><strong>Ngày hẹn:</strong> 04 / 11 / 2025</div>
-            <div class="info-line"><strong>Thời gian hẹn:</strong> 08:00 - 09:00</div>
-            <div class="info-line"><strong>Hình thức:</strong> Khám Online</div>
-        </div>
-
-        <div class="right-info">
-            <div class="info-line"><span class="info-label">Họ tên:</span> Thanh Nhàn</div>
-            <div class="info-line"><span class="info-label">Số điện thoại:</span> 0334744472</div>
-            <div class="info-line"><span class="info-label">Ngày sinh:</span> 04 / 11 / 2003</div>
-            <div class="info-line"><span class="info-label">Ngày sinh:</span> 04 / 11 / 2003</div>
-            <div class="info-line"><span class="info-label">Số tiền đặt cọc:</span> <span class="deposit-info">400.000 VND</span></div>
-            <div class="info-line"><span class="info-label">Số tiền thanh toán còn lại:</span> <span class="remain-info">400.000 VND</span></div>
-        </div>
-
-        <textarea placeholder="Ghi chú"></textarea>
-        <div class="note">
-            Bệnh nhân phải thanh toán trước 50% số tiền để đặt lịch khám, sẽ được hoàn tiền đặt cọc nếu huỷ lịch trước 12 tiếng
-        </div>
-        <div class="submit-button">
-            <button>XÁC NHẬN ĐẶT LỊCH</button>
+            <div class="block-right col">
+                <p id="maLichHen"></p>
+                <p id="chuyenGia"></p>
+                <p id="ngay"></p>
+                <p id="thoiGian" class="text-success"></p>
+                <p id="dichVu"></p>
+                <p id="giaDichVu" class="text-danger"></p>
+                <p id="ghiChu" ></p>
+            </div>
+            <div class="block-qr col-2">
+                <img src="~/images/qr.png" alt="QR" id="QR" />
+            </div>
         </div>
     </div>
 </div>
+
+@section Scripts {
+    <script src="~/PageScripts/DatLichKhamChiTiet.js"></script>
+}

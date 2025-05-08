@@ -8,6 +8,7 @@
         public int MaBenhNhan {  get; set; }
         public string TenBenhNhan { get; set; }
         public int MaDichVu { get; set; }
+        public float GiaDichVu { get; set; }
         public string TenDichVu { get; set; }
         public DateTime NgayHen { get; set; }
         public int ThoiGianHen { get; set; }

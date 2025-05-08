@@ -16,7 +16,6 @@
         <tr>
             <th>Stt</th>
             <th>Tiêu đề</th>
-            <th>Người đăng</th>
             <th>Thời gian đăng</th>
             <th>Trạng thái</th>
             <th>Thao tác</th>
@@ -60,11 +59,11 @@
                     <div>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="trangThaiAdd" id="congKhaiAdd" value="1" checked>
-                            <label class="form-check-label" for="congKhaiAdd">Công khai</label>
+                            <label class="form-check-label" for="congKhaiAdd">Xuất bản</label>
                         </div>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="trangThaiAdd" id="khongCongKhaiAdd" value="0">
-                            <label class="form-check-label" for="khongCongKhaiAdd">Không công khai</label>
+                            <label class="form-check-label" for="khongCongKhaiAdd">Nháp</label>
                         </div>
                     </div>
                 </div>
@@ -80,7 +79,7 @@
 
 @* MODAL CẬP NHẬT  *@
 <div class="modal fade" id="modalEdit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="staticBackdropLabel">Cập nhật bài viết</h5>
@@ -122,11 +121,11 @@
                     <div>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="trangThaiEdit" id="congKhaiEdit" value="1" checked>
-                            <label class="form-check-label" for="congKhaiEdit">Công khai</label>
+                            <label class="form-check-label" for="congKhaiEdit">Xuất bản</label>
                         </div>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="trangThaiEdit" id="khongCongKhaiEdit" value="0">
-                            <label class="form-check-label" for="khongCongKhaiEdit">Không công khai</label>
+                            <label class="form-check-label" for="khongCongKhaiEdit">Nháp</label>
                         </div>
                     </div>
                 </div>

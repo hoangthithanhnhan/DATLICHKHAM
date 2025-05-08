@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "D:\\TTTN2025\\DATLICHKHAM\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{103D04BA-3A84-42D5-BAB8-49526333C26D}|DATLICHKHAM.csproj|d:\\tttn2025\\datlichkham\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{103D04BA-3A84-42D5-BAB8-49526333C26D}|DATLICHKHAM.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{103D04BA-3A84-42D5-BAB8-49526333C26D}|DATLICHKHAM.csproj|d:\\tttn2025\\datlichkham\\wwwroot\\pagescripts\\datlichkhamchitiet.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{103D04BA-3A84-42D5-BAB8-49526333C26D}|DATLICHKHAM.csproj|solutionrelative:wwwroot\\pagescripts\\datlichkhamchitiet.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{103D04BA-3A84-42D5-BAB8-49526333C26D}|DATLICHKHAM.csproj|d:\\tttn2025\\datlichkham\\views\\lichkham\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{103D04BA-3A84-42D5-BAB8-49526333C26D}|DATLICHKHAM.csproj|solutionrelative:views\\lichkham\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{103D04BA-3A84-42D5-BAB8-49526333C26D}|DATLICHKHAM.csproj|d:\\tttn2025\\datlichkham\\views\\datlichkham\\datlichkhamchitiet.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{103D04BA-3A84-42D5-BAB8-49526333C26D}|DATLICHKHAM.csproj|solutionrelative:views\\datlichkham\\datlichkhamchitiet.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{103D04BA-3A84-42D5-BAB8-49526333C26D}|DATLICHKHAM.csproj|d:\\tttn2025\\datlichkham\\wwwroot\\pagescripts\\lichlamviecchuyengia.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{103D04BA-3A84-42D5-BAB8-49526333C26D}|DATLICHKHAM.csproj|solutionrelative:wwwroot\\pagescripts\\lichlamviecchuyengia.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{103D04BA-3A84-42D5-BAB8-49526333C26D}|DATLICHKHAM.csproj|d:\\tttn2025\\datlichkham\\domain\\dlk_lichhen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{103D04BA-3A84-42D5-BAB8-49526333C26D}|DATLICHKHAM.csproj|solutionrelative:domain\\dlk_lichhen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{103D04BA-3A84-42D5-BAB8-49526333C26D}|DATLICHKHAM.csproj|d:\\tttn2025\\datlichkham\\wwwroot\\pagescripts\\datlichkham.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{103D04BA-3A84-42D5-BAB8-49526333C26D}|DATLICHKHAM.csproj|solutionrelative:wwwroot\\pagescripts\\datlichkham.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{103D04BA-3A84-42D5-BAB8-49526333C26D}|DATLICHKHAM.csproj|d:\\tttn2025\\datlichkham\\wwwroot\\pagescripts\\quanlychuyengia.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -30,75 +34,89 @@
       "DocumentGroups": [
         {
           "DockedWidth": 250,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "site.css",
+              "DocumentMoniker": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AgIAAP0EAAAAAAAAAAAnwBUFAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-05-07T03:21:58.956Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DatLichKham.js",
+              "DocumentMoniker": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\DatLichKham.js",
+              "RelativeDocumentMoniker": "wwwroot\\PageScripts\\DatLichKham.js",
+              "ToolTip": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\DatLichKham.js",
+              "RelativeToolTip": "wwwroot\\PageScripts\\DatLichKham.js",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAD8AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-05-07T09:12:58.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DLK_LichHen.cs",
+              "DocumentMoniker": "D:\\TTTN2025\\DATLICHKHAM\\Domain\\DLK_LichHen.cs",
+              "RelativeDocumentMoniker": "Domain\\DLK_LichHen.cs",
+              "ToolTip": "D:\\TTTN2025\\DATLICHKHAM\\Domain\\DLK_LichHen.cs",
+              "RelativeToolTip": "Domain\\DLK_LichHen.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAYwAwAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T09:10:34.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DatLichKhamChiTiet.js",
+              "DocumentMoniker": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\DatLichKhamChiTiet.js",
+              "RelativeDocumentMoniker": "wwwroot\\PageScripts\\DatLichKhamChiTiet.js",
+              "ToolTip": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\DatLichKhamChiTiet.js",
+              "RelativeToolTip": "wwwroot\\PageScripts\\DatLichKhamChiTiet.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-05-07T08:54:43.756Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\TTTN2025\\DATLICHKHAM\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\TTTN2025\\DATLICHKHAM\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-02T19:33:29.578Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "QuanLyChuyenGia.js",
-              "DocumentMoniker": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\QuanLyChuyenGia.js",
-              "RelativeDocumentMoniker": "wwwroot\\PageScripts\\QuanLyChuyenGia.js",
-              "ToolTip": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\QuanLyChuyenGia.js",
-              "RelativeToolTip": "wwwroot\\PageScripts\\QuanLyChuyenGia.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-05-02T18:55:36.498Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LichLamViecChuyenGia.js",
-              "DocumentMoniker": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\LichLamViecChuyenGia.js",
-              "RelativeDocumentMoniker": "wwwroot\\PageScripts\\LichLamViecChuyenGia.js",
-              "ToolTip": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\LichLamViecChuyenGia.js",
-              "RelativeToolTip": "wwwroot\\PageScripts\\LichLamViecChuyenGia.js",
-              "ViewState": "AgIAAFcAAAAAAAAAAAD4v2QAAABMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-05-02T18:03:25.961Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\TTTN2025\\DATLICHKHAM\\Views\\LichKham\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\LichKham\\Index.cshtml",
-              "ToolTip": "D:\\TTTN2025\\DATLICHKHAM\\Views\\LichKham\\Index.cshtml",
-              "RelativeToolTip": "Views\\LichKham\\Index.cshtml",
-              "ViewState": "AgIAADwAAAAAAAAAAAAAAEUAAABCAAAAAAAAAA==",
+              "Title": "DatLichKhamChiTiet.cshtml",
+              "DocumentMoniker": "D:\\TTTN2025\\DATLICHKHAM\\Views\\DatLichKham\\DatLichKhamChiTiet.cshtml",
+              "RelativeDocumentMoniker": "Views\\DatLichKham\\DatLichKhamChiTiet.cshtml",
+              "ToolTip": "D:\\TTTN2025\\DATLICHKHAM\\Views\\DatLichKham\\DatLichKhamChiTiet.cshtml",
+              "RelativeToolTip": "Views\\DatLichKham\\DatLichKhamChiTiet.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB0AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-02T18:03:02.209Z",
+              "WhenOpened": "2025-05-07T04:26:37.284Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "site.css",
-              "DocumentMoniker": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
-              "ToolTip": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "wwwroot\\css\\site.css",
-              "ViewState": "AgIAAMsEAAAAAAAAAAAnwN8EAABWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-04-30T18:06:11.274Z",
+              "Title": "QuanLyChuyenGia.js",
+              "DocumentMoniker": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\QuanLyChuyenGia.js",
+              "RelativeDocumentMoniker": "wwwroot\\PageScripts\\QuanLyChuyenGia.js",
+              "ToolTip": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\QuanLyChuyenGia.js",
+              "RelativeToolTip": "wwwroot\\PageScripts\\QuanLyChuyenGia.js",
+              "ViewState": "AgIAAK0BAAAAAAAAAAAMwL8BAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-05-02T18:55:36.498Z",
               "EditorCaption": ""
             }
           ]

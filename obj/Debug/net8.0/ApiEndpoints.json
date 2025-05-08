@@ -1259,6 +1259,22 @@
     ]
   },
   {
+    "ContainingType": "DATLICHKHAM.ApiController.GenerateQRApiController",
+    "Method": "GenerateQR",
+    "RelativePath": "api/GenerateQRApi",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "qRCode",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "DATLICHKHAM.APIsController.LichHenApiController",
     "Method": "Add",
     "RelativePath": "api/LichHenApi/Add",

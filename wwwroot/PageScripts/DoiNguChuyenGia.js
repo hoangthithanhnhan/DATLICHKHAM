@@ -39,7 +39,7 @@ $(document).ready(function () {
         console.log("Mã Chuyên Gia:", maChuyenGia);
 
         // Điều hướng tới trang đặt lịch khám và truyền tham số vào URL
-        window.location.href = `/DatLichKham?id=${maDichVu}&maChuyenGia=${maChuyenGia}`;
+        window.location.href = `/DatLichKham?maDichVu=${maDichVu}&maChuyenGia=${maChuyenGia}`;
     });
 });
 

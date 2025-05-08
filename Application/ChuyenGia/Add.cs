@@ -30,7 +30,6 @@ namespace DATLICHKHAM.Application.ChuyenGia
                         DynamicParameters parameters = new DynamicParameters();
                         parameters.Add("@MaNguoiDung", request.Entity.MaNguoiDung);
                         parameters.Add("@MaChuyenKhoa", request.Entity.MaChuyenKhoa);
-                        parameters.Add("@MaDichVu", request.Entity.MaDichVu);
                         parameters.Add("@HoTen", request.Entity.HoTen);
                         parameters.Add("@GioiTinh", request.Entity.GioiTinh);
                         parameters.Add("@NgaySinh", request.Entity.NgaySinh);

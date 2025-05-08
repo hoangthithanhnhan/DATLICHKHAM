@@ -93,20 +93,20 @@ $(document).ready(function () {
         },
         "columnDefs": [
             {
-                targets: 3,
+                targets: 2,
                 render: function (data, type, row, meta) {
                     return formatTime(data) + "<br>" +formatDate(data)
                 }
             },
             {
-                targets: 4,
+                targets: 3,
                 render: function (data, type, row, meta) {
-                    return data == 1 ? "<span class='text-pink'>Công khai</span>" : "<span class='text-blue'>Ẩn danh</span>";
+                    return data == 1 ? "<span class='text-pink'>Xuất bản</span>" : "<span class='text-blue'>Nháp</span>";
 
                 }
             },
             {
-                targets: 5,
+                targets: 4,
                 render: function (data, type, row, meta) {
                     return `<button type="button" data-id="${meta.row}" class="button btn-update">
                                 <img src="../images/edit_filled.png" alt="Alternate Text" />
@@ -120,8 +120,7 @@ $(document).ready(function () {
         ],
         "columns": [
             { data: "stt", "width": "60px", "className": "text-center" },
-            { data: "tieuDe", "width": "600px", "className": "fw-bold" },
-            { data: "nguoiDang", "width": "250px", "className": "text-center" },
+            { data: "tieuDe", "width": "850px", "className": "fw-bold" },
             { data: "thoiGianDangBai", "width": "250px", "className": "text-center" },
             { data: "trangThai", "width": "200px", "className": "text-center fw-bold" },
             { data: "maBaiViet", "width": "auto", "className": "text-center" }
@@ -214,7 +213,7 @@ $(document).ready(function () {
     $("#editData").on('click', function () {
         let maBaiViet = $("#maBaiVietEdit").val();
         let maChuyenMuc = $("#chuyenMucEdit").val();
-        let tieuDe = $("#chuyenMucEdit").val();
+        let tieuDe = $("#tieuDeEdit").val();
         let tomTat = $("#tomTatEdit").val();
         let noiDung = editorEditInstance.getData();
         let trangThai = $("input[name='trangThaiEdit']:checked").val();

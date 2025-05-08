@@ -283,6 +283,25 @@ $(document).ready(function () {
             $('#myTable').DataTable().ajax.reload();
         }
     })
+
+    $('#qr').on('click', function () {
+        let maChuyenMuc = $('maChuyenMucEdit').val();
+        var QR = `${APIURL}/api/ChuyenMucApi/Get?MaChuyenMuc=${maChuyenMuc}`
+        $.ajax({
+            type: 'post',
+            url: APIURL + `/api/GenerateQRApi?qRCode=${qr}`,
+            "method": "POST",
+            "timeout": 0,
+            success: function (data) {
+                $("#maqr").html(`<img src=${data} alt="Cây cấm trồng"/>`)
+            },
+            error: function (err) {
+                showNotify('Xuất QR không thành công!', 'danger')
+            }
+        })
+    })
+
+
 })
 function resetForm() {
     $("#modalAdd input:not([type='radio'])").val("");

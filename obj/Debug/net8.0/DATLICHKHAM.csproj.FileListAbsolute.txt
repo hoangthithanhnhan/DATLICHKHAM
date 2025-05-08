@@ -560,3 +560,6 @@ D:\TTTN2025\DATLICHKHAM\obj\Debug\net8.0\refint\DATLICHKHAM.dll
 D:\TTTN2025\DATLICHKHAM\obj\Debug\net8.0\DATLICHKHAM.pdb
 D:\TTTN2025\DATLICHKHAM\obj\Debug\net8.0\DATLICHKHAM.genruntimeconfig.cache
 D:\TTTN2025\DATLICHKHAM\obj\Debug\net8.0\ref\DATLICHKHAM.dll
+D:\TTTN2025\DATLICHKHAM\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+D:\TTTN2025\DATLICHKHAM\bin\Debug\net8.0\itextsharp.dll
+D:\TTTN2025\DATLICHKHAM\bin\Debug\net8.0\QRCoder.dll

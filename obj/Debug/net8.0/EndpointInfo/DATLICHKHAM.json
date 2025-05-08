@@ -2049,6 +2049,27 @@
         }
       }
     },
+    "/api/GenerateQRApi": {
+      "post": {
+        "tags": [
+          "GenerateQRApi"
+        ],
+        "parameters": [
+          {
+            "name": "qRCode",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/LichHenApi/Gets": {
       "get": {
         "tags": [
@@ -3604,6 +3625,10 @@
           "maDichVu": {
             "type": "integer",
             "format": "int32"
+          },
+          "giaDichVu": {
+            "type": "number",
+            "format": "float"
           },
           "tenDichVu": {
             "type": "string",

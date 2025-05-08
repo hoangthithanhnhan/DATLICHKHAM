@@ -13,7 +13,7 @@ $(document).ready(function () {
     });
 
     const urlParams = new URLSearchParams(window.location.search);
-    const maDichVu = urlParams.get('id');
+    const maDichVu = urlParams.get('maDichVu');
     const maChuyenGia = urlParams.get('maChuyenGia');
 
     $.ajax({
@@ -130,9 +130,14 @@ $(document).ready(function () {
     })
 
     $('#btn-datLichNgay').on('click', function () {
+        $('#modalXacNhanDatLich').modal('show');
+    })
+    
+
+    $('#xacNhan').on('click', function () {
         let maBenhNhan = $('#maBenhNhan').val();
         let maChuyenGia = urlParams.get('maChuyenGia');
-        let maDichVu = urlParams.get('id');
+        let maDichVu = urlParams.get('maDichVu');
         let ngayHen = $('#ngayHenAdd').val();
         let thoiGianHen = $('.thoiGian.checked').data('id');
         let ghiChu = $('#ghiChuAdd').val();
@@ -167,7 +172,7 @@ $(document).ready(function () {
                 data: JSON.stringify(request),
                 success: function (data) {
                     console.log(data)
-                    showAlert("Thêm thành công", "success");
+                    window.location.href = `/DatLichKham/DatLichKhamChiTiet?maLichHen=${data.value.maLichHen}`;
                 },
                 error: function (error) {
                     showAlert("Thêm không thành công", "error");
@@ -176,5 +181,8 @@ $(document).ready(function () {
             });
         }
     })
+    //$('#xacNhan').on('click', function () {
+    //    window.location.href = "/DatLichKham/DatLichKhamChiTiet";
+    //})
 
 })
