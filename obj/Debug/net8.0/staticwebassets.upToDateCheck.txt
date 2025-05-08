@@ -175,6 +175,7 @@ wwwroot\lib\webfonts\fa-solid-900.ttf
 wwwroot\lib\webfonts\fa-solid-900.woff2
 wwwroot\lib\wow\wow.js
 wwwroot\lib\wow\wow.min.js
+wwwroot\PageScripts\Blog.js
 wwwroot\PageScripts\DangKy.js
 wwwroot\PageScripts\DanhSachChuyenGia.js
 wwwroot\PageScripts\DatLichKham.js

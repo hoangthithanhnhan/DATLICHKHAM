@@ -1456,3 +1456,136 @@ main .blockTrangCaNhan .thongTin .mb-3 #saveInfoCaNhan {
 ul.dropdown-menu {
     min-width: 200px;
 }
+main .block-blog .baiVietMoi{
+    margin-top:150px;
+}
+    main .block-blog .section .heading {
+        font-weight: 600;
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    main .block-blog .baiVietMoi .tinBai {
+        display: flex;
+        align-items: stretch;
+    }
+        main .block-blog .baiVietMoi .tinBai .tinBaiLeft{
+            padding-bottom:15px;
+        }
+        main .block-blog .baiVietMoi .tinBai .tinBaiLeft, .tinBaiRight {
+            display: flex;
+            flex-direction: column;
+        }
+        main .block-blog .baiVietMoi .tinBai .card {
+            border-radius: 10px;
+            border-radius: 20px;
+            border: solid 1px #e2e8f0;
+        }
+        main .block-blog .baiVietMoi .tinBai .tinBaiLeft .card, .tinBaiRight .card {
+            height: 100%;
+        }
+            main .block-blog .baiVietMoi .tinBai .tinBaiLeft .card img {
+                height: 50%;
+                object-fit: cover;
+                border-radius:20px 20px 0px 0px;
+            }
+            main .block-blog .baiVietMoi .tinBai .tinBaiLeft .card .card-body .chuyenMuc {
+                color: #1a76e3;
+                font-weight: 600;
+                font-size: 18px;
+                margin-bottom:5px;
+            }
+            main .block-blog .baiVietMoi .tinBai .tinBaiLeft .card .card-body .tieuDe {
+                font-size: 25px;
+                font-weight: 700;
+                color: #374151;
+                margin-bottom: 10px;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                -webkit-line-clamp: 2;
+            }
+            main .block-blog .baiVietMoi .tinBai .tinBaiLeft .card .card-body .tomTat {
+                font-size: 20px;
+                font-weight: 500;
+                margin-bottom: 5px;
+                color: #374151;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                -webkit-line-clamp: 4;
+            }
+            main .block-blog .baiVietMoi .tinBai .tinBaiLeft .card .card-body .thoiGianDang {
+                font-size: 18px;
+                font-weight: 500;
+                margin-bottom: 0px;
+                color: var(--greystr);
+                margin-top: auto;
+            }
+            main .block-blog .baiVietMoi .tinBai .tinBaiLeft .card .card-body {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+            }
+        main .block-blog .baiVietMoi .tinBai .tinBaiRight .card img {
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px 0px 0px 20px;
+        }
+        main .block-blog .baiVietMoi .tinBai .tinBaiRight .card .card-body .chuyenMuc {
+            color: #1a76e3;
+            font-weight: 600;
+            font-size: 18px;
+            margin-bottom: 5px;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 1;
+        }
+        main .block-blog .baiVietMoi .tinBai .tinBaiRight .card .card-body .tieuDe {
+            font-size: 18px;
+            font-weight: 700;
+            color: #374151;
+            margin-bottom: 5px;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 2;
+        }
+        main .block-blog .baiVietMoi .tinBai .tinBaiRight .card .card-body .tomTat {
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 5px;
+            color: #374151;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 2;
+        }
+        main .block-blog .baiVietMoi .tinBai .tinBaiRight .card .card-body .thoiGianDang {
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 0px;
+            color: var(--greystr);
+            margin-top: auto;
+        }
+        main .block-blog .baiVietMoi .tinBai .tinBaiRight .card .card-body {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        main .block-blog .baiVietMoi .tinBai .tinBaiRight .card .row{
+            height:100%;
+        }
+
+main .block-blog .baiVietNoiBat{
+    margin-top:30px;
+}
+    main .block-blog .baiVietNoiBat .chuyenMuc .card {
+        height: 100%;
+    }
