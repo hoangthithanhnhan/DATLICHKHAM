@@ -43,8 +43,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Application\HoaDon\" />
-    <Folder Include="Application\DanhGia\" />
     <Folder Include="Application\BinhLuan\" />
     <Folder Include="wwwroot\lib\flatpickr\" />
     <Folder Include="wwwroot\upload\DichVu\" />

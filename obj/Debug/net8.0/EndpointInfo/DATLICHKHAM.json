@@ -1690,6 +1690,180 @@
         }
       }
     },
+    "/api/DanhGiaApi/Gets": {
+      "post": {
+        "tags": [
+          "DanhGiaApi"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_DanhGiaRequestFilter"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_DanhGiaRequestFilter"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_DanhGiaRequestFilter"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_DanhGiaIEnumerableResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_DanhGiaIEnumerableResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_DanhGiaIEnumerableResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/DanhGiaApi/Add": {
+      "post": {
+        "tags": [
+          "DanhGiaApi"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_DanhGiaAdd"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_DanhGiaAdd"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_DanhGiaAdd"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_DanhGiaResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_DanhGiaResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_DanhGiaResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/DanhGiaApi/GetDanhGiaByLichHen": {
+      "get": {
+        "tags": [
+          "DanhGiaApi"
+        ],
+        "parameters": [
+          {
+            "name": "MaLichHen",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_DanhGiaResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_DanhGiaResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_DanhGiaResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/DanhGiaApi/Delete": {
+      "delete": {
+        "tags": [
+          "DanhGiaApi"
+        ],
+        "parameters": [
+          {
+            "name": "MaDanhGia",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Int32Result"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Int32Result"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Int32Result"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/DichVuApi/Gets": {
       "post": {
         "tags": [
@@ -2070,6 +2244,54 @@
         }
       }
     },
+    "/api/HoaDonApi/Add": {
+      "post": {
+        "tags": [
+          "HoaDonApi"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_HoaDonAdd"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_HoaDonAdd"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_HoaDonAdd"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_HoaDonResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_HoaDonResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_HoaDonResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/LichHenApi/Gets": {
       "get": {
         "tags": [
@@ -2167,6 +2389,45 @@
             "schema": {
               "type": "string",
               "format": "date-time"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_LichHenIEnumerableResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_LichHenIEnumerableResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_LichHenIEnumerableResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/LichHenApi/GetLichHenByBenhNhan": {
+      "get": {
+        "tags": [
+          "LichHenApi"
+        ],
+        "parameters": [
+          {
+            "name": "MaBenhNhan",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
             }
           }
         ],
@@ -2361,6 +2622,54 @@
               "text/json": {
                 "schema": {
                   "$ref": "#/components/schemas/Int32Result"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/LichHenApi/HuyLichHen": {
+      "put": {
+        "tags": [
+          "LichHenApi"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_LichHenUpdate"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_LichHenUpdate"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_LichHenUpdate"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_LichHenUpdateResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_LichHenUpdateResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_LichHenUpdateResult"
                 }
               }
             }
@@ -3479,6 +3788,103 @@
         },
         "additionalProperties": false
       },
+      "DLK_DanhGia": {
+        "type": "object",
+        "properties": {
+          "maDanhGia": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "maLichHen": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "hoTen": {
+            "type": "string",
+            "nullable": true
+          },
+          "noiDung": {
+            "type": "string",
+            "nullable": true
+          },
+          "thoiGianDanhGia": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "soSao": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DLK_DanhGiaAdd": {
+        "type": "object",
+        "properties": {
+          "maLichHen": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "noiDung": {
+            "type": "string",
+            "nullable": true
+          },
+          "soSao": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DLK_DanhGiaIEnumerableResult": {
+        "type": "object",
+        "properties": {
+          "isSuccess": {
+            "type": "boolean"
+          },
+          "value": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DLK_DanhGia"
+            },
+            "nullable": true
+          },
+          "error": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DLK_DanhGiaRequestFilter": {
+        "type": "object",
+        "properties": {
+          "keyword": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DLK_DanhGiaResult": {
+        "type": "object",
+        "properties": {
+          "isSuccess": {
+            "type": "boolean"
+          },
+          "value": {
+            "$ref": "#/components/schemas/DLK_DanhGia"
+          },
+          "error": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "DLK_DichVu": {
         "type": "object",
         "properties": {
@@ -3599,6 +4005,65 @@
         },
         "additionalProperties": false
       },
+      "DLK_HoaDon": {
+        "type": "object",
+        "properties": {
+          "maHoaDon": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "maLichHen": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tongTien": {
+            "type": "number",
+            "format": "float",
+            "nullable": true
+          },
+          "trangThai": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "DLK_HoaDonAdd": {
+        "type": "object",
+        "properties": {
+          "maLichHen": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tongTien": {
+            "type": "number",
+            "format": "float",
+            "nullable": true
+          },
+          "trangThai": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DLK_HoaDonResult": {
+        "type": "object",
+        "properties": {
+          "isSuccess": {
+            "type": "boolean"
+          },
+          "value": {
+            "$ref": "#/components/schemas/DLK_HoaDon"
+          },
+          "error": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "DLK_LichHen": {
         "type": "object",
         "properties": {
@@ -3614,6 +4079,10 @@
             "type": "string",
             "nullable": true
           },
+          "anhDaiDien": {
+            "type": "string",
+            "nullable": true
+          },
           "maBenhNhan": {
             "type": "integer",
             "format": "int32"
@@ -3622,13 +4091,30 @@
             "type": "string",
             "nullable": true
           },
+          "soDienThoai": {
+            "type": "string",
+            "nullable": true
+          },
           "maDichVu": {
             "type": "integer",
             "format": "int32"
           },
+          "chucDanh": {
+            "type": "string",
+            "nullable": true
+          },
           "giaDichVu": {
             "type": "number",
             "format": "float"
+          },
+          "tongTien": {
+            "type": "number",
+            "format": "float",
+            "nullable": true
+          },
+          "trangThaiThanhToan": {
+            "type": "boolean",
+            "nullable": true
           },
           "tenDichVu": {
             "type": "string",
@@ -3659,6 +4145,15 @@
             "nullable": true
           },
           "thoiGianLamViec": {
+            "type": "string",
+            "nullable": true
+          },
+          "soSao": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "noiDungDanhGia": {
             "type": "string",
             "nullable": true
           }

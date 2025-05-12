@@ -1036,6 +1036,110 @@
     ]
   },
   {
+    "ContainingType": "DATLICHKHAM.APIsController.DanhGiaApiController",
+    "Method": "Add",
+    "RelativePath": "api/DanhGiaApi/Add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Entity",
+        "Type": "DATLICHKHAM.Domain.DLK_DanhGiaAdd",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Application.Core.Result\u00601[[DATLICHKHAM.Domain.DLK_DanhGia, DATLICHKHAM, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DATLICHKHAM.APIsController.DanhGiaApiController",
+    "Method": "Delete",
+    "RelativePath": "api/DanhGiaApi/Delete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "MaDanhGia",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Application.Core.Result\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DATLICHKHAM.APIsController.DanhGiaApiController",
+    "Method": "GetDanhGiaByLichHen",
+    "RelativePath": "api/DanhGiaApi/GetDanhGiaByLichHen",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "MaLichHen",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Application.Core.Result\u00601[[DATLICHKHAM.Domain.DLK_DanhGia, DATLICHKHAM, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DATLICHKHAM.APIsController.DanhGiaApiController",
+    "Method": "Gets",
+    "RelativePath": "api/DanhGiaApi/Gets",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "filter",
+        "Type": "DATLICHKHAM.Domain.DLK_DanhGiaRequestFilter",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Application.Core.Result\u00601[[System.Collections.Generic.IEnumerable\u00601[[DATLICHKHAM.Domain.DLK_DanhGia, DATLICHKHAM, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "DATLICHKHAM.APIsController.DichVuApiController",
     "Method": "Add",
     "RelativePath": "api/DichVuApi/Add",
@@ -1275,6 +1379,32 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "DATLICHKHAM.APIsController.HoaDonApiController",
+    "Method": "Add",
+    "RelativePath": "api/HoaDonApi/Add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Entity",
+        "Type": "DATLICHKHAM.Domain.DLK_HoaDonAdd",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Application.Core.Result\u00601[[DATLICHKHAM.Domain.DLK_HoaDon, DATLICHKHAM, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "DATLICHKHAM.APIsController.LichHenApiController",
     "Method": "Add",
     "RelativePath": "api/LichHenApi/Add",
@@ -1354,6 +1484,32 @@
   },
   {
     "ContainingType": "DATLICHKHAM.APIsController.LichHenApiController",
+    "Method": "GetLichHenByBenhNhan",
+    "RelativePath": "api/LichHenApi/GetLichHenByBenhNhan",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "MaBenhNhan",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Application.Core.Result\u00601[[System.Collections.Generic.IEnumerable\u00601[[DATLICHKHAM.Domain.DLK_LichHen, DATLICHKHAM, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DATLICHKHAM.APIsController.LichHenApiController",
     "Method": "GetLichHenByChuyenGiaByNgay",
     "RelativePath": "api/LichHenApi/GetLichHenByChuyenGiaByNgay",
     "HttpMethod": "GET",
@@ -1400,6 +1556,32 @@
     "ReturnTypes": [
       {
         "Type": "Application.Core.Result\u00601[[System.Collections.Generic.IEnumerable\u00601[[DATLICHKHAM.Domain.DLK_LichHen, DATLICHKHAM, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DATLICHKHAM.APIsController.LichHenApiController",
+    "Method": "HuyLichHen",
+    "RelativePath": "api/LichHenApi/HuyLichHen",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Entity",
+        "Type": "DATLICHKHAM.Domain.DLK_LichHenUpdate",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Application.Core.Result\u00601[[DATLICHKHAM.Domain.DLK_LichHenUpdate, DATLICHKHAM, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",

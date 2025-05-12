@@ -1,22 +1,14 @@
-﻿$(document).ready(function () {
-    let data = [
-        {
-            "stt": 1,
-            "MaLichHen": 1,
-            "ThoiGianHen": "07:00 - 08:00",
-            "MaBenhNhan": 1,
-            "TenBenhNhan": "Thanh Nn",
-            "TenBacSi": "Võ Lê Bá Tùng",
-            "HinhThucKham": 0,
-            "TrangThai": 1,
-            "LyDoHuyLich": null,
-            "ChucDanh": "TS. BS.",
-            "NgayHen": "2025-03-12 10:09:07.4500000",
-            "SoSao": 4,
-            "NoiDung": "Mình rất thích cách trang web này hoạt động. Giao diện dễ hiểu, đặt lịch nhanh chóng mà không cần gọi điện. Ngoài ra, tính năng nhắc nhở lịch khám giúp mình không bị quên. Tuy nhiên, nếu có thêm thông báo qua SMS thì sẽ tiện hơn.",
-            "ThoiGianDanhGia":"2025-03-12 10:09:07.4500000"
+﻿let APIURL = window.location.origin;
+$(document).ready(function () {
+    function buildData() {
+        let keyword = $('#search').val();
+        let request = {
+            keyword: keyword,
         }
-    ]
+        return JSON.stringify(request);
+    }
+
+
     $('#myTable').DataTable({
         dom: '<"top"f>rt<"bottom d-flex justify-content-end" lp>',
         "pageLength": 10,
@@ -45,12 +37,28 @@
                 "last": '<img src="../images/arrow_next.png" />'
             }
         },
-        "data": data,
+        "ajax": {
+            url: APIURL + "/api/DanhGiaApi/Gets",
+            type: "POST",
+            contentType: "application/json; charset=utf-8",
+            data: buildData,
+            dataSrc: function (data) {
+                var result = data.value
+                if (result) {
+                    for (let i = 0; i < result.length; i++) {
+                        result[i].stt = i + 1;
+                    }
+                    return result;
+                }
+                return []
+
+            }
+        },
         "columnDefs": [
             {
                 targets: 2,
                 render: function (data, type, row, meta) {
-                    return data == 0 ? "<span class='text-pink'>Công khai</span>" : "<span class='text-blue'>Ẩn danh</span>";
+                    return ratingstar(data);
 
                 }
             },
@@ -61,33 +69,76 @@
                 }
             },
             {
-                targets: 6,
+                targets: 5,
                 render: function (data, type, row, meta) {
-                    return `<button type="button" data-id="${meta.row}" class="button btn-replyrating" data-bs-toggle="modal" data-bs-target="#modalDelete">
-                                <img src="../images/replyrating.png" alt="Alternate Text" />
-                            </button>
+                    return `
                             <button type="button" data-id="${meta.row}" class="button btn-delete" data-bs-toggle="modal" data-bs-target="#modalDelete">
                                 <img src="../images/delete_filled.png" alt="Alternate Text" />
                             </button>`;
 
                 }
-            },
+            }
 
         ],
         "columns": [
             { data: "stt", "width": "60px", "className": "text-center" },
             { data: "hoTen", "width": "250px", "className": "fw-bold" },
-            { data: "trangThai", "width": "200px", "className": "text-center fw-bold" },
-            { data: "soSao", "width": "100px", "className": "text-center" },
-            { data: "thoiGianDanhGia", "width": "170px", "className": "text-center" },
-            { data: "noiDung", "width": "600px", "className": "text-center" },
-            { data: "thaoTac", "width": "auto", "className": "text-center" }
+            { data: "soSao", "width": "300px", "className": "text-center" },
+            { data: "noiDung", "width": "400px", "className": "" },
+            { data: "thoiGianDanhGia", "width": "300px", "className": "text-center" },
+            { data: "maDanhGia", "width": "auto", "className": "text-center" }
         ]
     })
 
-    $("#myTable tbody .btn-update").on('click', function () {
+    $(document).on('click', '.btn-delete', function () {
         let id = $(this).data("id");
         let data = $('#myTable').DataTable().row(id).data();
-        console.log(data)
+        $("#maDanhGiaDelete").val(data.maDanhGia);
+        $('#modalDelete').modal('show');
     })
+
+    $('#deleteData').click(function () {
+        let maDanhGia = $("#maDanhGiaDelete").val();
+        $.ajax({
+            type: "DELETE",
+            url: APIURL + `/api/DanhGiaApi/Delete?maDanhGia=${maDanhGia}`,
+            contentType: "application/json; charset=utf-8",
+            success: function (data) {
+                $('#myTable').DataTable().ajax.reload();
+                if (data && data.isSuccess) {
+                    showAlert("Xóa thành công", "success");
+                    $('#modalDelete').modal('hide');
+                } else {
+                    showAlert("Xóa không thành công", "error");
+                    $('#modalDelete').modal('hide');
+                }
+            },
+            error: function (error) {
+                showAlert("Xóa không thành công", "error");
+
+            }
+        });
+    })
+
+    $("#btn-search").on('click', function () {
+        $('#myTable').DataTable().ajax.reload();
+    })
+
+
+    //search khi enter
+    $("#search").on('keyup', function (e) {
+        if (e.keyCode === 13) {
+            $('#myTable').DataTable().ajax.reload();
+        }
+    })
+
 })
+
+function ratingstar(soSao) {
+    let html = '<span class="text-warning">';
+    for (let i = 0; i < soSao; i++) {
+        html += `&#9733;`;
+    }
+    html += '</span>';
+    return html;
+}

@@ -37,6 +37,10 @@
       "PackagePath": "staticwebassets\\PageScripts\\Layout.js"
     },
     {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\LichHenCaNhan.js",
+      "PackagePath": "staticwebassets\\PageScripts\\LichHenCaNhan.js"
+    },
+    {
       "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\LichLamViecChuyenGia.js",
       "PackagePath": "staticwebassets\\PageScripts\\LichLamViecChuyenGia.js"
     },
@@ -263,6 +267,10 @@
     {
       "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\images\\qr.png",
       "PackagePath": "staticwebassets\\images\\qr.png"
+    },
+    {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\images\\qrthanhtoan.jpg",
+      "PackagePath": "staticwebassets\\images\\qrthanhtoan.jpg"
     },
     {
       "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\images\\rating.png",
@@ -751,6 +759,10 @@
     {
       "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\lib\\pagination\\jquery.twbsPagination.min.js",
       "PackagePath": "staticwebassets\\lib\\pagination\\jquery.twbsPagination.min.js"
+    },
+    {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\lib\\qrCode\\qrcode.min.js",
+      "PackagePath": "staticwebassets\\lib\\qrCode\\qrcode.min.js"
     },
     {
       "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\lib\\select2\\select2.min.css",

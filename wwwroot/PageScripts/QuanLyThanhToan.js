@@ -1,19 +1,5 @@
 ﻿$(document).ready(function () {
-    let data = [
-        {
-            "stt": 1,
-            "MaLichHen": 1,
-            "ThoiGianHen": "07:00 - 08:00",
-            "MaBenhNhan": 1,
-            "TenBenhNhan": "Thanh Nhàn",
-            "TrangThai": 2,
-            "SoTienDatCoc": 2222,
-            "SoTienConLai": 11,
-            "TongTien": 800000,
-            "ChucDanh": "TS. BS.",
-            "NgayHen": "2025-03-12 10:09:07.4500000"
-        }
-    ]
+   
     $('#myTable').DataTable({
         dom: '<"top"f>rt<"bottom d-flex justify-content-end" lp>',
         "pageLength": 10,
@@ -42,7 +28,23 @@
                 "last": '<img src="../images/arrow_next.png" />'
             }
         },
-        "data": data,
+        "ajax": {
+            url: APIURL + "/api/ChuyenMucApi/Gets",
+            type: "POST",
+            contentType: "application/json; charset=utf-8",
+            data: buildData,
+            dataSrc: function (data) {
+                var result = data.value
+                if (result) {
+                    for (let i = 0; i < result.length; i++) {
+                        result[i].stt = i + 1;
+                    }
+                    return result;
+                }
+                return []
+
+            }
+        },
         "columnDefs": [
             {
                 targets: 1,
@@ -81,9 +83,5 @@
         ]
     })
 
-    $("#myTable tbody .btn-update").on('click', function () {
-        let id = $(this).data("id");
-        let data = $('#myTable').DataTable().row(id).data();
-        console.log(data)
-    })
+   
 })

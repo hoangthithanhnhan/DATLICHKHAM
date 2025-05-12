@@ -169,21 +169,21 @@
         },
         "columnDefs": [
             {
-                targets: 2,
+                targets: 1,
                 render: function (data, type, row, meta) {
                     return formatDate(data);
 
                 }
             },
             {
-                targets: 6,
+                targets: 5,
                 render: function (data, type, row, meta) {
                     return data == 1 ? "<span class='text-pink'>Trực tiếp</span>" : "<span class='text-blue'>Online</span>";
 
                 }
             },
             {
-                targets: 7,
+                targets: 6,
                 render: function (data, type, row, meta) {
                     return data == 0 ? "<span class='text-blue'>Đã đặt lịch</span>" : data == 1 ? "<span class='text-green'>Hoàn thành</span>" : "<span class='text-red'>Đã hủy lịch</span>";
 
@@ -191,6 +191,13 @@
             },
             {
                 targets: 8,
+                render: function (data, type, row, meta) {
+                    return data == 1 ? "<span class='text-blue'>Đã thanh toán</span>" : "<span class='text-red'>Đã hoàn trả tiền</span>";
+
+                }
+            },
+            {
+                targets: 9,
                 render: function (data, type, row, meta) {
                     return `<button type="button" data-id="${meta.row}" class="button btn-update">
                                 <img src="../images/edit_filled.png" alt="Alternate Text" />
@@ -205,13 +212,14 @@
         ],
         "columns": [
             { data: "stt", "width": "60px", "className": "text-center" },
-            { data: "maLichHen", "width": "175px", "className": "text-center" },
-            { data: "ngayHen", "width": "140px", "className": "text-center" },
-            { data: "thoiGianLamViec", "width": "200px", "className": "text-center" },
+            { data: "ngayHen", "width": "100px", "className": "text-center" },
+            { data: "thoiGianLamViec", "width": "150px", "className": "text-center" },
             { data: "tenBenhNhan", "width": "230px", "className": "fw-bold" },
             { data: "tenChuyenGia", "width": "230px", "className": "fw-bold" },
-            { data: "hinhThucKham", "width": "150px", "className": "text-center fw-bold" },
+            { data: "hinhThucKham", "width": "100px", "className": "text-center fw-bold" },
             { data: "trangThai", "width": "150px", "className": "text-center fw-bold" },
+            { data: "tongTien", "width": "150px", "className": "text-center fw-bold" },
+            { data: "trangThaiThanhToan", "width": "200px", "className": "text-center fw-bold" },
             { data: "maLichHen", "width": "auto", "className": "text-center" },
         ]
     })
@@ -224,7 +232,6 @@
         let thoiGianHen = $('#thoiGianHenAdd').val();
         let ghiChu = $('#ghiChuAdd').val();
         let hinhThucKham = $('input[name="hinhThucAdd"]:checked').val();
-        //let trangThai = $('input[name="trangThaiAdd"]:checked').val();
         let request = {
             maBenhNhan: maBenhNhan,
             maDichVu: maDichVu,
@@ -232,8 +239,7 @@
             ngayHen: formatDateSQL(ngayHen),
             thoiGianHen: thoiGianHen,
             ghiChu: ghiChu,
-            hinhThucKham: Boolean(Number(hinhThucKham)),
-            //trangThai: Number(trangThai)
+            hinhThucKham: Boolean(Number(hinhThucKham))
         }
         console.log(request,123)
         if (checkEmptyString(maBenhNhan)) {

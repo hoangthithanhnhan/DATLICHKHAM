@@ -16,7 +16,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
 
-namespace QuanLyCayXanh.Areas.Identity.Pages.Account
+namespace DATLICHKHAM.Areas.Identity.Pages.Account
 {
     public class ResetPasswordModel : PageModel
     {

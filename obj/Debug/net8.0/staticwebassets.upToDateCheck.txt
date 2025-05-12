@@ -43,6 +43,7 @@ wwwroot\images\null-image.jpg
 wwwroot\images\nguoidung.png
 wwwroot\images\nguoidung1.png
 wwwroot\images\qr.png
+wwwroot\images\qrthanhtoan.jpg
 wwwroot\images\rating.png
 wwwroot\images\replyrating.png
 wwwroot\images\right.png
@@ -165,6 +166,7 @@ wwwroot\lib\owlcarousel\owl.carousel.min.css
 wwwroot\lib\owlcarousel\owl.carousel.min.js
 wwwroot\lib\owlcarousel\owl.theme.default.min.css
 wwwroot\lib\pagination\jquery.twbsPagination.min.js
+wwwroot\lib\qrCode\qrcode.min.js
 wwwroot\lib\select2\select2.min.css
 wwwroot\lib\select2\select2.min.js
 wwwroot\lib\sweetAlert\sweetalert.js
@@ -183,6 +185,7 @@ wwwroot\PageScripts\DatLichKhamChiTiet.js
 wwwroot\PageScripts\DichVu.js
 wwwroot\PageScripts\DoiNguChuyenGia.js
 wwwroot\PageScripts\Layout.js
+wwwroot\PageScripts\LichHenCaNhan.js
 wwwroot\PageScripts\LichLamViecChuyenGia.js
 wwwroot\PageScripts\QuanLyBaiViet.js
 wwwroot\PageScripts\QuanLyBenhNhan.js

@@ -1,20 +1,28 @@
 ﻿APIURL = window.location.origin;
 
 $(document).ready(function () {
-    
+
+    let giaDichVu;
+
+    formatInputDate("#ngayHenAdd");
+    const today = new Date();
+    $('#ngayHenAdd').val(formatDate(today));
+   
+
     $('.section-ThoiGianHen').on('click', '.thoiGian:not(.unavailble)', function () {
-        const _this = $(this);
-        if (_this.hasClass('checked')) {
-            _this.removeClass('checked');
+        if ($(this).hasClass('checked')) {
+            $(this).removeClass('checked');
         } else {
             $('.thoiGian').removeClass('checked');
-            _this.addClass('checked');
+            $(this).addClass('checked');
         }
     });
 
     const urlParams = new URLSearchParams(window.location.search);
     const maDichVu = urlParams.get('maDichVu');
     const maChuyenGia = urlParams.get('maChuyenGia');
+
+    renderLichLamViec(formatDate(today), maChuyenGia)
 
     $.ajax({
         url: APIURL + `/api/ChuyenGiaApi/Get?MaChuyenGia=${maChuyenGia}`,
@@ -25,7 +33,7 @@ $(document).ready(function () {
             if (data && data.value) {
                 $('.anhDaiDien').attr('src', data.value.anhDaiDien || '/images/anhdaidien.jpg');
                 $('.tenChuyenGia').text(data.value.chucDanh + ' ' + data.value.hoTen);
-                $('.soNam').text(data.value.soNamKinhNghiem ? data.value.soNamKinhNghiem: '');
+                $('.soNam').text(data.value.soNamKinhNghiem ? data.value.soNamKinhNghiem : '');
                 $('.valueCongTacTai').text(data.value.donViCongTac ? data.value.donViCongTac : '');
                 $('.valueChuyenKhoa').text(data.value.tenChuyenKhoa ? data.value.tenChuyenKhoa : '');
                 $('.valueChucVu').text(data.value.chucVu ? data.value.chucVu : '');
@@ -59,9 +67,10 @@ $(document).ready(function () {
         type: "GET",
         contentType: "application/json; charset=utf-8",
         success: function (data) {
-            if (data && data.value ) {
+            if (data && data.value) {
                 $('.tenDichVu').text(data.value.tenDichVu);
                 $('.giaDichVu').text(data.value.giaDichVu.toLocaleString('vi-VN') + ' VNĐ');
+                giaDichVu = data.value.giaDichVu;
             }
             else {
                 $('.tenDichVu').addClass('d-none');
@@ -106,52 +115,14 @@ $(document).ready(function () {
 
     $('#ngayHenAdd').on('change', function () {
         let ngayHen = $(this).val();
-        $.ajax({
-            url: APIURL + `/api/LichLamViecChuyenGiaApi/GetsLichLamViecChuyenGiaByNgay?Ngay=${ngayHen}&MaChuyenGia=${maChuyenGia}`,
-            type: "GET",
-            contentType: "application/json; charset=utf-8",
-            success: function (data) {
-                console.log(data);
-                if (data && data.value && data.value.length>0) {
-                    let html=''
-                    data.value.forEach(function (item) {
-                        html += `<p data-id="${item.maLichLamViec}" class="thoiGian ${item.trangThai ? "unavailble" : ""}">${item.thoiGianLamViec}</p>`
-                    })
-                    $('.section-ThoiGianHen').html(html);
-                }
-                else {
-                    $('.section-ThoiGianHen').html('<p class="thongTin">Không có lịch hẹn</p>');
-                }
-            },
-            error: function (err) {
-                console.log("Lỗi khi gọi API:", err);
-            }
-        })
+        renderLichLamViec(ngayHen, maChuyenGia)
     })
 
     $('#btn-datLichNgay').on('click', function () {
-        $('#modalXacNhanDatLich').modal('show');
-    })
-    
-
-    $('#xacNhan').on('click', function () {
-        let maBenhNhan = $('#maBenhNhan').val();
-        let maChuyenGia = urlParams.get('maChuyenGia');
-        let maDichVu = urlParams.get('maDichVu');
+        let hinhThucKham = $('input[name="hinhThucAdd"]:checked').val();
         let ngayHen = $('#ngayHenAdd').val();
         let thoiGianHen = $('.thoiGian.checked').data('id');
-        let ghiChu = $('#ghiChuAdd').val();
-        let hinhThucKham = $('input[name="hinhThucAdd"]:checked').val();
-        let request = {
-            maBenhNhan: maBenhNhan,
-            maChuyenGia: maChuyenGia,
-            maDichVu: maDichVu,
-            ngayHen: ngayHen,
-            thoiGianHen: thoiGianHen,
-            ghiChu: ghiChu,
-            hinhThucKham: Boolean(Number(hinhThucKham))
-        }
-        console.log(request);
+        let giaDichVu = $('.giaDichVu').text();
         if (checkEmptyString(hinhThucKham)) {
             showAlert("Hình thức không được để trống", "error");
             return;
@@ -165,24 +136,107 @@ $(document).ready(function () {
             return;
         }
         else {
-            $.ajax({
-                type: "POST",
-                url: APIURL + "/api/LichHenApi/Add",
-                contentType: "application/json; charset=utf-8",
-                data: JSON.stringify(request),
-                success: function (data) {
-                    console.log(data)
-                    window.location.href = `/DatLichKham/DatLichKhamChiTiet?maLichHen=${data.value.maLichHen}`;
-                },
-                error: function (error) {
-                    showAlert("Thêm không thành công", "error");
-                    console.log(error.responseText);
+            $('#soTienThanhToan').text(giaDichVu.toLocaleString('vi-VN') )
+            $('#modalXacNhanDatLich').modal('show');
+            let timeLeft = 5 * 60; // 5 phút = 300 giây
+
+            let countdownInterval = setInterval(function () {
+                let minutes = Math.floor(timeLeft / 60);
+                let seconds = timeLeft % 60;
+
+                // Định dạng số có 2 chữ số (VD: 04:09)
+                let display =
+                    (minutes < 10 ? "0" + minutes : minutes) + ":" +
+                    (seconds < 10 ? "0" + seconds : seconds);
+
+                $("#countdown").text(display);
+
+                timeLeft--;
+
+                if (timeLeft < 0) {
+                    clearInterval(countdownInterval);
+                    $(`#modalXacNhanDatLich`).modal('hide');
                 }
-            });
+            }, 1000);
         }
     })
-    //$('#xacNhan').on('click', function () {
-    //    window.location.href = "/DatLichKham/DatLichKhamChiTiet";
-    //})
 
+
+    $(document).on("keydown", function (e) {
+        if (e.key === "Enter" || e.keyCode === 13) {
+            if ($("#modalXacNhanDatLich").is(":visible")) {
+                let maBenhNhan = $('#maBenhNhan').val();
+                let maChuyenGia = urlParams.get('maChuyenGia');
+                let maDichVu = urlParams.get('maDichVu');
+                let ngayHen = $('#ngayHenAdd').val();
+                let thoiGianHen = $('.thoiGian.checked').data('id');
+                let ghiChu = $('#ghiChuAdd').val();
+                let hinhThucKham = $('input[name="hinhThucAdd"]:checked').val();
+                let request = {
+                    maBenhNhan: maBenhNhan,
+                    maChuyenGia: maChuyenGia,
+                    maDichVu: maDichVu,
+                    ngayHen: formatDateSQL(ngayHen),
+                    thoiGianHen: thoiGianHen,
+                    ghiChu: ghiChu,
+                    hinhThucKham: Boolean(Number(hinhThucKham))
+                }
+                $.ajax({
+                    type: "POST",
+                    url: APIURL + "/api/LichHenApi/Add",
+                    contentType: "application/json; charset=utf-8",
+                    data: JSON.stringify(request),
+                    success: function (data) {
+                        let requestHoaDon = {
+                            maLichHen: data.value.maLichHen,
+                            tongTien: giaDichVu
+                        }
+                        $.ajax({
+                            type: "POST",
+                            url: APIURL + "/api/HoaDonApi/Add",
+                            contentType: "application/json; charset=utf-8",
+                            data: JSON.stringify(requestHoaDon),
+                            async: false,
+                            success: function (data) {
+                                console.log(data)
+                            },
+                            error: function (error) {
+                                showAlert("Thêm không thành công", "error");
+                                console.log(error.responseText);
+                            }
+                        });
+                        //window.location.href = `/DatLichKham/DatLichKhamChiTiet?maLichHen=${data.value.maLichHen}`;
+                    },
+                    error: function (error) {
+                        showAlert("Thêm không thành công", "error");
+                        console.log(error.responseText);
+                    }
+                });
+            }
+        }
+    });
 })
+
+function renderLichLamViec(ngayHen,maChuyenGia) {
+    $.ajax({
+        url: APIURL + `/api/LichLamViecChuyenGiaApi/GetsLichLamViecChuyenGiaByNgay?Ngay=${formatDateSQL(ngayHen)}&MaChuyenGia=${maChuyenGia}`,
+        type: "GET",
+        contentType: "application/json; charset=utf-8",
+        success: function (data) {
+            console.log(data);
+            if (data && data.value && data.value.length > 0) {
+                let html = ''
+                data.value.forEach(function (item) {
+                    html += `<p data-id="${item.maLichLamViec}" class="thoiGian ${item.trangThai ? "unavailble" : ""}">${item.thoiGianLamViec}</p>`
+                })
+                $('.section-ThoiGianHen').html(html);
+            }
+            else {
+                $('.section-ThoiGianHen').html('<p class="thongTin">Không có lịch hẹn</p>');
+            }
+        },
+        error: function (err) {
+            console.log("Lỗi khi gọi API:", err);
+        }
+    })
+}

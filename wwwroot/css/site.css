@@ -1117,10 +1117,15 @@ main #modalXacNhanDatLich .modal-title {
     font-weight: 700;
     font-size: 20px;
 }
+main #modalXacNhanDatLich .modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 main #modalXacNhanDatLich .modal-body p {
     font-size: 20px;
     font-weight: 500;
-    margin:10px 0px;
+    margin: 10px 0px;
 }
 #modalXacNhanDatLich .modal-footer #xacNhan {
     background: var(--blue);
@@ -1589,3 +1594,158 @@ main .block-blog .baiVietNoiBat{
     main .block-blog .baiVietNoiBat .chuyenMuc .card {
         height: 100%;
     }
+
+main .block-main .lichHenCaNhan {
+    box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.25);
+    border-radius: 10px;
+}
+    main .block-main .lichHenCaNhan .lichHenLeft {
+        padding: 0px;
+        border-right: solid 0.5px #f5f5f5;
+    }
+        main .block-main .lichHenCaNhan .lichHenLeft .lichHen-item {
+            padding: 20px 20px 10px 20px;
+        }
+            main .block-main .lichHenCaNhan .lichHenLeft .lichHen-item:hover {
+                background: #F5F5F5;
+            }
+            main .block-main .lichHenCaNhan .lichHenLeft .lichHen-item:first-child {
+                border-top-left-radius: 10px;
+            }
+            main .block-main .lichHenCaNhan .lichHenLeft .lichHen-item:last-child {
+                border-bottom-left-radius: 10px;
+            }
+            main .block-main .lichHenCaNhan .lichHenLeft .lichHen-item.active {
+                background: #F5F5F5;
+            }
+            main .block-main .lichHenCaNhan .lichHenLeft .lichHen-item p {
+                margin: 0px 0px 10px 0px;
+            }
+            main .block-main .lichHenCaNhan .lichHenLeft .lichHen-item .chuyenGia-item{
+                font-weight:600;
+            }
+            main .block-main .lichHenCaNhan .lichHenLeft .lichHen-item .trangThai-item {
+                font-weight: 600;
+            }
+            main .block-main .lichHenCaNhan .lichHenLeft .lichHen-item .trangThai-item.hoanThanh{
+                color:var(--green);
+            }
+                main .block-main .lichHenCaNhan .lichHenLeft .lichHen-item .trangThai-item.daDatLich {
+                    color: var(--lightblue);
+                }
+                main .block-main .lichHenCaNhan .lichHenLeft .lichHen-item .trangThai-item.daHuyLich {
+                    color: var(--red);
+                }
+main .block-main .lichHenCaNhan .lichHenRight {
+    padding: 25px;
+}
+        main .block-main .lichHenCaNhan .lichHenRight .chuyenGia-QR {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            align-items: center;
+        }
+            main .block-main .lichHenCaNhan .lichHenRight .chuyenGia-QR #qrcode {
+                width: 100px;
+
+            }
+            main .block-main .lichHenCaNhan .lichHenRight .chuyenGia-QR .chuyenGia {
+                display: flex;
+                align-items: center;
+            }
+                main .block-main .lichHenCaNhan .lichHenRight .chuyenGia-QR .chuyenGia p {
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+                main .block-main .lichHenCaNhan .lichHenRight .chuyenGia-QR .chuyenGia #anhDaiDien {
+                    width: 80px;
+                    height: 80px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                    margin-right:10px;
+                }
+    main .block-main .lichHenCaNhan .lichHenRight .thongTinLichHen {
+        margin-top: 20px;
+    }
+        main .block-main .lichHenCaNhan .lichHenRight .thongTinLichHen p {
+            font-size: 18px;
+        }
+        main .block-main .lichHenCaNhan .lichHenRight .thongTinLichHen .item-left p {
+            color:var(--grey)
+        }
+        main .block-main .lichHenCaNhan .lichHenRight .thongTinLichHen .item-right {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+            main .block-main .lichHenCaNhan .lichHenRight .thongTinLichHen .item-right #huyLich {
+                border: solid 0.5px var(--red);
+                background: none;
+                color: var(--red);
+                padding: 5px 20px;
+                border-radius: 5px;
+            }
+            main .block-main .lichHenCaNhan .lichHenRight .thongTinLichHen .item-right #huyLich:hover {
+                border: solid 0.5px var(--red);
+                background: var(--red);
+                color: white;
+                padding: 5px 20px;
+                border-radius: 5px;
+            }
+            main .block-main .lichHenCaNhan .lichHenRight .thongTinLichHen .item-right #danhGia {
+                border: solid 0.5px var(--blue);
+                background: none;
+                color: var(--blue);
+                padding: 5px 20px;
+                border-radius: 5px;
+            }
+
+                main .block-main .lichHenCaNhan .lichHenRight .thongTinLichHen .item-right #danhGia:hover {
+                    border: solid 0.5px var(--blue);
+                    background: var(--blue);
+                    color: white;
+                    padding: 5px 20px;
+                    border-radius: 5px;
+                }
+
+#modalHuyLich .modal-title {
+    font-weight: 700;
+    font-size: 20px;
+}
+#modalHuyLich .modal-body p {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px 0px;
+}
+#modalHuyLich .modal-footer #btn-HuyLichHen {
+    background: var(--blue);
+    border-color: var(--blue);
+}
+#modalDanhGia .modal-title {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#modalDanhGia .modal-footer #btn-danhGia {
+    background: var(--blue);
+    border-color: var(--blue);
+}
+
+#modalDanhGia .modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#modalDanhGia .modal-body .star-rating {
+    font-size: 40px;
+    color: #ccc;
+    cursor: pointer;
+    display: inline-block;
+}
+#modalDanhGia .modal-body #noiDungDanhGia {
+    width: 100%;
+}
+#modalDanhGia .modal-body .star-rating .star.selected,
+.star-rating .star.hover {
+    color: gold;
+}

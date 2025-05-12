@@ -28,4 +28,12 @@ $(document).ready(function () {
         }
     })
 
+
+    new QRCode($("#QR")[0], {
+        text: `${maLichHen}`,
+        width: 128,
+        height: 128
+    });
+
+
 })

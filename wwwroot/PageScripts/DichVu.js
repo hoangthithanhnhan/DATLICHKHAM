@@ -26,7 +26,7 @@ function renderDichVu(keyword = "") {
                                             <p class="motaDichVu">${value.moTa}</p>
                                         </div>
                                         <div class="timChuyenGia">
-                                            <a href="/DichVu/DanhSachChuyenGia?id=${value.maDichVu}" class="btn-timChuyenGia">Tìm chuyên gia <img src="./images/right.png" alt="Alternate Text" /></a>
+                                            <a href="/DichVu/DanhSachChuyenGia?maDichVu=${value.maDichVu}" class="btn-timChuyenGia">Tìm chuyên gia <img src="./images/right.png" alt="Alternate Text" /></a>
                                         </div>
                                     </div>
                                 </div>

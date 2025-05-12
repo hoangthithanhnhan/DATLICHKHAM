@@ -9,18 +9,36 @@
         </div>
     </div>
     <table class="table table-border" id="myTable">
-    <thead>
-        <tr>
-            <th>Stt</th>
-            <th>Họ tên</th>
-            <th>Trạng thái</th>
-            <th>Số sao</th>
-            <th>Ngày đánh giá</th>
-            <th>Nội dung</th>
-            <th>Thao tác</th>
-        </tr>
-    </thead>
-</table>
+        <thead>
+            <tr>
+                <th>Stt</th>
+                <th>Họ tên</th>
+                <th>Số sao</th>
+                <th>Nội dung đánh giá</th>
+                <th>Thời gian đánh giá</th>
+                <th>Thao tác</th>
+            </tr>
+        </thead>
+    </table>
+</div>
+
+<div class="modal fade" id="modalDelete" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Xóa đánh giá</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Hủy"></button>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" class="form-control" id="maDanhGiaDelete" />
+                <p>Bạn có chắc chắn muốn xóa đánh giá này không?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-cancel btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                <button type="button" class="btn btn-active btn-primary" id="deleteData">Đồng ý</button>
+            </div>
+        </div>
+    </div>
 </div>
 
 @section Scripts {

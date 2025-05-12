@@ -82,15 +82,18 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">Xác nhận đặt lịch</h5>
+                <h5 class="modal-title" id="staticBackdropLabel">Thanh toán để đặt lịch</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Hủy"></button>
             </div>
             <div class="modal-body">
-                <p>Bạn có chắc chắn muốn đặt lịch hẹn này không?</p>
+                <p>Quý khách vui lòng quét mã QR để thanh toán</p>
+                <img src="~/images/qrthanhtoan.jpg" alt="QR THANH TOÁN" style="width:70%;" />
+                <p>Số tiền: <span id="soTienThanhToan" style="color:var(--blue); font-weight:600;"></span></p>
+                <p>Thanh toán trong <span id="countdown" style="color:var(--red);font-weight:600;"></span>s</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-cancel btn-secondary" data-bs-dismiss="modal">Hủy</button>
-                <button type="button" class="btn btn-active btn-primary" id="xacNhan">Xác nhận</button>
+                @* <button type="button" class="btn btn-active btn-primary" id="xacNhan">Xác nhận</button> *@
             </div>
         </div>
     </div>

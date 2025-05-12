@@ -48,8 +48,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>zmpjkdpk9t</Fingerprint>
-      <Integrity>dX902TTzi7PbMPU7d561R0biDFJvFNUW1OOlejceyow=</Integrity>
+      <Fingerprint>pcgoq103tu</Fingerprint>
+      <Integrity>ySaGvgLB+11jGfERsANUN1sZ1FxrWF7KT1QQxQRNLNo=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</OriginalItemSpec>
@@ -827,6 +827,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\qr.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\qrthanhtoan.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DATLICHKHAM</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DATLICHKHAM</BasePath>
+      <RelativePath>images/qrthanhtoan.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>nxwe4x675p</Fingerprint>
+      <Integrity>xZnYFyZt1q+M7oAPcdyKCwj2sgUsOsYxku6kEjBKhKg=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\qrthanhtoan.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\rating.png'))">
       <SourceType>Package</SourceType>
@@ -3024,6 +3042,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\pagination\jquery.twbsPagination.min.js'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\qrCode\qrcode.min.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DATLICHKHAM</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DATLICHKHAM</BasePath>
+      <RelativePath>lib/qrCode/qrcode.min.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>h5gslb8p3n</Fingerprint>
+      <Integrity>xUHvBjJ4hahBW8qN9gceFBibSFUzbe9PNttUvehITzY=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\qrCode\qrcode.min.js'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\select2\select2.min.css'))">
       <SourceType>Package</SourceType>
       <SourceId>DATLICHKHAM</SourceId>
@@ -3216,8 +3252,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>8rg1pcip1v</Fingerprint>
-      <Integrity>7Cu+1tG8i47wr7nToP4MoFPkVu8JT+ZfrzzANwFafbY=</Integrity>
+      <Fingerprint>28drp98msy</Fingerprint>
+      <Integrity>TgfGLpySe5zurnsH3IiwqLnXeTb61P2WSFLPBsohGdk=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\PageScripts\Blog.js'))</OriginalItemSpec>
@@ -3252,8 +3288,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>a2egzz28pq</Fingerprint>
-      <Integrity>zsVdvukCj1rlCe1A+vNtzSyuZ9Hbv96OEvXGFhjCv4A=</Integrity>
+      <Fingerprint>qycxhljzc3</Fingerprint>
+      <Integrity>4tTD9JZt6DBiIW8dzMt4ltm2nMv+xbHgCUJsfnqMv+E=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\PageScripts\DanhSachChuyenGia.js'))</OriginalItemSpec>
@@ -3270,8 +3306,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>e170evjthn</Fingerprint>
-      <Integrity>XsI2XBLsI7PeRORV6msYzvzZHftN/K9/0yKqldh2+H0=</Integrity>
+      <Fingerprint>d8g55kg9hw</Fingerprint>
+      <Integrity>bRYbqn7p2gtve2sgBt+U7ZVtAv9Fl3qxM/zwTSgoVNY=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\PageScripts\DatLichKham.js'))</OriginalItemSpec>
@@ -3288,8 +3324,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>5civ6xsjim</Fingerprint>
-      <Integrity>ayfyLMUZdXWGkyidXgoVk1ZAlyQ33hMfvzhxL1se/zI=</Integrity>
+      <Fingerprint>7pie99vf3v</Fingerprint>
+      <Integrity>1Yy38SwFbNqQKsqlYppMU9m9Nb4eCktoJeg/K7yDNpg=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\PageScripts\DatLichKhamChiTiet.js'))</OriginalItemSpec>
@@ -3306,8 +3342,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>2sbao8dnal</Fingerprint>
-      <Integrity>IiLdOT33O+wrXYk7LcxnBvI91MwADy/OhP7av1xbFBY=</Integrity>
+      <Fingerprint>iapqtvhtw9</Fingerprint>
+      <Integrity>imsFC6aNZztE/q50j4+OGZLdGMVOoSN3mg8p7O4eTcs=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\PageScripts\DichVu.js'))</OriginalItemSpec>
@@ -3347,6 +3383,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\PageScripts\Layout.js'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\PageScripts\LichHenCaNhan.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DATLICHKHAM</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DATLICHKHAM</BasePath>
+      <RelativePath>PageScripts/LichHenCaNhan.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>aje2dcm5rz</Fingerprint>
+      <Integrity>6syXmtAcRS+0nI/sG7P8F0oSI8qF4O63N9UbT3j9U2Y=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\PageScripts\LichHenCaNhan.js'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\PageScripts\LichLamViecChuyenGia.js'))">
       <SourceType>Package</SourceType>
@@ -3450,8 +3504,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>zbbqz1xxjo</Fingerprint>
-      <Integrity>37IogyrFDo0j4rVkfc4ndQeTNh3eez3/yW97A5UF9dU=</Integrity>
+      <Fingerprint>7il3fe3yb2</Fingerprint>
+      <Integrity>YVlDJSCnNWy+iMQgKuwmVAxb2wxmVlWObqPyWk6Pvsk=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\PageScripts\QuanLyChuyenMuc.js'))</OriginalItemSpec>
@@ -3468,8 +3522,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>9jk2ymdi8y</Fingerprint>
-      <Integrity>dZ4XvOF9zvxEbtuB7mAKrIXa7AHCELlPgRVHdeqyXPo=</Integrity>
+      <Fingerprint>p1xfgthn36</Fingerprint>
+      <Integrity>Dcm8kbwcB3sgLhf8E5Eefnqhn1jG3N1+8KZnbp6BQVs=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\PageScripts\QuanLyDanhGia.js'))</OriginalItemSpec>
@@ -3522,8 +3576,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>qjrr9mi6su</Fingerprint>
-      <Integrity>ytoSr8LCIaP7YoiwhT8lRVTPdOlR0VYSpaur3ur8cIk=</Integrity>
+      <Fingerprint>ys1hj5dm2z</Fingerprint>
+      <Integrity>nmW88O08kEjPyLro0fKzFsGk1gMiv8MTC+IdL6TbbSE=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\PageScripts\QuanLyLichKham.js'))</OriginalItemSpec>
@@ -3540,8 +3594,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>iwbl1ixgaj</Fingerprint>
-      <Integrity>fpeMdCm7aLr/f9DEwqNQOpsR2lNDs5BSPetTE/hl7kI=</Integrity>
+      <Fingerprint>972drenna9</Fingerprint>
+      <Integrity>ZW/i1fUqmqgYifu1CVV0yWcnhSjJfGiYx5iN0rrwGwM=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\PageScripts\QuanLyThanhToan.js'))</OriginalItemSpec>

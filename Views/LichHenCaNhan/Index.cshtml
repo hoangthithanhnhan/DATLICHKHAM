@@ -1,0 +1,91 @@
+﻿@page
+@model DATLICHKHAM.Views.DangKy.IndexModel
+@{
+
+}
+
+<div class="block-main">
+    <input value="@ViewBag.MaBenhNhan" id="maBenhNhan" type="text" hidden />
+    <div class="lichHenCaNhan row">
+        <div class="lichHenLeft col-3">
+            @* render các lich hẹn, lịch sử đặt lịch *@
+        </div>
+        <div class="lichHenRight col">
+            <div class="chuyenGia-QR">
+                <div class="chuyenGia">
+                    <img src="" alt="Ảnh đại diện chuyên gia" id="anhDaiDien" />
+                    <p><span id="chucDanh"></span> <span id="tenChuyenGia"></span></p>
+                </div>
+                <div id="qrcode"></div>
+            </div>
+            <div class="thongTinLichHen row">
+                <div class="item-left col-5">
+                    <p>Mã lịch hẹn</p>
+                    <p>Ngày hẹn</p>
+                    <p>Thời gian hẹn</p>
+                    <p>Hình thức khám</p>
+                    <p>Họ tên</p>
+                    <p>Số điện thoại</p>
+                    <p>Dịch vụ</p>
+                    <p>Số tiền đã thanh toán</p>
+                    <p>Ghi chú</p>
+                    <p>Trạng thái</p>
+                    <p class="titleDanhGia d-none">Đánh giá</p>
+                    <p class="titleHuyLich d-none">Lý do hủy lịch</p>
+                </div>
+                <div class="item-right col">
+                    @* render giá trị tương ứng cột bên trái *@
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modalHuyLich" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content" style="border:none;">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Xác nhận hủy lịch hẹn</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" id="maLichHenHuyLich" value="" />
+                <textarea cols="3" rows="3" type="text" name="huyLich" value="" id="lyDoHuyLich" placeholder="Nhập lý do hủy lịch"></textarea>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btn-cancel">Hủy</button>
+                <button type="button" class="btn btn-primary" id="btn-HuyLichHen">Xác nhận</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modalDanhGia" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content" style="border:none;">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Đánh giá dịch vụ</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" id="maLichHenDanhGia" value="" />
+                <div class="star-rating">
+                    <span class="star" data-value="1">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="5">&#9733;</span>
+                </div>
+                <textarea cols="3" rows="3" type="text" name="danhGia" value="" id="noiDungDanhGia" placeholder="Viết đánh giá"></textarea>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btn-cancel">Hủy</button>
+                <button type="button" class="btn btn-primary" id="btn-danhGia">Đánh giá</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/lib/qrCode/qrcode.min.js"></script>
+    <script src="~/PageScripts/LichHenCaNhan.js"></script>
+
+}

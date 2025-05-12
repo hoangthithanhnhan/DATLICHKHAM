@@ -1,7 +1,8 @@
 ﻿let APIURL = window.location.origin;
 $(document).ready(function () {
     let currentURL = new URLSearchParams(window.location.search);
-    let id = currentURL.get('id');
+    let id = currentURL.get('maDichVu');
+    console.log(id);
     renderTenDichVu(id);
     renderChuyenGiaByDichVu(id);
 })
