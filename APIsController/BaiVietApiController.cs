@@ -27,6 +27,27 @@ namespace DATLICHKHAM.APIsController
             return await Mediator.Send(new Get.Query { MaBaiViet = MaBaiViet });
         }
 
+        [HttpGet]
+        [Route("GetTop1BaiVietMoiNhat")]
+        public async Task<Result<DLK_BaiViet>> GetTop1BaiVietMoiNhat()
+        {
+            return await Mediator.Send(new GetTop1BaiVietMoiNhat.Query());
+        }
+
+        [HttpGet]
+        [Route("GetTop3BaiVietMoiNhat_SauTop1")]
+        public async Task<Result<IEnumerable<DLK_BaiViet>>> GetTop3BaiVietMoiNhat_SauTop1()
+        {
+            return await Mediator.Send(new GetTop3BaiVietMoiNhat_SauTop1.Query());
+        }
+
+        [HttpGet]
+        [Route("GetsBaiVietByChuyenMuc")]
+        public Task<Result<IEnumerable<DLK_BaiViet>>> GetsBaiVietByChuyenMuc(int? MaChuyenMuc, int? PageIndex=1, int? PageSize=10)
+        {
+            return Mediator.Send(new GetsBaiVietByChuyenMuc.Query { MaChuyenMuc = MaChuyenMuc, PageIndex = PageIndex, PageSize = PageSize });
+        }
+
         [HttpPost]
         [Route("Add")]
         public async Task<Result<DLK_BaiViet>> Add([FromForm] RequestUploadFile request)

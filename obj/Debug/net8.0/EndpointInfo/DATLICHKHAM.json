@@ -92,6 +92,121 @@
         }
       }
     },
+    "/api/BaiVietApi/GetTop1BaiVietMoiNhat": {
+      "get": {
+        "tags": [
+          "BaiVietApi"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_BaiVietResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_BaiVietResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_BaiVietResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/BaiVietApi/GetTop3BaiVietMoiNhat_SauTop1": {
+      "get": {
+        "tags": [
+          "BaiVietApi"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_BaiVietIEnumerableResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_BaiVietIEnumerableResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_BaiVietIEnumerableResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/BaiVietApi/GetsBaiVietByChuyenMuc": {
+      "get": {
+        "tags": [
+          "BaiVietApi"
+        ],
+        "parameters": [
+          {
+            "name": "MaChuyenMuc",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "PageIndex",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 1
+            }
+          },
+          {
+            "name": "PageSize",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 10
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_BaiVietIEnumerableResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_BaiVietIEnumerableResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_BaiVietIEnumerableResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/BaiVietApi/Add": {
       "post": {
         "tags": [
@@ -1869,22 +1984,25 @@
         "tags": [
           "DichVuApi"
         ],
-        "parameters": [
-          {
-            "name": "trangThai",
-            "in": "query",
-            "schema": {
-              "type": "boolean"
-            }
-          },
-          {
-            "name": "filter",
-            "in": "query",
-            "schema": {
-              "type": "string"
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_DichVuRequestFilter"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_DichVuRequestFilter"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DLK_DichVuRequestFilter"
+              }
             }
           }
-        ],
+        },
         "responses": {
           "200": {
             "description": "OK",
@@ -3187,19 +3305,11 @@
             "type": "integer",
             "format": "int32"
           },
-          "maNguoiDung": {
-            "type": "integer",
-            "format": "int32"
-          },
           "maChuyenMuc": {
             "type": "integer",
             "format": "int32"
           },
           "tenChuyenMuc": {
-            "type": "string",
-            "nullable": true
-          },
-          "nguoiDang": {
             "type": "string",
             "nullable": true
           },
@@ -3225,6 +3335,11 @@
           },
           "tomTat": {
             "type": "string",
+            "nullable": true
+          },
+          "totalRows": {
+            "type": "integer",
+            "format": "int32",
             "nullable": true
           }
         },
@@ -3930,6 +4045,20 @@
           },
           "error": {
             "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DLK_DichVuRequestFilter": {
+        "type": "object",
+        "properties": {
+          "keyword": {
+            "type": "string",
+            "nullable": true
+          },
+          "trangThai": {
+            "type": "boolean",
             "nullable": true
           }
         },

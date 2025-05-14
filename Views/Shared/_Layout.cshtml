@@ -87,30 +87,11 @@
     <script src="~/lib/select2/select2.min.js"></script>
     <script src="~/lib/flatpickr/flatpickr.js"></script>
     <script src="~/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="~/lib/pagination/jquery.twbsPagination.min.js"></script>
     <script src="~/PageScripts/Layout.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
 
     @await RenderSectionAsync("Scripts", required: false)
-
-    <script>
-        $('.owl-carousel').owlCarousel({
-            loop: true,
-            margin: 8,
-            autoplay:true,
-            autoplayTimeout: 3000,
-            dots: true,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 3
-                },
-                1000: {
-                    items: 4
-                }
-            }
-        })
-    </script>
+ 
 </body>
 </html>

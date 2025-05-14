@@ -19,4 +19,9 @@ namespace DATLICHKHAM.Domain
         public float? GiaDichVu { get; set; }
         public string? AnhDaiDien { get; set; }
     }
+    public class DLK_DichVuRequestFilter
+    {
+        public string? Keyword { get; set; }
+        public bool? TrangThai { get; set; }
+    }
 }

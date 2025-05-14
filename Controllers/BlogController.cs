@@ -17,8 +17,12 @@ namespace DATLICHKHAM.Controllers
         {
             return View();
         }
-        public IActionResult BaiVietChiTiet()
+        public IActionResult BaiVietChiTiet(string maBaiViet="")
         {
+            if (!string.IsNullOrEmpty(maBaiViet))
+            {
+                ViewBag.MaBaiViet = maBaiViet;
+            }
             return View();
         }
     }

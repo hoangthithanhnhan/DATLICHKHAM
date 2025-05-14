@@ -205,7 +205,7 @@ $(document).ready(function () {
                                 console.log(error.responseText);
                             }
                         });
-                        //window.location.href = `/DatLichKham/DatLichKhamChiTiet?maLichHen=${data.value.maLichHen}`;
+                        window.location.href = `/DatLichKham/DatLichKhamChiTiet?maLichHen=${data.value.maLichHen}`;
                     },
                     error: function (error) {
                         showAlert("Thêm không thành công", "error");

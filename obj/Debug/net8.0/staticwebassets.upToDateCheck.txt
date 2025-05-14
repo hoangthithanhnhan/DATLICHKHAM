@@ -166,6 +166,7 @@ wwwroot\lib\owlcarousel\owl.carousel.min.css
 wwwroot\lib\owlcarousel\owl.carousel.min.js
 wwwroot\lib\owlcarousel\owl.theme.default.min.css
 wwwroot\lib\pagination\jquery.twbsPagination.min.js
+wwwroot\lib\pagination\pagination.min.js
 wwwroot\lib\qrCode\qrcode.min.js
 wwwroot\lib\select2\select2.min.css
 wwwroot\lib\select2\select2.min.js
@@ -177,6 +178,7 @@ wwwroot\lib\webfonts\fa-solid-900.ttf
 wwwroot\lib\webfonts\fa-solid-900.woff2
 wwwroot\lib\wow\wow.js
 wwwroot\lib\wow\wow.min.js
+wwwroot\PageScripts\BaiVietChiTiet.js
 wwwroot\PageScripts\Blog.js
 wwwroot\PageScripts\DangKy.js
 wwwroot\PageScripts\DanhSachChuyenGia.js
@@ -184,6 +186,7 @@ wwwroot\PageScripts\DatLichKham.js
 wwwroot\PageScripts\DatLichKhamChiTiet.js
 wwwroot\PageScripts\DichVu.js
 wwwroot\PageScripts\DoiNguChuyenGia.js
+wwwroot\PageScripts\Home.js
 wwwroot\PageScripts\Layout.js
 wwwroot\PageScripts\LichHenCaNhan.js
 wwwroot\PageScripts\LichLamViecChuyenGia.js
@@ -281,6 +284,8 @@ wwwroot\scss\bootstrap\scss\mixins\_visually-hidden.scss
 wwwroot\scss\bootstrap\scss\utilities\_api.scss
 wwwroot\scss\bootstrap\scss\vendor\_rfs.scss
 wwwroot\upload\BaiViet\_MG_8932(1)_1746505617.jpg
+wwwroot\upload\BaiViet\18-bi-quyet-giam-cang-thang-lo-au-giup-ban-thu-gian-tot-nhat-4_1747128365.jpg
+wwwroot\upload\BaiViet\7-ky-thuat-hit-tho-sau-giam-cang-thang-hieu-qua-ngay-lap-tuc-1_1747128279.jpg
 wwwroot\upload\BaiViet\tam ly hoc sinh_1746504825.png
 wwwroot\upload\BenhNhan\25bf4d9f-ce4a-4985-bd86-8b40f276d967.jpg
 wwwroot\upload\BenhNhan\z6576553943492_fb32e47726557a75789c006ecf6c5f33_1746589881.jpg

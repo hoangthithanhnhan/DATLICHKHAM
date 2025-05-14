@@ -4,4 +4,19 @@
 
 }
 
-<h1>bài viettee chie tiws</h1>
+<div class="container baiVietChiTiet">
+    <div id="baiVietChiTiet">
+
+    </div>
+    <div id="cacBaiVietKhac">
+
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        let MaBaiViet = '@ViewBag.MaBaiViet';
+        let linkBaiVietChiTiet = '@Url.Action("BaiVietChiTiet", "Blog")';
+    </script>
+    <script src="~/PageScripts/BaiVietChiTiet.js"></script>
+}

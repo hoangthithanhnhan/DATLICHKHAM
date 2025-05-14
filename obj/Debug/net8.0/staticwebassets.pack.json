@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\DATLICHKHAM.phg8eyrk8a.bundle.scp.css"
     },
     {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\BaiVietChiTiet.js",
+      "PackagePath": "staticwebassets\\PageScripts\\BaiVietChiTiet.js"
+    },
+    {
       "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\Blog.js",
       "PackagePath": "staticwebassets\\PageScripts\\Blog.js"
     },
@@ -31,6 +35,10 @@
     {
       "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\DoiNguChuyenGia.js",
       "PackagePath": "staticwebassets\\PageScripts\\DoiNguChuyenGia.js"
+    },
+    {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\Home.js",
+      "PackagePath": "staticwebassets\\PageScripts\\Home.js"
     },
     {
       "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\Layout.js",
@@ -761,6 +769,10 @@
       "PackagePath": "staticwebassets\\lib\\pagination\\jquery.twbsPagination.min.js"
     },
     {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\lib\\pagination\\pagination.min.js",
+      "PackagePath": "staticwebassets\\lib\\pagination\\pagination.min.js"
+    },
+    {
       "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\lib\\qrCode\\qrcode.min.js",
       "PackagePath": "staticwebassets\\lib\\qrCode\\qrcode.min.js"
     },
@@ -1131,6 +1143,14 @@
     {
       "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\scss\\bootstrap\\scss\\vendor\\_rfs.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\vendor\\_rfs.scss"
+    },
+    {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\BaiViet\\18-bi-quyet-giam-cang-thang-lo-au-giup-ban-thu-gian-tot-nhat-4_1747128365.jpg",
+      "PackagePath": "staticwebassets\\upload\\BaiViet\\18-bi-quyet-giam-cang-thang-lo-au-giup-ban-thu-gian-tot-nhat-4_1747128365.jpg"
+    },
+    {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\BaiViet\\7-ky-thuat-hit-tho-sau-giam-cang-thang-hieu-qua-ngay-lap-tuc-1_1747128279.jpg",
+      "PackagePath": "staticwebassets\\upload\\BaiViet\\7-ky-thuat-hit-tho-sau-giam-cang-thang-hieu-qua-ngay-lap-tuc-1_1747128279.jpg"
     },
     {
       "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\BaiViet\\_MG_8932(1)_1746505617.jpg",
