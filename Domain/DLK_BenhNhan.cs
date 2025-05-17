@@ -14,7 +14,7 @@
         public string? ThoiQuenSinhHoat { get; set; }
         public string? GhiChuKhac { get; set; }
         public string? NgheNghiep {  get; set; }
-        public byte? TinhTrangHonNhan { get; set; }
+        public string? TinhTrangHonNhan { get; set; }
         public string? ThuocDangDung { get; set; }
         public string? LyDo { get; set; }
         public string SoDienThoai { get; set; }
@@ -37,7 +37,7 @@
         public string? ThoiQuenSinhHoat { get; set; }
         public string? GhiChuKhac { get; set; }
         public string? NgheNghiep { get; set; }
-        public byte? TinhTrangHonNhan { get; set; }
+        public string? TinhTrangHonNhan { get; set; }
         public string? ThuocDangDung { get; set; }
         public string? LyDo { get; set; }
         public bool TrangThai { get; set; }

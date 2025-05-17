@@ -9,9 +9,9 @@
             console.log(data)
             if (data && data.value) {
                 let html = `
-                <p id="chuyenMucBaiViet" class="fs-5 fw-bold text-info">${data.value.tenChuyenMuc}</p>
+                <p id="chuyenMucBaiViet" class="fs-5 fw-bold" style="color:var(--lightblue);">${data.value.tenChuyenMuc}</p>
                 <h3 id="tieuDeBaiViet">${data.value.tieuDe}</h3>
-                <p id="ngayDangBai" class="text-end text-secondary">${formatDate(data.value.thoiGianDangBai)}</p>
+                <p id="ngayDangBai" class="text-end text-secondary">Ngày đăng: ${formatDate(data.value.thoiGianDangBai)}</p>
                 <p id="tomTatBaiViet" class="fst-italic" style="text-align:justify;">
                     ${data.value.tomTat}
                 </p>
@@ -27,17 +27,15 @@
                     dataType: 'json',
                     success: function (res) {
                         if (res && res.value && res.value.length > 0) {
-                            let html = '<h4>Các bài viết liên quan</h4> <div>';
+                            let html = '<h4>Các bài viết liên quan</h4> <div><ul>';
                             $.each(res.value, function (index, item) {
                                 if (item.maBaiViet != data.value.maBaiViet) {
                                     html += `
-                                            <div class="content-item">
-                                                <a class="text-title" href="${linkBaiVietChiTiet}?maBaiViet=${item.maBaiViet}">${item.tieuDe}</a>
-                                            </div>
+                                    <li><a class="text-title" href="${linkBaiVietChiTiet}?maBaiViet=${item.maBaiViet}">${item.tieuDe} <span class="ngayDang">(${formatDate(data.value.thoiGianDangBai)})</span></a></li>
                                             `
                                 }
                             })
-                            html += '</div>';
+                            html += '</ul></div>';
                             $(`#cacBaiVietKhac`).html(html);
                         }
                     },

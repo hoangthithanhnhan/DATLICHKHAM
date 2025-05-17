@@ -75,7 +75,7 @@
                 let html=''
                 $.each(data.value, function (index, value) {
                     html += `
-                            <div class="col-3">
+                            <div class="col-2">
                                 <div class="block-category h-100">
                                     <img src="${value.anhDaiDien ? value.anhDaiDien : "/images/anhdaidien.jpg"}" alt="">
                                     <p class="title">${value.tenDichVu}</p>
@@ -144,5 +144,45 @@
         }
     });
 
+    $.ajax({
+        url: APIURL + "/api/DanhGiaApi/GetsTop3DanhGia",
+        type: "GET",
+        contentType: "application/json; charset=utf-8",
+        success: function (data) {
+            console.log(data, 111)
+            if (data && data.value && data.value.length > 0) {
+                let html = ''
+                $.each(data.value, function (index, value) {
+                    html += `
+                            <div class="card mb-3" style="max-width: 400px;">
+                                <div class="card-header">
+                                    <img src="/images/rating.png" alt="">
+                                    <p class="card-text">
+                                        ${value.noiDung}
+                                    </p>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">${value.hoTen}</h5>
+                                    <div class="rating">
+                                        ${ratingstar(value.soSao)}
+                                    </div>
+                                </div>
+                            </div>
+                        `
+                })
+                $('#danhGia').html(html);
+            }
+        },
+        error: function (err) {
+            console.log("Lỗi khi gọi API:", err);
+        }
+    });
 
 })
+function ratingstar(soSao) {
+    let html = '';
+    for (let i = 0; i < soSao; i++) {
+        html += `&#9733;`;
+    }
+    return html;
+}

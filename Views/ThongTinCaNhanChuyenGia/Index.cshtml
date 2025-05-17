@@ -1,39 +1,53 @@
 ﻿
-<div class="blockTrangCaNhan row">
-    <div class="col-5 taiKhoan">
-        <div class="avatar-wrapper">
-            <img src="~/images/anhdaidien.jpg" alt="Avatar" class="rounded-circle avatar-img" width="200" height="200" />
-            <button class="avatar-edit-btn">
-                <i class="fa fa-camera"></i> <!-- Hoặc dùng icon cây viết, fa fa-pencil -->
-            </button>
-        </div>
-        <div class="mb-3">
-            <label for="tenDangNhap" class="form-label">Tên đăng nhập</label>
-            <input type="text" class="form-control" id="tenDangNhap" placeholder="Nhập tên đăng nhập">
-        </div>
-        <div class="mb-3">
-            <label for="matKhauHienTai" class="form-label">Mật khẩu hiện tại</label>
-            <input type="text" class="form-control" id="matKhauHienTai" placeholder="Nhập mật khẩu hiện tại">
-        </div>
-        <div class="mb-3">
-            <label for="matKhauMoi" class="form-label">Mật khẩu mới</label>
-            <input type="text" class="form-control" id="matKhauMoi" placeholder="Nhập mật khẩu mới">
-        </div>
-        <div class="mb-3">
-            <label for="matKhauMoi1" class="form-label">Nhập lại mật khẩu mới</label>
-            <input type="text" class="form-control" id="matKhauMoi1" placeholder="Nhập lại mật khẩu mới">
-        </div>
-        <div class="mb-3">
-            <button id="saveInfoTaiKhoan">Lưu thông tin tài khoản</button>
-        </div>
+<div class="blockTrangCaNhan container">
+    <input value="@ViewBag.MaChuyenGia" id="maChuyenGia" type="text" hidden />
+    <div id="thongTin">
+
     </div>
-    <div class="col thongTin">
-        <div class="mb-3">
+    <div id="chungChi">
+        <h4 class="text-center" style="color: var(--pink);font-size: 20px;font-weight:700;">
+            THÔNG TIN CHỨNG CHỈ
+        </h4>
+        <button id="btn-create" class="btn" type="button" data-bs-toggle="modal" data-bs-target="#modalAdd" style="background: var(--blue);color: white;font-weight: 600;">
+            Thêm mới
+        </button>
+        <table class="table table-border" id="tableChungChi">
+            <thead>
+                <tr>
+                    <th>Stt</th>
+                    <th>Tên văn bằng</th>
+                    <th>Số hiệu</th>
+                    <th>Tổ chức cấp</th>
+                    <th>Ngày cấp</th>
+                    <th>Ngày hết hạn</th>
+                    <th>Hình ảnh</th>
+                    <th>Thao tác</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</div>
+<div class="modal fade thongTin-Edit" id="modalThongTinEdit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content" style="border:none;">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Chỉnh sửa thông tin cá nhân</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3 avatar-wrapper">
+                    <img id="anhDaiDienEdit" src="" alt="Avatar" class="rounded-circle avatar-img" width="200" height="200" />
+                    <input type="file" id="upload-avatar" style="display: none;" />
+                    <button class="avatar-edit-btn" onclick="document.getElementById('upload-avatar').click();">
+                        <i class="fa fa-camera"></i> <!-- Hoặc dùng icon cây viết, fa fa-pencil -->
+                    </button>
+                </div>
+                <div class="mb-3">
                     <label for="hoTenEdit" class="form-label">Họ và tên</label>
                     <input type="text" class="form-control" id="hoTenEdit" placeholder="Nhập họ và tên">
                 </div>
                 <div class="mb-3">
-                    <label class="form-label">Giới tính </label>
+                    <label class="form-label">Giới tính</label>
                     <div>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="gioitinhEdit" id="nuEdit" value="1">
@@ -54,15 +68,15 @@
                     <input type="date" class="form-control" id="ngaySinhEdit" placeholder="dd/mm/yyyy">
                 </div>
                 <div class="mb-3">
-                    <label for="soDienThoaiEdit" class="form-label">Số điện thoại</label>
+                    <label for="soDienThoaiEdit" class="form-label">Số điện thoại </label>
                     <input type="text" class="form-control" id="soDienThoaiEdit" placeholder="Nhập số điện thoại">
                 </div>
                 <div class="mb-3">
-                    <label for="emailEdit" class="form-label">Email </label>
+                    <label for="emailEdit" class="form-label">Email</label>
                     <input type="email" class="form-control" id="emailEdit" placeholder="Nhập email">
                 </div>
                 <div class="mb-3">
-                    <label for="diaChiEdit" class="form-label">Địa chỉ </label>
+                    <label for="diaChiEdit" class="form-label">Địa chỉ</label>
                     <input type="text" class="form-control" id="diaChiEdit" placeholder="Nhập địa chỉ">
                 </div>
                 <div class="mb-3">
@@ -73,24 +87,24 @@
                     <label for="chucVuEdit" class="form-label">Chức vụ</label>
                     <input type="text" class="form-control" id="chucVuEdit" placeholder="Nhập chức vụ">
                 </div>
-                <div class="mb-3" id="chuyenKhoaEditParent">
-                    <label for="chuyenKhoaEdit" class="form-label">Chuyên khoa</label>
-                    <select class="form-select" id="chuyenKhoaEdit">
-                @* render chuyên khoa *@
-                    </select>
-                </div>
-                <div class="mb-3" id="dichVuEditParent">
-                    <label for="dichVuEdit" class="form-label">Dịch vụ</label>
-                    <select class="form-select" id="dichVuEdit" multiple>
-                @* render dịch vụ *@
-                    </select>
-                </div>
                 <div class="mb-3">
                     <label for="soNamKinhNghiemEdit" class="form-label">Số năm kinh nghiệm</label>
                     <input type="text" class="form-control" id="soNamKinhNghiemEdit" placeholder="Nhập số năm kinh nghiệm">
                 </div>
+                <div class="mb-3" id="chuyenKhoaEditParent">
+                    <label for="chuyenKhoaEdit" class="form-label">Chuyên khoa <span class="text-red">*</span></label>
+                    <select class="form-select" id="chuyenKhoaEdit">
+                        @* render chuyên khoa *@
+                    </select>
+                </div>
+                <div class="mb-3" id="dichVuEditParent">
+                    <label for="dichVuEdit" class="form-label">Dịch vụ <span class="text-red">*</span></label>
+                    <select class="form-select" id="dichVuEdit" multiple>
+                        @* render dịch vụ *@
+                    </select>
+                </div>
                 <div class="mb-3">
-                    <label for="donViCongTacEdit" class="form-label">Đơn vị công tác</label>
+                    <label for="donViCongTacEdit" class="form-label">Đơn vị công tác <span class="text-red">*</span></label>
                     <input type="text" class="form-control" id="donViCongTacEdit" placeholder="Nhập đơn vị công tác">
                 </div>
                 <div class="mb-3">
@@ -105,14 +119,15 @@
                     <label for="kinhNghiemEdit" class="form-label">Kinh nghiệm</label>
                     <textarea cols="30" rows="5" type="text" class="form-control" id="kinhNghiemEdit" placeholder="Nhập kinh nghiệm"></textarea>
                 </div>
-        <div class="mb-3">
-            <button id="saveInfoCaNhan">Lưu thông tin cá nhân</button>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btn-cancel">Hủy</button>
+                <button type="button" class="btn btn-primary" id="btn-SaveThongTin">Lưu</button>
+            </div>
         </div>
     </div>
 </div>
 
-
-
-@* @section Scripts { *@
-@*     <script src="~/PageScripts/DichVu.js"></script> *@
-@* } *@
+@section Scripts {
+    <script src="~/PageScripts/ThongTinCaNhanChuyenGia.js"></script>
+}

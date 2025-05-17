@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wqP4py6ctE9KWsxmgrYjvOJIKZmftKw440dEdzgmL/0=",
+  "Hash": "86oHhwiH6JMuJ4JiVVGNHwxcMarCQchjTgg8TkVfh1U=",
   "Source": "DATLICHKHAM",
   "BasePath": "_content/DATLICHKHAM",
   "Mode": "Default",
@@ -1375,8 +1375,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "u96bcjn5u3",
-      "Integrity": "fqN+v7u52luOvfmIlDmsYJe5nj8z9BhlZDqQUoxu6V0=",
+      "Fingerprint": "3mhrjkk6z6",
+      "Integrity": "FetifLUU9DmJq+gay7LYiGNgXs4YheqhT2Tkc2mUxDk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -5113,8 +5113,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "ay6ui81ps0",
-      "Integrity": "skB3+eGiTCla8JVuTiLgqCNki3zFYPJjUYJMItTwPRY=",
+      "Fingerprint": "qs3xa1vyj8",
+      "Integrity": "eu8Mj31UMBoxWekX5COEN+IaPL+Jb8EL6wJc8cA5EVY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\PageScripts\\BaiVietChiTiet.js"
@@ -5134,8 +5134,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "tpkcafoht1",
-      "Integrity": "H2aqL6FyrmrY4LDhYKW6Yw17skNs9MtltpuRi5sVoHY=",
+      "Fingerprint": "yphx00igen",
+      "Integrity": "CgjLzY2s5vPYkQ8ZadYG3d7P7eJwbqpf+eY6HFn3OIQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\PageScripts\\Blog.js"
@@ -5281,8 +5281,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "zu8v08jtni",
-      "Integrity": "ZTGqxJae3CjxJfBiK50M3RGEVCUxwF2CE25uhOL/bEw=",
+      "Fingerprint": "1e21p38siy",
+      "Integrity": "WedSUyO51ewLHAJnjezYXzrWKdqu4w2ihWB2jycLCME=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\PageScripts\\Home.js"
@@ -5407,8 +5407,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "lby9ty4rga",
-      "Integrity": "/+TygDCFMxbxwShhoNmDoN2/Xo39MKDQoD26360SMjU=",
+      "Fingerprint": "vosa3qlhhk",
+      "Integrity": "v8p4RTukStplw3NZgKsUjXtrPq/M8BJA1RZCJsALlj4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\PageScripts\\QuanLyChuyenGia.js"
@@ -5491,8 +5491,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "9gevixzoqp",
-      "Integrity": "F/8ZJUXkms7GN10Zk0610eHn9G4TEjtBxnA98cWnOZ4=",
+      "Fingerprint": "co0d4pw63e",
+      "Integrity": "VLMT5O9/WCzElcXqINyakc90A2AqPilgtcmQ33QpRlY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\PageScripts\\QuanLyDichVu.js"
@@ -5580,6 +5580,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\PageScripts\\ThongKe.js"
+    },
+    {
+      "Identity": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\ThongTinCaNhanBenhNhan.js",
+      "SourceId": "DATLICHKHAM",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\",
+      "BasePath": "_content/DATLICHKHAM",
+      "RelativePath": "PageScripts/ThongTinCaNhanBenhNhan#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "197bcf31x2",
+      "Integrity": "dZE/ARemghwV/q1gf1SKxGJtIISSl5a3XTQSFCXM1wo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\PageScripts\\ThongTinCaNhanBenhNhan.js"
+    },
+    {
+      "Identity": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\ThongTinCaNhanChuyenGia.js",
+      "SourceId": "DATLICHKHAM",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\",
+      "BasePath": "_content/DATLICHKHAM",
+      "RelativePath": "PageScripts/ThongTinCaNhanChuyenGia#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cc62v5w9r1",
+      "Integrity": "nH9iJNx5Mc5G1r5fhZwpW7ExCCX7mC00qUo46Spy+RI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\PageScripts\\ThongTinCaNhanChuyenGia.js"
     },
     {
       "Identity": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\scss\\bootstrap.scss",
@@ -7388,6 +7430,27 @@
       "OriginalItemSpec": "wwwroot\\upload\\BaiViet\\tam ly hoc sinh_1746504825.png"
     },
     {
+      "Identity": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\BenhNhan\\18-bi-quyet-giam-cang-thang-lo-au-giup-ban-thu-gian-tot-nhat-4_1747415032.jpg",
+      "SourceId": "DATLICHKHAM",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\",
+      "BasePath": "_content/DATLICHKHAM",
+      "RelativePath": "upload/BenhNhan/18-bi-quyet-giam-cang-thang-lo-au-giup-ban-thu-gian-tot-nhat-4_1747415032#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "z3c6v5s7fe",
+      "Integrity": "z7UErCmfQO1EXbkxOZA6J36+TIA4D4I8H6UPelGzmI8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\upload\\BenhNhan\\18-bi-quyet-giam-cang-thang-lo-au-giup-ban-thu-gian-tot-nhat-4_1747415032.jpg"
+    },
+    {
       "Identity": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\BenhNhan\\25bf4d9f-ce4a-4985-bd86-8b40f276d967.jpg",
       "SourceId": "DATLICHKHAM",
       "SourceType": "Discovered",
@@ -7409,27 +7472,6 @@
       "OriginalItemSpec": "wwwroot\\upload\\BenhNhan\\25bf4d9f-ce4a-4985-bd86-8b40f276d967.jpg"
     },
     {
-      "Identity": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\BenhNhan\\z6576553943492_fb32e47726557a75789c006ecf6c5f33_1746589881.jpg",
-      "SourceId": "DATLICHKHAM",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\",
-      "BasePath": "_content/DATLICHKHAM",
-      "RelativePath": "upload/BenhNhan/z6576553943492_fb32e47726557a75789c006ecf6c5f33_1746589881#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "gkmyb2v2mt",
-      "Integrity": "wEnh5+0qo6wBQd3nrfH6I9BiMx8ITYNs6Uaj3Ie/2wc=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\upload\\BenhNhan\\z6576553943492_fb32e47726557a75789c006ecf6c5f33_1746589881.jpg"
-    },
-    {
       "Identity": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\Blog\\4c42a82b-834b-4de0-80f2-da7956063395_images.jpg",
       "SourceId": "DATLICHKHAM",
       "SourceType": "Discovered",
@@ -7449,6 +7491,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\upload\\Blog\\4c42a82b-834b-4de0-80f2-da7956063395_images.jpg"
+    },
+    {
+      "Identity": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\ChungChi\\18-bi-quyet-giam-cang-thang-lo-au-giup-ban-thu-gian-tot-nhat-4_1747494877749.jpg",
+      "SourceId": "DATLICHKHAM",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\",
+      "BasePath": "_content/DATLICHKHAM",
+      "RelativePath": "upload/ChungChi/18-bi-quyet-giam-cang-thang-lo-au-giup-ban-thu-gian-tot-nhat-4_1747494877749#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "z3c6v5s7fe",
+      "Integrity": "z7UErCmfQO1EXbkxOZA6J36+TIA4D4I8H6UPelGzmI8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\upload\\ChungChi\\18-bi-quyet-giam-cang-thang-lo-au-giup-ban-thu-gian-tot-nhat-4_1747494877749.jpg"
     },
     {
       "Identity": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\ChuyenGia\\6a4bdccc-2a07-427b-8c17-dc5626deec63.jpg",
@@ -8016,6 +8079,51 @@
       ]
     },
     {
+      "Route": "css/site.3mhrjkk6z6.css",
+      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "224600"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FetifLUU9DmJq+gay7LYiGNgXs4YheqhT2Tkc2mUxDk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 16:56:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3mhrjkk6z6"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-FetifLUU9DmJq+gay7LYiGNgXs4YheqhT2Tkc2mUxDk="
+        }
+      ]
+    },
+    {
       "Route": "css/site.css",
       "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\css\\site.css",
       "Selectors": [],
@@ -8026,7 +8134,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "52843"
+          "Value": "224600"
         },
         {
           "Name": "Content-Type",
@@ -8034,11 +8142,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"fqN+v7u52luOvfmIlDmsYJe5nj8z9BhlZDqQUoxu6V0=\""
+          "Value": "\"FetifLUU9DmJq+gay7LYiGNgXs4YheqhT2Tkc2mUxDk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 17:57:29 GMT"
+          "Value": "Sat, 17 May 2025 16:56:54 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8048,52 +8156,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-fqN+v7u52luOvfmIlDmsYJe5nj8z9BhlZDqQUoxu6V0="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.u96bcjn5u3.css",
-      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\css\\site.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "52843"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"fqN+v7u52luOvfmIlDmsYJe5nj8z9BhlZDqQUoxu6V0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 17:57:29 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "u96bcjn5u3"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-fqN+v7u52luOvfmIlDmsYJe5nj8z9BhlZDqQUoxu6V0="
+          "Value": "sha256-FetifLUU9DmJq+gay7LYiGNgXs4YheqhT2Tkc2mUxDk="
         }
       ]
     },
@@ -24996,51 +25059,6 @@
       ]
     },
     {
-      "Route": "PageScripts/BaiVietChiTiet.ay6ui81ps0.js",
-      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\BaiVietChiTiet.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2692"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"skB3+eGiTCla8JVuTiLgqCNki3zFYPJjUYJMItTwPRY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 17:00:53 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "ay6ui81ps0"
-        },
-        {
-          "Name": "label",
-          "Value": "PageScripts/BaiVietChiTiet.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-skB3+eGiTCla8JVuTiLgqCNki3zFYPJjUYJMItTwPRY="
-        }
-      ]
-    },
-    {
       "Route": "PageScripts/BaiVietChiTiet.js",
       "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\BaiVietChiTiet.js",
       "Selectors": [],
@@ -25051,7 +25069,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2692"
+          "Value": "2684"
         },
         {
           "Name": "Content-Type",
@@ -25059,11 +25077,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"skB3+eGiTCla8JVuTiLgqCNki3zFYPJjUYJMItTwPRY=\""
+          "Value": "\"eu8Mj31UMBoxWekX5COEN+IaPL+Jb8EL6wJc8cA5EVY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 17:00:53 GMT"
+          "Value": "Thu, 15 May 2025 07:52:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -25073,7 +25091,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-skB3+eGiTCla8JVuTiLgqCNki3zFYPJjUYJMItTwPRY="
+          "Value": "sha256-eu8Mj31UMBoxWekX5COEN+IaPL+Jb8EL6wJc8cA5EVY="
+        }
+      ]
+    },
+    {
+      "Route": "PageScripts/BaiVietChiTiet.qs3xa1vyj8.js",
+      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\BaiVietChiTiet.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2684"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eu8Mj31UMBoxWekX5COEN+IaPL+Jb8EL6wJc8cA5EVY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 15 May 2025 07:52:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qs3xa1vyj8"
+        },
+        {
+          "Name": "label",
+          "Value": "PageScripts/BaiVietChiTiet.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-eu8Mj31UMBoxWekX5COEN+IaPL+Jb8EL6wJc8cA5EVY="
         }
       ]
     },
@@ -25088,7 +25151,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3585"
+          "Value": "4077"
         },
         {
           "Name": "Content-Type",
@@ -25096,11 +25159,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"H2aqL6FyrmrY4LDhYKW6Yw17skNs9MtltpuRi5sVoHY=\""
+          "Value": "\"CgjLzY2s5vPYkQ8ZadYG3d7P7eJwbqpf+eY6HFn3OIQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 16:46:55 GMT"
+          "Value": "Thu, 15 May 2025 09:16:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -25110,12 +25173,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-H2aqL6FyrmrY4LDhYKW6Yw17skNs9MtltpuRi5sVoHY="
+          "Value": "sha256-CgjLzY2s5vPYkQ8ZadYG3d7P7eJwbqpf+eY6HFn3OIQ="
         }
       ]
     },
     {
-      "Route": "PageScripts/Blog.tpkcafoht1.js",
+      "Route": "PageScripts/Blog.yphx00igen.js",
       "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\Blog.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -25125,7 +25188,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3585"
+          "Value": "4077"
         },
         {
           "Name": "Content-Type",
@@ -25133,11 +25196,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"H2aqL6FyrmrY4LDhYKW6Yw17skNs9MtltpuRi5sVoHY=\""
+          "Value": "\"CgjLzY2s5vPYkQ8ZadYG3d7P7eJwbqpf+eY6HFn3OIQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 16:46:55 GMT"
+          "Value": "Thu, 15 May 2025 09:16:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -25147,7 +25210,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "tpkcafoht1"
+          "Value": "yphx00igen"
         },
         {
           "Name": "label",
@@ -25155,7 +25218,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-H2aqL6FyrmrY4LDhYKW6Yw17skNs9MtltpuRi5sVoHY="
+          "Value": "sha256-CgjLzY2s5vPYkQ8ZadYG3d7P7eJwbqpf+eY6HFn3OIQ="
         }
       ]
     },
@@ -25652,6 +25715,51 @@
       ]
     },
     {
+      "Route": "PageScripts/Home.1e21p38siy.js",
+      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\Home.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8013"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WedSUyO51ewLHAJnjezYXzrWKdqu4w2ihWB2jycLCME=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 15 May 2025 16:03:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1e21p38siy"
+        },
+        {
+          "Name": "label",
+          "Value": "PageScripts/Home.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-WedSUyO51ewLHAJnjezYXzrWKdqu4w2ihWB2jycLCME="
+        }
+      ]
+    },
+    {
       "Route": "PageScripts/Home.js",
       "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\Home.js",
       "Selectors": [],
@@ -25662,7 +25770,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6352"
+          "Value": "8013"
         },
         {
           "Name": "Content-Type",
@@ -25670,11 +25778,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ZTGqxJae3CjxJfBiK50M3RGEVCUxwF2CE25uhOL/bEw=\""
+          "Value": "\"WedSUyO51ewLHAJnjezYXzrWKdqu4w2ihWB2jycLCME=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 18:28:38 GMT"
+          "Value": "Thu, 15 May 2025 16:03:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -25684,52 +25792,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-ZTGqxJae3CjxJfBiK50M3RGEVCUxwF2CE25uhOL/bEw="
-        }
-      ]
-    },
-    {
-      "Route": "PageScripts/Home.zu8v08jtni.js",
-      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\Home.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "6352"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ZTGqxJae3CjxJfBiK50M3RGEVCUxwF2CE25uhOL/bEw=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 18:28:38 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "zu8v08jtni"
-        },
-        {
-          "Name": "label",
-          "Value": "PageScripts/Home.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-ZTGqxJae3CjxJfBiK50M3RGEVCUxwF2CE25uhOL/bEw="
+          "Value": "sha256-WedSUyO51ewLHAJnjezYXzrWKdqu4w2ihWB2jycLCME="
         }
       ]
     },
@@ -26154,7 +26217,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "41164"
+          "Value": "41198"
         },
         {
           "Name": "Content-Type",
@@ -26162,11 +26225,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"/+TygDCFMxbxwShhoNmDoN2/Xo39MKDQoD26360SMjU=\""
+          "Value": "\"v8p4RTukStplw3NZgKsUjXtrPq/M8BJA1RZCJsALlj4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 07 May 2025 02:41:24 GMT"
+          "Value": "Sat, 17 May 2025 16:48:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -26176,12 +26239,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-/+TygDCFMxbxwShhoNmDoN2/Xo39MKDQoD26360SMjU="
+          "Value": "sha256-v8p4RTukStplw3NZgKsUjXtrPq/M8BJA1RZCJsALlj4="
         }
       ]
     },
     {
-      "Route": "PageScripts/QuanLyChuyenGia.lby9ty4rga.js",
+      "Route": "PageScripts/QuanLyChuyenGia.vosa3qlhhk.js",
       "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\QuanLyChuyenGia.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -26191,7 +26254,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "41164"
+          "Value": "41198"
         },
         {
           "Name": "Content-Type",
@@ -26199,11 +26262,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"/+TygDCFMxbxwShhoNmDoN2/Xo39MKDQoD26360SMjU=\""
+          "Value": "\"v8p4RTukStplw3NZgKsUjXtrPq/M8BJA1RZCJsALlj4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 07 May 2025 02:41:24 GMT"
+          "Value": "Sat, 17 May 2025 16:48:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -26213,7 +26276,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "lby9ty4rga"
+          "Value": "vosa3qlhhk"
         },
         {
           "Name": "label",
@@ -26221,7 +26284,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-/+TygDCFMxbxwShhoNmDoN2/Xo39MKDQoD26360SMjU="
+          "Value": "sha256-v8p4RTukStplw3NZgKsUjXtrPq/M8BJA1RZCJsALlj4="
         }
       ]
     },
@@ -26472,7 +26535,7 @@
       ]
     },
     {
-      "Route": "PageScripts/QuanLyDichVu.9gevixzoqp.js",
+      "Route": "PageScripts/QuanLyDichVu.co0d4pw63e.js",
       "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\QuanLyDichVu.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -26482,7 +26545,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12287"
+          "Value": "12288"
         },
         {
           "Name": "Content-Type",
@@ -26490,11 +26553,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"F/8ZJUXkms7GN10Zk0610eHn9G4TEjtBxnA98cWnOZ4=\""
+          "Value": "\"VLMT5O9/WCzElcXqINyakc90A2AqPilgtcmQ33QpRlY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 18:33:15 GMT"
+          "Value": "Wed, 14 May 2025 18:41:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -26504,7 +26567,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "9gevixzoqp"
+          "Value": "co0d4pw63e"
         },
         {
           "Name": "label",
@@ -26512,7 +26575,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-F/8ZJUXkms7GN10Zk0610eHn9G4TEjtBxnA98cWnOZ4="
+          "Value": "sha256-VLMT5O9/WCzElcXqINyakc90A2AqPilgtcmQ33QpRlY="
         }
       ]
     },
@@ -26527,7 +26590,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12287"
+          "Value": "12288"
         },
         {
           "Name": "Content-Type",
@@ -26535,11 +26598,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"F/8ZJUXkms7GN10Zk0610eHn9G4TEjtBxnA98cWnOZ4=\""
+          "Value": "\"VLMT5O9/WCzElcXqINyakc90A2AqPilgtcmQ33QpRlY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 18:33:15 GMT"
+          "Value": "Wed, 14 May 2025 18:41:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -26549,7 +26612,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-F/8ZJUXkms7GN10Zk0610eHn9G4TEjtBxnA98cWnOZ4="
+          "Value": "sha256-VLMT5O9/WCzElcXqINyakc90A2AqPilgtcmQ33QpRlY="
         }
       ]
     },
@@ -26878,6 +26941,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-vyZU6OZPc1WitzugHxAmZCg1HGExYiatNLG8GEF8XZU="
+        }
+      ]
+    },
+    {
+      "Route": "PageScripts/ThongTinCaNhanBenhNhan.197bcf31x2.js",
+      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\ThongTinCaNhanBenhNhan.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8919"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dZE/ARemghwV/q1gf1SKxGJtIISSl5a3XTQSFCXM1wo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 14:21:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "197bcf31x2"
+        },
+        {
+          "Name": "label",
+          "Value": "PageScripts/ThongTinCaNhanBenhNhan.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dZE/ARemghwV/q1gf1SKxGJtIISSl5a3XTQSFCXM1wo="
+        }
+      ]
+    },
+    {
+      "Route": "PageScripts/ThongTinCaNhanBenhNhan.js",
+      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\ThongTinCaNhanBenhNhan.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8919"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dZE/ARemghwV/q1gf1SKxGJtIISSl5a3XTQSFCXM1wo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 14:21:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dZE/ARemghwV/q1gf1SKxGJtIISSl5a3XTQSFCXM1wo="
+        }
+      ]
+    },
+    {
+      "Route": "PageScripts/ThongTinCaNhanChuyenGia.cc62v5w9r1.js",
+      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\ThongTinCaNhanChuyenGia.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20816"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nH9iJNx5Mc5G1r5fhZwpW7ExCCX7mC00qUo46Spy+RI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 17:02:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cc62v5w9r1"
+        },
+        {
+          "Name": "label",
+          "Value": "PageScripts/ThongTinCaNhanChuyenGia.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nH9iJNx5Mc5G1r5fhZwpW7ExCCX7mC00qUo46Spy+RI="
+        }
+      ]
+    },
+    {
+      "Route": "PageScripts/ThongTinCaNhanChuyenGia.js",
+      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\ThongTinCaNhanChuyenGia.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20816"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nH9iJNx5Mc5G1r5fhZwpW7ExCCX7mC00qUo46Spy+RI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 17:02:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-nH9iJNx5Mc5G1r5fhZwpW7ExCCX7mC00qUo46Spy+RI="
         }
       ]
     },
@@ -33934,6 +34161,88 @@
       ]
     },
     {
+      "Route": "upload/BenhNhan/18-bi-quyet-giam-cang-thang-lo-au-giup-ban-thu-gian-tot-nhat-4_1747415032.jpg",
+      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\BenhNhan\\18-bi-quyet-giam-cang-thang-lo-au-giup-ban-thu-gian-tot-nhat-4_1747415032.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "34354"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"z7UErCmfQO1EXbkxOZA6J36+TIA4D4I8H6UPelGzmI8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 17:03:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-z7UErCmfQO1EXbkxOZA6J36+TIA4D4I8H6UPelGzmI8="
+        }
+      ]
+    },
+    {
+      "Route": "upload/BenhNhan/18-bi-quyet-giam-cang-thang-lo-au-giup-ban-thu-gian-tot-nhat-4_1747415032.z3c6v5s7fe.jpg",
+      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\BenhNhan\\18-bi-quyet-giam-cang-thang-lo-au-giup-ban-thu-gian-tot-nhat-4_1747415032.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "34354"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"z7UErCmfQO1EXbkxOZA6J36+TIA4D4I8H6UPelGzmI8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 17:03:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "z3c6v5s7fe"
+        },
+        {
+          "Name": "label",
+          "Value": "upload/BenhNhan/18-bi-quyet-giam-cang-thang-lo-au-giup-ban-thu-gian-tot-nhat-4_1747415032.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-z7UErCmfQO1EXbkxOZA6J36+TIA4D4I8H6UPelGzmI8="
+        }
+      ]
+    },
+    {
       "Route": "upload/BenhNhan/25bf4d9f-ce4a-4985-bd86-8b40f276d967.jpg",
       "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\BenhNhan\\25bf4d9f-ce4a-4985-bd86-8b40f276d967.jpg",
       "Selectors": [],
@@ -34016,88 +34325,6 @@
       ]
     },
     {
-      "Route": "upload/BenhNhan/z6576553943492_fb32e47726557a75789c006ecf6c5f33_1746589881.gkmyb2v2mt.jpg",
-      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\BenhNhan\\z6576553943492_fb32e47726557a75789c006ecf6c5f33_1746589881.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "224850"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"wEnh5+0qo6wBQd3nrfH6I9BiMx8ITYNs6Uaj3Ie/2wc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 07 May 2025 03:51:21 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "gkmyb2v2mt"
-        },
-        {
-          "Name": "label",
-          "Value": "upload/BenhNhan/z6576553943492_fb32e47726557a75789c006ecf6c5f33_1746589881.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-wEnh5+0qo6wBQd3nrfH6I9BiMx8ITYNs6Uaj3Ie/2wc="
-        }
-      ]
-    },
-    {
-      "Route": "upload/BenhNhan/z6576553943492_fb32e47726557a75789c006ecf6c5f33_1746589881.jpg",
-      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\BenhNhan\\z6576553943492_fb32e47726557a75789c006ecf6c5f33_1746589881.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "224850"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"wEnh5+0qo6wBQd3nrfH6I9BiMx8ITYNs6Uaj3Ie/2wc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 07 May 2025 03:51:21 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-wEnh5+0qo6wBQd3nrfH6I9BiMx8ITYNs6Uaj3Ie/2wc="
-        }
-      ]
-    },
-    {
       "Route": "upload/Blog/4c42a82b-834b-4de0-80f2-da7956063395_images.9hre4i90zq.jpg",
       "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\Blog\\4c42a82b-834b-4de0-80f2-da7956063395_images.jpg",
       "Selectors": [],
@@ -34176,6 +34403,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-nR5THdxc7B8oLbWmaEo4RvFbRyK1BvbsYu79ytskWWo="
+        }
+      ]
+    },
+    {
+      "Route": "upload/ChungChi/18-bi-quyet-giam-cang-thang-lo-au-giup-ban-thu-gian-tot-nhat-4_1747494877749.jpg",
+      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\ChungChi\\18-bi-quyet-giam-cang-thang-lo-au-giup-ban-thu-gian-tot-nhat-4_1747494877749.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "34354"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"z7UErCmfQO1EXbkxOZA6J36+TIA4D4I8H6UPelGzmI8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 15:14:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-z7UErCmfQO1EXbkxOZA6J36+TIA4D4I8H6UPelGzmI8="
+        }
+      ]
+    },
+    {
+      "Route": "upload/ChungChi/18-bi-quyet-giam-cang-thang-lo-au-giup-ban-thu-gian-tot-nhat-4_1747494877749.z3c6v5s7fe.jpg",
+      "AssetFile": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\ChungChi\\18-bi-quyet-giam-cang-thang-lo-au-giup-ban-thu-gian-tot-nhat-4_1747494877749.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "34354"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"z7UErCmfQO1EXbkxOZA6J36+TIA4D4I8H6UPelGzmI8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 15:14:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "z3c6v5s7fe"
+        },
+        {
+          "Name": "label",
+          "Value": "upload/ChungChi/18-bi-quyet-giam-cang-thang-lo-au-giup-ban-thu-gian-tot-nhat-4_1747494877749.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-z7UErCmfQO1EXbkxOZA6J36+TIA4D4I8H6UPelGzmI8="
         }
       ]
     },

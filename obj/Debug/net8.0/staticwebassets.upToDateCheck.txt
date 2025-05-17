@@ -201,6 +201,8 @@ wwwroot\PageScripts\QuanLyHeThong.js
 wwwroot\PageScripts\QuanLyLichKham.js
 wwwroot\PageScripts\QuanLyThanhToan.js
 wwwroot\PageScripts\ThongKe.js
+wwwroot\PageScripts\ThongTinCaNhanBenhNhan.js
+wwwroot\PageScripts\ThongTinCaNhanChuyenGia.js
 wwwroot\scss\bootstrap.scss
 wwwroot\scss\bootstrap\scss\_accordion.scss
 wwwroot\scss\bootstrap\scss\_alert.scss
@@ -287,9 +289,10 @@ wwwroot\upload\BaiViet\_MG_8932(1)_1746505617.jpg
 wwwroot\upload\BaiViet\18-bi-quyet-giam-cang-thang-lo-au-giup-ban-thu-gian-tot-nhat-4_1747128365.jpg
 wwwroot\upload\BaiViet\7-ky-thuat-hit-tho-sau-giam-cang-thang-hieu-qua-ngay-lap-tuc-1_1747128279.jpg
 wwwroot\upload\BaiViet\tam ly hoc sinh_1746504825.png
+wwwroot\upload\BenhNhan\18-bi-quyet-giam-cang-thang-lo-au-giup-ban-thu-gian-tot-nhat-4_1747415032.jpg
 wwwroot\upload\BenhNhan\25bf4d9f-ce4a-4985-bd86-8b40f276d967.jpg
-wwwroot\upload\BenhNhan\z6576553943492_fb32e47726557a75789c006ecf6c5f33_1746589881.jpg
 wwwroot\upload\Blog\4c42a82b-834b-4de0-80f2-da7956063395_images.jpg
+wwwroot\upload\ChungChi\18-bi-quyet-giam-cang-thang-lo-au-giup-ban-thu-gian-tot-nhat-4_1747494877749.jpg
 wwwroot\upload\ChuyenGia\6a4bdccc-2a07-427b-8c17-dc5626deec63.jpg
 wwwroot\upload\ChuyenGia\7898b7fd-92d6-47a8-9deb-8df6e77aaed9.jpg
 wwwroot\upload\ChuyenGia\anh-bac-si_1746588725.jpg

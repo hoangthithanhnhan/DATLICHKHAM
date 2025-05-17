@@ -97,6 +97,14 @@
       "PackagePath": "staticwebassets\\PageScripts\\ThongKe.js"
     },
     {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\ThongTinCaNhanBenhNhan.js",
+      "PackagePath": "staticwebassets\\PageScripts\\ThongTinCaNhanBenhNhan.js"
+    },
+    {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\PageScripts\\ThongTinCaNhanChuyenGia.js",
+      "PackagePath": "staticwebassets\\PageScripts\\ThongTinCaNhanChuyenGia.js"
+    },
+    {
       "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\css\\base.css",
       "PackagePath": "staticwebassets\\css\\base.css"
     },
@@ -1161,16 +1169,20 @@
       "PackagePath": "staticwebassets\\upload\\BaiViet\\tam ly hoc sinh_1746504825.png"
     },
     {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\BenhNhan\\18-bi-quyet-giam-cang-thang-lo-au-giup-ban-thu-gian-tot-nhat-4_1747415032.jpg",
+      "PackagePath": "staticwebassets\\upload\\BenhNhan\\18-bi-quyet-giam-cang-thang-lo-au-giup-ban-thu-gian-tot-nhat-4_1747415032.jpg"
+    },
+    {
       "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\BenhNhan\\25bf4d9f-ce4a-4985-bd86-8b40f276d967.jpg",
       "PackagePath": "staticwebassets\\upload\\BenhNhan\\25bf4d9f-ce4a-4985-bd86-8b40f276d967.jpg"
     },
     {
-      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\BenhNhan\\z6576553943492_fb32e47726557a75789c006ecf6c5f33_1746589881.jpg",
-      "PackagePath": "staticwebassets\\upload\\BenhNhan\\z6576553943492_fb32e47726557a75789c006ecf6c5f33_1746589881.jpg"
-    },
-    {
       "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\Blog\\4c42a82b-834b-4de0-80f2-da7956063395_images.jpg",
       "PackagePath": "staticwebassets\\upload\\Blog\\4c42a82b-834b-4de0-80f2-da7956063395_images.jpg"
+    },
+    {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\ChungChi\\18-bi-quyet-giam-cang-thang-lo-au-giup-ban-thu-gian-tot-nhat-4_1747494877749.jpg",
+      "PackagePath": "staticwebassets\\upload\\ChungChi\\18-bi-quyet-giam-cang-thang-lo-au-giup-ban-thu-gian-tot-nhat-4_1747494877749.jpg"
     },
     {
       "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\ChuyenGia\\6a4bdccc-2a07-427b-8c17-dc5626deec63.jpg",

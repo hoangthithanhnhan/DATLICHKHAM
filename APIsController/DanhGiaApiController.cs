@@ -20,6 +20,14 @@ namespace DATLICHKHAM.APIsController
             return await Mediator.Send(new Gets.Query { Filter = filter });
         }
 
+        [HttpGet]
+        [Route("GetsTop3DanhGia")]
+        public async Task<Result<IEnumerable<DLK_DanhGia>>> GetsTop3DanhGia()
+        {
+            return await Mediator.Send(new GetsTop3DanhGia.Query());
+        }
+
+
         [HttpPost]
         [Route("Add")]
         public async Task<Result<DLK_DanhGia>> Add(DLK_DanhGiaAdd Entity)

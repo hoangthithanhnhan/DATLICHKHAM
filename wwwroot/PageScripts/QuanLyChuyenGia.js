@@ -21,7 +21,6 @@ $(document).ready(function () {
             if (data && data.isSuccess) {
                 if (data.value && data.value.length > 0) {
                     let html = "<option value=''>Chọn chuyên khoa</option>";
-
                     $.each(data.value, function (index, item) {
                         html += `<option value="${item.maChuyenKhoa}">${item.tenChuyenKhoa}</option>`;
                     });
@@ -43,9 +42,10 @@ $(document).ready(function () {
     })
     
     $.ajax({
-        url: APIURL + `/api/DichVuApi/Gets?trangThai=true`,
+        url: APIURL + `/api/DichVuApi/Gets`,
         type: "POST",
         contentType: "application/json; charset=utf-8",
+        data: JSON.stringify({ trangThai:true }),
         success: function (data) {
             if (data && data.isSuccess) {
                 if (data.value && data.value.length > 0) {
