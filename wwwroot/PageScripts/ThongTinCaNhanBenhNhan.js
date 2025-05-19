@@ -65,7 +65,8 @@ $(document).ready(function () {
             ngheNghiep: ngheNghiep,
             tinhTrangHonNhan: tinhTrangHonNhan,
             thuocDangDung: thuocDangDung,
-            ghiChuKhac: ghiChuKhac
+            ghiChuKhac: ghiChuKhac,
+            trangThai: Boolean(Number(1))
         }
         let formData = new FormData();
         formData.append("data", JSON.stringify(request));// dữ liệu dạng object
@@ -123,65 +124,65 @@ function renderThongTin(maBenhNhan) {
 
                     <div class='row w-100'>
                         <div class='col-6'>
-                            <p class="heading">Họ và tên</p>
+                            <p class="heading"><i class="fa-solid fa-user"></i> Họ và tên</p>
                             <p id="hoTen">${data.value.hoTen}</p>
                         </div>
                         <div class='col-6'>
-                            <p class="heading">Giới tính</p>
+                            <p class="heading"><i class="fa-solid fa-venus-mars"></i> Giới tính</p>
                             <p id="gioiTinh" data-gt=${data.value.gioiTinh}>${data.value.gioiTinh == 1 ? "Nữ" : data.value.gioiTinh == 0 ? "Nam" : "Khác"}</p>
                         </div>
                     </div>
                     <div class='row w-100'>
                         <div class='col-6'>
-                            <p class="heading">Ngày sinh</p>
+                            <p class="heading"><i class="fa-solid fa-calendar-day"></i> Ngày sinh</p>
                             <p id="ngaySinh">${formatDate(data.value.ngaySinh)}</p >
                         </div>
                         <div class='col-6'>
-                            <p class="heading">Số điện thoại</span>
+                            <p class="heading"><i class="fa-solid fa-phone"></i> Số điện thoại</span>
                             <p id="soDienThoai">${data.value.soDienThoai}</p>
                         </div>
                     </div>
                     <div class='row w-100'>
                         <div class='col-6'>
-                            <p class="heading">Email</p>
+                            <p class="heading"><i class="fa-solid fa-envelope"></i> Email</p>
                             <p id="email">${data.value.email}</p >
                         </div>
                         <div class='col-6'>
-                            <p class="heading">Địa chỉ</span>
+                            <p class="heading"><i class="fa-solid fa-location-dot"></i> Địa chỉ</span>
                             <p id="diaChi">${data.value.diaChi}</p>
                         </div>
                     </div>
                     <div class='row w-100'>
                         <div class='col-6'>
-                            <p class="heading">Nghề nghiệp</p>
+                            <p class="heading"><i class="fa-solid fa-briefcase"></i> Nghề nghiệp</p>
                             <p id="ngheNghiep">${data.value.ngheNghiep}</p >
                         </div>
                         <div class='col-6'>
-                            <p class="heading">Tình trạng hôn nhân</span>
+                            <p class="heading"><i class="fa-solid fa-ring"></i> Tình trạng hôn nhân</span>
                             <p id="tinhTrangHonNhan">${data.value.tinhTrangHonNhan}</p>
                         </div>
                     </div>
                     <div class='row w-100'>
                         <div class='col'>
-                            <p class="heading">Tiền sử bệnh</p>
+                            <p class="heading"><i class="fa-solid fa-notes-medical"></i> Tiền sử bệnh</p>
                             <p id="tienSuBenh">${data.value.tienSuBenh}</p >
                         </div>
                     </div>
                     <div class='row w-100'>
                         <div class='col'>
-                            <p class="heading">Thói quen sinh hoạt</p>
+                            <p class="heading"><i class="fa-solid fa-person-walking"></i> Thói quen sinh hoạt</p>
                             <p id="thoiQuenSinhHoat">${data.value.thoiQuenSinhHoat}</p >
                         </div>
                     </div>
                     <div class='row w-100'>
                         <div class='col'>
-                            <p class="heading">Thuốc đang dùng</p>
+                            <p class="heading"><i class="fa-solid fa-capsules"></i> Thuốc đang dùng</p>
                             <p id="thuocDangDung">${data.value.thuocDangDung}</p >
                         </div>
                     </div>
                     <div class='row w-100'>
                         <div class='col'>
-                            <p class="heading">Ghi chú khác</p>
+                            <p class="heading"><i class="fa-solid fa-pen-to-square"></i> Ghi chú khác</p>
                             <p id="ghiChuKhac">${data.value.ghiChuKhac}</p >
                         </div>
                     </div>

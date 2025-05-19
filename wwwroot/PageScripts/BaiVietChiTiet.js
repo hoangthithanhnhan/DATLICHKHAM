@@ -27,7 +27,7 @@
                     dataType: 'json',
                     success: function (res) {
                         if (res && res.value && res.value.length > 0) {
-                            let html = '<h4>Các bài viết liên quan</h4> <div><ul>';
+                            let html = '<h4><i class="fa-solid fa-file-lines"></i> Các bài viết liên quan</h4> <div><ul>';
                             $.each(res.value, function (index, item) {
                                 if (item.maBaiViet != data.value.maBaiViet) {
                                     html += `

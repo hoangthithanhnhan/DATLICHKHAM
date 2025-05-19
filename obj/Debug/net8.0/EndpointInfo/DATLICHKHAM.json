@@ -3089,47 +3089,17 @@
         }
       }
     },
-    "/api/ThongTinChanDoanApi/Gets": {
+    "/api/TaiKhoanApi/Gets": {
       "get": {
         "tags": [
-          "ThongTinChanDoanApi"
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/DLK_ThongTinChanDoanIEnumerableResult"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/DLK_ThongTinChanDoanIEnumerableResult"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/DLK_ThongTinChanDoanIEnumerableResult"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/api/ThongTinChanDoanApi/Get": {
-      "get": {
-        "tags": [
-          "ThongTinChanDoanApi"
+          "TaiKhoanApi"
         ],
         "parameters": [
           {
-            "name": "MaChanDoan",
+            "name": "Keyword",
             "in": "query",
             "schema": {
-              "type": "integer",
-              "format": "int32"
+              "type": "string"
             }
           }
         ],
@@ -3139,17 +3109,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/DLK_ThongTinChanDoanResult"
+                  "$ref": "#/components/schemas/AppUserIEnumerableResult"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/DLK_ThongTinChanDoanResult"
+                  "$ref": "#/components/schemas/AppUserIEnumerableResult"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/DLK_ThongTinChanDoanResult"
+                  "$ref": "#/components/schemas/AppUserIEnumerableResult"
                 }
               }
             }
@@ -3157,74 +3127,26 @@
         }
       }
     },
-    "/api/ThongTinChanDoanApi/Add": {
-      "post": {
-        "tags": [
-          "ThongTinChanDoanApi"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/DLK_ThongTinChanDoanAdd"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/DLK_ThongTinChanDoanAdd"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/DLK_ThongTinChanDoanAdd"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/DLK_ThongTinChanDoanResult"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/DLK_ThongTinChanDoanResult"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/DLK_ThongTinChanDoanResult"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/api/ThongTinChanDoanApi/Update": {
+    "/api/TaiKhoanApi/UpdateStatus": {
       "put": {
         "tags": [
-          "ThongTinChanDoanApi"
+          "TaiKhoanApi"
         ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/DLK_ThongTinChanDoan"
+                "$ref": "#/components/schemas/AppUser"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/DLK_ThongTinChanDoan"
+                "$ref": "#/components/schemas/AppUser"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/DLK_ThongTinChanDoan"
+                "$ref": "#/components/schemas/AppUser"
               }
             }
           }
@@ -3235,17 +3157,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/DLK_ThongTinChanDoanResult"
+                  "$ref": "#/components/schemas/Int32Result"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/DLK_ThongTinChanDoanResult"
+                  "$ref": "#/components/schemas/Int32Result"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/DLK_ThongTinChanDoanResult"
+                  "$ref": "#/components/schemas/Int32Result"
                 }
               }
             }
@@ -3253,14 +3175,43 @@
         }
       }
     },
-    "/api/ThongTinChanDoanApi/Delete": {
-      "delete": {
+    "/api/ThongKeApi/ThongKe_TongQuat": {
+      "get": {
         "tags": [
-          "ThongTinChanDoanApi"
+          "ThongKeApi"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ThongKeResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ThongKeResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DLK_ThongKeResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ThongKeApi/ThongKe_DoanhThu": {
+      "get": {
+        "tags": [
+          "ThongKeApi"
         ],
         "parameters": [
           {
-            "name": "MaChanDoan",
+            "name": "Nam",
             "in": "query",
             "schema": {
               "type": "integer",
@@ -3274,17 +3225,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/Int32Result"
+                  "$ref": "#/components/schemas/DLK_ThongKe_DoanhThuIEnumerableResult"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Int32Result"
+                  "$ref": "#/components/schemas/DLK_ThongKe_DoanhThuIEnumerableResult"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Int32Result"
+                  "$ref": "#/components/schemas/DLK_ThongKe_DoanhThuIEnumerableResult"
                 }
               }
             }
@@ -3327,6 +3278,122 @@
   },
   "components": {
     "schemas": {
+      "AppUser": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "userName": {
+            "type": "string",
+            "nullable": true
+          },
+          "normalizedUserName": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "normalizedEmail": {
+            "type": "string",
+            "nullable": true
+          },
+          "emailConfirmed": {
+            "type": "boolean"
+          },
+          "passwordHash": {
+            "type": "string",
+            "nullable": true
+          },
+          "securityStamp": {
+            "type": "string",
+            "nullable": true
+          },
+          "concurrencyStamp": {
+            "type": "string",
+            "nullable": true
+          },
+          "phoneNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "phoneNumberConfirmed": {
+            "type": "boolean"
+          },
+          "twoFactorEnabled": {
+            "type": "boolean"
+          },
+          "lockoutEnd": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "lockoutEnabled": {
+            "type": "boolean"
+          },
+          "accessFailedCount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "displayName": {
+            "type": "string",
+            "nullable": true
+          },
+          "bio": {
+            "type": "string",
+            "nullable": true
+          },
+          "address": {
+            "type": "string",
+            "nullable": true
+          },
+          "avatar": {
+            "type": "string",
+            "nullable": true
+          },
+          "groupId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "chucDanhId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "isEnabled": {
+            "type": "boolean"
+          },
+          "vaiTro": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "AppUserIEnumerableResult": {
+        "type": "object",
+        "properties": {
+          "isSuccess": {
+            "type": "boolean"
+          },
+          "value": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AppUser"
+            },
+            "nullable": true
+          },
+          "error": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "DLK_BaiViet": {
         "type": "object",
         "properties": {
@@ -4568,66 +4635,36 @@
         },
         "additionalProperties": false
       },
-      "DLK_ThongTinChanDoan": {
+      "DLK_ThongKe": {
         "type": "object",
         "properties": {
-          "maChanDoan": {
+          "tongSoBenhNhan": {
             "type": "integer",
             "format": "int32"
           },
-          "maLichHen": {
+          "tongSoChuyenGia": {
             "type": "integer",
             "format": "int32"
           },
-          "tinhTrangHienTai": {
-            "type": "string",
-            "nullable": true
+          "tongSoLichHen": {
+            "type": "integer",
+            "format": "int32"
           },
-          "chanDoan": {
-            "type": "string",
-            "nullable": true
-          },
-          "huongDieuTri": {
-            "type": "string",
-            "nullable": true
+          "lichHenHomNay": {
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false
       },
-      "DLK_ThongTinChanDoanAdd": {
-        "type": "object",
-        "properties": {
-          "maLichHen": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "tinhTrangHienTai": {
-            "type": "string",
-            "nullable": true
-          },
-          "chanDoan": {
-            "type": "string",
-            "nullable": true
-          },
-          "huongDieuTri": {
-            "type": "string",
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "DLK_ThongTinChanDoanIEnumerableResult": {
+      "DLK_ThongKeResult": {
         "type": "object",
         "properties": {
           "isSuccess": {
             "type": "boolean"
           },
           "value": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/DLK_ThongTinChanDoan"
-            },
-            "nullable": true
+            "$ref": "#/components/schemas/DLK_ThongKe"
           },
           "error": {
             "type": "string",
@@ -4636,14 +4673,32 @@
         },
         "additionalProperties": false
       },
-      "DLK_ThongTinChanDoanResult": {
+      "DLK_ThongKe_DoanhThu": {
+        "type": "object",
+        "properties": {
+          "thang": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tongDoanhThu": {
+            "type": "number",
+            "format": "float"
+          }
+        },
+        "additionalProperties": false
+      },
+      "DLK_ThongKe_DoanhThuIEnumerableResult": {
         "type": "object",
         "properties": {
           "isSuccess": {
             "type": "boolean"
           },
           "value": {
-            "$ref": "#/components/schemas/DLK_ThongTinChanDoan"
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DLK_ThongKe_DoanhThu"
+            },
+            "nullable": true
           },
           "error": {
             "type": "string",

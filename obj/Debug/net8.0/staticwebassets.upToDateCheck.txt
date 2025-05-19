@@ -36,6 +36,7 @@ wwwroot\images\introchuyengia.jpg
 wwwroot\images\introdichvu.jpg
 wwwroot\images\introphongkham.jpg
 wwwroot\images\introtongquan.jpg
+wwwroot\images\lock.png
 wwwroot\images\logo.jpg
 wwwroot\images\mess.png
 wwwroot\images\null.png
@@ -54,6 +55,7 @@ wwwroot\images\star.png
 wwwroot\images\star-null.png
 wwwroot\images\thongke.png
 wwwroot\images\thongke1.png
+wwwroot\images\unlock.png
 wwwroot\images\user.png
 wwwroot\images\view-detail.png
 wwwroot\images\view-image.png
@@ -61,6 +63,9 @@ wwwroot\js\main.js
 wwwroot\js\site.js
 wwwroot\lib\adminlte\adminlte.min.css
 wwwroot\lib\adminlte\adminlte.min.js
+wwwroot\lib\adminlte\chart.js
+wwwroot\lib\adminlte\chart.min.js
+wwwroot\lib\adminlte\dashboard.min.js
 wwwroot\lib\animate\animate.css
 wwwroot\lib\animate\animate.min.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
@@ -285,14 +290,21 @@ wwwroot\scss\bootstrap\scss\mixins\_utilities.scss
 wwwroot\scss\bootstrap\scss\mixins\_visually-hidden.scss
 wwwroot\scss\bootstrap\scss\utilities\_api.scss
 wwwroot\scss\bootstrap\scss\vendor\_rfs.scss
-wwwroot\upload\BaiViet\_MG_8932(1)_1746505617.jpg
-wwwroot\upload\BaiViet\18-bi-quyet-giam-cang-thang-lo-au-giup-ban-thu-gian-tot-nhat-4_1747128365.jpg
-wwwroot\upload\BaiViet\7-ky-thuat-hit-tho-sau-giam-cang-thang-hieu-qua-ngay-lap-tuc-1_1747128279.jpg
-wwwroot\upload\BaiViet\tam ly hoc sinh_1746504825.png
+wwwroot\upload\BaiViet\1cdf01cf-d59d-4743-a1f3-7e84c9caa78f_1747579271.png
+wwwroot\upload\BaiViet\211_1747579649.png
+wwwroot\upload\BaiViet\5f87b978-9d61-4315-b630-ffbf7ddbd285_1747579364.png
+wwwroot\upload\BaiViet\7bf4faf5-2dce-479c-b6d9-034c98746f9e_1747579431.png
+wwwroot\upload\BaiViet\82a85774-2b7a-473c-9cce-726597a65645_1747579180.png
+wwwroot\upload\BaiViet\8d59ece9-63a3-4d26-95f4-21dc8230708e_1747579767.png
+wwwroot\upload\BaiViet\9feff8f9-7abb-4e4c-9b0d-4e8bb40de82b_1747579513.png
+wwwroot\upload\BaiViet\ef0254cb-cd56-4e90-8382-de7031328ad1_1747579032.png
+wwwroot\upload\BaiViet\khung-hoang-tien-hon-nhan-2_1747578823.jpg
+wwwroot\upload\BaiViet\roi-loan-phan-ly-3_1747578731.jpg
 wwwroot\upload\BenhNhan\18-bi-quyet-giam-cang-thang-lo-au-giup-ban-thu-gian-tot-nhat-4_1747415032.jpg
 wwwroot\upload\BenhNhan\25bf4d9f-ce4a-4985-bd86-8b40f276d967.jpg
 wwwroot\upload\Blog\4c42a82b-834b-4de0-80f2-da7956063395_images.jpg
-wwwroot\upload\ChungChi\18-bi-quyet-giam-cang-thang-lo-au-giup-ban-thu-gian-tot-nhat-4_1747494877749.jpg
+wwwroot\upload\ChungChi\7-ky-thuat-hit-tho-sau-giam-cang-thang-hieu-qua-ngay-lap-tuc-1_174755616234.jpg
+wwwroot\upload\ChuyenGia\27-04-2021-nu-bac-si-tre-voi-niem-dam-me-nghien-cuu-khoa-hoc-3BF6CE8_1747555979.jpg
 wwwroot\upload\ChuyenGia\6a4bdccc-2a07-427b-8c17-dc5626deec63.jpg
 wwwroot\upload\ChuyenGia\7898b7fd-92d6-47a8-9deb-8df6e77aaed9.jpg
 wwwroot\upload\ChuyenGia\anh-bac-si_1746588725.jpg
@@ -300,7 +312,6 @@ wwwroot\upload\ChuyenGia\b97e9f5b-b58b-4827-8382-17b3f19e277e.jpg
 wwwroot\upload\ChuyenGia\de0d718a-e05f-4b22-88cb-e9ca9f2405ec.jpg
 wwwroot\upload\ChuyenGia\ffc3e29b-6628-4c60-9f36-4726c39579aa.jpg
 wwwroot\upload\ChuyenMuc\103785348_145313730492932_5772214164823743607_o-2_1746503735.png
-wwwroot\upload\ChuyenMuc\1-tri-lieu-tam-ly-shutterstock-5870_1746503705.jpeg
 wwwroot\upload\ChuyenMuc\20190622_042043_347343_phong_kham_tam_ly_2_max_1800x1800_jpg_762fae02b8_1746503529.jpg
 wwwroot\upload\ChuyenMuc\8ca08d6c-bf7e-4bc6-8a3b-9527c1293d48_1746503679.png
 wwwroot\upload\ChuyenMuc\images_1746503611.jpg

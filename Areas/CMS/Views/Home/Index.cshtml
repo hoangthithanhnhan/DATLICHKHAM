@@ -5,6 +5,33 @@
 }
 
 <div class="content">
+    <div class="row" id="thongKeTongQuat">
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card card-info">
+                <div class="card-header">
+                    <h3 class="card-title fw-bold">Thống kê doanh thu theo tháng</h3>
+                    <div class="card-tools">
+                        <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                            <i class="fas fa-minus"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="chart">
+                        <div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+                        <canvas id="doanhThuChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%; display: block; width: 348px;" width="435" height="312" class="chartjs-render-monitor"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@* <div class="content">
     @await Html.PartialAsync("Common/_Filter")
     <table class="table table-border" id="lichHen">
         <thead>
@@ -49,7 +76,7 @@
         </thead>
     </table>
 </div>
-
+ *@
 
 
 @section Scripts {

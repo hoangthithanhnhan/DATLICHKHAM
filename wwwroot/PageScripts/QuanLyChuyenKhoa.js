@@ -100,7 +100,8 @@ $(document).ready(function () {
                 contentType: "application/json; charset=utf-8",
                 data: JSON.stringify(request),
                 success: function (data) {
-                    $('#myTable').DataTable().ajax.reload();
+                    let keyword = $("#search").val();
+                    $('#myTable').DataTable().ajax.url(APIURL + `/api/ChuyenKhoaApi/Gets?filter=${keyword}`).load();
                     $('#modalAdd').modal('hide'); 
                     showAlert("Thêm thành công", "success");
                     //Làm rỗng form sau khi thêm mới
@@ -141,7 +142,8 @@ $(document).ready(function () {
                 contentType: "application/json; charset=utf-8",
                 data: JSON.stringify(request),
                 success: function (data) {
-                    $('#myTable').DataTable().ajax.reload();
+                    let keyword = $("#search").val();
+                    $('#myTable').DataTable().ajax.url(APIURL + `/api/ChuyenKhoaApi/Gets?filter=${keyword}`).load();
                     $('#modalEdit').modal('hide');
                     showAlert("Cập nhật thành công", "success");
                 },
@@ -166,7 +168,8 @@ $(document).ready(function () {
             url: APIURL + `/api/ChuyenKhoaApi/Delete?maChuyenKhoa=${maChuyenKhoa}`,
             contentType: "application/json; charset=utf-8",
             success: function (data) {
-                $('#myTable').DataTable().ajax.reload();
+                let keyword = $("#search").val();
+                $('#myTable').DataTable().ajax.url(APIURL + `/api/ChuyenKhoaApi/Gets?filter=${keyword}`).load();
                 $('#modalDelete').modal('hide');
                 if (data && data.isSuccess) { 
                     showAlert("Xóa thành công", "success");

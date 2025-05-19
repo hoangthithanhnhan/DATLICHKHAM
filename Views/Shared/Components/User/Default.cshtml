@@ -24,7 +24,7 @@ else
         @if(ViewBag.VaiTro == 1)
         {
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
-                <li><a class="dropdown-item" asp-controller="ThongTinCaNhanChuyenGia" asp-action="Index"><i class="fa fa-user"></i> Thông tin cá nhân</a></li>
+                <li><a class="dropdown-item" asp-controller="ThongTinCaNhan" asp-action="Index"><i class="fa fa-user"></i> Thông tin cá nhân</a></li>
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" asp-controller="LichKham" asp-action="Index"><i class="fa fa-calendar"></i> Quản lý lịch khám</a></li>
                 <li><hr class="dropdown-divider"></li>
@@ -34,10 +34,13 @@ else
         else
         {
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
-                <li><a class="dropdown-item" asp-controller="ThongTinCaNhanBenhNhan" asp-action="Index"><i class="fa fa-user"></i> Thông tin cá nhân</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" asp-controller="LichHenCaNhan" asp-action="Index"><i class="fa fa-calendar"></i> Quản lý lịch hẹn</a></li>
-                <li><hr class="dropdown-divider"></li>
+                @if (ViewBag.VaiTro == 2)
+                {
+                    <li><a class="dropdown-item" asp-controller="ThongTinCaNhan" asp-action="Index"><i class="fa fa-user"></i> Thông tin cá nhân</a></li>
+                    <li><hr class="dropdown-divider"></li>                    
+                    <li><a class="dropdown-item" asp-controller="LichHenCaNhan" asp-action="Index"><i class="fa fa-calendar"></i> Quản lý lịch hẹn</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                }
                 <li><a class="dropdown-item" asp-action="Logout" asp-controller="Home"><i class="fa fa-sign-out-alt"></i> Đăng xuất</a></li>
             </ul>
         }

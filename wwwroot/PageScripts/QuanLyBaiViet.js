@@ -93,20 +93,20 @@ $(document).ready(function () {
         },
         "columnDefs": [
             {
-                targets: 2,
+                targets: 3,
                 render: function (data, type, row, meta) {
                     return formatTime(data) + "<br>" +formatDate(data)
                 }
             },
             {
-                targets: 3,
+                targets: 4,
                 render: function (data, type, row, meta) {
                     return data == 1 ? "<span class='text-pink'>Xuất bản</span>" : "<span class='text-blue'>Nháp</span>";
 
                 }
             },
             {
-                targets: 4,
+                targets: 5,
                 render: function (data, type, row, meta) {
                     return `<button type="button" data-id="${meta.row}" class="button btn-update">
                                 <img src="../images/edit_filled.png" alt="Alternate Text" />
@@ -120,7 +120,8 @@ $(document).ready(function () {
         ],
         "columns": [
             { data: "stt", "width": "60px", "className": "text-center" },
-            { data: "tieuDe", "width": "850px", "className": "fw-bold" },
+            { data: "tieuDe", "width": "650px", "className": "fw-bold" },
+            { data: "tenChuyenMuc", "width": "250px", "className": "" },
             { data: "thoiGianDangBai", "width": "250px", "className": "text-center" },
             { data: "trangThai", "width": "200px", "className": "text-center fw-bold" },
             { data: "maBaiViet", "width": "auto", "className": "text-center" }
@@ -227,6 +228,7 @@ $(document).ready(function () {
             noiDung: noiDung,
             trangThai: Boolean(Number(trangThai))
         }
+        console.log(request)
         let formData = new FormData();
         formData.append("data", JSON.stringify(request)); // dữ liệu dạng object
         if (file) {

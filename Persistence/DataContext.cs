@@ -7,6 +7,8 @@ namespace DATLICHKHAM.Persistence
 {
     public class DataContext : IdentityDbContext<AppUser, AppRole, Int64>
     {
+        internal readonly object BenhNhan;
+
         public DataContext(DbContextOptions options) : base(options)
         {
 

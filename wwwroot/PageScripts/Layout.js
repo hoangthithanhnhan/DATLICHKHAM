@@ -3,7 +3,6 @@
 $(document).ready(function () {
     let URL = window.location.pathname;
     $('.nav-sidebar .nav-link').each(function () {
-        console.log($(this).attr('href'));
         if ($(this).attr('href') == URL) {
             $(this).addClass('active');
             $(this).parents('.nav-item').addClass('menu-open');

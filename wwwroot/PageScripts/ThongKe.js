@@ -1,169 +1,122 @@
-﻿$(document).ready(function () {
-    let data = [
-        {
-            "stt": 1,
-            "MaLichHen": 1,
-            "ThoiGianHen": "07:00 - 08:00",
-            "MaBenhNhan": 1,
-            "TenBenhNhan": "Thanh Nn",
-            "TenBacSi": "Võ Lê Bá Tùng",
-            "HinhThucKham": 0,
-            "TrangThai": 1,
-            "LyDoHuyLich": null,
-            "ChucDanh": "TS. BS.",
-            "NgayHen": "2025-03-12 10:09:07.4500000",
-            "SoSao": 4,
-            "NoiDung": "Mình rất thích cách trang web này hoạt động. Giao diện dễ hiểu, đặt lịch nhanh chóng mà không cần gọi điện. Ngoài ra, tính năng nhắc nhở lịch khám giúp mình không bị quên. Tuy nhiên, nếu có thêm thông báo qua SMS thì sẽ tiện hơn.",
-            "ThoiGianDanhGia": "2025-03-12 10:09:07.4500000",
-            "ChucVu": "Chuyên viên tư vấn",
-            "ChuyenKhoa": "Tâm lý học lâm sàng",
-            "NgayPhep": "2025-03-12 10:09:07.4500000",
-            "TongLichHen": 22,
-            "DaKham": 12,
-            "DaHuy": 2,
-            "ChoKham":2,
-            "DoanhThuTienMat": 2000,
-            "ChuyenKhoan": 5220,
-            "TongDoanhThu": 23924,
-            "SoCaKham": 13,
-            "SoCaHuy": 4234,
-            "DanhGiaTrungBinh":14324
+﻿let APIURL = window.location.origin;
+$(document).ready(function () {
+    $.ajax({
+        url: APIURL + `/api/ThongKeApi/ThongKe_TongQuat`,
+        type: "GET",
+        contentType: "application/json; charset=utf-8",
+        success: function (data) {
+            console.log(data);
+            if (data && data.value) {
+                let html = `
+                    <div class="col-lg-3 col-6">
+                        <div class="small-box bg-success">
+                            <div class="inner">
+                                <h3>${data.value.tongSoBenhNhan}</h3>
+                                <p class="fw-bold fs-5">Tổng số bệnh nhân</p>
+                            </div>  
+                            <div class="icon">
+                               <i class="fas fa-users"></i>
+                            </div>
+                            <a href="/cms/QuanLyBenhNhan" class="small-box-footer">Xem thêm <i class="fas fa-arrow-circle-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <div class="small-box bg-info">
+                            <div class="inner">
+                                <h3>${data.value.tongSoChuyenGia}</h3>
+                                <p class="fw-bold fs-5">Tổng số chuyên gia</p>
+                            </div>  
+                            <div class="icon">
+                               <i class="fas fa-user-md"></i>
+                            </div>
+                            <a href="/cms/QuanLyChuyenGia" class="small-box-footer">Xem thêm <i class="fas fa-arrow-circle-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <div class="small-box bg-warning">
+                            <div class="inner">
+                                <h3>${data.value.tongSoLichHen}</h3>
+                                <p class="fw-bold fs-5">Tổng số lịch hẹn</p>
+                            </div>  
+                            <div class="icon">
+                               <i class="fas fa-calendar-check"></i>
+                            </div>
+                            <a href="/cms/QuanLyLichKham" class="small-box-footer">Xem thêm <i class="fas fa-arrow-circle-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <div class="small-box bg-danger">
+                            <div class="inner">
+                                <h3>${data.value.lichHenHomNay}</h3>
+                                <p class="fw-bold fs-5">Lich hẹn hôm nay</p>
+                            </div>  
+                            <div class="icon">
+                               <i class="fas fa-calendar-day"></i>
+                            </div>
+                            <a href="/cms/QuanLyLichKham" class="small-box-footer">Xem thêm <i class="fas fa-arrow-circle-right"></i></a>
+                        </div>
+                    </div>
+                `;
+                $('#thongKeTongQuat').html(html);
+            }
         }
-    ]
-    $('#lichHen').DataTable({
-        dom: '<"top"f>rt<"bottom d-flex justify-content-end" lp>',
-        "pageLength": 10,
-        "autoWidth": false,
-        "ordering": false,
-        "bInfo": false,
-        "bDestroy": true,
-        searching: false,
-        lengthMenu: [
-            [10, 20, 50, 100],
-            [10, 20, 50, 100]
-        ],
-        language: {
-            "sProcessing": "Đang xử lý...",
-            "sLengthMenu": "_MENU_",
-            "sZeroRecords": "Không có dữ liệu",
-            "sEmptyTable": "Bảng trống",
-            "sInfo": "Hiện dòng _START_ đến _END_ trong tổng _TOTAL_ dòng",
-            "sInfoEmpty": "Hiện dòng 0 đến 0 trong tổng 0 dòng",
-            "sSearch": "Tìm kiếm",
-            "sLoadingRecords": "Đang tải...",
-            "paginate": {
-                "first": '<img src="../images/arrow_previous.png" />',
-                "previous": '<img src="../images/chevron_left.png" />',
-                "next": '<img src="../images/chevron_right.png" />',
-                "last": '<img src="../images/arrow_next.png" />'
-            }
-        },
-        "data": data,
-        "columnDefs": [
-            {
-                targets: 1,
-                render: function (data, type, row, meta) {
-                    return formatDate(data);
-                }
-            }
-        ],
-        "columns": [
-            { data: "stt", "width": "60px", "className": "text-center" },
-            { data: "NgayHen", "width": "350px", "className": "fw-bold text-center" },
-            { data: "TongLichHen", "width": "280px", "className": "text-right" },
-            { data: "DaKham", "width": "280px", "className": "text-right" },
-            { data: "DaHuy", "width": "280px", "className": "text-right" },
-            { data: "ChoKham", "width": "280px", "className": "text-right" }
-        ]
-    })
-    $('#doanhThu').DataTable({
-        dom: '<"top"f>rt<"bottom d-flex justify-content-end" lp>',
-        "pageLength": 10,
-        "autoWidth": false,
-        "ordering": false,
-        "bInfo": false,
-        "bDestroy": true,
-        searching: false,
-        lengthMenu: [
-            [10, 20, 50, 100],
-            [10, 20, 50, 100]
-        ],
-        language: {
-            "sProcessing": "Đang xử lý...",
-            "sLengthMenu": "_MENU_",
-            "sZeroRecords": "Không có dữ liệu",
-            "sEmptyTable": "Bảng trống",
-            "sInfo": "Hiện dòng _START_ đến _END_ trong tổng _TOTAL_ dòng",
-            "sInfoEmpty": "Hiện dòng 0 đến 0 trong tổng 0 dòng",
-            "sSearch": "Tìm kiếm",
-            "sLoadingRecords": "Đang tải...",
-            "paginate": {
-                "first": '<img src="../images/arrow_previous.png" />',
-                "previous": '<img src="../images/chevron_left.png" />',
-                "next": '<img src="../images/chevron_right.png" />',
-                "last": '<img src="../images/arrow_next.png" />'
-            }
-        },
-        "data": data,
-        "columnDefs": [
-            {
-                targets: 1,
-                render: function (data, type, row, meta) {
-                    return formatDate(data);
-                }
-            }
-        ],
-        "columns": [
-            { data: "stt", "width": "60px", "className": "text-center" },
-            { data: "NgayHen", "width": "350px", "className": "fw-bold text-center" },
-            { data: "DoanhThuTienMat", "width": "375px", "className": "text-right" },
-            { data: "ChuyenKhoan", "width": "375px", "className": "text-right" },
-            { data: "TongDoanhThu", "width": "auto", "className": "text-right" }
-        ]
-    })
-    $('#bacSi').DataTable({
-        dom: '<"top"f>rt<"bottom d-flex justify-content-end" lp>',
-        "pageLength": 10,
-        "autoWidth": false,
-        "ordering": false,
-        "bInfo": false,
-        "bDestroy": true,
-        searching: false,
-        lengthMenu: [
-            [10, 20, 50, 100],
-            [10, 20, 50, 100]
-        ],
-        language: {
-            "sProcessing": "Đang xử lý...",
-            "sLengthMenu": "_MENU_",
-            "sZeroRecords": "Không có dữ liệu",
-            "sEmptyTable": "Bảng trống",
-            "sInfo": "Hiện dòng _START_ đến _END_ trong tổng _TOTAL_ dòng",
-            "sInfoEmpty": "Hiện dòng 0 đến 0 trong tổng 0 dòng",
-            "sSearch": "Tìm kiếm",
-            "sLoadingRecords": "Đang tải...",
-            "paginate": {
-                "first": '<img src="../images/arrow_previous.png" />',
-                "previous": '<img src="../images/chevron_left.png" />',
-                "next": '<img src="../images/chevron_right.png" />',
-                "last": '<img src="../images/arrow_next.png" />'
-            }
-        },
-        "data": data,
-        "columnDefs": [
-        ],
-        "columns": [
-            { data: "stt", "width": "60px", "className": "text-center" },
-            { data: "TenBacSi", "width": "350px", "className": "fw-bold text-center" },
-            { data: "SoCaKham", "width": "375px", "className": "text-right" },
-            { data: "SoCaHuy", "width": "375px", "className": "text-right" },
-            { data: "DanhGiaTrungBinh", "width": "auto", "className": "text-right" }
-        ]
     })
 
-    $("#myTable tbody .btn-update").on('click', function () {
-        let id = $(this).data("id");
-        let data = $('#myTable').DataTable().row(id).data();
-        console.log(data)
-    })
+    $.ajax({
+        url: `/api/ThongKeApi/ThongKe_DoanhThu?Nam=2025`,
+        type: "GET",
+        contentType: "application/json; charset=utf-8",
+        success: function (res) {
+            if (res && res.value) {
+                const labels = res.value.map(item => 'Tháng ' + item.thang);
+                const data = res.value.map(item => item.tongDoanhThu);
+
+                const ctx = $('#doanhThuChart');
+
+                new Chart(ctx, {
+                    type: 'line', // bạn có thể đổi thành 'line' nếu muốn
+                    data: {
+                        labels: labels,
+                        datasets: [{
+                            label: 'Tổng doanh thu (VNĐ)',
+                            data: data,
+                            backgroundColor: 'rgba(60,141,188,0.9)',
+                            borderColor: 'rgba(60,141,188,1)',
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                ticks: {
+                                    callback: function (value) {
+                                        return value.toLocaleString('vi-VN') + ' đồng';
+                                    }
+                                }
+                            }
+                        },
+                        plugins: {
+                            tooltip: {
+                                callbacks: {
+                                    label: function (context) {
+                                        return context.dataset.label + ': ' + context.parsed.y.toLocaleString('vi-VN') + ' đồng';
+                                    }
+                                }
+                            }
+                        }
+                    }
+                });
+            } else {
+                console.warn('Dữ liệu trả về không hợp lệ');
+            }
+        },
+        error: function (err) {
+            console.error("Lỗi AJAX:", err);
+        }
+    });
+
+
 })

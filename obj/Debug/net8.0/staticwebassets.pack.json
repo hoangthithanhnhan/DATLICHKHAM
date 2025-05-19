@@ -257,6 +257,10 @@
       "PackagePath": "staticwebassets\\images\\introtongquan.jpg"
     },
     {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\images\\lock.png",
+      "PackagePath": "staticwebassets\\images\\lock.png"
+    },
+    {
       "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\images\\logo.jpg",
       "PackagePath": "staticwebassets\\images\\logo.jpg"
     },
@@ -329,6 +333,10 @@
       "PackagePath": "staticwebassets\\images\\thongke1.png"
     },
     {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\images\\unlock.png",
+      "PackagePath": "staticwebassets\\images\\unlock.png"
+    },
+    {
       "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\images\\user.png",
       "PackagePath": "staticwebassets\\images\\user.png"
     },
@@ -371,6 +379,18 @@
     {
       "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\lib\\adminlte\\adminlte.min.js",
       "PackagePath": "staticwebassets\\lib\\adminlte\\adminlte.min.js"
+    },
+    {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\lib\\adminlte\\chart.js",
+      "PackagePath": "staticwebassets\\lib\\adminlte\\chart.js"
+    },
+    {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\lib\\adminlte\\chart.min.js",
+      "PackagePath": "staticwebassets\\lib\\adminlte\\chart.min.js"
+    },
+    {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\lib\\adminlte\\dashboard.min.js",
+      "PackagePath": "staticwebassets\\lib\\adminlte\\dashboard.min.js"
     },
     {
       "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\lib\\animate\\animate.css",
@@ -1153,20 +1173,44 @@
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\vendor\\_rfs.scss"
     },
     {
-      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\BaiViet\\18-bi-quyet-giam-cang-thang-lo-au-giup-ban-thu-gian-tot-nhat-4_1747128365.jpg",
-      "PackagePath": "staticwebassets\\upload\\BaiViet\\18-bi-quyet-giam-cang-thang-lo-au-giup-ban-thu-gian-tot-nhat-4_1747128365.jpg"
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\BaiViet\\1cdf01cf-d59d-4743-a1f3-7e84c9caa78f_1747579271.png",
+      "PackagePath": "staticwebassets\\upload\\BaiViet\\1cdf01cf-d59d-4743-a1f3-7e84c9caa78f_1747579271.png"
     },
     {
-      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\BaiViet\\7-ky-thuat-hit-tho-sau-giam-cang-thang-hieu-qua-ngay-lap-tuc-1_1747128279.jpg",
-      "PackagePath": "staticwebassets\\upload\\BaiViet\\7-ky-thuat-hit-tho-sau-giam-cang-thang-hieu-qua-ngay-lap-tuc-1_1747128279.jpg"
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\BaiViet\\211_1747579649.png",
+      "PackagePath": "staticwebassets\\upload\\BaiViet\\211_1747579649.png"
     },
     {
-      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\BaiViet\\_MG_8932(1)_1746505617.jpg",
-      "PackagePath": "staticwebassets\\upload\\BaiViet\\_MG_8932(1)_1746505617.jpg"
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\BaiViet\\5f87b978-9d61-4315-b630-ffbf7ddbd285_1747579364.png",
+      "PackagePath": "staticwebassets\\upload\\BaiViet\\5f87b978-9d61-4315-b630-ffbf7ddbd285_1747579364.png"
     },
     {
-      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\BaiViet\\tam ly hoc sinh_1746504825.png",
-      "PackagePath": "staticwebassets\\upload\\BaiViet\\tam ly hoc sinh_1746504825.png"
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\BaiViet\\7bf4faf5-2dce-479c-b6d9-034c98746f9e_1747579431.png",
+      "PackagePath": "staticwebassets\\upload\\BaiViet\\7bf4faf5-2dce-479c-b6d9-034c98746f9e_1747579431.png"
+    },
+    {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\BaiViet\\82a85774-2b7a-473c-9cce-726597a65645_1747579180.png",
+      "PackagePath": "staticwebassets\\upload\\BaiViet\\82a85774-2b7a-473c-9cce-726597a65645_1747579180.png"
+    },
+    {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\BaiViet\\8d59ece9-63a3-4d26-95f4-21dc8230708e_1747579767.png",
+      "PackagePath": "staticwebassets\\upload\\BaiViet\\8d59ece9-63a3-4d26-95f4-21dc8230708e_1747579767.png"
+    },
+    {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\BaiViet\\9feff8f9-7abb-4e4c-9b0d-4e8bb40de82b_1747579513.png",
+      "PackagePath": "staticwebassets\\upload\\BaiViet\\9feff8f9-7abb-4e4c-9b0d-4e8bb40de82b_1747579513.png"
+    },
+    {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\BaiViet\\ef0254cb-cd56-4e90-8382-de7031328ad1_1747579032.png",
+      "PackagePath": "staticwebassets\\upload\\BaiViet\\ef0254cb-cd56-4e90-8382-de7031328ad1_1747579032.png"
+    },
+    {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\BaiViet\\khung-hoang-tien-hon-nhan-2_1747578823.jpg",
+      "PackagePath": "staticwebassets\\upload\\BaiViet\\khung-hoang-tien-hon-nhan-2_1747578823.jpg"
+    },
+    {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\BaiViet\\roi-loan-phan-ly-3_1747578731.jpg",
+      "PackagePath": "staticwebassets\\upload\\BaiViet\\roi-loan-phan-ly-3_1747578731.jpg"
     },
     {
       "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\BenhNhan\\18-bi-quyet-giam-cang-thang-lo-au-giup-ban-thu-gian-tot-nhat-4_1747415032.jpg",
@@ -1181,8 +1225,12 @@
       "PackagePath": "staticwebassets\\upload\\Blog\\4c42a82b-834b-4de0-80f2-da7956063395_images.jpg"
     },
     {
-      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\ChungChi\\18-bi-quyet-giam-cang-thang-lo-au-giup-ban-thu-gian-tot-nhat-4_1747494877749.jpg",
-      "PackagePath": "staticwebassets\\upload\\ChungChi\\18-bi-quyet-giam-cang-thang-lo-au-giup-ban-thu-gian-tot-nhat-4_1747494877749.jpg"
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\ChungChi\\7-ky-thuat-hit-tho-sau-giam-cang-thang-hieu-qua-ngay-lap-tuc-1_174755616234.jpg",
+      "PackagePath": "staticwebassets\\upload\\ChungChi\\7-ky-thuat-hit-tho-sau-giam-cang-thang-hieu-qua-ngay-lap-tuc-1_174755616234.jpg"
+    },
+    {
+      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\ChuyenGia\\27-04-2021-nu-bac-si-tre-voi-niem-dam-me-nghien-cuu-khoa-hoc-3BF6CE8_1747555979.jpg",
+      "PackagePath": "staticwebassets\\upload\\ChuyenGia\\27-04-2021-nu-bac-si-tre-voi-niem-dam-me-nghien-cuu-khoa-hoc-3BF6CE8_1747555979.jpg"
     },
     {
       "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\ChuyenGia\\6a4bdccc-2a07-427b-8c17-dc5626deec63.jpg",
@@ -1207,10 +1255,6 @@
     {
       "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\ChuyenGia\\ffc3e29b-6628-4c60-9f36-4726c39579aa.jpg",
       "PackagePath": "staticwebassets\\upload\\ChuyenGia\\ffc3e29b-6628-4c60-9f36-4726c39579aa.jpg"
-    },
-    {
-      "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\ChuyenMuc\\1-tri-lieu-tam-ly-shutterstock-5870_1746503705.jpeg",
-      "PackagePath": "staticwebassets\\upload\\ChuyenMuc\\1-tri-lieu-tam-ly-shutterstock-5870_1746503705.jpeg"
     },
     {
       "Id": "D:\\TTTN2025\\DATLICHKHAM\\wwwroot\\upload\\ChuyenMuc\\103785348_145313730492932_5772214164823743607_o-2_1746503735.png",

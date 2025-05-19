@@ -7,6 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Application\BinhLuan\**" />
+    <Content Remove="Application\BinhLuan\**" />
+    <EmbeddedResource Remove="Application\BinhLuan\**" />
+    <None Remove="Application\BinhLuan\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Include="Controllers\BaseApiController.cs" />
   </ItemGroup>
 
@@ -43,7 +50,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Application\BinhLuan\" />
     <Folder Include="wwwroot\lib\flatpickr\" />
     <Folder Include="wwwroot\upload\DichVu\" />
     <Folder Include="wwwroot\upload\ChuyenMuc\" />

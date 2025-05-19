@@ -13,73 +13,78 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <div class="mb-3 avatar-wrapper">
-                    <img id="anhDaiDienEdit" src="" alt="Avatar" class="rounded-circle avatar-img" width="200" height="200" />
-                    <input type="file" id="upload-avatar" style="display: none;" />
-                    <button class="avatar-edit-btn" onclick="document.getElementById('upload-avatar').click();">
-                        <i class="fa fa-camera"></i> <!-- Hoặc dùng icon cây viết, fa fa-pencil -->
-                    </button>
+                <div class="mb-3 text-center">
+                    <div class=" avatar-wrapper">
+                        <img id="anhDaiDienEdit" src="" alt="Avatar" class="rounded-circle avatar-img" width="200" height="200" />
+                        <input type="file" id="upload-avatar" style="display: none;" />
+                        <button class="avatar-edit-btn" onclick="document.getElementById('upload-avatar').click();">
+                            <i class="fa fa-camera"></i> <!-- Hoặc dùng icon cây viết, fa fa-pencil -->
+                        </button>
+                    </div>
+
                 </div>
-                <div class="mb-3">
-                    <label for="hoTenEdit" class="form-label">Họ và tên</label>
-                    <input type="text" class="form-control" id="hoTenEdit" placeholder="Nhập họ và tên">
-                </div>
-                <div class="mb-3">
-                    <label class="form-label">Giới tính</label>
-                    <div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="gioitinhEdit" id="nuEdit" value="1">
-                            <label class="form-check-label" for="nuEdit">Nữ</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="gioitinhEdit" id="namEdit" value="0">
-                            <label class="form-check-label" for="namEdit">Nam</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="gioitinhEdit" id="khacEdit" value="2">
-                            <label class="form-check-label" for="khacEdit">Khác</label>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <label for="hoTenEdit" class="form-label">Họ và tên</label>
+                        <input type="text" class="form-control" id="hoTenEdit" placeholder="Nhập họ và tên">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label">Giới tính</label>
+                        <div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gioitinhEdit" id="nuEdit" value="1">
+                                <label class="form-check-label" for="nuEdit">Nữ</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gioitinhEdit" id="namEdit" value="0">
+                                <label class="form-check-label" for="namEdit">Nam</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gioitinhEdit" id="khacEdit" value="2">
+                                <label class="form-check-label" for="khacEdit">Khác</label>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="mb-3">
-                    <label for="ngaySinhEdit" class="form-label">Ngày sinh</label>
-                    <input type="date" class="form-control" id="ngaySinhEdit" placeholder="dd/mm/yyyy">
-                </div>
-                <div class="mb-3">
-                    <label for="soDienThoaiEdit" class="form-label">Số điện thoại </label>
-                    <input type="text" class="form-control" id="soDienThoaiEdit" placeholder="Nhập số điện thoại">
-                </div>
-                <div class="mb-3">
-                    <label for="emailEdit" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="emailEdit" placeholder="Nhập email">
-                </div>
-                <div class="mb-3">
-                    <label for="diaChiEdit" class="form-label">Địa chỉ</label>
-                    <input type="text" class="form-control" id="diaChiEdit" placeholder="Nhập địa chỉ">
-                </div>
-                <div class="mb-3">
-                    <label for="tienSuBenhEdit" class="form-label">Tiền sử bệnh</label>
-                    <input type="text" class="form-control" id="tienSuBenhEdit" placeholder="Nhập tiền sử bệnh">
-                </div>
-                <div class="mb-3">
-                    <label for="thoiQuenSinhHoatEdit" class="form-label">Thói quen sinh hoạt</label>
-                    <input type="text" class="form-control" id="thoiQuenSinhHoatEdit" placeholder="Nhập thói quen sinh hoạt">
-                </div>
-                <div class="mb-3">
-                    <label for="ngheNghiepEdit" class="form-label">Nghề nghiệp</label>
-                    <input type="text" class="form-control" id="ngheNghiepEdit" placeholder="Nhập nghề nghiệp">
-                </div>
-                <div class="mb-3">
-                    <label for="tinhTrangHonNhanEdit" class="form-label">Tình trạng hôn nhân</label>
-                    <input type="text" class="form-control" id="tinhTrangHonNhanEdit" placeholder="Nhập tình trạng hôn nhân">
-                </div>
-                <div class="mb-3">
-                    <label for="thuocDangDungEdit" class="form-label">Thuốc đang dùng</label>
-                    <textarea cols="30" rows="3" type="text" class="form-control" id="thuocDangDungEdit" placeholder="Nhập thuốc đang dùng"></textarea>
-                </div>
-                <div class="mb-3">
-                    <label for="ghiChuKhacEdit" class="form-label">Ghi chú khác</label>
-                    <textarea cols="30" rows="3" type="text" class="form-control" id="ghiChuKhacEdit" placeholder="Nhập ghi chú khác"></textarea>
+                    <div class="col-md-4 mb-3">
+                        <label for="ngaySinhEdit" class="form-label">Ngày sinh</label>
+                        <input type="date" class="form-control" id="ngaySinhEdit" placeholder="dd/mm/yyyy">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="soDienThoaiEdit" class="form-label">Số điện thoại </label>
+                        <input type="text" class="form-control" id="soDienThoaiEdit" placeholder="Nhập số điện thoại">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="emailEdit" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="emailEdit" placeholder="Nhập email">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="diaChiEdit" class="form-label">Địa chỉ</label>
+                        <input type="text" class="form-control" id="diaChiEdit" placeholder="Nhập địa chỉ">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="ngheNghiepEdit" class="form-label">Nghề nghiệp</label>
+                        <input type="text" class="form-control" id="ngheNghiepEdit" placeholder="Nhập nghề nghiệp">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="tinhTrangHonNhanEdit" class="form-label">Tình trạng hôn nhân</label>
+                        <input type="text" class="form-control" id="tinhTrangHonNhanEdit" placeholder="Nhập tình trạng hôn nhân">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="thuocDangDungEdit" class="form-label">Thuốc đang dùng</label>
+                        <input type="text" class="form-control" id="thuocDangDungEdit" placeholder="Nhập thuốc đang dùng">
+                    </div>
+                    <div class="col-md-12 mb-3">
+                        <label for="tienSuBenhEdit" class="form-label">Tiền sử bệnh</label>
+                        <input type="text" class="form-control" id="tienSuBenhEdit" placeholder="Nhập tiền sử bệnh">
+                    </div>
+                    <div class="col-md-12 mb-3">
+                        <label for="thoiQuenSinhHoatEdit" class="form-label">Thói quen sinh hoạt</label>
+                        <input type="text" class="form-control" id="thoiQuenSinhHoatEdit" placeholder="Nhập thói quen sinh hoạt">
+                    </div>
+                    <div class="col-md-12 mb-3">
+                        <label for="ghiChuKhacEdit" class="form-label">Ghi chú khác</label>
+                        <textarea cols="30" rows="3" type="text" class="form-control" id="ghiChuKhacEdit" placeholder="Nhập ghi chú khác"></textarea>
+                    </div>
                 </div>
             </div>
             <div class="modal-footer">

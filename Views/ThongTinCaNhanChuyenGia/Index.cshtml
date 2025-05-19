@@ -6,11 +6,97 @@
     </div>
     <div id="chungChi">
         <h4 class="text-center" style="color: var(--pink);font-size: 20px;font-weight:700;">
-            THÔNG TIN CHỨNG CHỈ
+            DANH SÁCH VĂN BẰNG
         </h4>
-        <button id="btn-create" class="btn" type="button" data-bs-toggle="modal" data-bs-target="#modalAdd" style="background: var(--blue);color: white;font-weight: 600;">
+        <button id="btn-create" class="btn" type="button" data-bs-toggle="modal" data-bs-target="#modalAdd" style="background: var(--blue);color: white;font-weight: 600; margin-bottom:10px;">
             Thêm mới
         </button>
+        <div id="AddChungChi" class="d-none block-info">
+            <h4>Thêm mới văn bằng</h4>
+            <div class="form-group">
+                <input type="text" class="form-control" id="maChuyenGiaChungChiAdd" hidden />
+                <div class="row">
+                    <div class="col-md-4">
+                        <label class="editor-label">Tên văn bằng <span class="text-red">*</span></label>
+                        <input type="text" class="form-control" id="tenChungChiAdd" placeholder="Nhập tên chứng chỉ/chứng nhận" />
+                    </div>
+                    <div class="col-md-4">
+                        <label class="editor-label">Số hiệu</label>
+                        <input type="text" class="form-control" id="soHieuChungChiAdd" placeholder="Nhập mã số hoặc số hiệu văn bản" />
+                    </div>
+                    <div class="col-md-4">
+                        <label class="editor-label">Tổ chức cấp</label>
+                        <input type="text" class="form-control" id="toChucCapAdd" placeholder="Nhập tên tổ chức cấp" />
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-4">
+                        <label class="editor-label">Ngày cấp</label>
+                        <input type="date" class="form-control" id="ngayCapAdd" placeholder="dd/mm/yyyy" />
+                    </div>
+                    <div class="col-md-4">
+                        <label class="editor-label">Ngày hết hạn</label>
+                        <input type="date" class="form-control" id="ngayHetHanAdd" placeholder="dd/mm/yyyy" />
+                    </div>
+                    <div class="col-md-4">
+                        <label class="editor-label">Hình ảnh <span class="text-red">*</span></label>
+                        <input type="file" class="form-control" id="anhChungChiAdd" accept="image/*" multiple />
+                    </div>
+                </div>
+            </div>
+            <div style="display:flex;justify-content:flex-end; margin-top: 10px; margin-top: 30px;">
+                <button type="button" class="btn btn-cancel btn-secondary">Hủy</button>
+                <button type="button" class="btn btn-active btn-primary" id="saveChungChi">Lưu</button>
+            </div>
+        </div>
+        <div id="EditChungChi" class="d-none block-info">
+            <h4>Chỉnh sửa văn bằng</h4>
+            <div class="form-group">
+                <input type="text" class="form-control" id="maChuyenGiaChungChiEdit" hidden />
+                <input type="text" class="form-control" id="maChungChiEdit" hidden />
+                <div class="row">
+                    <div class="col-md-4">
+                        <label class="editor-label">Tên văn bằng <span class="text-red">*</span></label>
+                        <input type="text" class="form-control" id="tenChungChiEdit" placeholder="Nhập tên chứng chỉ/chứng nhận" />
+                    </div>
+                    <div class="col-md-4">
+                        <label class="editor-label">Số hiệu</label>
+                        <input type="text" class="form-control" id="soHieuChungChiEdit" placeholder="Nhập mã số hoặc số hiệu văn bản" />
+                    </div>
+                    <div class="col-md-4">
+                        <label class="editor-label">Tổ chức cấp</label>
+                        <input type="text" class="form-control" id="toChucCapEdit" placeholder="Nhập tên tổ chức cấp" />
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-4">
+                        <label class="editor-label">Ngày cấp</label>
+                        <input type="date" class="form-control" id="ngayCapEdit" placeholder="dd/mm/yyyy" />
+                    </div>
+                    <div class="col-md-4">
+                        <label class="editor-label">Ngày hết hạn</label>
+                        <input type="date" class="form-control" id="ngayHetHanEdit" placeholder="dd/mm/yyyy" />
+                    </div>
+                    <div class="col-md-4">
+                        <label class="editor-label">Hình ảnh <span class="text-red">*</span></label>
+                        <input type="file" class="form-control" id="anhChungChiEdit" accept="image/*" multiple />
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div id="previewAnhChungChi"></div>
+                </div>
+            </div>
+            <div style="display:flex;justify-content:flex-end; margin-top: 10px; margin-top: 30px;">
+                <button type="button" class="btn btn-cancel btn-secondary">Hủy</button>
+                <button type="button" class="btn btn-active btn-primary" id="editChungChi">Lưu</button>
+            </div>
+        </div>
         <table class="table table-border" id="tableChungChi">
             <thead>
                 <tr>
@@ -35,94 +121,140 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <div class="mb-3 avatar-wrapper">
-                    <img id="anhDaiDienEdit" src="" alt="Avatar" class="rounded-circle avatar-img" width="200" height="200" />
-                    <input type="file" id="upload-avatar" style="display: none;" />
-                    <button class="avatar-edit-btn" onclick="document.getElementById('upload-avatar').click();">
-                        <i class="fa fa-camera"></i> <!-- Hoặc dùng icon cây viết, fa fa-pencil -->
-                    </button>
-                </div>
-                <div class="mb-3">
-                    <label for="hoTenEdit" class="form-label">Họ và tên</label>
-                    <input type="text" class="form-control" id="hoTenEdit" placeholder="Nhập họ và tên">
-                </div>
-                <div class="mb-3">
-                    <label class="form-label">Giới tính</label>
-                    <div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="gioitinhEdit" id="nuEdit" value="1">
-                            <label class="form-check-label" for="nuEdit">Nữ</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="gioitinhEdit" id="namEdit" value="0">
-                            <label class="form-check-label" for="namEdit">Nam</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="gioitinhEdit" id="khacEdit" value="2">
-                            <label class="form-check-label" for="khacEdit">Khác</label>
-                        </div>
+                <div class="mb-3 text-center">
+                    <div class="avatar-wrapper">
+                        <img id="anhDaiDienEdit" src="" alt="Avatar" class="rounded-circle avatar-img" width="200" height="200" />
+                        <input type="file" id="upload-avatar" style="display: none;" />
+                        <button class="avatar-edit-btn" onclick="document.getElementById('upload-avatar').click();">
+                            <i class="fa fa-camera"></i> <!-- Hoặc dùng icon cây viết, fa fa-pencil -->
+                        </button>
                     </div>
                 </div>
-                <div class="mb-3">
-                    <label for="ngaySinhEdit" class="form-label">Ngày sinh</label>
-                    <input type="date" class="form-control" id="ngaySinhEdit" placeholder="dd/mm/yyyy">
-                </div>
-                <div class="mb-3">
-                    <label for="soDienThoaiEdit" class="form-label">Số điện thoại </label>
-                    <input type="text" class="form-control" id="soDienThoaiEdit" placeholder="Nhập số điện thoại">
-                </div>
-                <div class="mb-3">
-                    <label for="emailEdit" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="emailEdit" placeholder="Nhập email">
-                </div>
-                <div class="mb-3">
-                    <label for="diaChiEdit" class="form-label">Địa chỉ</label>
-                    <input type="text" class="form-control" id="diaChiEdit" placeholder="Nhập địa chỉ">
-                </div>
-                <div class="mb-3">
-                    <label for="chucDanhEdit" class="form-label">Chức danh</label>
-                    <input type="text" class="form-control" id="chucDanhEdit" placeholder="Nhập chức danh">
-                </div>
-                <div class="mb-3">
-                    <label for="chucVuEdit" class="form-label">Chức vụ</label>
-                    <input type="text" class="form-control" id="chucVuEdit" placeholder="Nhập chức vụ">
-                </div>
-                <div class="mb-3">
-                    <label for="soNamKinhNghiemEdit" class="form-label">Số năm kinh nghiệm</label>
-                    <input type="text" class="form-control" id="soNamKinhNghiemEdit" placeholder="Nhập số năm kinh nghiệm">
-                </div>
-                <div class="mb-3" id="chuyenKhoaEditParent">
-                    <label for="chuyenKhoaEdit" class="form-label">Chuyên khoa <span class="text-red">*</span></label>
-                    <select class="form-select" id="chuyenKhoaEdit">
-                        @* render chuyên khoa *@
-                    </select>
-                </div>
-                <div class="mb-3" id="dichVuEditParent">
-                    <label for="dichVuEdit" class="form-label">Dịch vụ <span class="text-red">*</span></label>
-                    <select class="form-select" id="dichVuEdit" multiple>
-                        @* render dịch vụ *@
-                    </select>
-                </div>
-                <div class="mb-3">
-                    <label for="donViCongTacEdit" class="form-label">Đơn vị công tác <span class="text-red">*</span></label>
-                    <input type="text" class="form-control" id="donViCongTacEdit" placeholder="Nhập đơn vị công tác">
-                </div>
-                <div class="mb-3">
-                    <label for="giaiThuongNghienCuuEdit" class="form-label">Giải thưởng nghiên cứu</label>
-                    <textarea cols="30" rows="3" type="text" class="form-control" id="giaiThuongNghienCuuEdit" placeholder="Nhập giải thưởng nghiên cứu"></textarea>
-                </div>
-                <div class="mb-3">
-                    <label for="gioiThieuEdit" class="form-label">Giới thiệu</label>
-                    <textarea cols="30" rows="5" type="text" class="form-control" id="gioiThieuEdit" placeholder="Nhập giới thiệu"></textarea>
-                </div>
-                <div class="mb-3">
-                    <label for="kinhNghiemEdit" class="form-label">Kinh nghiệm</label>
-                    <textarea cols="30" rows="5" type="text" class="form-control" id="kinhNghiemEdit" placeholder="Nhập kinh nghiệm"></textarea>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <label for="hoTenEdit" class="form-label">Họ và tên</label>
+                        <input type="text" class="form-control" id="hoTenEdit" placeholder="Nhập họ và tên">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label">Giới tính</label>
+                        <div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gioitinhEdit" id="nuEdit" value="1">
+                                <label class="form-check-label" for="nuEdit">Nữ</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gioitinhEdit" id="namEdit" value="0">
+                                <label class="form-check-label" for="namEdit">Nam</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gioitinhEdit" id="khacEdit" value="2">
+                                <label class="form-check-label" for="khacEdit">Khác</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="ngaySinhEdit" class="form-label">Ngày sinh</label>
+                        <input type="date" class="form-control" id="ngaySinhEdit" placeholder="dd/mm/yyyy">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="soDienThoaiEdit" class="form-label">Số điện thoại </label>
+                        <input type="text" class="form-control" id="soDienThoaiEdit" placeholder="Nhập số điện thoại">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="emailEdit" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="emailEdit" placeholder="Nhập email">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="diaChiEdit" class="form-label">Địa chỉ</label>
+                        <input type="text" class="form-control" id="diaChiEdit" placeholder="Nhập địa chỉ">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="chucDanhEdit" class="form-label">Chức danh</label>
+                        <input type="text" class="form-control" id="chucDanhEdit" placeholder="Nhập chức danh">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="chucVuEdit" class="form-label">Chức vụ</label>
+                        <input type="text" class="form-control" id="chucVuEdit" placeholder="Nhập chức vụ">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="soNamKinhNghiemEdit" class="form-label">Số năm kinh nghiệm</label>
+                        <input type="text" class="form-control" id="soNamKinhNghiemEdit" placeholder="Nhập số năm kinh nghiệm">
+                    </div>
+                    <div class="col-md-12 mb-3">
+                        <label for="donViCongTacEdit" class="form-label">Đơn vị công tác <span class="text-red">*</span></label>
+                        <input type="text" class="form-control" id="donViCongTacEdit" placeholder="Nhập đơn vị công tác">
+                    </div>
+                    <div class="col-md-12 mb-3" id="chuyenKhoaEditParent">
+                        <label for="chuyenKhoaEdit" class="form-label">Chuyên khoa <span class="text-red">*</span></label>
+                        <select class="form-select" id="chuyenKhoaEdit">
+                            @* render chuyên khoa *@
+                        </select>
+                    </div>
+                    <div class="col-md-12 mb-3" id="dichVuEditParent">
+                        <label for="dichVuEdit" class="form-label">Dịch vụ <span class="text-red">*</span></label>
+                        <select class="form-select" id="dichVuEdit" multiple>
+                            @* render dịch vụ *@
+                        </select>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                        <label for="giaiThuongNghienCuuEdit" class="form-label">Giải thưởng nghiên cứu</label>
+                        <textarea cols="30" rows="3" type="text" class="form-control" id="giaiThuongNghienCuuEdit" placeholder="Nhập giải thưởng nghiên cứu"></textarea>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                        <label for="gioiThieuEdit" class="form-label">Giới thiệu</label>
+                        <textarea cols="30" rows="5" type="text" class="form-control" id="gioiThieuEdit" placeholder="Nhập giới thiệu"></textarea>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                        <label for="kinhNghiemEdit" class="form-label">Kinh nghiệm</label>
+                        <textarea cols="30" rows="5" type="text" class="form-control" id="kinhNghiemEdit" placeholder="Nhập kinh nghiệm"></textarea>
+                    </div>
+
                 </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btn-cancel">Hủy</button>
                 <button type="button" class="btn btn-primary" id="btn-SaveThongTin">Lưu</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@* MODAL XÓA CHỨNG CHỈ*@
+<div class="modal fade" id="modalDeleteChungChi" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Xóa chứng chỉ</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Hủy"></button>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" class="form-control" id="maDeleteChungChi" />
+                <input type="hidden" class="form-control" id="maChuyenGia" />
+                <p>Bạn có chắc chắn muốn xóa chứng chỉ này không?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-cancel btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                <button type="button" class="btn btn-active btn-primary" id="btn-deleteChungChi">Đồng ý</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@* MODAL XÓA ẢNH CHỨNG CHỈ*@
+<div class="modal fade" id="modalDeleteAnhChungChi" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Xóa ảnh hình ảnh chứng chỉ</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Hủy"></button>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" class="form-control" id="maChungChiDeleteAnh" />
+                <p>Bạn có chắc chắn muốn xóa hình ảnh chứng chỉ này không?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-cancel btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                <button type="button" class="btn btn-active btn-primary" id="deleteAnhChungChi">Đồng ý</button>
             </div>
         </div>
     </div>

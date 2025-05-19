@@ -6,7 +6,6 @@
         contentType: "application/json; charset=utf-8",
         data: JSON.stringify({ keyword: "" }),
         success: function (data) {
-            console.log(data)
             if (data && data.value && data.value.length > 0) {
                 let html = '';
                 $.each(data.value, function (index, value) {
@@ -19,7 +18,6 @@
                             <div class="card-body d-flex flex-column">
                                 <h5 class="card-title flex-grow-1"><a href="">${value.chucDanh} ${value.hoTen}</a></h5>
                                 <p class="card-text flex-grow-1">${value.tenChuyenKhoa}</p>
-                                <a href="#" class="btn btn-register btn-primary">Đặt lịch ngay</a>
                             </div>
                         </div>
                     `
@@ -50,7 +48,6 @@
                     var height = $(this).outerHeight();
                     if (height > maxHeight) {
                         maxHeight = height;
-                        console.log(maxHeight,123)
                     }
                 });
                 $('#trinhDienChuyenGia .item').height(maxHeight);
@@ -70,7 +67,6 @@
             trangThai: true
         }),
         success: function (data) {
-            console.log(data,111)
             if (data && data.value && data.value.length > 0) {
                 let html=''
                 $.each(data.value, function (index, value) {
@@ -78,7 +74,7 @@
                             <div class="col-2">
                                 <div class="block-category h-100">
                                     <img src="${value.anhDaiDien ? value.anhDaiDien : "/images/anhdaidien.jpg"}" alt="">
-                                    <p class="title">${value.tenDichVu}</p>
+                                    <a href="/DichVu/DanhSachChuyenGia?maDichVu=${value.maDichVu}" class="title">${value.tenDichVu}</a>
                                 </div>
                             </div>
                         `
@@ -93,7 +89,7 @@
 
     $.ajax({
         type: 'GET',
-        url: APIURL + `/api/BaiVietApi/GetsBaiVietByChuyenMuc?&PageIndex=1&PageSize=4`,
+        url: APIURL + `/api/BaiVietApi/GetsBaiVietByChuyenMuc?&PageIndex=1&PageSize=6`,
         dataType: 'json',
         success: function (data) {
             console.log(data)
@@ -103,11 +99,11 @@
                     if (index == 0) {
                         html +=
                             `<div class="card" style="width: 100%;">
-                                <a href="#" class="img"><img src="${item.anhDaiDien}" class="card-img-top" alt="..."></a>
+                                <a href='${linkBaiVietChiTiet}?maBaiViet=${item.maBaiViet}' class="img"><img src="${item.anhDaiDien}" class="card-img-top" alt="..."></a>
                                 <div class="card-body">
                                     <a class="chuyenMuc">${item.tenChuyenMuc} </a>
                                     <a href='${linkBaiVietChiTiet}?maBaiViet=${item.maBaiViet}' class="tieuDe">${item.tieuDe}</a>
-                                    <a class="tomTat">${item.tomTat ? item.tomTat : item.noiDung}</a>
+                                    <a href='${linkBaiVietChiTiet}?maBaiViet=${item.maBaiViet}' class="tomTat">${item.tomTat ? item.tomTat : item.noiDung}</a>
                                     <p class="thoiGianDang">${formatDate(item.thoiGianDangBai)} </p>
                                 </div>
                             </div>
@@ -120,13 +116,12 @@
                             <div class="card mb-3" style="max-width: 540px;">
                                 <div class="row g-0">
                                     <div class="col-md-5">
-                                        <a href="#" class="img"><img src="${item.anhDaiDien}" class="card-img-top" alt="..."></a>
+                                        <a href='${linkBaiVietChiTiet}?maBaiViet=${item.maBaiViet}' class="img"><img src="${item.anhDaiDien}" class="card-img-top" alt="..."></a>
                                     </div>
                                     <div class="col-md-7">
                                         <div class="card-body">
                                             <a class="chuyenMuc">${item.tenChuyenMuc}</a>
-                                            <a class="tieuDe">${item.tieuDe}</a>
-                                            <a class="tomTat">${item.tomTat ? item.tomTat : item.noiDung}</a>
+                                            <a href='${linkBaiVietChiTiet}?maBaiViet=${item.maBaiViet}' class="tieuDe">${item.tieuDe}</a>
                                             <p class="thoiGianDang">${formatDate(item.thoiGianDangBai)}</p>
                                         </div>
                                     </div>
@@ -149,7 +144,6 @@
         type: "GET",
         contentType: "application/json; charset=utf-8",
         success: function (data) {
-            console.log(data, 111)
             if (data && data.value && data.value.length > 0) {
                 let html = ''
                 $.each(data.value, function (index, value) {

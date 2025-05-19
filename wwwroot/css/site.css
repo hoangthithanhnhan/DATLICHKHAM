@@ -483,10 +483,12 @@ main.block-trangchu {
     main .category .row  .title {
         font-size: 18px;
         font-weight: 700;
-        letter-spacing: -0.5px;
         text-align: center;
         padding: 20px 10px;
         margin: 0;
+        text-decoration:none;
+        color:var(--body);
+        display:block;
     }
 
     main .category .row  img {
@@ -1326,16 +1328,13 @@ main #modalThongTinEdit .modal-title {
 }
 main #modalThongTinEdit .modal-body {
     padding: 25px;
-    display: flex;
-    flex-direction:column;
-    align-items:center;
 }
-    main #modalThongTinEdit .modal-body .mb-3:not(.mb-3.avatar-wrapper) {
-        width: 100%;
-    }
+.text-red{
+    color:var(--red);
+}
 main #modalThongTinEdit .modal-footer button {
     width: 120px;
-    font-weight:700;
+    font-weight: 700;
 }
 main #modalThongTinEdit .modal-footer #btn-cancel {
     background: none;
@@ -1350,7 +1349,97 @@ main #modalThongTinEdit .modal-footer #btn-SaveThongTin {
         font-size: 16px;
         color: #555;
     }
-main  #thongTin {
+
+.block-info {
+    border: solid 1px #dee2e6;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+    .block-info h4 {
+        color: var(--body);
+        font-weight: 600;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .block-info .editor-label {
+        font-weight: 600;
+    }
+    .block-info .form-group{
+        margin-bottom:15px;
+    }
+#saveChungChi, #editChungChi, .btn-cancel {
+    border-radius: 4px;
+    border-color: var(--body);
+    width: 120px;
+    font-size: 16px;
+    font-weight: 600;
+    background: var(--body);
+    margin-left: 20px;
+}
+.btn-cancel {
+    background: none;
+    color: var(--body);
+}
+
+.modal-content .modal-header {
+    border: none;
+}
+.modal-footer {
+    padding: 20px;
+    padding-top: 0px;
+    border: none;
+}
+    .modal-content .modal-header .modal-title {
+        font-size: 24px;
+        font-weight: 700;
+    }
+.modal-content .modal-body {
+    padding: 0px 20px;
+}
+#btn-deleteChungChi {
+    background: var(--body);
+    border: none;
+}
+.modal-footer > button.btn-cancel {
+    background: none;
+    border-color: #E2E4E9;
+    color: var(--body);
+}
+.modal-footer > button {
+    border-radius: 4px;
+    width: 120px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+div.dt-container select.dt-input{
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: solid 1px #E2E4E9;
+    width: 100px;
+}
+.table {
+    border: solid 1px #dee2e6;
+    border-radius: 8px;
+    border-collapse: separate;
+    border-spacing: 0;
+    overflow: hidden;
+    margin-bottom: 24px !important;
+}
+div.dt-container .dt-paging .dt-paging-button {
+    border: none !important;
+    background: none !important;
+    padding: 8px 13.5px;
+    font-size: 14px;
+    margin-left: 8px;
+}
+    div.dt-container .dt-paging .dt-paging-button.current {
+        background: var(--body) !important;
+        color: var(--white) !important;
+        border-radius: 8px;
+    }
+main #thongTin {
     padding: 30px;
 }
     main #thongTin #anhDaiDien{
@@ -1442,7 +1531,6 @@ main .blog .section .heading {
             border: solid 1px #e2e8f0;
         }
         main .blog .baiVietMoi .tinBai .tinBaiLeft .card, .tinBaiRight .card {
-            height: 100%;
             display:block;
         }
             main .blog .baiVietMoi .tinBai .tinBaiLeft .card :hover img, .tinBaiRight .card :hover img {
@@ -1497,7 +1585,6 @@ main .blog .section .heading {
                 font-weight: 500;
                 margin-bottom: 0px;
                 color: var(--greystr);
-                margin-top: auto;
             }
             main .blog .baiVietMoi .tinBai .tinBaiLeft .card .card-body {
                 display: flex;
@@ -1768,7 +1855,7 @@ main .block-main .lichHenCaNhan .lichHenRight {
             }
     .block-blog #baiViet {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
         .block-blog #baiViet .content-item {
@@ -1805,7 +1892,7 @@ main .block-main .lichHenCaNhan .lichHenRight {
                     text-align: justify;
                 }
                 .block-blog #baiViet .content-item .text .text-title {
-                    font-size: 18px;
+                    font-size: 20px;
                     font-weight: 600;
                     display: -webkit-box;
                     -webkit-line-clamp:3 ; /* Giới hạn số dòng */

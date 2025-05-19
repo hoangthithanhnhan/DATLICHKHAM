@@ -80,35 +80,45 @@ namespace Login.Areas.Identity.Pages.Account
             if (ModelState.IsValid)
             {
                 var user = await _userManager.FindByNameAsync(Input.Username);
+
                 if (user != null)
                 {
-                    var result = await _signInManager.PasswordSignInAsync(Input.Username, Input.Password, true, lockoutOnFailure: false);
-                    if (result.Succeeded)
-                    {
-                        //VaiTro ==0 là Admin, sẽ điều hướng đến trang quản trị
-                        if (user.VaiTro == 0 )
-                        {
-                            return LocalRedirect(returnUrl);
-                        }
-                        else
-                        {
-                            return LocalRedirect("~/");
-                        }
-
-                    }
-                    if (result.RequiresTwoFactor)
-                    {
-                        return RedirectToPage("./LoginWith2fa", new { ReturnUrl = returnUrl, RememberMe = true });
-                    }
-                    if (result.IsLockedOut)
+                    if (!user.IsEnabled)
                     {
                         _logger.LogWarning("Tài khoản của bạn bị khoá!");
-                        return RedirectToPage("./Login");
+                        ModelState.AddModelError(string.Empty, "Tài khoản của bạn bị khoá!");
+                        return Page();
                     }
                     else
                     {
-                        ModelState.AddModelError(string.Empty, "Sai tên đăng nhập hoặc mật khẩu!");
-                        return Page();
+                        var result = await _signInManager.PasswordSignInAsync(Input.Username, Input.Password, true, lockoutOnFailure: false);
+                        if (result.Succeeded)
+                        {
+                            //VaiTro ==0 là Admin, sẽ điều hướng đến trang quản trị
+                            if (user.VaiTro == 0 )
+                            {
+                                return LocalRedirect(returnUrl);
+                            }
+                            else
+                            {
+                                return LocalRedirect("~/");
+                            }
+
+                        }
+                        if (result.RequiresTwoFactor)
+                        {
+                            return RedirectToPage("./LoginWith2fa", new { ReturnUrl = returnUrl, RememberMe = true });
+                        }
+                        if (result.IsLockedOut)
+                        {
+                            _logger.LogWarning("Tài khoản của bạn bị khoá!");
+                            return RedirectToPage("./Login");
+                        }
+                        else
+                        {
+                            ModelState.AddModelError(string.Empty, "Sai tên đăng nhập hoặc mật khẩu!");
+                            return Page();
+                        }
                     }
                 }
                 return Page();

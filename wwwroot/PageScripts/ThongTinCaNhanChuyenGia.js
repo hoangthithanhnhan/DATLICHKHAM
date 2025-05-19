@@ -2,6 +2,16 @@
 
 $(document).ready(function () {
 
+    //ngày sinh
+    formatInputDate("#ngaySinhEdit");
+    //ngày cấp chứng chỉ
+    formatInputDate("#ngayCapAdd");
+    formatInputDate("#ngayCapEdit");
+
+    //ngày hết hạn chứng chỉ
+    formatInputDate("#ngayHetHanAdd");
+    formatInputDate("#ngayHetHanEdit");
+
     let maChuyenGia = $('#maChuyenGia').val();
     console.log(maChuyenGia);
 
@@ -146,6 +156,7 @@ $(document).ready(function () {
             giaiThuong_NghienCuu: giaiThuongNghienCuu,
             gioiThieu: gioiThieu,
             kinhNghiem: kinhNghiem,
+            trangThai: Boolean(Number(1))
         }
         let formData = new FormData();
         formData.append("data", JSON.stringify(request));// dữ liệu dạng object
@@ -349,6 +360,241 @@ $(document).ready(function () {
             { data: "maChungChi", "width": "auto", "className": "text-center" }
         ]
     })
+
+    $('#btn-create').on('click', function () {
+        $("#AddChungChi input").val("");
+        $('#AddChungChi').removeClass('d-none');
+        $('#EditChungChi').addClass('d-none');
+    });
+    $('.btn-cancel').on('click', function () {
+        $('#AddChungChi').addClass('d-none');
+        $('#EditChungChi').addClass('d-none');
+    });
+
+    //Thêm mới chứng chỉ
+    $("#saveChungChi").on('click', function () {
+        let tenChungChi = $("#tenChungChiAdd").val();
+        let soHieuChungChi = $("#soHieuChungChiAdd").val();
+        let toChucCap = $("#toChucCapAdd").val();
+        let ngayCap = $("#ngayCapAdd").val();
+        let ngayHetHan = $("#ngayHetHanAdd").val();
+        let fileInput = $("#anhChungChiAdd")[0];
+        let files = fileInput.files; // Trả về đối tượng file kiểu object
+        console.log(files, 123)
+        let request = {
+            maChuyenGia: maChuyenGia,
+            tenChungChi: tenChungChi,
+            soHieuChungChi: soHieuChungChi,
+            toChucCap: toChucCap,
+            ngayCap: formatDateSQL(ngayCap),
+            ngayHetHan: formatDateSQL(ngayHetHan)
+        }
+        let formData = new FormData();
+        formData.append("data", JSON.stringify(request));// dữ liệu dạng object
+        if (files) {
+            $.each(files, function (index, item) {
+                formData.append("files", item); // ảnh nếu có
+            });
+        }
+
+        if (checkEmptyString(tenChungChi)) {
+            showAlert("Tên chứng chỉ không được để trống", "error");
+            return;
+        }
+        if (!files || files.length === 0) {
+            showAlert("Phải chọn ít nhất một ảnh chứng chỉ", "error");
+            return;
+        }
+        else {
+            $.ajax({
+                type: "POST",
+                url: APIURL + "/api/ChungChiChuyenGiaApi/Add",
+                contentType: false,
+                processData: false,
+                data: formData,
+                success: function (data) {
+                    console.log(data)
+                    $('#tableChungChi').DataTable().ajax.reload();
+                    $('#AddChungChi').addClass('d-none');
+                    showAlert("Thêm thành công", "success");
+                    resetFormChungChi()
+                },
+                error: function (error) {
+                    showAlert("Thêm không thành công", "error");
+                    console.log(error)
+                }
+            });
+        }
+    })
+
+    $(document).on('click', '.btn-delete', function () {
+        let id = $(this).data("id");
+        let data = $('#tableChungChi').DataTable().row(id).data();
+        console.log(data)
+        $('#maDeleteChungChi').val(data.maChungChi);
+        $('#modalDeleteChungChi').modal('show');
+    })
+
+    $('#btn-deleteChungChi').on('click', function () {
+        let maChungChi = $("#maDeleteChungChi").val();
+        $.ajax({
+            type: "DELETE",
+            async: false,
+            url: APIURL + `/api/ChungChiChuyenGiaApi/Delete?MaChungChi=${maChungChi}`,
+            contentType: "application/json; charset=utf-8",
+            success: function (data) {
+                $('#modalDeleteChungChi').modal('hide');
+                if (data && data.isSuccess) {
+                    $('#tableChungChi').DataTable().ajax.reload();
+                    showAlert("Xóa thành công", "success");
+                } else {
+                    showAlert("Xóa không thành công", "error");
+                }
+            },
+            error: function (error) {
+                showAlert("Xóa không thành công", "error");
+            }
+        });
+    })
+
+
+    $(document).on('click', '.btn-update', function () {
+        let id = $(this).data("id");
+        let data = $('#tableChungChi').DataTable().row(id).data();
+        console.log(data)
+        $('#maChungChiEdit').val(data.maChungChi);
+        $('#AddChungChi').addClass('d-none');
+        $('#EditChungChi').removeClass('d-none');
+        $('#tenChungChiEdit').val(data.tenChungChi);
+        $('#soHieuChungChiEdit').val(data.soHieuChungChi);
+        $('#toChucCapEdit').val(data.toChucCap);
+        $('#ngayCapEdit').val(formatDate(data.ngayCap));
+        $('#ngayHetHanEdit').val(formatDate(data.ngayHetHan));
+        $('#anhChungChiEdit').val("");
+
+        if (data.tepKemTheo.length > 0) {
+            let html = '<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">';
+            data.tepKemTheo.forEach(item => {
+                html += `<div class="item-image" id="item-image-${item.maTepDinhKem}">
+                            <img src="${item.duongDan}" style="width: 150px; height: 150px; object-fit: cover;" />
+                            <button type="button" style=" border:none; background:none;" data-id="${item.maTepDinhKem}" class="button btn-deleteAnhChungChi" fdprocessedid="8bdhz7">
+                                <img src="../images/delete_filled.png" alt="Alternate Text">
+                            </button>
+                        </div>`;
+            });
+            html += '</div>';
+            $('#previewAnhChungChi').html(html);
+        } else {
+            $('#previewAnhChungChi').empty();
+        }
+    })
+
+    $('#editChungChi').on('click', function () {
+        let maChungChi = $("#maChungChiEdit").val();
+        let tenChungChi = $("#tenChungChiEdit").val();
+        let soHieuChungChi = $("#soHieuChungChiEdit").val();
+        let toChucCap = $("#toChucCapEdit").val();
+        let ngayCap = $("#ngayCapEdit").val();
+        let ngayHetHan = $("#ngayHetHanEdit").val();
+        let fileInput = $("#anhChungChiEdit")[0];
+        console.log(fileInput, checkEmptyString(fileInput))
+        let files = fileInput.files; // Trả về đối tượng file kiểu object
+        console.log(files, 123)
+        let request = {
+            maChuyenGia: maChuyenGia,
+            maChungChi: maChungChi,
+            tenChungChi: tenChungChi,
+            soHieuChungChi: soHieuChungChi,
+            toChucCap: toChucCap,
+            ngayCap: formatDateSQL(ngayCap),
+            ngayHetHan: formatDateSQL(ngayHetHan)
+        }
+        let formData = new FormData();
+        formData.append("data", JSON.stringify(request));// dữ liệu dạng object
+        if (files) {
+
+            // Đối tượng files truyền vào là List, lặp qua các phần tử của mảng đối tượng files để append vào formData
+            // => List file
+            $.each(files, function (index, item) {
+                formData.append("files", item); // ảnh nếu có
+            });
+        }
+        if (checkEmptyString(tenChungChi)) {
+            showAlert("Tên chứng chỉ không được để trống", "error");
+            return;
+        }
+        if (files.length == 0 && $("#previewAnhChungChi .item-image").length == 0) {
+            showAlert("Phải chọn ít nhất một ảnh chứng chỉ", "error");
+            return;
+        }
+        else {
+            $.ajax({
+                type: "PUT",
+                url: APIURL + "/api/ChungChiChuyenGiaApi/Update",
+                contentType: false,
+                processData: false,
+                data: formData,
+                success: function (data) {
+                    if (!data.isSuccess) {
+                        showAlert(data.error, "error");
+                    }
+                    else {
+                        $('#tableChungChi').DataTable().ajax.reload();
+                        $('#EditChungChi').addClass('d-none');
+                        showAlert("Cập nhật thành công", "success");
+                        $('#anhChungChiEdit').val("");
+                    }
+                },
+                error: function (error) {
+                    showAlert("Cập nhật không thành công", "error");
+                    $('#anhChungChiEdit').val("");
+                }
+            });
+            $('#anhChungChiEdit').val("");
+        }
+    })
+
+
+    $(document).on('click', '.btn-deleteAnhChungChi', function () {
+        let id = $(this).data("id");
+        console.log(id);
+        $("#maChungChiDeleteAnh").val(id);
+        $("#modalDeleteAnhChungChi").modal('show');
+    })
+
+    //chỉ xóa ảnh CHỨNG CHỈ
+    $("#deleteAnhChungChi").on('click', function () {
+        let maAnhChungChi = $("#maChungChiDeleteAnh").val();
+        if ($("#previewAnhChungChi .item-image").length == 1) {
+            showAlert("Phải có ít nhất 1 ảnh chứng chỉ", "error");
+            $('#modalDeleteAnhChungChi').modal('hide');
+            return;
+        }
+        if (maAnhChungChi != "") {
+            $.ajax({
+                type: "DELETE",
+                url: APIURL + `/api/ChungChiChuyenGiaApi/DeleteAnhChungChi?MaTepDinhKem=${maAnhChungChi}`,
+                contentType: "application/json; charset=utf-8",
+                success: function (data) {
+                    console.log(data, 111)
+                    if (data && data.isSuccess) {
+                        $('#tableChungChi').DataTable().ajax.reload();
+                        showAlert("Xóa thành công", "success");
+                        $('#modalDeleteAnhChungChi').modal('hide');
+                        $(`#item-image-${maAnhChungChi}`).remove();
+                    } else {
+                        showAlert("Xóa không thành công", "error");
+                        $('#modalDeleteAnhChungChi').modal('hide');
+
+                    }
+                },
+                error: function (error) {
+                    showAlert("Xóa không thành công", "error");
+                },
+
+            });
+        }
+    })
 })
 
 function renderThongTin(maChuyenGia) {
@@ -364,79 +610,79 @@ function renderThongTin(maChuyenGia) {
                     <button id="editInfoCaNhan" data-id=${maChuyenGia}>Chỉnh sửa thông tin</button>
                     <div class='row w-100'>
                         <div class='col-6'>
-                            <p class="heading">Họ và tên</p>
+                            <p class="heading"><i class="fa-solid fa-user"></i> Họ và tên</p>
                             <p id="hoTen">${data.value.hoTen}</p>
                         </div>
                         <div class='col-6'>
-                            <p class="heading">Giới tính</p>
+                            <p class="heading"><i class="fa-solid fa-venus-mars"></i> Giới tính</p>
                             <p id="gioiTinh" data-gt=${data.value.gioiTinh}>${data.value.gioiTinh == 1 ? "Nữ" : data.value.gioiTinh == 0 ? "Nam" : "Khác"}</p>
                         </div>
                     </div>
                     <div class='row w-100'>
                         <div class='col-6'>
-                            <p class="heading">Ngày sinh</p>
+                            <p class="heading"><i class="fa-solid fa-calendar-day"></i> Ngày sinh</p>
                             <p id="ngaySinh">${formatDate(data.value.ngaySinh)}</p >
                         </div>
                         <div class='col-6'>
-                            <p class="heading">Số điện thoại</span>
+                            <p class="heading"><i class="fa-solid fa-phone"></i> Số điện thoại</span>
                             <p id="soDienThoai">${data.value.soDienThoai}</p>
                         </div>
                     </div>
                     <div class='row w-100'>
                         <div class='col-6'>
-                            <p class="heading">Email</p>
+                            <p class="heading"><i class="fa-solid fa-envelope"></i> Email</p>
                             <p id="email">${data.value.email}</p >
                         </div>
                         <div class='col-6'>
-                            <p class="heading">Địa chỉ</span>
+                            <p class="heading"><i class="fa-solid fa-location-dot"></i> Địa chỉ</span>
                             <p id="diaChi">${data.value.diaChi}</p>
                         </div>
                     </div>
                     <div class='row w-100'>
                         <div class='col-6'>
-                            <p class="heading">Chức danh</p>
+                            <p class="heading"><i class="fa-solid fa-graduation-cap"></i> Chức danh</p>
                             <p id="chucDanh">${data.value.chucDanh}</p >
                         </div>
                         <div class='col-6'>
-                            <p class="heading">Chức vụ</span>
+                            <p class="heading"><i class="fa-solid fa-id-badge"></i> Chức vụ</span>
                             <p id="chucVu">${data.value.chucVu}</p>
                         </div>
                     </div>
                     <div class='row w-100'>
                         <div class='col-6'>
-                            <p class="heading">Số năm kinh nghiệm</p>
+                            <p class="heading"><i class="fa-solid fa-briefcase"></i> Số năm kinh nghiệm</p>
                             <p id="soNamKinhNghiem">${data.value.soNamKinhNghiem}</p >
                         </div>
                         <div class='col-6'>
-                            <p class="heading">Đơn vị công tác</span>
+                            <p class="heading"><i class="fa-solid fa-building"></i> Đơn vị công tác</span>
                             <p id="donViCongTac">${data.value.donViCongTac}</p>
                         </div>
                     </div>
                     <div class='row w-100'>
                         <div class='col-6'>
-                            <p class="heading">Chuyên khoa</p>
+                            <p class="heading"><i class="fa-solid fa-brain"></i> Chuyên khoa</p>
                             <p id="tenChuyenKhoa" data-ck=${data.value.maChuyenKhoa}>${data.value.tenChuyenKhoa}</p >
                         </div>
                         <div class='col-6'>
-                            <p class="heading">Dịch vụ</p>
+                            <p class="heading"><i class="fa-solid fa-list-check"></i> Dịch vụ</p>
                             <p id="dichVu">${data.value.dichVu}</p >
                         </div>
                     </div>
                     <div class='row w-100'>
                         <div class='col'>
-                            <p class="heading">Giải thưởng nghiên cứu</p>
+                            <p class="heading"><i class="fa-solid fa-award"></i> Giải thưởng nghiên cứu</p>
                             <p id="giaiThuong_NghienCuu">${data.value.giaiThuong_NghienCuu}</p >
                         </div>
                     </div>
                     <div class='row w-100'>
                         <div class='col'>
-                            <p class="heading">Giới thiệu</p>
+                            <p class="heading"><i class="fa-solid fa-circle-info"></i> Giới thiệu</p>
                             <p id="gioiThieu">${data.value.gioiThieu}</p >
                         </div>
                     </div>
                     <div class='row w-100'>
                         <div class='col'>
-                            <p class="heading">Kinh nghiệm</p>
+                            <p class="heading"><i class="fa-solid fa-file-lines"></i> Kinh nghiệm</p>
                             <p id="kinhNghiem">${data.value.kinhNghiem}</p >
                         </div>
                     </div>
@@ -466,23 +712,3 @@ function getDataWithApi(method, uri, data) {
         url: APIURL + uri,
     });
 };
-
-function getChungChi(maChuyenGia) {
-    let arrData = [];
-    $.ajax({
-        url: APIURL + `/api/ChungChiChuyenGiaApi/Gets?MaChuyenGia=${maChuyenGia}`,
-        type: "GET",
-        contentType: "application/json; charset=utf-8",
-        async: false,
-        success: function (data) {
-            var result = data.value
-            if (result) {
-                for (let i = 0; i < result.length; i++) {
-                    result[i].stt = i + 1;
-                    arrData.push(result[i]);
-                }
-            }
-        }
-    })
-    return arrData;
-}

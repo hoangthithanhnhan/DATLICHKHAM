@@ -1900,22 +1900,22 @@
     ]
   },
   {
-    "ContainingType": "DATLICHKHAM.APIsController.ThongTinChanDoanApiController",
-    "Method": "Add",
-    "RelativePath": "api/ThongTinChanDoanApi/Add",
-    "HttpMethod": "POST",
+    "ContainingType": "DATLICHKHAM.APIsController.TaiKhoanApiController",
+    "Method": "Gets",
+    "RelativePath": "api/TaiKhoanApi/Gets",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "Entity",
-        "Type": "DATLICHKHAM.Domain.DLK_ThongTinChanDoanAdd",
-        "IsRequired": true
+        "Name": "Keyword",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "Application.Core.Result\u00601[[DATLICHKHAM.Domain.DLK_ThongTinChanDoan, DATLICHKHAM, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "Application.Core.Result\u00601[[System.Collections.Generic.IEnumerable\u00601[[DATLICHKHAM.Models.AppUser, DATLICHKHAM, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -1926,17 +1926,17 @@
     ]
   },
   {
-    "ContainingType": "DATLICHKHAM.APIsController.ThongTinChanDoanApiController",
-    "Method": "Delete",
-    "RelativePath": "api/ThongTinChanDoanApi/Delete",
-    "HttpMethod": "DELETE",
+    "ContainingType": "DATLICHKHAM.APIsController.TaiKhoanApiController",
+    "Method": "UpdateStatus",
+    "RelativePath": "api/TaiKhoanApi/UpdateStatus",
+    "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "MaChanDoan",
-        "Type": "System.Int32",
-        "IsRequired": false
+        "Name": "Entity",
+        "Type": "DATLICHKHAM.Models.AppUser",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": [
@@ -1952,22 +1952,22 @@
     ]
   },
   {
-    "ContainingType": "DATLICHKHAM.APIsController.ThongTinChanDoanApiController",
-    "Method": "Get",
-    "RelativePath": "api/ThongTinChanDoanApi/Get",
+    "ContainingType": "DATLICHKHAM.APIsController.ThongKeApiController",
+    "Method": "ThongKe_DoanhThu",
+    "RelativePath": "api/ThongKeApi/ThongKe_DoanhThu",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "MaChanDoan",
+        "Name": "Nam",
         "Type": "System.Int32",
         "IsRequired": false
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "Application.Core.Result\u00601[[DATLICHKHAM.Domain.DLK_ThongTinChanDoan, DATLICHKHAM, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "Application.Core.Result\u00601[[System.Collections.Generic.IEnumerable\u00601[[DATLICHKHAM.Domain.DLK_ThongKe_DoanhThu, DATLICHKHAM, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -1978,42 +1978,16 @@
     ]
   },
   {
-    "ContainingType": "DATLICHKHAM.APIsController.ThongTinChanDoanApiController",
-    "Method": "Gets",
-    "RelativePath": "api/ThongTinChanDoanApi/Gets",
+    "ContainingType": "DATLICHKHAM.APIsController.ThongKeApiController",
+    "Method": "ThongKe_TongQuat",
+    "RelativePath": "api/ThongKeApi/ThongKe_TongQuat",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "Application.Core.Result\u00601[[System.Collections.Generic.IEnumerable\u00601[[DATLICHKHAM.Domain.DLK_ThongTinChanDoan, DATLICHKHAM, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "DATLICHKHAM.APIsController.ThongTinChanDoanApiController",
-    "Method": "Update",
-    "RelativePath": "api/ThongTinChanDoanApi/Update",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "Entity",
-        "Type": "DATLICHKHAM.Domain.DLK_ThongTinChanDoan",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "Application.Core.Result\u00601[[DATLICHKHAM.Domain.DLK_ThongTinChanDoan, DATLICHKHAM, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "Application.Core.Result\u00601[[DATLICHKHAM.Domain.DLK_ThongKe, DATLICHKHAM, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",

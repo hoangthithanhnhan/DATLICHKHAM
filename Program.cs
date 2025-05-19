@@ -60,26 +60,6 @@ builder.Services.AddMediatR(typeof(Add.Handler).Assembly);
 builder.Services
     .AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie();
 #endregion
-//// CORS
-//builder.Services.AddCors(options =>
-//{
-//    options.AddPolicy("CorsPolicy", policy =>
-//    {
-//        policy.AllowAnyOrigin()
-//              .AllowAnyMethod()
-//              .AllowAnyHeader();
-//    });
-//});
-// CORS
-//builder.Services.AddCors(options =>
-//{
-//    options.AddPolicy("CorsPolicy", policy =>
-//    {
-//        policy.WithOrigins("https://example.com", "https://another-example.com") // Thay thế bằng các domain của bạn
-//              .AllowAnyMethod()
-//              .AllowAnyHeader();
-//    });
-//});
 
 
 var app = builder.Build();
@@ -99,7 +79,6 @@ app.UseStaticFiles();
 
 app.UseRouting();
 app.UseCors("CorsPolicy");
-//app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
 app.UseDeveloperExceptionPage();
@@ -108,11 +87,7 @@ app.MapAreaControllerRoute(
     areaName: "CMS",
     pattern: "cms/{controller=Home}/{action=Index}/{id?}"
 );
-//app.MapAreaControllerRoute(
-//    name: "default",
-//    areaName: "Identity",
-//    pattern: "{area:exists}/{controller=Account}/{action=Login}/{id?}");
-// ROUTES
+
 app.UseSwagger();
 app.UseSwaggerUI(options =>
 {
@@ -135,12 +110,11 @@ try
     var roleManager = services.GetRequiredService<RoleManager<AppRole>>();
     var mediator = app.Services.GetRequiredService<IMediator>();
     await context.Database.MigrateAsync();
-    //await Seed.SeedData(context, userManager, roleManager, mediator);
 }
 catch (System.Exception ex)
 {
     var logger = services.GetRequiredService<ILogger<Program>>();
-    logger.LogError(ex, "chi la ri");
+    logger.LogError(ex, "Error");
     //throw;
 }
 

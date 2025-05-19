@@ -3,16 +3,20 @@
     ViewBag.Title = "Quản lý hệ thống";
 }
 <div class="content">
+    <div class="d-flex align-items-center block-header">
+        <div class="search-block">
+            <input id="search" type="text" placeholder="Tìm kiếm...">
+            <button id="btn-search"> <img src="~/images/search-cms.png" alt=""></button>
+        </div>
+    </div>
     <table class="table table-border" id="myTable">
     <thead>
         <tr>
             <th>Stt</th>
-            <th>Tên chứng chỉ</th>
-            <th>Bác sĩ</th>
-            <th>Ngày cấp</th>
-            <th>Ngày hết hạn</th>
-            <th>Số hiệu chứng chỉ</th>
-            <th>Tổ chức cấp</th>
+            <th>Họ tên</th>
+            <th>Tên đăng nhập</th>
+            <th>Vai trò</th>
+            <th>Trạng thái</th>
             <th>Thao tác</th>
         </tr>
     </thead>
