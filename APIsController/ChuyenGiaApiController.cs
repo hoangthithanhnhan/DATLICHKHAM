@@ -14,10 +14,12 @@ namespace DATLICHKHAM.APIsController
     public class ChuyenGiaApiController : BaseApiController
     {
         private readonly UserManager<AppUser> _userManager;
+        private readonly RoleManager<AppRole> _roleManager;
 
-        public ChuyenGiaApiController(IWebHostEnvironment hostingEnvironment, UserManager<AppUser> userManager) : base(hostingEnvironment)
+        public ChuyenGiaApiController(IWebHostEnvironment hostingEnvironment, UserManager<AppUser> userManager, RoleManager<AppRole> roleManager) : base(hostingEnvironment)
         {
             _userManager = userManager;
+            _roleManager = roleManager;
         }
         
         [HttpGet]
@@ -86,7 +88,7 @@ namespace DATLICHKHAM.APIsController
                 Email = chuyenGia.Email,
                 DisplayName = chuyenGia.HoTen,
                 PhoneNumber = chuyenGia.SoDienThoai,
-                VaiTro = 1,
+                //VaiTro = 1,
                 Avatar = chuyenGia.AnhDaiDien
             };
 
@@ -95,6 +97,15 @@ namespace DATLICHKHAM.APIsController
             if (requestUser.Succeeded)
             {
                 var infoUser = await _userManager.FindByNameAsync(chuyenGia.Username);
+
+                var addRoleUser = await _userManager.AddToRoleAsync(infoUser, "ChuyenGia");
+
+                if (!addRoleUser.Succeeded)
+                {
+                    string error = addRoleUser.Errors.FirstOrDefault()?.Description ?? "Lỗi không xác định";
+                    return Result<DLK_ChuyenGia>.Failure(error);
+                }
+
                 //kiểm tra username id đã tồn tại hay chưa
                 if (infoUser?.Id != null)
                 {

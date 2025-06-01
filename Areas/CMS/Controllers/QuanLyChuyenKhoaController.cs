@@ -21,7 +21,9 @@ namespace RouteLinks.Areas.CMS.Controllers
             var user = userCurrent != null && userCurrent.Name != null ? await _userManager.FindByNameAsync(userCurrent.Name) : null;
             if (user != null)
             {
-                if (user.VaiTro != 0)
+                var checkRole = await _userManager.IsInRoleAsync(user, "Admin");
+
+                if (!checkRole)
                 {
                     return LocalRedirect($"/AccessDenied");
                 }

@@ -1,8 +1,8 @@
 ﻿@page
 @model DATLICHKHAM.Views.DatLichKham.IndexModel
-@{
+@using System.Security.Claims;
+@using Microsoft.AspNetCore.Identity;
 
-}
 
 <div class="block-main">
     <div class="blockDatLichKham">
@@ -50,19 +50,19 @@
         <div class="section-gioiThieu gioiThieuChuyenGia">
             <h5 class="title">Giới thiệu</h5>
             <p class="gioiThieu">
-                
+
             </p>
         </div>
         <div class="section-KinhNghiem gioiThieuChuyenGia">
             <h5 class="title">Kinh nghiệm</h5>
             <p class="kinhNghiem">
-                
+
             </p>
         </div>
         <div class="section-GiaiThuongNghienCuu gioiThieuChuyenGia">
             <h5 class="title">Giải thưởng nghiên cứu</h5>
             <p class="giaiThuong">
-                
+
             </p>
         </div>
         <div class="section-chungNhan gioiThieuChuyenGia">
@@ -73,7 +73,14 @@
         </div>
         <p class="notice" style="font-size:20px; color:red;text-align:justify">Nếu vì lý do cá nhân bạn không thể đến khám đúng hẹn, vui lòng hủy lịch khám ít nhất 12 tiếng trước và chọn một thời gian khác phù hợp. Chúng tôi rất cảm ơn sự hợp tác của bạn!</p>
         <div class="datKhamNgay">
-            <a  class="btn btn-primary" id="btn-datLichNgay">ĐẶT LỊCH NGAY</a>
+            @if (User.Identity.IsAuthenticated)
+            {
+                <a class="btn btn-datLichNgay" id="btn-datLichNgay">ĐẶT LỊCH NGAY</a>
+            }
+            else
+            {
+                <a class="btn btn-datLichNgay" asp-page="/Account/Login" asp-area="Identity">ĐẶT LỊCH NGAY</a>
+            }
         </div>
     </div>
 </div>

@@ -6,10 +6,13 @@ $(document).ready(function () {
     formatInputDate("#lichHen");
 
     getMaChuyenGia();
-
+    
     const today = new Date();
     $('#lichHen').val(formatDate(today));
     $('#setNgay').val(formatDate(today));
+
+
+    renderLichLamViec();
 
     $('#setNgay').on('change', function () {
         renderLichLamViec();
@@ -87,7 +90,7 @@ $(document).ready(function () {
 });
 
 
-function renderLichHen(maChuyenGia,ngayHen) {
+function renderLichHen(maChuyenGia, ngayHen) {
     $.ajax({
         url: APIURL + `/api/LichHenApi/GetLichHenByChuyenGiaByNgay?MaChuyenGia=${maChuyenGia}&NgayHen=${formatDateSQL(ngayHen)
             }`,
@@ -125,9 +128,9 @@ function renderLichHen(maChuyenGia,ngayHen) {
 function renderLichLamViec() {
     let ngay = $('#setNgay').val();
     let maChuyenGia = $('#maChuyenGia').val();
+    console.log(maChuyenGia)
     $.ajax({
-        url: APIURL + `/api/LichLamViecChuyenGiaApi/GetsLichLamViecChuyenGiaByNgay?Ngay=${formatDateSQL(ngay)
-    } & MaChuyenGia=${ maChuyenGia }`,
+        url: APIURL + `/api/LichLamViecChuyenGiaApi/GetsLichLamViecChuyenGiaByNgay?Ngay=${formatDateSQL(ngay)}&MaChuyenGia=${maChuyenGia}`,
         type: "GET",
         contentType: "application/json; charset=utf-8",
         success: function (data) {
@@ -203,6 +206,7 @@ function getMaChuyenGia() {
         url: APIURL + `/api/ChuyenGiaApi/user-info`,
         type: "GET",
         contentType: "application/json; charset=utf-8",
+        async: false,
         success: function (data) {
             const value = data.value;
             $('#maChuyenGia').val(value.maChuyenGia);

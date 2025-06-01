@@ -45,6 +45,7 @@ builder.Services.AddIdentity<AppUser, AppRole>(config =>
 })
     .AddEntityFrameworkStores<DataContext>()
     .AddDefaultTokenProviders();
+
 builder.Services.AddHttpContextAccessor();
 builder.Services.ConfigureApplicationCookie(config =>
 {

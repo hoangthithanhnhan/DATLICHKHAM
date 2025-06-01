@@ -98,7 +98,7 @@
                 $.each(data.value, function (index, item) {
                     if (index == 0) {
                         html +=
-                            `<div class="card" style="width: 100%;">
+                            `<div class="card" style="width: 100%; height:100%">
                                 <a href='${linkBaiVietChiTiet}?maBaiViet=${item.maBaiViet}' class="img"><img src="${item.anhDaiDien}" class="card-img-top" alt="..."></a>
                                 <div class="card-body">
                                     <a class="chuyenMuc">${item.tenChuyenMuc} </a>
@@ -151,13 +151,13 @@
                             <div class="card mb-3" style="max-width: 400px;">
                                 <div class="card-header">
                                     <img src="/images/rating.png" alt="">
-                                    <p class="card-text">
+                                    <p class="card-text fs-6">
                                         ${value.noiDung}
                                     </p>
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title">${value.hoTen}</h5>
-                                    <div class="rating">
+                                    <div class="rating text-warning fs-5">
                                         ${ratingstar(value.soSao)}
                                     </div>
                                 </div>

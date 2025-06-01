@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DATLICHKHAM.Models
 {
@@ -11,6 +12,7 @@ namespace DATLICHKHAM.Models
         public int? GroupId { get; set; }
         public int? ChucDanhId { get; set; }
         public bool IsEnabled { get; set; } = true;
-        public byte VaiTro { get; set; }
+        [NotMapped]
+        public byte? VaiTro { get; set; }
     }
 }

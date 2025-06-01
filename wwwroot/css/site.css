@@ -344,6 +344,7 @@ main.block-trangchu {
         padding-right: 81px;
         padding-left: 81px;
         margin-top: 80px;
+        margin-bottom:40px;
     }
 
         main .block-content .heading {
@@ -446,6 +447,7 @@ main.block-trangchu {
             display: flex;
             flex-direction: column;
             align-items: center;
+            flex-grow:1;
         }
 
             main .rating .card .card-header .card-text {
@@ -459,6 +461,8 @@ main.block-trangchu {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex: 0;
+
         }
 
             main .rating .card .card-body .card-title {
@@ -1000,7 +1004,7 @@ main.block-trangchu {
             bottom:0;
             background:var(--white);
         }
-            .block-main .blockDatLichKham .datKhamNgay #btn-datLichNgay {
+            .block-main .blockDatLichKham .datKhamNgay .btn-datLichNgay {
                 background: var(--blue);
                 color: white;
                 padding: 10px 20px;
@@ -1012,7 +1016,7 @@ main.block-trangchu {
                 font-weight: 700;
                 border: none;
             }
-            .block-main .blockDatLichKham .datKhamNgay #btn-datLichNgay:hover {
+            .block-main .blockDatLichKham .datKhamNgay .btn-datLichNgay:hover {
                 cursor: pointer;
             }
 main #modalXacNhanDatLich .modal-title {
@@ -1056,11 +1060,15 @@ main #chonDichVu .modal-footer button {
 main #chonDichVu .modal-footer #btn-DatLichHen{
     background:var(--blue);
     border-color:var(--blue);
+    width:160px;
 }
 main #chonDichVu .modal-footer #btn-cancel{
     background:none;
     border-color:var(--blue);
     color:var(--blue);
+}
+main #chonDichVu .modal-footer{
+    margin-top:10px;
 }
 
 
@@ -1578,7 +1586,7 @@ main .blog .section .heading {
                 -webkit-box-orient: vertical;
                 overflow: hidden;
                 text-overflow: ellipsis;
-                -webkit-line-clamp: 4;
+                -webkit-line-clamp: 5;
             }
             main .blog .baiVietMoi .tinBai .tinBaiLeft .card .card-body .thoiGianDang {
                 font-size: 18px;
@@ -1946,10 +1954,15 @@ main .block-main .lichHenCaNhan .lichHenRight {
 figure.image {
     text-align: center;
     border:none;
+    width:100%;
+}
+#baiVietChiTiet img{
+    width:100%;
 }
 #baiVietChiTiet {
     font-size: 20px;
 }
+
 
 .select2-container--default .select2-selection--single {
     border: 1px solid #ced4da;

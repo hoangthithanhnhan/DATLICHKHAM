@@ -202,6 +202,7 @@ $(document).ready(function () {
             kinhNghiem: kinhNghiem,
             trangThai: Boolean(Number(trangThai))
         }
+        console.log(request)
         let formData = new FormData();
         formData.append("data", JSON.stringify(request));// dữ liệu dạng object
         if (file) {

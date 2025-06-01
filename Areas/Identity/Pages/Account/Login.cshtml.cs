@@ -94,8 +94,9 @@ namespace Login.Areas.Identity.Pages.Account
                         var result = await _signInManager.PasswordSignInAsync(Input.Username, Input.Password, true, lockoutOnFailure: false);
                         if (result.Succeeded)
                         {
+                            var checkRole = await _userManager.IsInRoleAsync(user, "Admin");
                             //VaiTro ==0 là Admin, sẽ điều hướng đến trang quản trị
-                            if (user.VaiTro == 0 )
+                            if (checkRole)
                             {
                                 return LocalRedirect(returnUrl);
                             }

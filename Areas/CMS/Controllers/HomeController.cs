@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 
-namespace RouteLinks.Areas.CMS.Controllers
+namespace Areas.CMS.Controllers
 {
     [Area("CMS")]
     [Authorize]
@@ -19,13 +19,16 @@ namespace RouteLinks.Areas.CMS.Controllers
             _userManager = userManager;
             _signInManager = signInManager;
         }
+
         public async Task<IActionResult> Index()
         {
             var userCurrent = (ClaimsIdentity)User.Identity;
             var user = userCurrent != null && userCurrent.Name != null ? await _userManager.FindByNameAsync(userCurrent.Name) : null;
             if (user != null)
             {
-                if (user.VaiTro != 0)
+                var checkRole = await _userManager.IsInRoleAsync(user, "Admin");
+
+                if (!checkRole)
                 {
                     return LocalRedirect($"/AccessDenied");
                 }

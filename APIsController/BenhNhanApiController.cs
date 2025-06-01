@@ -6,6 +6,7 @@ using DATLICHKHAM.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
+using System.Data;
 using System.Security.Claims;
 
 namespace DATLICHKHAM.APIsController
@@ -14,11 +15,13 @@ namespace DATLICHKHAM.APIsController
     {
 
         private readonly UserManager<AppUser> _userManager;
+        private readonly RoleManager<AppRole> _roleManager;
 
-        public BenhNhanApiController(IWebHostEnvironment hostingEnvironment, UserManager<AppUser> userManager) : base(hostingEnvironment)
+        public BenhNhanApiController(IWebHostEnvironment hostingEnvironment, UserManager<AppUser> userManager, RoleManager<AppRole> roleManager) : base(hostingEnvironment)
         {
 
             _userManager = userManager;
+            _roleManager = roleManager;
         }
 
         [HttpGet]
@@ -80,7 +83,7 @@ namespace DATLICHKHAM.APIsController
                 Email = benhNhan.Email,
                 DisplayName = benhNhan.HoTen,
                 PhoneNumber = benhNhan.SoDienThoai,
-                VaiTro = 2,
+                //VaiTro = 2,
                 Avatar = benhNhan.AnhDaiDien
             };
 
@@ -89,6 +92,14 @@ namespace DATLICHKHAM.APIsController
             if (requestUser.Succeeded)
             {
                 var infoUser = await _userManager.FindByNameAsync(benhNhan.Username);
+
+                var addRoleUser = await _userManager.AddToRoleAsync(infoUser, "BenhNhan");
+
+                if (!addRoleUser.Succeeded) {
+                    string error = addRoleUser.Errors.FirstOrDefault()?.Description ?? "Lỗi không xác định";
+                    return Result<DLK_BenhNhan>.Failure(error);
+                }
+
                 //kiểm tra username id đã tồn tại hay chưa
                 if (infoUser?.Id != null)
                 {

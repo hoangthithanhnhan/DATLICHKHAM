@@ -117,7 +117,7 @@ $(document).ready(function () {
         let tienSuBenh = $("#tienSuBenhAdd").val();
         let thoiQuenSinhHoat = $("#thoiQuenSinhHoatAdd").val();
         let thuocDangDung = $("#thuocDangDungAdd").val();
-        let ghiChuKhac = $("#ghiChuKhacAdd").val();
+        let ghiChuKhac = $("#ghiChuAdd").val();
         let trangThai = $("input[name='trangThaiAdd']:checked").val();
         let lyDo = $("#lyDoAdd").val();
         let fileInput = $("#anhDaiDienAdd")[0];

@@ -17,11 +17,11 @@ else
             }
             else
             {
-                <img src="./images/anhdaidien.jpg" alt="Avatar" class="rounded-circle" width="40" height="40" />
+                <img src="/images/anhdaidien.jpg" alt="Avatar" class="rounded-circle" width="40" height="40" />
             }
             <span class="displayName ms-2">@ViewBag.DisplayName</span>
         </a>
-        @if(ViewBag.VaiTro == 1)
+        @if(ViewBag.VaiTro == 2)
         {
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
                 <li><a class="dropdown-item" asp-controller="ThongTinCaNhan" asp-action="Index"><i class="fa fa-user"></i> Thông tin cá nhân</a></li>
@@ -34,7 +34,7 @@ else
         else
         {
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
-                @if (ViewBag.VaiTro == 2)
+                @if (ViewBag.VaiTro == 3)
                 {
                     <li><a class="dropdown-item" asp-controller="ThongTinCaNhan" asp-action="Index"><i class="fa fa-user"></i> Thông tin cá nhân</a></li>
                     <li><hr class="dropdown-divider"></li>                    

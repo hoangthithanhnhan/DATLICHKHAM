@@ -390,3 +390,12 @@ h4 {
     height: 27px;
     border:none;
 }
+
+#listChuyenGia.users-list>li{
+    width:33%;
+}
+    #listChuyenGia.users-list > li img {
+        width: 93px;
+        height: 93px;
+        object-fit: cover;
+    }

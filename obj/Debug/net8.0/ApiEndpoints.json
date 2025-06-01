@@ -1953,8 +1953,68 @@
   },
   {
     "ContainingType": "DATLICHKHAM.APIsController.ThongKeApiController",
-    "Method": "ThongKe_DoanhThu",
-    "RelativePath": "api/ThongKeApi/ThongKe_DoanhThu",
+    "Method": "ThongKeChuyenGia",
+    "RelativePath": "api/ThongKeApi/ThongKeChuyenGia",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Application.Core.Result\u00601[[System.Collections.Generic.IEnumerable\u00601[[DATLICHKHAM.Domain.DLK_ThongKe_ChuyenGia, DATLICHKHAM, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DATLICHKHAM.APIsController.ThongKeApiController",
+    "Method": "ThongKeDanhGia",
+    "RelativePath": "api/ThongKeApi/ThongKeDanhGia",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Application.Core.Result\u00601[[System.Collections.Generic.IEnumerable\u00601[[DATLICHKHAM.Domain.DLK_ThongKe_DanhGia, DATLICHKHAM, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DATLICHKHAM.APIsController.ThongKeApiController",
+    "Method": "ThongKeDichVu",
+    "RelativePath": "api/ThongKeApi/ThongKeDichVu",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Application.Core.Result\u00601[[System.Collections.Generic.IEnumerable\u00601[[DATLICHKHAM.Domain.DLK_ThongKe_DichVu, DATLICHKHAM, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DATLICHKHAM.APIsController.ThongKeApiController",
+    "Method": "ThongKeDoanhThu",
+    "RelativePath": "api/ThongKeApi/ThongKeDoanhThu",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -1979,8 +2039,34 @@
   },
   {
     "ContainingType": "DATLICHKHAM.APIsController.ThongKeApiController",
-    "Method": "ThongKe_TongQuat",
-    "RelativePath": "api/ThongKeApi/ThongKe_TongQuat",
+    "Method": "ThongKeLichHen",
+    "RelativePath": "api/ThongKeApi/ThongKeLichHen",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Nam",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Application.Core.Result\u00601[[System.Collections.Generic.IEnumerable\u00601[[DATLICHKHAM.Domain.DLK_ThongKe_LichHen, DATLICHKHAM, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DATLICHKHAM.APIsController.ThongKeApiController",
+    "Method": "ThongKeTongQuat",
+    "RelativePath": "api/ThongKeApi/ThongKeTongQuat",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

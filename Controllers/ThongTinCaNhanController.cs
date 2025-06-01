@@ -26,7 +26,9 @@ namespace DATLICHKHAM.Controllers
             var user = userCurrent != null && userCurrent.Name != null ? await _userManager.FindByNameAsync(userCurrent.Name) : null;
             if (user != null)
             {
-                if(user.VaiTro == 2)
+                var checkRoleBN = await _userManager.IsInRoleAsync(user, "BenhNhan");
+                var checkRoleCG = await _userManager.IsInRoleAsync(user, "Admin");
+                if (checkRoleBN)
                 {
                     var benhNhanInfo = await _mediator.Send(new Application.BenhNhan.Get.Query { MaBenhNhan = null, MaNguoiDung = user.Id.ToString() });
                     if (benhNhanInfo.IsSuccess)
@@ -35,7 +37,7 @@ namespace DATLICHKHAM.Controllers
                     }
                     return View("~/Views/ThongTinCaNhanBenhNhan/Index.cshtml");
                 }
-                else if(user.VaiTro == 1)
+                else if(checkRoleCG)
                 {
                     var chuyenGiaInfo = await _mediator.Send(new Application.ChuyenGia.Get.Query { MaChuyenGia = null, MaNguoiDung = user.Id.ToString() });
                     if (chuyenGiaInfo.IsSuccess)

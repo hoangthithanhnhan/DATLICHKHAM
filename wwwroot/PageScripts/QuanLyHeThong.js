@@ -49,7 +49,7 @@ $(document).ready(function () {
             {
                 targets: 3,
                 render: function (data, type, row, meta) {
-                    return data == 0 ? '<span class="text-pink">Quản trị viên</span>' : data == 1 ? '<span class="text-blue">Chuyên gia</span>' : '<span class="text-yellow">Bệnh nhân</span>';
+                    return data == 1 ? '<span class="text-pink">Quản trị viên</span>' : data == 2 ? '<span class="text-blue">Chuyên gia</span>' : '<span class="text-yellow">Bệnh nhân</span>';
                 }
             },
             {
@@ -61,7 +61,7 @@ $(document).ready(function () {
             {
                 targets: 5,
                 render: function (data, type, row, meta) {
-                    return row.vaiTro != 0 ? `<button type="button" data-id="${meta.row}" class="button btn-status">
+                    return row.vaiTro != 1 ? `<button type="button" data-id="${meta.row}" class="button btn-status">
                                 <img src="../images/${row.isEnabled ? 'lock.png' : 'unlock.png'}" alt="Alternate Text" />
                             </button> 
                             <button type="button" data-id="${meta.row}" class="button d-none btn-delete" data-bs-toggle="modal" data-bs-target="#modalDelete">

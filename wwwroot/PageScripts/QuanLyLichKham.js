@@ -37,9 +37,10 @@
       
 
     $.ajax({
-        url: APIURL + `/api/DichVuApi/Gets?trangThai=true`,
+        url: APIURL + `/api/DichVuApi/Gets`,
         type: "POST",
         contentType: "application/json; charset=utf-8",
+        data: JSON.stringify({ trangThai: true }),
         success: function (data) {
             if (data && data.isSuccess) {
                 if (data.value && data.value.length > 0) {
